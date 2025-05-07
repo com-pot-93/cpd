@@ -1,0 +1,14 @@
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->2:subprocess:(Decision Logic)
+2:subprocess:-->3:task:(task D)
+3:task:-->4:endevent:((endevent))
+
+subgraph Decision Logic
+0:exclusivegateway:{x}
+0:exclusivegateway:-->|true|1:task:(task B)
+0:exclusivegateway:-->|false|2:task:(task C)
+1:task:-->3:exclusivegateway:{x}
+2:task:-->3:exclusivegateway:
+3:exclusivegateway:-->4:task:
+end

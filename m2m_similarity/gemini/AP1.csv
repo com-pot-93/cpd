@@ -1,0 +1,126 @@
+,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
+0,0,False,False,a,False,False,0.0
+1,1,True,False,delete task E from the model,"Remove task E.
+",True,0.9363888065951991
+2,2,True,True,"after task C in the false bracket, append task E","Add task E after task C on the false branch of the gateway.
+",True,1.0
+3,3,True,True,create task E and make it follow task C only,"Insert a new task named ""E"" after task ""C"".
+",True,1.0
+4,4,True,False,"In the new model, if task A is false, 2 tasks should be done: task C and task E.","If task A is false, then execute task C and task E.
+",True,1.0
+5,5,True,True,"Please add another task (task E) in the ""false""-branch directly after task C. ","Add task E after task C on the false branch.
+",True,1.0
+6,6,True,True,Add task E to the model after task C,"Insert task E after task C.
+",True,1.0
+7,7,True,True,"Insert a task E immediately after task C. After that the closing or-gate should follow. The other path of the or-gate, including task B, should not be changed.","Add a new task E between task C and the merging OR gateway. Task B remains unchanged as a separate branch leading to the same OR gateway.
+",True,1.0
+8,8,True,True,Add a task E following task C before the join clause,"Insert a new task ""E"" between task ""C"" and the subsequent gateway.
+",True,1.0
+9,9,True,False,"Add a task E after task C. The reason is that if after task a the status is false we need to do task c first and then immediately afterwards task E, task E is not needed if after task A the status is true.","Insert a task ""E"" after task ""C"" on the branch where the status after task ""A"" is false.
+",True,1.0
+10,10,True,False,Remove task E,"Delete task E.
+",True,0.9363888065951991
+11,11,True,True,please add one more step after task c and before arriving into X,"NA
+",True,0.9363888065951991
+12,12,True,True,Add task E after task C,"Insert task E between task C and the activity that follows task C.
+",True,1.0
+13,13,True,True,append a task E following task C ,"Insert a new task named ""E"" after task ""C"".
+",True,1.0
+14,14,True,True,Please add task E directly after task C,"Insert task E between task C and the activity that follows task C.
+",True,1.0
+15,15,True,False,Task E was added for the case taskQ evaluated to false ,"Add a new task named ""E"" after task ""taskQ"" on the ""false"" path.
+",True,0.9363888065951991
+16,16,False,False,"Aditionally, the new model should have a task E after task C in the flase OR Gateway path",False,False,0.0
+17,17,True,True,"In the 'OR split' after 'task A', insert a transition 'task E' after 'task C' and its corresponding edges.","Insert a new activity 'Task E' between activity 'Task C' and the converging OR gateway that follows 'Task C'. Connect 'Task C' to 'Task E' with a sequence flow and 'Task E' to the converging gateway with another sequence flow.
+",True,1.0
+18,18,True,True,Add task E directly after task C,"Insert task E between task C and the activity that follows task C.
+",True,1.0
+19,19,True,True,Please insert a task E between task C and the closing XOR ,"Add a new task named ""E"" between task ""C"" and the exclusive gateway that follows it.
+",True,1.0
+20,20,True,True,insert task E after task C and before XOR gateway (join),"Add task E between task C and the XOR gateway that follows task C.
+",True,1.0
+21,21,True,True,please insert an additional task E immediately after task C.,"Insert task E after task C.
+",True,1.0
+22,22,True,True,Please add task E behind Task C before going into the XOR,"Insert task E between task C and the exclusive gateway.
+",True,1.0
+23,23,True,True,Adding a task,"NA
+",True,0.9363888065951991
+24,24,True,True,Please add another Task E directly following the Task C in the False Branch of the Gate. ,"Add a new task named ""Task E"" after ""Task C"" in the branch where the gateway condition evaluates to false.
+",True,1.0
+25,25,True,True,Add task E directly after task C before the XOR join. ,"Insert task E between task C and the XOR gateway.
+",True,1.0
+26,26,True,True,Directly after task C add task E. Do not make any other changes.,"Insert task E after task C.
+",True,1.0
+27,27,True,True,Add task E after task C.,"Insert task E between task C and the activity that follows task C.
+",True,1.0
+28,28,True,True,Insert a task E between task C and the Exclusive gateway,"Add a new task named ""E"" between task ""C"" and the exclusive gateway.
+",True,1.0
+29,29,True,True,Add an additional task E directly after task C and before the closing of the OR-gateway.,"Add task E between task C and the merge gateway that follows tasks C and D.
+",True,1.0
+30,30,True,True,Please insert Task E after Task C,"Insert Task E after Task C.
+",True,1.0
+31,31,True,True,"After task C, insert a new task E.","Insert task E after task C.
+",True,1.0
+32,32,True,True,"Add a new task E after task C, before the two branches converge.","Insert a new task ""E"" between task ""C"" and the converging gateway that follows it.
+",True,1.0
+33,33,True,True,Add a Task E after Task C but Before the XOR-Merge Gate,"Insert a new task named ""E"" between task ""C"" and the XOR-Merge gateway.
+",True,1.0
+34,34,True,False,"After executing task A, a condition is executed. If false, complete task C and add a new task E. If the condition is true, complete task B and contniue as stated in the graph","After task A, introduce a conditional gateway. If the condition is false, execute task C followed by new task E. If true, execute task B.
+",True,1.0
+35,35,True,True,Include Task E after Task C in the path before the merger to Task D,"Insert Task E between Task C and the gateway that merges into Task D.
+",True,1.0
+36,36,True,False,"Task E is added, which means in case of a false Task A, task C and E should be executed","If Task A's condition is false, execute Tasks C and E.
+",True,1.0
+37,37,True,True,Add a task called task E directly following task C with the same conditional logic  ,"Insert a new task named ""Task E"" after ""Task C"". Task E should inherit the same inbound conditional flow as Task C.
+",True,1.0
+38,38,True,True,Adding a task E after task C. ,"Insert task E after task C.
+",True,1.0
+39,39,True,False,"the ""false"" path should include a task E after task C","Add task E after task C on the ""false"" path of the gateway.
+",True,1.0
+40,40,True,False,"Task E is added, following task C, in case task condition","NA
+",True,0.9363888065951991
+41,41,True,True,after task a if it results in a false value we do task c and then go back to task d after which the entire model ends. I want to add a second task e which takes place after task c and before we go into task d,"Insert task 'e' between task 'c' and task 'd' in the branch where task 'a' results in a false value.
+",True,1.0
+42,42,True,True,"Please add a new task called ""task E"" that should be executed after task C","Insert a new task ""Task E"" after task C.
+",True,1.0
+43,43,True,True,Add task E,"NA
+",True,0.9363888065951991
+44,44,True,True,"Add a new Task called ""task E"" following task C and connect only task E to the exclusive gateway. ","Insert a new task named ""Task E"" after Task C. Redirect the outgoing sequence flow from Task C to Task E, and create a new sequence flow from Task E to the exclusive gateway. Remove any existing connections between Task C and the exclusive gateway.
+",True,1.0
+45,45,True,True,Please add a new task E after the task C,"Insert a new task ""E"" after task ""C"".
+",True,1.0
+46,46,True,True,Add one more step after processing task C,"Insert a new activity after activity C.
+",True,1.0
+47,47,True,True,Insert task E after task C but before the two control flows merges,"Add task E between task C and the converging gateway that follows it.
+",True,1.0
+48,48,True,True,Add a new Task E after Task C in the Same condition,"Insert a new task named ""E"" after task ""C"".
+",True,1.0
+49,49,True,True,"Add a task E after task C, before X","Insert a new task ""E"" between task ""C"" and task ""X"".
+",True,1.0
+50,50,True,True,Please add a new task E directly after task C ,"Insert task E after task C.
+",True,1.0
+51,51,True,True,Add a new task E following task C.,"Insert a new task named ""E"" after task ""C"".
+",True,1.0
+52,52,True,True,Add a new task E After Task C inside the XOR block,"Insert a new task named ""E"" after task ""C"".
+",True,1.0
+53,53,True,True,Insert a task E after task C that then merges into the existing or gate,"Add a new task named ""E"" after task ""C"".  The output of both tasks ""C"" and ""E"" should then flow into the existing OR gateway.
+",True,0.96
+54,54,True,True,Add a new task E immediately after task C,"Insert a new task E between task C and the activity that follows task C.
+",True,1.0
+55,55,True,True,"Add a new task E after task C, so that the 'false' branch becomes task C followed by task E.","Insert task E after task C on the 'false' branch.
+",True,1.0
+56,56,False,False,"The task C should followed by task E, no other relationship should be changed",False,False,0.0
+57,57,True,True,Please add Task E following Task C before merging the true and false cases,"Insert a new task ""Task E"" after ""Task C"" and before the merge gateway.
+",True,1.0
+58,58,True,True,The task E is added after task c. ,"Insert task E after task C.
+",True,1.0
+59,59,True,True,Add an extra task (task E) after task C.,"Insert task E after task C.
+",True,1.0
+60,60,True,True,Please add a Task E to within the flow of „false“ after task C,"NA
+",True,0.9363888065951991
+61,61,True,False,in case task A results in false we need to add a task E after task C,"If task A is followed by a gateway with a condition evaluating the result of task A, and the outgoing flow from this gateway corresponding to a negative result currently leads directly to task C, then introduce a new task E between the gateway and task C on this path.  If task A is not followed by a gateway, introduce a new exclusive gateway after task A. Connect task A to the gateway. Create two outgoing flows from the gateway: one for a positive result from task A, leading to the original subsequent task (e.g. B), and one for a negative result, leading to the new task E. Then connect task E to task C.
+",True,1.0
+62,62,True,True,Add the task E after task C on the false branch.,"Insert task E after task C on the false branch.
+",True,1.0
+63,63,True,True,Insert a task e after task c.,"Add a new task ""e"" directly after task ""c"".
+",True,1.0

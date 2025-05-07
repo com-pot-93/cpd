@@ -1,0 +1,8 @@
+```mermaid
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->9:parallelgateway:{AND}
+9:parallelgateway:-->10:task:(task D)
+10:task:-->11:parallelgateway:{AND}
+11:parallelgateway:-->8:endevent:(((endevent)))
+```

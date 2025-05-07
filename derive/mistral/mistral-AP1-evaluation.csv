@@ -1,0 +1,110 @@
+,mapping,epap,user,meaning
+0,False,False,a,False
+1,True,False,delete task E from the model,NA.
+2,True,True,"after task C in the false bracket, append task E",NA.
+3,True,True,create task E and make it follow task C only,NA
+4,True,False,"In the new model, if task A is false, 2 tasks should be done: task C and task E.",NA.
+5,True,True,"Please add another task (task E) in the ""false""-branch directly after task C. ",NA.
+6,True,True,Add task E to the model after task C,Insert task E into the model to be executed immediately after task C is completed.
+7,True,True,"Insert a task E immediately after task C. After that the closing or-gate should follow. The other path of the or-gate, including task B, should not be changed.","Insert task E between task C and the subsequent or-gate, ensuring that task E is executed immediately after task C and before the or-gate. The other branch of the or-gate, which includes task B, remains unchanged."
+8,True,True,Add a task E following task C before the join clause,The actual meaning of the user input is: Insert a new task E between task C and the subsequent join clause.
+9,True,False,"Add a task E after task C. The reason is that if after task a the status is false we need to do task c first and then immediately afterwards task E, task E is not needed if after task A the status is true.",NA
+10,True,False,Remove task E,NA
+11,True,True,please add one more step after task c and before arriving into X,"(e) Translate the derived meaning into a structured format that captures the essence of the change in clear and concise natural language, ensuring that all relevant details are included and any ambiguities are resolved.
+
+So the final output will be the result of this step."
+12,True,True,Add task E after task C,NA
+13,True,True,append a task E following task C ,NA
+14,True,True,Please add task E directly after task C,"To evaluate and interpret this modification, let's go through the steps:
+
+(a) **Validation**: The instruction ""Please add task E directly after task C"" is clear and unambiguous. It specifies the tasks involved (C and E) and the sequence (E after C).
+
+(b) **Mapping to Change Pattern**: This modification fits the change pattern **AP1**: ""Insert Process Fragment. Adds a new process fragments between two directly succeeding activities."" Here, task E is being inserted after task C.
+
+(c) **Deriving the Actual Meaning**: Based on BPMN semantics and the intent of AP1, the actual meaning of the modification is to introduce a new task E immediately following task C in the process sequence.
+
+(d) **Compliance Check**: This modification complies with BPMN modeling rules, as it involves a straightforward insertion of a new task in a specified sequence.
+
+**Final Output**:
+Insert task E immediately after task C in the process sequence."
+15,True,False,Task E was added for the case taskQ evaluated to false ,NA.
+16,True,True,"Aditionally, the new model should have a task E after task C in the flase OR Gateway path",NA.
+17,True,True,"In the 'OR split' after 'task A', insert a transition 'task E' after 'task C' and its corresponding edges.",NA.
+18,True,True,Add task E directly after task C,Insert task E directly after task C.
+19,True,True,Please insert a task E between task C and the closing XOR ,Insert task E between task C and the closing XOR gateway.
+20,True,True,insert task E after task C and before XOR gateway (join),Insert task E between task C and the XOR join gateway.
+21,True,True,please insert an additional task E immediately after task C.,"Insert a new activity ""E"" immediately after activity ""C""."
+22,True,True,Please add task E behind Task C before going into the XOR,"To add task E behind task C before going into the XOR gateway, the modification can be mapped to the change pattern AP1 (""Insert Process Fragment""). This change pattern involves adding a new process fragment between two directly succeeding activities.
+
+Given the context, the actual meaning of the modification is:
+
+**Insert a new task E immediately after task C and before the XOR gateway.**"
+23,True,True,Adding a task,NA.
+24,True,True,Please add another Task E directly following the Task C in the False Branch of the Gate. ,NA.
+25,True,True,Add task E directly after task C before the XOR join. ,Insert task E between task C and the XOR join.
+26,True,True,Directly after task C add task E. Do not make any other changes.,"Insert task E directly after task C, ensuring that task E follows task C in the sequence flow without any other modifications to the process."
+27,True,True,Add task E after task C.,Insert task E immediately after task C.
+28,True,True,Insert a task E between task C and the Exclusive gateway,Insert a task E between task C and the Exclusive gateway
+29,True,True,Add an additional task E directly after task C and before the closing of the OR-gateway.,Insert a new task E immediately after task C and before the OR-gateway closes.
+30,True,True,Please insert Task E after Task C,Insert Task E to be executed immediately after Task C.
+31,True,True,"After task C, insert a new task E.",Insert a new task E to be performed immediately after task C.
+32,True,True,"Add a new task E after task C, before the two branches converge.","Insert a new activity ""Task E"" immediately following ""Task C"" and preceding the point where the two branches merge."
+33,True,True,Add a Task E after Task C but Before the XOR-Merge Gate,Insert a new task labeled 'E' between the task labeled 'C' and the XOR merge gateway.
+34,True,False,"After executing task A, a condition is executed. If false, complete task C and add a new task E. If the condition is true, complete task B and contniue as stated in the graph",NA
+35,True,True,Include Task E after Task C in the path before the merger to Task D,Insert Task E between Task C and the subsequent merger to Task D.
+36,True,False,"Task E is added, which means in case of a false Task A, task C and E should be executed",The actual meaning of the user input is: Embed Tasks C and E in a conditional branch that executes if Task A evaluates to false.
+37,True,True,Add a task called task E directly following task C with the same conditional logic  ,"The actual meaning of the user input is: ""Insert a new task called 'Task E' immediately after 'Task C', maintaining the same conditional flow logic."""
+38,True,True,Adding a task E after task C. ,Insert task E immediately after task C.
+39,True,False,"the ""false"" path should include a task E after task C","The actual meaning of the user input is: ""Embed task E into the 'false' branch of the conditional flow after task C."""
+40,True,False,"Task E is added, following task C, in case task condition",NA
+41,True,False,after task a if it results in a false value we do task c and then go back to task d after which the entire model ends. I want to add a second task e which takes place after task c and before we go into task d,Insert a new task 'E' between tasks 'C' and 'D'.
+42,True,True,"Please add a new task called ""task E"" that should be executed after task C",NA.
+43,True,True,Add task E,NA.
+44,True,True,"Add a new Task called ""task E"" following task C and connect only task E to the exclusive gateway. ","Insert a new task called ""Task E"" immediately after ""Task C"". Connect only ""Task E"" to the exclusive gateway."
+45,True,True,Please add a new task E after the task C,"To determine the actual meaning of the user's input, we need to map the modification to a predefined change pattern and interpret it based on BPMN semantics.
+
+The user's input is: ""Please add a new task E after the task C.""
+
+This modification can be mapped to the change pattern **AP1**: ""Insert Process Fragment. Adds a new process fragments between two directly succeeding activities.""
+
+Based on BPMN semantics and the intent of the change pattern AP1, the actual meaning of the modification is:
+
+**Insert a new task E immediately after task C in the process sequence.**"
+46,True,True,Add one more step after processing task C,"To evaluate and interpret this modification, let's go through the steps:
+
+(a) **Validation**: The modification specifies adding a step after ""processing task C."" This information is sufficient and unambiguous.
+
+(b) **Mapping to Change Pattern**: This modification maps to ""AP1: Insert Process Fragment. Adds a new process fragments between two directly succeeding activities.""
+
+(c) **Deriving the Actual Meaning**: Based on BPMN semantics and the intent of the change pattern, the actual meaning of the modification is to insert a new activity or process fragment immediately after the existing ""processing task C.""
+
+(d) **Compliance**: This modification complies with BPMN modeling rules and the structure of the existing process, as it involves adding a new step in a sequential flow.
+
+**Final Output**: Insert a new activity immediately after ""processing task C""."
+47,True,True,Insert task E after task C but before the two control flows merges,Insert task E between task C and the subsequent merging gateway.
+48,True,True,Add a new Task E after Task C in the Same condition,"Insert a new task labeled 'E' immediately following task 'C', ensuring it adheres to the same conditional flow as task 'C'."
+49,True,True,"Add a task E after task C, before X",Insert a new task labeled 'E' immediately after the task labeled 'C' and before the element labeled 'X'.
+50,True,True,Please add a new task E directly after task C ,NA.
+51,True,True,Add a new task E following task C.,Insert a new activity labeled 'E' immediately after the activity labeled 'C'.
+52,True,True,Add a new task E After Task C inside the XOR block,NA.
+53,True,True,Insert a task E after task C that then merges into the existing or gate,"Insert a task E after task C, and then merge it into the existing OR gateway."
+54,True,True,Add a new task E immediately after task C,Insert a new activity labeled 'E' directly following the activity labeled 'C'.
+55,True,False,"Add a new task E after task C, so that the 'false' branch becomes task C followed by task E.","Insert a new activity ""E"" directly after activity ""C"" in the 'false' branch."
+56,True,False,"The task C should followed by task E, no other relationship should be changed","The task E should directly follow task C, with no other changes to the process."
+57,True,True,Please add Task E following Task C before merging the true and false cases,NA
+58,True,True,The task E is added after task c. ,"Insert the task ""E"" immediately after the task ""C""."
+59,True,True,Add an extra task (task E) after task C.,"Insert a new activity labeled ""Task E"" immediately following ""Task C""."
+60,True,False,Please add a Task E to within the flow of „false“ after task C,"To evaluate and interpret the user-provided modification, let's follow the steps outlined:
+
+(a) **Validating the modification**: The user has provided the instruction to add a Task E within the flow of ""false"" after Task C. This instruction is sufficiently clear and unambiguous.
+
+(b) **Mapping to a change pattern**: The modification involves adding a new process fragment (Task E) between two directly succeeding activities (after Task C in the ""false"" branch). This maps to the change pattern **AP1**: Insert Process Fragment.
+
+(c) **Deriving the actual meaning**: Based on BPMN semantics and the intent of the change pattern AP1, the modification means that a new task, Task E, should be inserted into the process flow. Specifically, it should be added after Task C in the branch that corresponds to the ""false"" condition.
+
+(d) **Ensuring compliance**: The modification complies with BPMN modeling rules and the structure of the existing process, as it involves a straightforward insertion of a new task within an existing flow.
+
+**Final output**: Add Task E after Task C in the branch that corresponds to the ""false"" condition."
+61,True,True,in case task A results in false we need to add a task E after task C,NA.
+62,True,True,Add the task E after task C on the false branch.,NA
+63,True,True,Insert a task e after task c.,Insert a new task 'e' immediately after the task 'c' is completed.

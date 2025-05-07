@@ -1,0 +1,32 @@
+Prompt to map wording to a pattern in a rulbase:
+
+The prompt consists of two parts: system prompt and user prompt
+
+System Prompt:
+Consider following predefined change patterns for business process model redesign:
+{
+"AP1":"Insert Process Fragment",
+"AP2":"Delete Process Fragment",
+"AP3":"Move Process Fragment",
+"AP4":"Replace Process Fragment",
+"AP5":"Swap Process Fragments",
+"AP8.1":"Embed Process Fragment in Pre-Conditional Loop",
+"AP8.2":"Embed Process Fragment in Post-Conditional Loop",
+"AP9":"Parallelize Process Fragments",
+"AP10":"Embed Process Fragment in Conditional Branch",
+"AP14":"Copy Process Fragment",
+"AP6":"Extract Sub Process",
+"AP7":"Inline Sub Process",
+"AP13":"Update Condition",
+"AP19":"Replace Gateways",
+"AP15":"Split Process Fragment",
+"AP16":"Merge Process Fragment",
+"AP17":"Delete Entire Branch",
+"AP18":"Leave Single Branch"
+}.
+Classify the user input into one of the predefined change patterns, if a matching pattern exists.
+If a match is found, return only the pattern ID. Only one pattern can be matched.
+If no match is found, return NA. No other information is allowed to be returned!!!
+
+User Prompt: <Wording provided by a user>
+

@@ -1,0 +1,127 @@
+,mapping,epap,user,meaning
+0,False,False,b,False
+1,True,True,delete task C from the model,"Remove task C.
+"
+2,True,False,forward false without any tasks,"NA
+"
+3,True,False,remove task C so that its branch connects directly to task D,"Remove task C and connect the preceding gateway directly to task D.
+"
+4,True,False,"In the new model, if task A is false, task D should be done directly.","Connect task A to task D with a new conditional flow.  Set the condition on this flow to evaluate to false.
+"
+5,True,False,"Please remove task C so that if task A returns ""false"" the process directly continues with task D. ","Remove task C and connect task A directly to task D.
+"
+6,True,True,Remove task C from the model,"Remove task C.
+"
+7,True,False,"Remove task C in the false-path of the or-gate and make the path directly point to the closing or-gate. The true-path of the or-gate, including task B, should not be changed.","Delete task C and connect the outgoing flow of the ""false"" path directly to the merging OR gateway.
+"
+8,True,False,remove task c keep and rejoin the false branch,"NA
+"
+9,True,True,Remove task C. We do not need to do an additional task if the status is false after task A.,"Remove task C and the gateway preceding it if it only leads to task C. If the gateway leads to other tasks, only remove the outgoing sequence flow from the gateway to task C.
+"
+10,True,False,Remove task C and connect the gateways in the case of false ,"Remove task C and connect the exclusive gateway preceding it to the exclusive gateway succeeding it in the case of a false evaluation.
+"
+11,True,False,"instead of task C, add a condition where if false, continue to the second X","NA
+"
+12,True,True,delete task c,"Remove task ""c"".
+"
+13,True,False,"remove option of task C, leave the ""false path"" as option without a task","Delete task C from a parallel gateway's branch.
+"
+14,True,True,"Please remove task C, but leave the false connection.","Remove task C and retain the outgoing sequence flow.
+"
+15,True,False,in case of false no taskC gets now executed,"If the condition is false, execute Task C.
+"
+16,True,False,Task C should be removed from the false OR Gateway path,"Remove task C from the OR gateway's false path.
+"
+17,True,False,"In the 'OR split' after 'task A', remove the transition 'task C' and its edges, insert the edge 'false' between 'OR split' and 'Or join' in its place.","Remove the transition to 'Task C' from the OR gateway following 'Task A' and create a new transition from this gateway directly to the OR gateway's corresponding merge gateway, labeled with the condition 'false'.
+"
+18,True,False,Remove task C while maintaining the false path,"Remove task C and connect task B directly to the exclusive gateway.
+"
+19,True,True,Please remove task c from the model but keep the connection between the gateways,"Remove task ""c"" and connect the preceding and succeeding gateways directly.
+"
+20,True,False,"remove task C, keep conditional branch (empty)","Remove task C and leave the surrounding conditional structure in place.
+"
+21,True,False,please remove task C while keeping the connection with condition of false.,"Remove task C and connect the preceding gateway directly to the subsequent task/gateway with the condition ""false"".
+"
+22,True,True,Please remove task C. We do now go directly into the second XOR if the first XOR is false.,"Remove task C and connect the preceding gateway directly to the second exclusive gateway.
+"
+23,True,True,Removing a task,"NA
+"
+24,True,True,remove task C ,"Delete task C.
+"
+25,True,False,Remove task C such that no task is executed in the false-branch. ,"Remove task C and the outgoing sequence flow from the exclusive gateway.  Remove the exclusive gateway and connect the incoming sequence flow directly to task D.
+"
+26,True,True,Delete task C. Do not make any other changes.,"Remove task C.
+"
+27,True,False,remove task C such that after task A is suceded by task D when the condition is false,"Remove task C and connect task A to task D with a conditional flow.
+"
+28,True,True,remove task C,"Delete task C.
+"
+29,True,False,"Delete task C, so that in case of ""false"" the path goes directly to the closing OR-gateway.","Remove task C and connect the outgoing sequence flow of task B directly to the merging OR-gateway.
+"
+30,True,True,Task C has to be removed,"Remove Task C.
+"
+31,True,False,"Instead of task C, connect both gateways directly.","Remove task C and connect the preceding and succeeding gateways directly.
+"
+32,True,True,Remove task C.,"Delete task C.
+"
+33,True,False,"Replace Task C with a direct connection to the Merge-Gateway, which is used when the Split Gateway evaluates to false.","Remove task C and connect the false branch of the split gateway directly to the merge gateway.
+"
+34,True,True,Remove task C,"Delete task C.
+"
+35,True,False,"Remove Task C, when task A is true ","NA
+"
+36,True,False,"Task C is removed, meaning a false task A, won't execute a task C anymore.","Remove the connection between Task A and Task C, and remove Task C.
+"
+37,False,False,Delete task C and adapt the conditional logic ,False
+38,True,True,Removing task C. ,"Delete task C.
+"
+39,True,False,remove task c form the false path,"NA
+"
+40,True,False,"If the result of condition X is false, then no task C is executed any more. ","Task C is only executed if condition X is true.
+"
+41,True,True,delete task c while keeping the entire structure elsewise in the excactly same manner,"Remove task ""c"".
+"
+42,True,True,Please remove task C from the model,"Remove task C.
+"
+43,True,True,Remove Task C,"Delete Task C.
+"
+44,True,False,"Please change the true and false regulation of our first exclusive gateway to directly connect to the second exclusive gateway by removing task C. THe direct connection to our second exclusive gateway should be ""false"". ","Remove task C and connect the first exclusive gateway to the second exclusive gateway with a condition of ""false"".
+"
+45,True,True,Please remove the task C ,"NA
+"
+46,True,True,Delete the task C,"Remove task C.
+"
+47,True,False,Remove task C but maintain the decision before task B,"Remove task C and connect the decision gateway directly to task D and task B.
+"
+48,True,False,Remove Task c and instead skip to Task d If false,"NA
+"
+49,True,False,"remove task C, if X false then next X","NA
+"
+50,True,True,please remove task C from the model.,"Remove task C.
+"
+51,True,False,Remove task C from the false branch.,"Remove task C from the branch that follows the false gateway.
+"
+52,True,False,"Remove task C, but keep the XOR structure by replacing the task with an empty branch ","Replace task C with an empty sequence flow.
+"
+53,True,False,remove task C and directly go into the joining Or on the false side,"Remove task C and connect the preceding activity directly to the subsequent Or gateway.
+"
+54,True,False,Remove task C but keep the false flow to the gateway,"NA
+"
+55,True,False,"Remove task C from the 'false' branch, so that only task B remains on the 'true' branch before continuing to task D.","Remove task C from the false branch of the exclusive gateway.
+"
+56,True,True,Remove the task C while make no change to others ,"Remove task C.
+"
+57,True,False,Remove Task C to make the false case of the gateway empty and instantly merging into the close gateway ,"Remove task C and the following merge gateway. Connect the outgoing flow of the exclusive gateway with the condition ""false"" directly to the closing parallel gateway.
+"
+58,True,True,The task c is deleted. ,"Remove task c.
+"
+59,True,True,Remove task C.,"Delete task C.
+"
+60,True,False,Please delete task c and directly link the flow false without any task,"Remove task ""c"" and connect the preceding gateway directly to the subsequent flow where ""c"" previously led on the ""false"" path.
+"
+61,True,True,remove task C,"Delete task C.
+"
+62,True,True,Remove task C. Keep the exclusive choice for Task B.,"Remove task C and connect task B directly to the subsequent exclusive gateway.
+"
+63,True,True,delete task c,"Remove task ""c"".
+"

@@ -1,0 +1,11 @@
+```mermaid
+graph LR
+0:startevent:((startevent))-->1:task:(Task B)
+1:task:-->2:exclusivegateway:{x}
+2:exclusivegateway:-->|true|3:task:(Task A)
+2:exclusivegateway:-->|false|5:task:(Task C)
+3:task:-->6:exclusivegateway:{x}
+5:task:-->6:exclusivegateway:
+6:exclusivegateway:-->7:task:(Task D)
+7:task:-->8:endevent:(((endevent)))
+```

@@ -1,0 +1,14 @@
+graph LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->2:exclusivegateway:{x}
+2:exclusivegateway:-->|true|3:task:(task B)
+2:exclusivegateway:-->|false|5:task:(task C)
+3:task:-->9:task:(task Evaluate B)
+5:task:-->10:task:(task Evaluate C)
+9:task:-->11:exclusivegateway:{x}
+10:task:-->11:exclusivegateway:
+11:exclusivegateway:-->|true|7:task:(task D)
+11:exclusivegateway:-->|false|7:task:
+7:task:-->12:task:(task Evaluate D)
+12:task:-->8:endevent:(((endevent)))
+

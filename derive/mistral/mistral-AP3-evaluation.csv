@@ -1,0 +1,76 @@
+,mapping,epap,user,meaning
+0,False,False,c,False
+1,True,True,move task C from its current position to after the closing XOR,"AP3
+The task C is moved from its current position to a new position directly after the closing XOR gateway."
+2,True,True,forward false without any tasks and add task C before task D,NA.
+3,True,True,move task C so that it always has to be executed before task D,"AP3
+Task C is shifted to a new position where it always precedes task D."
+4,True,False,"In the new model, if task A is false, task B should be skipped, continuing with task C and D.",NA.
+5,True,True,"Please remove task C from the first if-else block and put it right after the second if-else block, before task D. ",NA.
+6,True,True,Move task C between second multiplication and task D,NA.
+7,True,True,"Remove task C from the false-path of the or-gate and place it after the closing or-gate. The resulting false-path of the or-gate directly points to the closing or-gate, while the true-path, including task B, is not changed. After the closing or-gate task C follows.","The user wants to move the process fragment containing task C from the false branch of an OR gateway to a position immediately after the merging OR gateway, without altering the true branch that includes task B."
+8,False,False,remove task c keep and rejoin the false branch insert task C after the join clause before task D,False
+9,True,True,"Move task C to be done in both cases if status after task a is true or false, it should Stil be done before task D. ",NA.
+10,True,False,Replace task c between the gateway and task D while connecting the gateways in case of false,NA.
+11,True,False,"instead of task C, add a condition where if false, continue to the second X and move task c after the second X and before task D",NA
+12,True,True,change task c position to be before task d,NA
+13,True,False,remove task C out of the optional path on the main path ,NA.
+14,True,True,"Please move task C directly before task D, but leave the false connection.",NA
+15,True,False,taskC now gets executed no matter if taskA returns true or false ,AP10
+16,True,True,Task C should not be in the false OR Gateway path but after the OR Gateway and before task D,NA.
+17,False,False,"In the 'OR split' after 'task A', remove the transition 'task C' and its edges, then insert the edge 'false' between 'OR split' and 'Or join' in its place. Finally, insert 'task C' with 'OR split' as input and 'task D' as output as well as its corresponding edges.",False
+18,True,True,Move task C directly before task D while maintaining the false path,"AP3
+Task C is shifted from its current position to directly precede task D, ensuring that the sequence flow representing the false path is preserved."
+19,True,True,Please remove task C from inside the xor and insert it between the closing xor and task D,NA.
+20,False,False,"remove task C, keep conditional branch (empty), insert task C between XOR (gateway) join and task D",False
+21,True,True,please move task C before task D and after the xor choice while keeping the false condition.,NA
+22,True,True,Please move task C behind the second XOR and if the first XOR is false we do now go directly into the second XOR,NA.
+23,True,True,Moving task c after the xor closing gate,NA.
+24,False,False,remove task C and add a new Task C after the end of the gate ,False
+25,True,True,Move task C from the false-branch in the XOR to directly-follow the XORs join. ,NA
+26,True,True,"I want you to move task C directly before task D, it will not be part of the gateway any longer. Do not make any other changes.","The task C will be moved directly before task D, and it will no longer be part of any gateway."
+27,True,True,remove task C such that after task A is suceded by task D when the condition is false. After the condition add a new task C.,NA
+28,True,True,move task C from inside the exclusive gateway after the exclusive gateway,"AP3
+
+Move task C from inside the exclusive gateway to a position immediately after the exclusive gateway."
+29,True,True,"Move task C behind the closed OR-gateway and directly before task D, in case of ""false"" the path goes directly to the closing OR-gateway.",NA.
+30,True,True,Please move Task C before Task D as it has to be done by all,AP3: Move Process Fragment. Task C is moved to a new position before Task D to ensure it is completed by all participants.
+31,True,True,Move task C behind the second gateway and connect both gateways with one arrow/flow.,NA.
+32,True,True,"Move task C from the ""false"" branch, to before task D, after the branches converge.",NA
+33,True,False,Remove Task c by connecting the two Gateways directly with the Same condition,NA.
+34,True,True,"Move tssk C out of the OR condition. Move it after the condition check, right before task D",NA.
+35,True,True,remove task C from the fasle case of task A and place if after the second merger before task D,NA.
+36,True,False,"Task C is removed, and a task C is added. Meaning that a false task A, won't execute a task C. Task C was conditionally executed before but is now always in the sequence. ",NA
+37,True,False,"After task a, if true maintain the model as before, but task c and d should be performed regardless of the output of task a ",Understood. Please provide the user-modified BPMN process model details so I can evaluate and interpret the changes accordingly.
+38,True,True,Moving task C to the spot before task D. ,Task C is now performed immediately before task D.
+39,True,True,move task c from the false path to the spot betwwen task the and the XOR,NA.
+40,True,False,"Regardless the result of the condition X, a second condition is checked and then task C will be executed at every scenario.  ",NA.
+41,True,True,at the moment we differentiate between true or false after task a. This goes into either task b or task c. I would like to put task c in a different spot. It should still differentiate between true or false but they should both result in task c now which then follows task and the end.,"The user input suggests a modification to the process flow where the decision point after Task A is altered. Instead of branching into Task B or Task C based on a true or false condition, both conditions should lead to Task C, which is then followed by another task and the end of the process.
+
+This modification can be mapped to the change pattern AP10: ""Embed Process Fragment in Conditional Branch. An existing process fragment is embedded in a conditional branch"".
+
+The actual meaning of the modification is:
+
+""After completing Task A, the process will always proceed to Task C regardless of the true or false condition. Following Task C, the process will continue to the next task and then end."""
+42,True,True,"Please move task C to after the second exclusive gateway, just before task D",NA.
+43,True,False,Change task c from false input to finally ,AP13
+44,False,False,"Please change the true and false regulation of our first exclusive gateway to directly connect to the second exclusive gateway by removing task C. THe direct connection to our second exclusive gateway should be ""false"". Then add a new task following the second exclusive gateway called ""task C"". ""task D"" should then be followed directly after task C",False
+45,True,True,Please remove the task c from the original position to the position before task D,NA
+46,True,True,Move the task c afterwards task B,NA
+47,False,False,Remove task C but maintain the decision before task B and insert task C before task D but after the two control flows merges,False
+48,True,True,Move Task c to after the conditional Split and before Task d,NA.
+49,True,True,"move task C to behind task D, if X false than next X",NA.
+50,True,True,please move task C from after the exclusive gateway before task D,NA
+51,False,False,Remove task C from the false branch and add a new task C before task D.,False
+52,True,True,move task C out of the XOR structure and place it before D ,NA.
+53,True,True,move Task C after the joining Or gate,NA.
+54,False,False,Perform the following two steps. First: Remove task C but keep the false flow to the gateway. Second: Add the deleted task C before task D.,False
+55,True,True,"Move task C from the 'false' branch to after the XOR join, so that it is executed before task D regardless of the branch taken.","The task C is moved to a position immediately after the XOR join, ensuring it is executed before task D, regardless of which branch was taken."
+56,True,True,Move the task C to the behind of xor and followed by  Task D,NA.
+57,True,True,Move Task C dein inside the false case to behind the close gateway in order to get a „empty“ false case directly going into the close gateway and two tasks (C and D) following merge ,NA.
+58,True,True,The task c is moved to the one before task D. ,The task C is now performed immediately before task D.
+59,True,True,Move task C to right before task D.,Insert task C immediately before task D.
+60,True,True,Please move the task C right in front of Task D and after the xor,AP3
+61,True,True,move task c directly before task D,NA.
+62,True,True,Move Task C after the exclusive choice,NA.
+63,True,False,add a task c after the decision join.,NA

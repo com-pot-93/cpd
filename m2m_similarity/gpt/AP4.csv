@@ -1,0 +1,65 @@
+,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
+0,0,False,False,d,False,False,0.0
+1,1,True,True,replace task B with task E,Replace task B with task E.,True,1.0
+2,2,True,True,change task B into task E,Replace task B with task E.,True,1.0
+3,3,True,True,create task E and replace task B with task E,Replace task B with task E.,True,1.0
+4,4,True,True,"In the new model, task B will be changed as task E. ",Replace task B with task E.,True,1.0
+5,5,True,True,Please substitute task B through task E.,Replace task B through task E with a new process fragment.,True,0.9778256852479212
+6,6,True,True,Replace task B with task E,Replace task B with task E,True,1.0
+7,7,True,True,Replace task B with task E. Don't change anything else.,Replace task B with task E.,True,1.0
+8,8,True,True,Remove task B with task E,Replace task B with task E.,True,1.0
+9,9,True,True,Replace task B with task e. We do not need task b but instead we need task e at the stage where task b was previously.,Replace task B with task E.,True,1.0
+10,10,False,False,rename task b to task e,False,False,0.0
+11,11,True,True,replace task B with task E within the process while everything stays the same,Replace task B with task E within the process.,True,1.0
+12,12,True,False,switch in task e for task b,Swap task e with task b.,True,1.0
+13,13,True,True,replace task E for task B,Replace task E with task B.,True,1.0
+14,14,True,True,Please replace task B with task E.,Replace task B with task E.,True,1.0
+15,15,True,True,taskB get replaced by task E,Replace task B with task E.,True,1.0
+16,16,True,True,Task B should be replaced by Task Ee,Replace Task B with Task Ee.,True,1.0
+17,17,True,True,Replace 'task E' with 'task B'.,Replace 'task E' with 'task B'.,True,1.0
+18,18,True,True,Replace task B with task E,Replace task B with task E.,True,1.0
+19,19,False,False,Please rename task B to task E,False,False,0.0
+20,20,True,True,replace task B by task E,Replace task B with task E.,True,1.0
+21,21,False,False,please change the name of task B to task E,False,False,0.0
+22,22,True,False,Exchange task B with task E,Swap task B with task E.,True,1.0
+23,23,True,True,Replacing tasl b with task e,Replace task b with task e.,True,1.0
+24,24,False,False,rename task B to task E,False,False,0.0
+25,25,False,False,Rename task B to task E,False,False,0.0
+26,26,False,False,"Replace the label of ""task B"" with ""task E"". Do not make any other changes.",False,False,0.0
+27,27,True,True,replace task B with task E,Replace task B with task E.,True,1.0
+28,28,False,False,Rename task B to task E,False,False,0.0
+29,29,False,False,Change the name of task B to task E.,False,False,0.0
+30,30,True,False,Task B has to be exchanged with Task E,Swap Task B with Task E.,True,1.0
+31,31,True,True,"Change ""task B"" to ""task E"".","Replace ""task B"" with ""task E"".",True,1.0
+32,32,True,True,Replace task B by a new task E.,Replace task B with a new task E.,True,1.0
+33,33,False,False,Change the Name of Task B to Task E,False,False,0.0
+34,34,True,True,Replace task B with task E,Replace task B with task E.,True,1.0
+35,35,True,True,replace task b with task e,Replace task B with task E.,True,1.0
+36,36,True,True,"Task B is replaced by Task E, meaning a true task A, will execute a task E instead of a B","Task B is replaced by Task E, meaning a true task A, will execute a task E instead of a B",True,1.0
+37,37,True,True,replace task b with task e with the same conditional logic ,Replace task B with task E while maintaining the same conditional logic.,True,1.0
+38,38,True,True,Replacing task B with task E. ,Replace task B with task E.,True,1.0
+39,39,True,True,"change the text ""task B"" to ""task E""",,False,0.0
+40,40,True,False,"Task E will be executed instead of task B, if condition X is true.  ",Embed task E in a conditional branch with condition X.,True,0.9363888065951991
+41,41,True,True,replace task b with task e in the diagram,Replace task B with task E in the diagram.,True,1.0
+42,42,True,True,Please replace task B with task E,Replace task B with task E.,True,1.0
+43,43,True,False,Switch B to E,Swap process fragment B with process fragment E.,True,1.0
+44,44,False,False,"Change the name of ""task B"" to be ""task E"" ",False,False,0.0
+45,45,True,True,Please replace the task B with task E,Replace task B with task E.,True,1.0
+46,46,True,True,Change the content of task B to E,Replace the content of task B with the content of task E.,True,1.0
+47,47,True,True,Change task B to task E,Replace task B with task E.,True,1.0
+48,48,True,True,Change Task B to Task E,Replace Task B with Task E.,True,1.0
+49,49,True,True,replace task B with task E,Replace task B with task E.,True,1.0
+50,50,True,True,please replace task B by task E,Replace task B with task E.,True,1.0
+51,51,True,True,Replace task B with a new task called task E.,Replace task B with a new task called task E.,True,1.0
+52,52,False,False,renametask B to E,False,False,0.0
+53,53,True,True,Replace task B with task E,Replace task B with task E,True,1.0
+54,54,True,True,Exchange task B with a new task E.,Replace task B with a new task E.,True,1.0
+55,55,True,True,Replace task B with a new task E in the 'true' branch of the XOR gateway.,Replace task B with a new task E in the 'true' branch of the XOR gateway.,True,1.0
+56,56,True,True,Change the signature of task B to task E,,False,0.0
+57,57,True,True,Replace Task B with Task ,,False,0.0
+58,58,True,True,The task b is replaced with task E. ,Replace task B with task E.,True,1.0
+59,59,True,True,Replace task B with task E.,Replace task B with task E.,True,1.0
+60,60,True,True,Please change task B to Task E,Move Task B to the position of Task E.,True,1.0
+61,61,True,False,exchange task b to task e,Swap task B with task E.,True,1.0
+62,62,True,True,Replace Task B with Task E,Replace Task B with Task E,True,1.0
+63,63,True,True,replace task b with a task e.,Replace task B with task E.,True,1.0

@@ -1,0 +1,105 @@
+,mapping,epap,user,meaning
+0,False,False,k,False
+1,True,True,Merge the whole XOR and task D into a subprocess F.,NA.
+2,True,True,change all to one subprocess F except the task A,NA.
+3,True,True,create subprocess F and replace everything after task A with it,NA.
+4,True,True,"In the new model, after task A, there is one subprocess F.",NA
+5,True,True,Keep only task A and let it follow a sub-process F.,NA
+6,True,True,"Combine tasks B, C, and D into subprocess F ",NA.
+7,True,False,"Remove the or-block of the input process model, including the two or-gates and both task B and C, and replace it with a task called 'subprocess F'. Furthermore remove task D. The resulting proces model only consists of the start and end event as well as task A followed by subprocess F.",NA.
+8,True,True,encapsulate everything after task A in subproces F,NA.
+9,True,True,"Move everything after task a into a separate subprocess F, which then included the Or Condition,Task B, Task C and Task D",NA.
+10,True,True,group everything except task a into a subprocess F,NA.
+11,True,True,"Call the process coming after task A subprocess F, and while presenting the flow, use subprocess F for notation.",NA.
+12,True,True,summarize everything after task a into subprocess f,NA
+13,True,True,remove the optional paths B and C as well as D and make a subprocess F out of them,NA.
+14,True,True,Please replace the current condition with a subprocess F.,NA
+15,True,True,subprocess introduced for taskB and C incl. the boolean operator,NA.
+16,True,True,Summarize everything after task A into an Subprocess.,NA
+17,True,False,"After 'task A' and before the 'end place', replace all elements with a transition 'subprocess F'.",NA.
+18,True,True,Introduce a subprocess F instead of all tasks after task A,NA.
+19,True,True,Please summarize the xor section together with task D to a subprocess F and insert it into the model.,NA.
+20,True,True,embed XOR block containing tasks B and C as well as task D into complex task with label subprocess F,NA.
+21,False,False,"please only keep the start, end and task A in the model, and then add subprocess F after task A.",False
+22,True,True,Make everything besides task A into a subprocess F,NA.
+23,True,True,Creating a subprocess for tasks b - d,NA.
+24,False,False,.,False
+25,True,True,Abstract the XOR fragment and task D into a subprocess F. ,NA.
+26,True,False,"Now directly after task A we have ""subprocess F"". Please delete all the rest. ",NA.
+27,True,False,"fuck the original process. create a new process with task A at the beginning, followed by subprocess F.",NA
+28,True,True,transform everything except task A into a subprocess,"To transform everything except Task A into a subprocess, we need to evaluate the modification based on the provided change patterns and BPMN semantics.
+
+1. **Validation**: The modification specifies transforming everything except Task A into a subprocess. This information is sufficient and unambiguous.
+
+2. **Mapping to Change Pattern**: This modification maps to ""AP6"": Extract Sub Process. Extracts an existing process fragment to encapsulate it in a separate sub process.
+
+3. **Deriving the Actual Meaning**: Based on BPMN semantics and the intent of the change pattern, the actual meaning of the modification is:
+
+""Encapsulate all activities and elements except Task A into a separate subprocess."""
+29,True,True,"Simplify the process to only show task A and the rest as ""subprocess F"".",NA.
+30,True,True,"Please insert subprocess F after task A and remove task B, C and D",NA.
+31,True,True,"Store all operations after task A with a new task called ""subprocess F"".",NA
+32,True,True,Replace everything except task A with a subprocess F.,NA.
+33,True,True,Display the process from the Split Gateway to the end of the process as subprocess F,"To evaluate and interpret the user-provided modification, let's break down the request step by step:
+
+1. **Validation of Information**:
+   - The user wants to display the process from the Split Gateway to the end of the process as a subprocess named ""F"".
+   - This modification contains sufficient and unambiguous information to be applied.
+
+2. **Mapping to Change Pattern**:
+   - The modification involves extracting a part of the process and encapsulating it in a separate subprocess.
+   - This corresponds to the change pattern **AP6: Extract Sub Process**.
+
+3. **Deriving the Actual Meaning**:
+   - Based on BPMN semantics and the intent of the change pattern AP6, the user wants to take the sequence of activities from the Split Gateway to the end of the process and encapsulate it within a subprocess named ""F"".
+
+4. **Ensuring Compliance with BPMN Rules**:
+   - Extracting a subprocess is a valid operation in BPMN.
+   - The structure of the existing process should allow for the extraction without violating any BPMN modeling rules.
+
+Given the above analysis, the actual meaning of the user input in natural language is:
+
+**Encapsulate the sequence of activities from the Split Gateway to the end of the process within a subprocess named ""F"".**"
+34,True,True,After task A add subprocess F. Then end the process. Remove all other tasks.,NA.
+35,False,False,"summarize tasks b,c and d and their paths in subprocess F ",False
+36,True,True,"instead of a condition to either b or c, we now have a subprocess F sequentially executed",NA.
+37,True,False,"replace the conditional logic and task d with ""subprocess F"" ",NA.
+38,False,False,I don't know. ,False
+39,True,True,create a new process flow with task A followed by subporcess F and then the endpoint,NA
+40,True,False,Subprocess F follows task A. It seems to be black box. ,NA
+41,False,False,delete everthying after task a and replace it with the subprocess F which results in the end,False
+42,True,False,Please replace everything after task A with subprocess F,NA.
+43,True,True,Everything after task a is called subprocess F,NA
+44,True,True,put every process following task A into a subprocess called subprocess F,NA
+45,True,True,Replace all process between task A and end state to a new subprocess F ,Replace the sequence of activities between 'Task A' and the 'End State' with a new subprocess labeled 'F'.
+46,True,True,Encapsulating decision logic into a subprocess,NA.
+47,True,True,Merge everythingt that comes after task A into a subprocess F,NA.
+48,True,True,Abstract the process after Task a into subprocess F.,NA
+49,True,True,substitute everything but task A and start-point and endpoint with a subprocess F,NA.
+50,True,False,replace everything behind task A with subprocess F.,NA
+51,True,False,Replace the whole XOR branch and task D with a subprocess called F.,NA.
+52,True,True,replace everything After a exept the endevent with subprocess F,NA.
+53,True,False,"replace everything after taks A with ""subprocess F""",NA.
+54,True,True,Create a new subprocess F that contains all elements between task A and task D,NA
+55,True,False,Merge tasks  except A into a new subprocess F,NA.
+56,True,True,Compress the task other than task A in to sub process F,NA
+57,True,True,"Put the whole Process Model except for Task A into a subprocess F keeping the Overall functionality resulting in an Output
+Process Model with Start -> Task A -> Subprocess F -> End",NA.
+58,True,False,The output PM can only have two tasks. ,NA.
+59,True,True,"Simplify everything after task A but before the end of the process with ""subprocess F"".",NA
+60,True,True,Change the flow and put ecerything after Task A into a subprocess F,NA.
+61,True,True,all tasks after task a are subprocess f,"To evaluate and interpret the user-provided modification ""all tasks after task a are subprocess f,"" we need to follow the steps outlined:
+
+(a) **Validating the modification**: The statement ""all tasks after task a are subprocess f"" is somewhat ambiguous. It does not specify exactly which tasks are being referred to or how they are being modified. Additionally, it does not clarify whether ""subprocess f"" is an existing subprocess or a new one.
+
+(b) **Mapping to a change pattern**: Based on the provided information, the closest change pattern could be ""AP6"": Extract Sub Process. However, the statement is not clear enough to definitively map it to this pattern.
+
+(c) **Deriving the actual meaning**: Given the ambiguity, it is challenging to derive a precise meaning. The statement seems to suggest that all tasks following ""task a"" should be encapsulated within a subprocess ""f,"" but it lacks specific details.
+
+(d) **Ensuring compliance with BPMN rules**: Without clear information on the tasks and the subprocess, it is not possible to ensure compliance with BPMN rules.
+
+Given the lack of sufficient and unambiguous information, the final output is:
+
+NA"
+62,True,False,Make a new process task A directly leads to subprocess F.,NA
+63,False,False,Delete evertything after task A. Then add a subprocess F after A.,False

@@ -1,0 +1,124 @@
+,mapping,epap,user,meaning
+0,False,False,t,False
+1,True,True,Change the XOR to a parallel flow.,"Replace the exclusive gateway with a parallel gateway.
+"
+2,True,False,make no more conditions for the task B and C,"Remove the gateway preceding tasks B and C, and connect the preceding activity directly to B, followed by C.
+"
+3,True,False,"both task B and task C should be executed in parallel, rather than only one being executed","Execute task B and task C in parallel.
+"
+4,True,False,"In the new model, the true or false conditions will be changed to other conditions","Update the conditions of a gateway.
+"
+5,False,False,-,False
+6,False,False,Replace multiplications with additions,False
+7,True,True,Replace the or-gates with and-gates and therefore also remove the conditions. The rest of the structure should stay the same.,"Replace parallel gateways with inclusive gateways and remove the conditions from the outgoing sequence flows.
+"
+8,True,False,replace or with and,"Change the gateway from an OR gateway to an AND gateway.
+"
+9,True,False,Change the or condition to an and condition. After task A both Task B and Task C should be done and not only one of those ,"Change the gateway between Task A, Task B, and Task C from an inclusive gateway to a parallel gateway.
+"
+10,True,True,change the exclusive gateway into a parallel one,"Replace the exclusive gateway with a parallel gateway.
+"
+11,True,False,Replace X steps with + steps in the flow. While there is a condition inside first X determining the path task B or task D there is no condition from first + to Task B or C. This time they are alternate paths to each other. After task B or task C meet at second + following by task D.,"NA
+"
+12,True,True,change xor gates to and gates,"Replace exclusive gateways with parallel gateways.
+"
+13,True,False,change the or operators into and operators,"Replace OR gateways with AND gateways.
+"
+14,True,False,Please change the XOR condition to an AND condition.,"Change the XOR gateway to an AND gateway.
+"
+15,True,True,change of exclusive operator to inclusive operator ,"Replace the exclusive gateway with an inclusive gateway.
+"
+16,True,True,Replace the OR Gateway with an AND Gateway,"Replace the existing OR gateway with an AND gateway.
+"
+17,True,True,"Remove annotations of ""OR split"". Replace ""OR split"" and ""OR join"" with 'AND split' and ""AND join"".","Change the gateway type from inclusive (OR) to parallel (AND).
+"
+18,True,True,Replace the split lane with one for parallel processed,"Change the split type of the lane from sequential to parallel.
+"
+19,True,True,Please swap the xor with a parallel gatway,"Replace the exclusive gateway with a parallel gateway.
+"
+20,True,True,replace XOR-block consisting of task B and task C to AND-block consisting of task B and task C,"Replace the exclusive gateway preceding tasks B and C with a parallel gateway, and the exclusive gateway following tasks B and C with a parallel gateway.  Tasks B and C will now execute concurrently.
+"
+21,True,True,please modify the exclusive gateway to parallel gateway.,"Replace the exclusive gateway with a parallel gateway.
+"
+22,True,False,Change the condition from and XOR to an AND,"Change the gateway from exclusive to parallel.
+"
+23,True,True,Changing xor to and (or other way around idk),"Replace exclusive gateway with parallel gateway.
+"
+24,False,False,.,False
+25,True,True,Change the XOR fragment to be of type AND. ,"Replace the exclusive gateway with a parallel gateway.
+"
+26,True,True,Replace the exclusive gateway with a parallel one.,"Replace the exclusive gateway with a parallel gateway.
+"
+27,True,True,replace the xor gateways with parallel gateways,"Replace exclusive gateways with parallel gateways.
+"
+28,True,True,Change the exclusive choice to a parallel gateway,"Replace the exclusive gateway with a parallel gateway.
+"
+29,True,True,Change the OR-gateways to AND-Gateways.,"Replace OR-gateways with AND-gateways.
+"
+30,True,False,After completing Task A either Task B or C need to be completed,"Introduce an exclusive gateway after Task A, followed by Task B on one branch and Task C on the other, then merge the branches back together.
+"
+31,True,True,Replace both exclusive gateways with respective parallel gateways.,"Replace exclusive gateways with parallel gateways.
+"
+32,True,True,Replace the conditional branch by an unconditional branch.,"Remove the gateway conditions.
+"
+33,True,True,Replace the XOR Gateways with parallel Gateways,"Replace XOR gateways with AND gateways.
+"
+34,True,True,"Instead of  XOR condition, make the tasks be performed in pararell (AND condition)","Change the exclusive gateway to a parallel gateway.
+"
+35,True,False,"after task A, execute both task B and C in parallel before doing task D","Introduce a parallel gateway after Task A, leading to both Task B and Task C concurrently. Once both B and C are completed, converge them into a joining gateway, which then leads to Task D.
+"
+36,True,False,"instead of a condition we now have &, meaning that both b and c should be executed","Replace the existing exclusive gateway with a parallel gateway.
+"
+37,True,False,perform tasks b and c in parallel,"Parallelize tasks b and c.
+"
+38,False,False,I don't know. ,False
+39,True,False,replace the x with + ,"NA
+"
+40,True,True,"XOR operation is switched to AND. No condition is evaluated, both task B and C run simultaneously. ","Replace the exclusive gateway with a parallel gateway.
+"
+41,True,True,replace all exclusive gateways with parallel gateways,"Replace all exclusive gateways with parallel gateways.
+"
+42,True,True,Please replace the exclusive gateway with a parallel gateway that executes both task B and task C,"Replace the exclusive gateway with a parallel gateway, enabling concurrent execution of Task B and Task C.
+"
+43,False,False,Sorry I don't know,False
+44,True,True,"Our model currently includes two exclusive gateway nodes. the first exclusive gateway node connected to task A will hereinafter be reffered to as ""eg1"" while the second exclusive gateway node connected by task B as its true statement and task C as its false statement will hereinafter be referred to as ""eg2"".
+Change eg1 and eg2 to be parallal gateways. ","Replace the exclusive gateways connected to tasks A, B, and C with parallel gateways.
+"
+45,True,True,Replace both selection states to normal states ,"NA
+"
+46,True,False,Do Task B and C at the same time,"Execute tasks B and C in parallel.
+"
+47,True,True,Change all exclusive gateways to parallel gateways,"Replace all exclusive gateways with parallel gateways.
+"
+48,True,True,Remove the conditional Split and make Task b and c parallel.,"Replace the exclusive gateway with a parallel gateway, and the corresponding merge gateway also with a parallel gateway, so that Task B and Task C are executed in parallel.
+"
+49,True,True,change both X to +,"Replace parallel gateways with inclusive gateways.
+"
+50,True,True,change the exclusive gateway to a parallel gateway.,"Replace the exclusive gateway with a parallel gateway.
+"
+51,True,True,Replace XOR with AND.,"Replace an exclusive gateway with a parallel gateway.
+"
+52,True,True,change the XOR Gateways to parallel ones.,"Replace XOR gateways with parallel gateways.
+"
+53,True,True,replace the or gates with and gates,"Replace OR gateways with AND gateways.
+"
+54,True,True,Exchange the two XOR Decision Gateways with a Parallel Gateway.,"Replace the exclusive decision gateways with a parallel gateway.
+"
+55,True,True,Replace XOR gateway with AND,"Replace an exclusive gateway with a parallel gateway.
+"
+56,True,True,Change xor to parallel ,"Replace an exclusive gateway with a parallel gateway.
+"
+57,True,True,Replace the true false gateways with parallel gateways to execute Both Task A and C simutaniously ,"Replace the exclusive gateways with parallel gateways to execute Task A and Task C concurrently.
+"
+58,True,False,The if condition is replaced by “and”. ,"Change the gateway condition to ""and"".
+"
+59,True,True,Replace the XORs with gateaways.,"NA
+"
+60,True,True,Change the xors to a AND,"Replace exclusive gateways with parallel gateways.
+"
+61,True,False,change decisions to parallelise task b and c,"Execute tasks ""b"" and ""c"" concurrently.
+"
+62,True,True,replace the exclusive choice x with a parallel,"Replace the exclusive gateway ""x"" with a parallel gateway.
+"
+63,True,True,Change the decision to a parallel.,"Replace the exclusive gateway with a parallel gateway.
+"

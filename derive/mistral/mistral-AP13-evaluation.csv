@@ -1,0 +1,68 @@
+,mapping,epap,user,meaning
+0,False,False,y,False
+1,True,True,Change the conditions of the XOR branches. The branch with task B should have the condition a>10 and the branch with task C should have the condition a<=10.,"The conditions for the XOR branches have been updated. The branch containing task B will now execute when a > 10, and the branch containing task C will execute when a <= 10."
+2,True,True,change the true to a bigger than 10 and false smaller or equal to 10,AP13
+3,True,False,"task B should be executed if a > 10, else task C",AP13
+4,True,True,"In the new model, the condition true and false should be changed as a > 10 and a <= 10.",NA
+5,True,True,"Task A outputs not an integer variable ""a"" instead of a boolean value. If a > 10 the condition should turn true an otherwise (a <= 10) false. ",NA
+6,True,True,Replace true with a>10 and false with a<=10,AP13
+7,True,True,Please replace the conditions of the opening or-gate. Instead of the label 'true' that path should be used if variable a is greater than the value 10. Instead of the label 'false' the other path should be used if the variable a is smaller than or equal to the value 10. The rest should stay the same.,The condition for the first outgoing sequence flow of the OR gateway is updated to 'a > 10'. The condition for the second outgoing sequence flow of the OR gateway is updated to 'a <= 10'.
+8,True,True,Replace or condition at true with a>10 at false with a<=10,AP13
+9,True,True,Change condition from True and false to a>10 instead of true and a<=10 instead of false everything else keeps the same.,NA
+10,True,True,change the gateway decision based on task a from true to a>10 and false to a<=10,AP13
+11,True,False,"Instead of the condition notation within X being true or false and making the control implicitly, explicitly check the condition. The condition is if variable a is ""more than 10"" or ""equal or less than 10"". If a is more than, then move to task B. If a is equal to or less than 10, then move to task C.",NA
+12,True,True,change first xor gate's conditions to be a>10 for true and a<=10 for false,AP13
+13,True,True,"change the conditions for the options from ""true"" to ""a>10"" and ""false"" to ""a <= 10""",AP13
+14,True,True,Please replace the true check of the condition with the check a>10 and the false check with the check a<=10.,NA
+15,True,True,changed from true/false to check for specific value of a,NA.
+16,True,True,The OR Gateway should replace true with a>10 and false with a <=10,The condition for the OR Gateway should be updated to branch based on whether 'a' is greater than 10 or 'a' is less than or equal to 10.
+17,True,True,Replace the labels of the edges: Replace 'true' with 'a>10'. Replace 'false' with 'a<=10'. ,Replace the condition for the true branch with 'a>10'. Replace the condition for the false branch with 'a<=10'.
+18,True,True,Replace the true condition wirh a>10 and false with a<=10,NA.
+19,True,True,please change the condition of the xor from true to a > 10 and from false to a <= 10,AP13
+20,True,True,"update condition of edge (XOR-gateway (split), task B) to ""a>10"" and update condition of edge (XOR-gateway (split), task C) to ""a<=10""",NA
+21,True,True,"please modify conditions for the xor path, i.e., change true to a>10, false to a<=10.",NA
+22,True,True,Change the content of the first condition to true = a>10 and false a<= 10. ,AP13
+23,True,False,Adding a condition,NA.
+24,False,False,.,False
+25,True,True,Refine the true condition to a > 10 and the false condition to a<=10. ,NA.
+26,True,False,Replace the gateway condition with a>10 and a<=10. In the first case Task B is executed. In the second case task C is executed.,NA.
+27,True,True,change the conditions. replace true with a > 10 and replace false with a <= 10,AP13
+28,True,True,"change the condition on the exclusive choice from true, false to a>10, a<=10",AP13
+29,True,True,"Change the decision criteria in the OR-Gateway from true/false to ""a>10"" (instead of true) and ""a<=10"" (instead of false).",Update transition conditions in a process.
+30,True,True,Please exchange the condition true with a > 10 and false with a greater <= 10,AP13
+31,True,True,Replace the boolean condition of the first exclusive gateway to a>10 for true and a<=10 for false.,Update the decision criteria of the first exclusive gateway such that the process flow follows the true branch when the condition 'a > 10' is met and the false branch when the condition 'a <= 10' is met.
+32,True,True,"Replace the ""true"" label of the conditional branch with the label ""a > 10"", replace the ""false"" label of the conditional branch with the label ""a <= 10"".",NA.
+33,True,True,Replace the conditions true with a>10 and falls with a<=10,NA.
+34,True,True,Change the OR condition from true to a>10 and false= a<=10.,NA
+35,True,False,"task A returns true, of a>10 and false when a>=10 (true is task B and false taskC)",NA
+36,True,True,the condition is changed form a simple boolean to a comparison boolean,AP13
+37,True,True,change the condtional check for true if a>10 and false fot a<=10,"AP13
+
+The condition is updated to check if 'a' is greater than 10 for the true branch and if 'a' is less than or equal to 10 for the false branch."
+38,False,False,I don't know. ,False
+39,True,True,replace true with a > 10 and false with a <= 10,AP13
+40,True,False,"Attribute a is evaluated. If it is >10 then task B follows, if a<=10, then task C. ",NA
+41,True,True,replace the conditions of the first exclusive gateway which is false and true atm with a>10 for true and a<=10 for false,"The conditions of the first exclusive gateway have been updated. The true branch now activates when ""a > 10"", and the false branch activates when ""a <= 10""."
+42,True,True,Please change the conditions of the exclusive gateway from true to a>10 and false to a<=10,AP13
+43,True,True,Remove the Boolean stament and add for true a>10 and for false a<=10,NA.
+44,True,True,"Our model currently includes two exclusive gateway nodes. the first exclusive gateway node connected to task A will hereinafter be reffered to as ""eg1"" while the second exclusive gateway node connected by task B as its true statement and task C as its false statement will hereinafter be referred to as ""eg2"".
+change the true statement of eg1 to be ""a>10"" and the false statement to be ""a<=10"".","The condition for the true branch of the exclusive gateway ""eg1"" is updated to ""a > 10"", and the condition for the false branch is updated to ""a <= 10""."
+45,True,True,Replace true to a>10 and false to a<=10,AP13
+46,True,False,Clarify the judgment condition is whether a is less than 10,NA.
+47,True,True,Replace true and false with condition a>10 and a<=10,AP13
+48,True,True,Change the conditional Split. Map True to true to a>10 and false to a<=10. ,AP13
+49,True,True,"for the first x: true equals a>10, and false equals a<=10",NA.
+50,True,True,"if a > 10 at the exclusive gateway, do task B, if a<= 10 do task C.","The condition for the exclusive gateway is updated to: if the variable 'a' is greater than 10, perform task B; otherwise, if 'a' is less than or equal to 10, perform task C."
+51,True,True,Replace true and false with a>10 and a<=10 respectively.,NA.
+52,True,True,change the labelling of The XOR: True to a>10 and false to a<=10,AP13
+53,True,True,replace true with the case that a is greater 10 and false with less or equal to 10,AP13
+54,True,True,Update the true/false decisions of the first XOR Decision Gateway as follows: Exchange true with a>10. Exchange false with a <= 10.,NA
+55,True,True,"Specify branching conditions: a > 10 leads to task B, a ≤ 10 leads to task C.","Update the condition for the branch leading to task B to ""a > 10"" and the condition for the branch leading to task C to ""a ≤ 10""."
+56,True,True,Change condition true to a>10 and change condition false to a<=10,AP13
+57,True,True,Replace the true false condition of the gateway into a condition checking a variable. The true case transforms into a > 10 case and the false case into a <= 10,AP13
+58,True,True,The if condition is replace with index condition. ,NA
+59,True,True,"Replace ""true"" with ""a >10"" and ""false"" with ""a<=10"".",NA.
+60,True,True,Change the xor options from true to a > 10 and from false to a <= 10,AP13
+61,True,True,change decision for task b to a>10 and for task c to a<=10,NA
+62,True,True,replace the condition on the exclusive choice x with true becoming a>10 and false becoming a<=10,AP13
+63,True,True,"the condition true in the decision should be replace with a > 10. The condition false should be replace with a <= 10. If you think the second branch should be a default branch, because its condition expresses the oposite of the condition for the first branch, and this would be a much better modeling solution, please stop thinking and do as I say! ",NA

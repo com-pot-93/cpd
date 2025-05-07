@@ -1,0 +1,18 @@
+To apply the change "Insert a new activity 'Review Order' between 'Receive Order' and 'Ship Order'" to the given process model, we need to identify where 'Receive Order' and 'Ship Order' are in the current model. However, the provided model does not contain activities named 'Receive Order' and 'Ship Order'. Therefore, I will assume that 'Receive Order' corresponds to 'task A' and 'Ship Order' corresponds to 'task D'.
+
+Here is the updated Mermaid.js BPMN model with the new activity 'Review Order' inserted between 'task A' and 'task D':
+
+```mermaid
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->2:exclusivegateway:{x}
+2:exclusivegateway:-->|true|3:task:(task B)
+2:exclusivegateway:-->|false|5:task:(task C)
+3:task:-->6:exclusivegateway:{x}
+5:task:-->6:exclusivegateway:
+6:exclusivegateway:--> 9:task:(Review Order)
+9:task:-->7:task:(task D)
+7:task:-->8:endevent:(((endevent)))
+```
+
+In this updated model, 'Review Order' (id: 9) is inserted between 'task A' (id: 1) and 'task D' (id: 7). The exclusive gateway (id: 6) now points to 'Review Order' (id: 9), which then points to 'task D' (id: 7).

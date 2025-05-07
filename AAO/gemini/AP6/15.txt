@@ -1,0 +1,8 @@
+graph LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->2:exclusivegateway:{x}
+2:exclusivegateway:-->|true|3:subprocess:(Subprocess 1)
+2:exclusivegateway:-->|false|3:subprocess:
+3:subprocess:-->4:exclusivegateway:{x}
+4:exclusivegateway:-->5:task:(task D)
+5:task:-->6:endevent:(((endevent)))

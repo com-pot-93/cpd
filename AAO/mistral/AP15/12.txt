@@ -1,0 +1,15 @@
+```mermaid
+flowchart LR
+    0:startevent:((startevent)) --> 1:task:(task A)
+    1:task: --> 2:exclusivegateway:{x}
+    2:exclusivegateway: -->|true| 3:task:(Payment Confirmation)
+    2:exclusivegateway: -->|false| 5:task:(task C)
+    3:task: --> 9:exclusivegateway:{Order Value > $100?}
+    9:exclusivegateway: -->|true| 10:task:(Apply Discount)
+    9:exclusivegateway: -->|false| 4:task:(Order Processing)
+    10:task: --> 4:task:
+    4:task: --> 6:exclusivegateway:{x}
+    5:task: --> 6:exclusivegateway:
+    6:exclusivegateway: --> 7:task:(task D)
+    7:task: --> 8:endevent:(((endevent)))
+```

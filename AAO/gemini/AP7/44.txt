@@ -1,0 +1,7 @@
+```mermaid
+graph LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->7:subprocess:(subprocess F)
+7:subprocess:-->8:endevent:(((endevent)))
+
+```

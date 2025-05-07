@@ -1,0 +1,65 @@
+,mapping,epap,user,meaning
+0,False,False,i,False
+1,True,False,Introduce a task A' after the closing XOR gateway.,Insert a new task A' after the closing XOR gateway.
+2,True,False,Add task A'before task D,Insert task A before task D.
+3,True,False,create task A' that always has to be executed before task D,Insert a new task A' before task D.
+4,True,False,"In the new model, before the task D, task A' should be done.",Insert task A' before task D.
+5,True,False,Insert a new task A´ directly before task D.,Insert a new task A´ directly before task D.
+6,True,False,Add task A’ before task D,Insert task A' before task D.
+7,True,False,Insert a task A' immediately after the closing or-gate and prior to task D. ,Insert a task A' immediately after the closing or-gate and prior to task D.
+8,True,False,insert task A' before task D,Insert task A' before task D.
+9,True,False,Add a task a‘ to the chain it should be done after the or condition independent of the status and before task D,Insert a new task a' after the OR condition and before task D.
+10,True,False,add task A' before task d,Insert task A' before task D.
+11,True,False,"Right before task D, add task A' (A prime) which is the opposite of task A.","Insert a new task A' right before task D, which is the opposite of task A."
+12,True,False,add task a' before task d,Insert task a' before task d.
+13,True,False,"add a task A' before task D, after the optional paths are merged","Insert a new task A' before task D, after the optional paths are merged."
+14,True,False,Please add a task A‘ directly before task D.,Insert task A' directly before task D.
+15,False,False,?,False
+16,True,False,Insert a Task A' after the OR Gateway but before task D,Insert a Task A' between the OR Gateway and task D.
+17,True,False,"After 'OR join' and before 'task D', insert a transition 'task A' its corresponding edges.",Insert 'task A' between 'OR join' and 'task D'.
+18,True,False,Introduce a task A‘ directly before task D,Insert a new task directly before task D.
+19,True,False,Please insert task A' between the closing xor and task D,Insert task A' between the closing XOR gateway and task D.
+20,True,False,insert task A' after XOR-gateway (join) and task D,Insert task A' between XOR-gateway (join) and task D.
+21,True,False,please add task A' after the xor gateway and before task D.,Insert task A' after the XOR gateway and before task D.
+22,True,False,Add task A' in front of task D without removing the existing task A,Insert task A' before task D without removing the existing task A.
+23,True,True,Duplicating task a,Copy task a and paste it to a new position.
+24,False,False,.,False
+25,True,False,Add task A' directly before task D,Insert task A' directly before task D.
+26,True,False,"Directly before ""task D"" add a new task with label ""task A'"". Do not make any other changes.","Insert a new task labeled ""task A'"" directly before ""task D""."
+27,True,False,add task A' after the condition has ended,Insert task A' after the condition has ended.
+28,True,False,insert a task A' after the exclusive choice block,Insert a task A' after the exclusive choice block.
+29,True,False,"Add another ""task A"" directly before task D (after the closing OR-Gateway). ","Insert a new ""task A"" directly before task D (after the closing OR-Gateway)."
+30,True,False,Please insert task A' after completing task B or C,Embed task A' in a conditional branch after completing task B or C.
+31,True,False,"Insert task A' right before task D, maintaining the sequence flows through task A.","Insert task A' right before task D, maintaining the sequence flows through task A."
+32,True,False,Add a new task A' just before task D.,Insert a new task A' before task D.
+33,True,False,Add Task A' between the Join Gateway and Task D,Insert Task A' between the Join Gateway and Task D.
+34,True,False,After the OR condition check add task A'.,Insert task A' after the OR condition check.
+35,True,False,include task again after the merger between b and c before d ,"Insert the task again between the merged tasks B and C, and task D."
+36,True,False,"instead of task d being executed directly after last condition, we now have 2 tasks a and d being executed sequentially",Insert task a before task d.
+37,True,False,repeat task a after the conditional logic of task b and c ,Embed task a in a post-conditional loop after task b and task c.
+38,False,False,I don't know. ,False
+39,True,False,create a task A' directly before task D,Insert a new task directly before task D.
+40,True,False,Task A' is added before task D. ,Insert task A' before task D.
+41,True,False,add task A' after the merging of the tasks b and task c which then results in task D,"Insert task A' after the merging of tasks B and C, before task D."
+42,True,False,Please execute task A' right before task D,Insert task A' right before task D.
+43,True,False,Add task A again but after task D ,Copy task A and place it after task D.
+44,False,False,-,False
+45,True,False,Add a new state which name is task A’ before task D,"Insert a new task named ""task A'"" before ""task D""."
+46,True,False,Add one more step after the decision logic,NA
+47,True,False,insert another instance of task A right before task D ,Copy task A and place it right before task D.
+48,True,True,"Before Task D, add Task A again.",Insert Task A before Task D.
+49,True,False,add a task A' before task D,Insert a new task A' before task D.
+50,True,False,add another task A' right before task D,Insert a new task A' right before task D.
+51,True,False,Add a new task A' before task D.,Insert a new task A' before task D.
+52,True,False,add task a‘ before D,Insert task a' before task D.
+53,True,False,Add task A prime just before task D,Insert task A prime just before task D.
+54,True,False,Add the task A' immediately before task D.,Insert task A' immediately before task D.
+55,True,False,Add task A' between the XOR gateway and task D,Insert task A' between the XOR gateway and task D.
+56,True,False,Add task A’ behind the xor and before task D,Insert task A' between the XOR gateway and task D.
+57,True,False,Re-Execute Task A as Task A‘ after the close gateway of the condition and in Front of Task D,Copy Task A and paste it after the close gateway of the condition and in front of Task D.
+58,True,True,Task A will be duplicated before task D. ,Copy Task A and place it before Task D.
+59,True,False,Add task A' before task D.,Insert task A' before task D.
+60,True,True,Add a copy of task A in front of task D,Copy task A and place it before task D.
+61,True,True,add duplicate of task a before task d,Copy task A and place it before task D.
+62,True,False,Add a task A' directly before task D,Insert a new task A' directly before task D.
+63,True,False,insert a task A directly after the decision.,Insert a task A directly after the decision.

@@ -1,0 +1,9 @@
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->7:inclusivegateway:{O}
+7:inclusivegateway:{O}-->|true|2:task:(task B)
+7:inclusivegateway:{O}-->|false|3:task:(task C)
+2:task:-->8:inclusivegateway:{O}
+3:task:-->8:inclusivegateway:{O}
+8:inclusivegateway:{O}-->4:task:(task D)
+4:task:-->9:endevent:((endevent))

@@ -1,0 +1,15 @@
+graph LR
+0:startevent:((startevent))-->1:exclusivegateway:{x}
+1:exclusivegateway:{x}-->|a==1|2:exclusivegateway:{x}
+1:exclusivegateway:{x}-->|a!=1|4:task:(task A)
+2:exclusivegateway:{x}-->3:exclusivegateway:{x}
+4:task:-->5:exclusivegateway:{x}
+5:exclusivegateway:{x}-->|true|6:task:(task B)
+5:exclusivegateway:{x}-->|false|8:task:(task C)
+6:task:-->9:exclusivegateway:{x}
+8:task:-->9:exclusivegateway:
+9:exclusivegateway:-->10:task:(task D)
+3:exclusivegateway:-->10:task:
+10:task:-->11:exclusivegateway:{x}
+11:exclusivegateway:{x}-->12:endevent:(((endevent)))
+

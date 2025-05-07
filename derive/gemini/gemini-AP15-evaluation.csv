@@ -1,0 +1,117 @@
+,mapping,epap,user,meaning
+0,False,False,l,False
+1,True,True,"Split ""task B & E"" into two subsequent activities which are called ""task B"" and ""task E"". Task B should be the first one, task E the second one.","Split ""Task B & E"" into ""Task B"" followed by ""Task E"".
+"
+2,True,True,divide the combined task B & E into two separate ones,"Split the combined task ""B & E"" into two separate tasks, ""B"" and ""E"".
+"
+3,True,True,"task B & E should be split into task B and task E, while remaining on their branch
+task B should be executed before task E","Split task B & E into two separate tasks, task B and task E, with task B preceding task E on the same branch.
+"
+4,False,False,"In the new model, the system executes tasks B, E in sequence.",False
+5,True,True,Separate the combined module of task B and task E into two individual modules task B and task E. ,"Split process fragment containing tasks B and E into two separate fragments, one for task B and one for task E.
+"
+6,True,True,Separate task B&E into task B and task E,"Split task B&E into two separate tasks, task B and task E, executed sequentially.
+"
+7,True,True,Split the task 'task B & E' into two single tasks 'task B' immediately followed by 'task E'. The rest of the process model should not be changed.,"Split task 'task B & E' into two sequential tasks 'task B' and 'task E'.
+"
+8,True,True,split task B&E into task B and task E,"Split task B&E into two sequential tasks, task B followed by task E.
+"
+9,True,True,Split Task B&E into two separate tasks Task B and Task E. Task B should be done first and then Task E should be done.,"Split Task B&E into two separate tasks, Task B followed by Task E.
+"
+10,True,True,split task b & e into two separate tasks called task b and task e where task b comes first,"Split task b&e into two tasks named task b and task e, with task b preceding task e.
+"
+11,True,False,"Instead of task B & E notation following X being true, clearly indicate that task B follows task E, and they are separate tasks.","NA
+"
+12,True,True,deconstruct task b&e to individual tasks task b and task e,"Split task ""b&e"" into two separate tasks, ""b"" and ""e"".
+"
+13,True,True,"separate the task ""B&E"" into two subsequent distinct tasks","Split the task ""B&E"" into two separate tasks, one after the other.
+"
+14,True,False,Please separate task B and task E in two separate tasks. Execute E after B.,"Insert a parallel gateway after task B and before task E.  A merge gateway should be added after task E.
+"
+15,True,True,taskB&E got separated in separate tasks,"NA
+"
+16,True,True,uncombine task B&E; Execute them each at a time,"Change sequential execution of tasks B and E to parallel execution.
+"
+17,True,False,"Replace 'task B & E' with ''task B'. In the 'OR split' after 'task B', insert a transition 'task E' after 'task B' and its corresponding edges.","Replace tasks B and E with task B.  Add a new path from the OR gateway following task B to a new task E.
+"
+18,True,True,Split task B & E into 2 tasks,"Split task B into two tasks and split task E into two tasks.
+"
+19,True,True,"please split the task ""task B & E"" into two seperate tasks ""ask B and task E","Split the task ""Task B & E"" into two separate tasks ""Task B"" and ""Task E"".
+"
+20,True,True,"split task task B & E into a sequence of two tasks, i.e., task B followed by task E","Split task B into two sequential tasks, followed by splitting task E into two sequential tasks.
+"
+21,True,False,"please split task B & E into two tasks, i.e., remove task B & E first and add task B if condition is true and task E is immediately followed by task B.","Split task B into B1 and B2, and task E into E1 and E2. Introduce a conditional gateway after B1. If the condition is true, execute B2. E2 follows B2. E1 is placed in the branch where the condition is false.  E2 always follows after B2 or E1.
+"
+22,True,True,divide task B & E into two several tasks. ,"Split task B and task E into two separate tasks each.
+"
+23,False,False,Not sure what the difference is,False
+24,False,False,.,False
+25,True,True,Refine abstract task B & E to be the two tasks B and E following each other. ,"Decompose abstract task B into two sequential sub-tasks, B and E.
+"
+26,True,True,"Replace task called ""task B & E"" with two independent tasks. The first one being called ""task B"" and the second one being called ""task E""","Replace ""task B & E"" with two parallel tasks, ""task B"" and ""task E"".
+"
+27,True,True,split the 'task B & E' into two tasks. first b then e,"Split ""Task B & E"" into two separate tasks, ""Task B"" followed by ""Task E"".
+"
+28,True,True,split task B & E to two tasks B and E,"NA
+"
+29,True,True,"Split ""task B & E"" to be two seperate task directly following each other, first ""task B"" and then ""task E"". ","Split ""Task B & E"" into two separate tasks, ""Task B"" followed by ""Task E"".
+"
+30,True,True,Task B & E should be separated into two tasks,"NA
+"
+31,True,True,"Separate ""taks B & E"" into two independent tasks ""task B"" followed by ""task E"".","Separate task B and E into two sequential tasks.
+"
+32,True,True,Separate task B & E into two tasks B and E.,"NA
+"
+33,True,True,Split Task B & E inti the Taks B and Task E which are executed sequentialy,"Split Task B into Task B1 and Task B2, and Task E into Task E1 and Task E2, with execution order B1 -> B2 -> E1 -> E2.
+"
+34,True,True,Split tasks B and E into seperate taks,"NA
+"
+35,True,False,Split up taskB&E into two separate paths on the upper graph ,"NA
+"
+36,False,False,"instead of being executed at the same time, b and e are now executed sequentially",False
+37,False,False,make task e follow the completion of task b ,False
+38,False,False,I don't know. ,False
+39,True,False,replace task B & E with two seperate tasks task B and then task E,"Replace task B & E with two separate tasks, first task B and then task E.
+"
+40,False,False,"Task B and E are not executed at the same time, but sequentially. First B and then task E. ",False
+41,True,False,replace the task b& E into two following seperate steps with task b first followed by task e. leave the rest the same.,"Replace task ""b& E"" with two separate tasks, ""b"" followed by ""e"".
+"
+42,True,False,Please replace task B&E to execute task B and task E seperately,"Change task B and E to a parallel gateway followed by task B and task E, then join them with a parallel gateway.
+"
+43,True,True,Split task B and E I'm two separated tasks ,"Split tasks B and E into two separate tasks each.
+"
+44,True,True,split up task B & E to be two seperat tasks called task B and task E.,"NA
+"
+45,True,True,Separate task B&E to two states Task b and E in a order ,"NA
+"
+46,False,False,Process the task B and E one by one ,False
+47,True,True,Split task B & E into two seperate tasks,"Split task B into two separate tasks and split task E into two separate tasks.
+"
+48,True,True,Split Task B&E into to seperate tasks,"Split Task B&E into two separate tasks.
+"
+49,True,True,split task B&E into task B and then task E,"Split task B&E into two sequential tasks, task B followed by task E.
+"
+50,True,False,"instead of doing task B & E combined, do them sequentially after each other, starting with task B","Change task B & E from parallel execution to sequential execution, with task B preceding task E.
+"
+51,False,False,"Make task B & E sequential, with task B being followed by task E.",False
+52,True,False,replace task B&E by two separate tasks B and E,"Replace task ""B&E"" with two separate tasks, ""B"" and ""E"".
+"
+53,True,True,"split task B&E into two separate tasks, task B and task E","Split task B&E into two separate tasks, task B and task E.
+"
+54,True,True,Split task B & E in two separated tasks called task B and task E. And replace the two new tasks with the task B & E.,"NA
+"
+55,True,True,Split the combined task 'B & E' in the true branch into two separate tasks: task B followed by task E.,"Split task 'B & E' into two separate tasks 'B' and 'E', with 'B' preceding 'E'.
+"
+56,False,False,Change task B&E to sequence task B then task E,False
+57,False,False,Split and Replace Task B & E into the First Task B and secondly Task E inside the true case ,False
+58,False,False,Task B and E is run in sequence. ,False
+59,True,True,"Replace ""task B & E"" with ""task B"" and then ""task E"" individually.","Split task B & E into two separate tasks, task B and task E, executed sequentially.
+"
+60,True,True,Split the task B&E into two seperate tasks,"Split task ""B&E"" into two separate tasks, ""B"" and ""E"".
+"
+61,True,True,pull apart task b and e to first have task b,"NA
+"
+62,True,False,Add task B and Task E after task B &E. Remove task B&E,"NA
+"
+63,True,True,"Replace task B&E by a sequence of task B and task E. (Spliting is an absolutely pointless pattern from the point of view of execution, but a useful pattern from the point of view of modelling. Keep that in mind.). ","Split task B&E into task B followed by task E.
+"

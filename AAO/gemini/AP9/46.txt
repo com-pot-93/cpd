@@ -1,0 +1,14 @@
+```mermaid
+graph LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->2:exclusivegateway:{x}
+2:exclusivegateway:-->|Condition is met|3:parallelgateway:{AND}
+2:exclusivegateway:-->|Condition is not met|7:task:(task D)
+3:parallelgateway:{AND}-->4:task:(task B)
+3:parallelgateway:{AND}-->5:task:(task C)
+4:task:-->6:parallelgateway:{AND}
+5:task:-->6:parallelgateway:
+6:parallelgateway:-->7:task:
+7:task:-->8:endevent:(((endevent)))
+
+```

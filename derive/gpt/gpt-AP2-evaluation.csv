@@ -1,0 +1,65 @@
+,mapping,epap,user,meaning
+0,False,False,b,False
+1,True,True,delete task C from the model,Removes task C from the model.
+2,True,False,forward false without any tasks,NA
+3,True,True,remove task C so that its branch connects directly to task D,Remove task C and connect its branch directly to task D.
+4,True,False,"In the new model, if task A is false, task D should be done directly.",Embed task D in a conditional branch based on the outcome of task A.
+5,True,False,"Please remove task C so that if task A returns ""false"" the process directly continues with task D. ","Remove task C so that if task A returns ""false"" the process directly continues with task D."
+6,True,True,Remove task C from the model,Remove task C from the model.
+7,True,False,"Remove task C in the false-path of the or-gate and make the path directly point to the closing or-gate. The true-path of the or-gate, including task B, should not be changed.","Remove task C in the false-path of the or-gate and make the path directly point to the closing or-gate. The true-path of the or-gate, including task B, should not be changed."
+8,True,False,remove task c keep and rejoin the false branch,Remove task C and rejoin the false branch.
+9,True,False,Remove task C. We do not need to do an additional task if the status is false after task A.,Delete the task C.
+10,True,False,Remove task C and connect the gateways in the case of false ,Delete task C and connect the gateways in the case of false.
+11,True,False,"instead of task C, add a condition where if false, continue to the second X","Embed a conditional branch where if the condition is false, the process continues to the second task X."
+12,True,True,delete task c,NA
+13,True,False,"remove option of task C, leave the ""false path"" as option without a task","Remove the task associated with the ""false path"" of task C, leaving the ""false path"" as an option without a task."
+14,True,False,"Please remove task C, but leave the false connection.",NA
+15,True,False,in case of false no taskC gets now executed,Embed Process Fragment in Conditional Branch. TaskC is now executed only if the condition is false.
+16,True,False,Task C should be removed from the false OR Gateway path,Remove Task C from the false OR Gateway path.
+17,True,False,"In the 'OR split' after 'task A', remove the transition 'task C' and its edges, insert the edge 'false' between 'OR split' and 'Or join' in its place.","Remove the transition 'task C' and its edges, insert the edge 'false' between 'OR split' and 'Or join' in its place."
+18,True,False,Remove task C while maintaining the false path,Delete task C while maintaining the false path.
+19,True,True,Please remove task c from the model but keep the connection between the gateways,Remove task c from the model but keep the connection between the gateways.
+20,True,True,"remove task C, keep conditional branch (empty)","Remove task C, keep the conditional branch without any tasks."
+21,True,True,please remove task C while keeping the connection with condition of false.,Remove task C while keeping the connection with the condition of false.
+22,True,True,Please remove task C. We do now go directly into the second XOR if the first XOR is false.,"Remove task C. If the first XOR is false, go directly into the second XOR."
+23,True,True,Removing a task,NA
+24,True,True,remove task C ,Delete task C.
+25,True,False,Remove task C such that no task is executed in the false-branch. ,Remove task C and ensure that no tasks are executed in the false-branch.
+26,True,True,Delete task C. Do not make any other changes.,NA
+27,True,True,remove task C such that after task A is suceded by task D when the condition is false,NA
+28,True,True,remove task C,Delete task C.
+29,True,False,"Delete task C, so that in case of ""false"" the path goes directly to the closing OR-gateway.","Remove task C, so that in case of ""false"" the path goes directly to the closing OR-gateway."
+30,True,True,Task C has to be removed,Remove Task C.
+31,True,False,"Instead of task C, connect both gateways directly.",NA
+32,True,True,Remove task C.,Delete task C.
+33,True,False,"Replace Task C with a direct connection to the Merge-Gateway, which is used when the Split Gateway evaluates to false.","Replace Task C with a direct connection to the Merge-Gateway, which is used when the Split Gateway evaluates to false."
+34,True,True,Remove task C,Delete task C.
+35,True,False,"Remove Task C, when task A is true ",NA
+36,True,True,"Task C is removed, meaning a false task A, won't execute a task C anymore.",Task C is removed.
+37,True,True,Delete task C and adapt the conditional logic ,Remove task C and update the transition conditions accordingly.
+38,True,True,Removing task C. ,Delete task C.
+39,True,False,remove task c form the false path,Remove task C from the false path.
+40,True,False,"If the result of condition X is false, then no task C is executed any more. ",Embed Process Fragment in Conditional Branch. Task C is executed only if the result of condition X is true.
+41,True,True,delete task c while keeping the entire structure elsewise in the excactly same manner,Remove task C from the process while keeping the rest of the structure unchanged.
+42,True,True,Please remove task C from the model,Remove task C from the model.
+43,True,True,Remove Task C,Delete Task C.
+44,True,False,"Please change the true and false regulation of our first exclusive gateway to directly connect to the second exclusive gateway by removing task C. THe direct connection to our second exclusive gateway should be ""false"". ","Remove task C and directly connect the first exclusive gateway to the second exclusive gateway with the condition ""false""."
+45,True,True,Please remove the task C ,Delete the task C.
+46,True,True,Delete the task C,Delete the task C.
+47,True,False,Remove task C but maintain the decision before task B,Delete task C but maintain the decision before task B.
+48,True,False,Remove Task c and instead skip to Task d If false,Embed Task d in Conditional Branch. Task c is removed.
+49,True,False,"remove task C, if X false then next X",NA
+50,True,True,please remove task C from the model.,Remove task C from the model.
+51,True,False,Remove task C from the false branch.,Remove task C from the false branch.
+52,True,False,"Remove task C, but keep the XOR structure by replacing the task with an empty branch ",Remove task C and replace it with an empty branch while maintaining the XOR structure.
+53,True,True,remove task C and directly go into the joining Or on the false side,Remove task C and directly connect to the joining Or on the false side.
+54,True,True,Remove task C but keep the false flow to the gateway,Remove task C but keep the false flow to the gateway
+55,True,False,"Remove task C from the 'false' branch, so that only task B remains on the 'true' branch before continuing to task D.","Remove task C from the 'false' branch, so that only task B remains on the 'true' branch before continuing to task D."
+56,True,True,Remove the task C while make no change to others ,Remove the task C.
+57,True,False,Remove Task C to make the false case of the gateway empty and instantly merging into the close gateway ,Remove Task C from the false case of the gateway and instantly merge into the close gateway.
+58,True,True,The task c is deleted. ,The task c is removed.
+59,True,True,Remove task C.,Delete task C.
+60,True,True,Please delete task c and directly link the flow false without any task,Delete task c and directly link the flow false without any task.
+61,True,True,remove task C,Delete task C.
+62,True,True,Remove task C. Keep the exclusive choice for Task B.,Remove Task C.
+63,True,True,delete task c,NA

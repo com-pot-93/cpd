@@ -1,0 +1,141 @@
+,1,count
+0,AP18.csv,1
+1, ,1
+2,False,5
+3,"True,True,True,False",7
+4,"True,True,False,False",20
+5,"True,False",12
+6,"True,True,True,True",5
+7,"True,True,False,True",15
+8,AP10.csv,1
+9, ,1
+10,False,5
+11,"True,True,True,False",42
+12,"True,False",7
+13,"True,True,False,False",8
+14,"True,True,True,True",2
+15,AP17.csv,1
+16, ,1
+17,False,3
+18,"True,True,True,True",39
+19,"True,False",12
+20,"True,True,False,False",5
+21,"True,True,False,True",3
+22,"True,True,True,False",2
+23,AP5.csv,1
+24, ,1
+25,False,2
+26,"True,True,True,True",54
+27,"True,True,False,False",2
+28,"True,True,True,False",2
+29,"True,False",3
+30,"True,True,False,True",1
+31,AP7.csv,1
+32, ,1
+33,False,3
+34,"True,True,True,True",2
+35,"True,True,True,False",12
+36,"True,True,False,False",21
+37,"True,True,False,True",13
+38,"True,False",13
+39,AP2.csv,1
+40, ,1
+41,False,1
+42,"True,True,True,True",29
+43,"True,False",10
+44,"True,True,False,False",6
+45,"True,True,False,True",18
+46,AP14.csv,1
+47, ,1
+48,False,5
+49,"True,True,False,True",49
+50,"True,True,False,False",4
+51,"True,True,True,True",5
+52,"True,False",1
+53,AP6.csv,1
+54, ,1
+55,False,4
+56,"True,True,False,False",7
+57,"True,True,True,True",7
+58,"True,True,False,True",13
+59,"True,True,True,False",23
+60,"True,False",10
+61,AP15.csv,1
+62, ,1
+63,False,4
+64,"True,True,True,True",34
+65,"True,False",4
+66,"True,True,True,False",11
+67,"True,True,False,True",10
+68,"True,True,False,False",1
+69,AP16.csv,1
+70, ,1
+71,False,5
+72,"True,True,True,True",38
+73,"True,True,False,False",6
+74,"True,True,True,False",3
+75,"True,False",10
+76,"True,True,False,True",2
+77,AP3.csv,1
+78, ,1
+79,False,1
+80,"True,True,True,True",29
+81,"True,True,False,False",11
+82,"True,True,True,False",15
+83,"True,False",5
+84,"True,True,False,True",3
+85,AP8.1.csv,1
+86, ,1
+87,False,4
+88,"True,True,False,False",39
+89,"True,True,False,True",4
+90,"True,True,True,False",13
+91,"True,True,True,True",2
+92,"True,False",2
+93,AP8.2.csv,1
+94, ,1
+95,False,3
+96,"True,True,True,True",7
+97,"True,False",3
+98,"True,True,True,False",26
+99,"True,True,False,False",22
+100,"True,True,False,True",3
+101,AP9.csv,1
+102, ,1
+103,False,3
+104,"True,True,True,True",4
+105,"True,True,True,False",24
+106,"True,True,False,False",14
+107,"True,False",17
+108,"True,True,False,True",2
+109,AP19.csv,1
+110, ,1
+111,False,6
+112,"True,True,True,True",36
+113,"True,False",5
+114,"True,True,False,True",8
+115,"True,True,False,False",4
+116,"True,True,True,False",5
+117,AP13.csv,1
+118, ,1
+119,False,3
+120,"True,True,True,True",55
+121,"True,True,False,True",3
+122,"True,False",2
+123,"True,True,False,False",1
+124,AP1.csv,1
+125, ,1
+126,False,1
+127,"True,False",4
+128,"True,True,False,True",12
+129,"True,True,True,True",41
+130,"True,True,False,False",5
+131,"True,True,True,False",1
+132,AP4.csv,1
+133, ,1
+134,False,12
+135,"True,True,True,True",42
+136,"True,True,True,False",1
+137,"True,True,False,True",5
+138,"True,False",3
+139,"True,True,False,False",1

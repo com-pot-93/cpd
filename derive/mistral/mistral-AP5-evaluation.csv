@@ -1,0 +1,113 @@
+,mapping,epap,user,meaning
+0,False,False,e,False
+1,True,True,swap the positions of tasks A and B,NA.
+2,True,True,change task A into task B and task B into task A,Swap the positions of task A and task B in the process.
+3,True,True,swap task A with task B,NA
+4,True,False,"In the new model, task B should be checked, if true, task A will be done.",NA.
+5,True,True,Please switch task A and task B.,Switch Task A and Task B
+6,True,True,Switch task A and task B,"To evaluate and interpret the user-provided modification ""Switch task A and task B,"" we need to follow the steps outlined:
+
+(a) **Validating the modification**: The modification ""Switch task A and task B"" contains sufficient and unambiguous information to be applied, assuming that tasks A and B are clearly defined in the existing process model.
+
+(b) **Mapping to a change pattern**: The modification ""Switch task A and task B"" maps to the change pattern **AP5**: ""Swap Process Fragments. Swaps an existing process fragment with another existing process fragment.""
+
+(c) **Deriving the actual meaning**: Based on BPMN semantics and the intent of the change pattern AP5, the actual meaning of the modification is to interchange the positions of task A and task B in the process flow.
+
+(d) **Ensuring compliance**: This modification complies with BPMN modeling rules and the structure of the existing process, assuming tasks A and B are sequential and swappable without disrupting the logical flow of the process.
+
+**Final output**: Interchange the positions of task A and task B in the process flow."
+7,True,True,Swap task A with task B. Don't change the rest of the structure.,"Task A and task B are swapped in the process sequence, with no other changes to the structure."
+8,True,True,switch task A and task B,"The actual meaning of the user input is: ""Swap the positions of task A and task B in the process."""
+9,True,False,Switch task b and task a. Task B should be the first task in the chain and task A is exclusive to if the status is true.,NA
+10,True,True,switch the positions of task b and task a with each other,NA.
+11,True,True,swap the positions of task A and task B while everything stays the same,"The positions of task A and task B are swapped, with no other changes to the process."
+12,True,True,change task a and task b's position for each other,AP5
+13,True,True,swap tasks A and B,NA
+14,True,True,Please exchange task A and task B with each other.,NA.
+15,True,True,taskA and Task B were interchanged ,NA
+16,True,True,Task A and B should be switched,NA.
+17,True,True,Swap the labels 'task A' and 'task B'.,NA
+18,True,True,Switch task A with task B,"To evaluate and interpret the user-provided modification ""Switch task A with task B,"" we need to follow the steps outlined:
+
+(a) **Validating the modification**: The modification ""Switch task A with task B"" contains sufficient and unambiguous information to be applied, assuming that tasks A and B are clearly defined in the existing process model.
+
+(b) **Mapping to a change pattern**: This modification maps to the change pattern **AP5**: ""Swap Process Fragments. Swaps an existing process fragment with another existing process fragment.""
+
+(c) **Deriving the actual meaning**: Based on BPMN semantics and the intent of the change pattern AP5, the actual meaning of the modification is to interchange the positions of task A and task B in the process flow.
+
+(d) **Ensuring compliance**: This change complies with BPMN modeling rules and the structure of the existing process, assuming tasks A and B are sequential and swappable without disrupting the logical flow of the process.
+
+**Final output**: Interchange the positions of task A and task B in the process flow."
+19,True,True,Please swap task A with task B,NA.
+20,True,True,swap task and task B,NA
+21,True,True,please swap task A and task B.,NA
+22,True,True,exchange task A and task B,NA
+23,True,True,Switching task a and b,NA.
+24,False,False,"rename Task A to task B and task A to task B, essentially changing the 2 tasks",False
+25,True,True,Switch task A and B,NA
+26,True,True,"Swap the label between ""task A"" and ""task B"". Do not make any other changes.",NA
+27,False,False,"at the start, add task B. replace task B inside the conditional branch with task A.",False
+28,True,True,Switch task A and task B,NA
+29,True,True,"Switch tasks A and B, so the first task in the process is task B. ",NA
+30,True,True,Please exchange Task A with Task B and vice versa,NA.
+31,True,True,Switch task A and task B.,AP5
+32,True,True,Switch the places of tasks A and B.,Task A and Task B have been swapped in the process.
+33,True,True,Replace the Name of Task A with Task B and Task B with Task A,NA.
+34,True,True,"Replace task A with task B, and task B with task A",NA.
+35,True,True,switch the place of task a and b ,NA
+36,True,False,"Task A is replaced by B, and the conditionally B in case of a true task A, is not replaced by A.",NA.
+37,True,True,swap task a and task b with the same conditional logic ,NA
+38,True,True,Switching the spots of task A and B. ,Task A and Task B are swapped in the process.
+39,True,True,exchange task A and task B ,NA
+40,True,False,"In this case task B will be firstly executed. Then condition X will be checked. If true, task A follows. ",NA
+41,True,True,"switch the places of task a and b in the input diagram, so that where task a was, no b is and where b was a will be",Task A and Task B have been swapped in the process.
+42,True,True,Please switch the positions of task A and task B,NA.
+43,True,True,switch A and B,NA
+44,True,True,Switch positions of task A and task B,NA
+45,True,False,Please exchange the task A and task B,NA.
+46,True,True,Exchange the content  (order) of task A with Task B,NA
+47,True,True,"Change task B to task X, Change task A to task B, Change task X to task A",NA.
+48,True,True,Change Task a and Task b with each other,NA
+49,True,True,switch task A and task B,"To evaluate and interpret the user-provided modification ""switch task A and task B,"" we need to follow the steps outlined:
+
+(a) **Validating the modification**: The modification ""switch task A and task B"" is clear and unambiguous, as it specifies two tasks (A and B) that need to be switched.
+
+(b) **Mapping to a change pattern**: This modification maps to the change pattern **AP5**: ""Swap Process Fragments. Swaps an existing process fragment with another existing process fragment.""
+
+(c) **Deriving the actual meaning**: Based on BPMN semantics and the intent of the change pattern AP5, swapping tasks A and B means that the positions of task A and task B in the process flow are interchanged.
+
+(d) **Ensuring compliance**: This modification complies with BPMN modeling rules, as swapping tasks does not violate the structure or flow of the process.
+
+**Final output**:
+Swap the positions of task A and task B in the process flow."
+50,True,False,Please switch task A with task B,"The user input is not sufficient to perform the requested change.
+
+Output:
+NA"
+51,True,False,Switch the order of task A and task B.,Task A and task B are swapped in the process.
+52,True,True,rename task A to B and B to A,NA
+53,True,True,Switch task A and task B,NA
+54,True,True,Exchange task A with task B,NA
+55,True,True,Swap the positions of task A and task B,The positions of task A and task B are swapped.
+56,True,True,Switch the position of task A and task B while make no change to others ,The position of task A and task B are swapped.
+57,True,True,Switch the positions of Tasks A and B to result to have Task B following the Start Node and Task A inside the True Case,"AP3
+
+Task B now follows the Start Node, and Task A is inside the True Case."
+58,True,True,The task A and task B are exchanged. ,NA
+59,True,True,Switch task A and task B with one another.,NA
+60,True,False,Please seitch task A and B,"The user input does not contain sufficient and unambiguous information to be applied.
+
+NA"
+61,True,True,exchange task A and task b,"To evaluate and interpret the user-provided modification ""exchange task A and task B,"" we need to follow the steps outlined:
+
+(a) **Validating Information**: The modification specifies two tasks, A and B, and the action ""exchange."" This information is sufficient and unambiguous.
+
+(b) **Mapping to Change Pattern**: The action ""exchange"" corresponds to swapping the positions of two tasks, which maps to the change pattern **AP5**: ""Swap Process Fragments. Swaps an existing process fragment with another existing process fragment.""
+
+(c) **Deriving Meaning**: Based on BPMN semantics and the intent of AP5, swapping tasks A and B means that the positions of these tasks in the process flow will be interchanged.
+
+(d) **Ensuring Compliance**: This modification complies with BPMN modeling rules, as swapping tasks does not violate the structure or flow of the process.
+
+**Final Output**: Swap the positions of task A and task B in the process flow."
+62,True,False,Replace Task A with Task B and replace task A with Task B,NA
+63,True,True,Swap task A and B.,Swap the positions of task A and task B in the process.

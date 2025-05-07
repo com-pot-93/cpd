@@ -1,0 +1,72 @@
+,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
+0,0,False,False,u,False,False,0.0
+1,1,True,True,"Unpack subprocess F which contains an XOR with two branches (one branch with condition true contains task B, one branch with condition false contains task C) and a subsequent task D.",NA.,True,0.6624356775300172
+2,2,True,True,turn the information of the subprocess F again back,NA.,True,0.6624356775300172
+3,3,False,False,"create task B, task D, and task C and remove subprocess F
+after task A, task B or task C should follow - task B should follow if true, task C if false
+task D should always be executed after either task B or C",False,False,0.0
+4,4,True,False,"In the new model, if task A is true, task B should be done, otherwise task C should be done. Afterwards task D should be done.","The user input specifies a conditional branching where task B is executed if task A is true, and task C is executed otherwise. After either task B or task C, task D is executed. This modification can be mapped to change pattern AP10 (Embed Process Fragment in Conditional Branch).
+
+The actual meaning of the modification is:
+
+""After task A, a decision is made based on the outcome of task A. If task A is true, task B is executed; otherwise, task C is executed. Following the execution of either task B or task C, task D is performed.""",True,0.9778256852479212
+5,5,True,False,"Convert subprocess F into the following scheme: The first element is an if-else statement that takes an boolean input from task A. If true task B should follow, if false task C should follow. Afterwards another if-else-block should be placed to consolidate the two branches which then go to task D. ",,False,0.0
+6,6,True,False,"New model should dissect subprocess F into tasks B,C, and D",NA.,True,0.6624356775300172
+7,7,True,False,"Replace subprocess F with the following structure: Starting with an opening or-gate two pathes occur. If the condition of the or-gate is true, task B is performed and if the conidition is false, task C is performed. After that both paths meet each other again in the closing or-gate. Furthermore insert task D immediately after the closing or-gate.",NA.,True,0.6624356775300172
+8,8,True,False,Split subproces F into its parts,NA.,True,0.6624356775300172
+9,9,True,True,"Move the subprocess f into the main process so that this one includes task a, all the conditions of subprocess F and all the tasks of subprocess F",NA.,True,0.6624356775300172
+10,10,True,True,Display the subprocess F as it was before,,False,0.0
+11,11,True,False,"Instead of subprocess F notation, use the notation forming subprocess B step by step.",NA.,True,0.6624356775300172
+12,12,True,False,"deconstruct subprocess f into xor gate which executes task b if true and task c if false, connect both tasks to xor gate and connect task d to last xor gate",NA.,True,0.6624356775300172
+13,13,True,False,"split subprocess F into two options true, where true path includes task B or false, incl task C. Add another task D following after the options, on the main path",NA.,True,0.6624356775300172
+14,14,True,False,Please replace the subprocess F with a condition which executes task B in the true case and task B in the false case. After the end of the condition also add a task D before the termination node.,NA.,True,0.6624356775300172
+15,15,True,False,subprocces decomposition ,NA.,True,0.6624356775300172
+16,16,True,True,unhide the subprocess F,NA.,True,0.6624356775300172
+17,17,True,False,"After 'task A' and before the 'end place', replace the transition  'subprocess F' with the following. An annotated 'OR split' should follow 'task B' if true OR 'task C' if false. Both of these, should be followed by an 'OR join', which is then followed by 'task D', and finally 'task D' is followed by the 'end place'.",NA.,True,0.6624356775300172
+18,18,True,False,"Replace subprocess F with a split for task B when true and task C when false, followed by task D","Replace the subprocess F with a conditional branch. If the condition is true, execute task B, otherwise execute task C. After completing either task B or task C, proceed to task D.",True,0.9068376068376068
+19,19,True,False,"Please remove the subprocess F and instead insert a xor with two branches. If it evaluates to false move to task C, if it evaluates to true move to task B. The xor is connected to task D",,False,0.0
+20,20,True,False,"replace complex task subprocess F with embedded subprocess consisting of a sequence of an XOR block consisting of two branches where one branch (condition: true) contains task B and the other branch (condition: false) contains task C, followed by task D",NA.,True,0.6624356775300172
+21,21,True,False,"please remove subprocess F, then add an exclusive choice after task A, add task B if the condition is true; add task C to false condition. After the xor path, add task D before process end.",NA.,True,0.6624356775300172
+22,22,True,False,Replace the subprocess with and XOR with task B for true and task C for false. After that go into an XOR again and finally task D,NA.,True,0.6624356775300172
+23,23,True,True,Removing the subprocess,NA.,True,0.6624356775300172
+24,24,False,False,.,False,False,0.0
+25,25,True,False,Refine subprocess F with its corresponding XOR fragment followed by task D. ,NA.,True,0.6624356775300172
+26,26,False,False,I want to expand subprocess F and have it directly modeled in my PM. Directly after task A I want to have a exclusive gateway. If true then task B. If false then task C. Close the gateway and execute task D.,False,False,0.0
+27,27,True,False,replace the subprocess F with a new XOR condition with two branches. one branch is taken when the condition is true. then task B is executed. the other branch is taken when the condition is false. then task C is executed. after that the xor ends and task D follows.,NA.,True,0.6624356775300172
+28,28,True,True,excpand subprocess F as a new process,NA.,True,0.6624356775300172
+29,29,True,False,"Detail subprocess F to show the following: after task A, there is an OR-Split, the ""true"" path goes to task B, the ""false"" path goes to task C, both paths join in a closing OR-gateway, followed by task D which goes to END.",,False,0.0
+30,30,True,False,Please remove subprocess F and insert task B for true and task C for false after completing Task A and also insert Task D after completing task B or C,NA.,True,0.6624356775300172
+31,31,True,True,Replace subprocess F with the respective content of the subprocess. ,NA.,True,0.6624356775300172
+32,32,True,False,"Replace subprocess F with the following process: A conditional branch where the ""true"" branch contains task B and the ""false"" branch contains task C, after the branches converge task D.","The subprocess F is replaced with a conditional branch. If the condition is true, task B is executed. If the condition is false, task C is executed. After either task B or task C is completed, task D is executed.",True,0.9068376068376068
+33,33,True,False,Replace the Subprocess F with an XOR Split Gateway which leads to Task b If the condition ist true and to Task c If the condition ist false. Afterwards Join the process again and add Task D before the end of the process.,NA.,True,0.6624356775300172
+34,34,True,False,"Replace subprocess F with: conditional check of true- continue with task B and false- continue with task C, and then out of the OR loop execute task D.",,False,0.0
+35,35,False,False,"expand subprocess F and execute B, if task A returns true or c if its false. After both cases, execute D",False,False,0.0
+36,36,True,False,"now task A is followed by a conditions, which leads to either b or c, and eventually to d, meanwhile before it led to a subprocess",NA.,True,0.6624356775300172
+37,37,True,False,"change subprocess f for a condition, if true perform task b, if false perform task c, after the conditinonal closes perform task d ",NA.,True,0.6624356775300172
+38,38,False,False,I don't know. ,False,False,0.0
+39,39,False,False,"task A should go directly to a XOR; if false trigger a new task C and then reach the next XOR
+if true do task be before reaching the next XOR. After the second XOR implment task d and then the endpoint. subprocess F is completely removed",False,False,0.0
+40,40,False,False,Subprocess F is clearly explained how it works. ,False,False,0.0
+41,41,True,False,reverse the process from the previous question ,NA.,True,0.6624356775300172
+42,42,True,False,"Please remove subprocess F, and make a new exclusive gate after task A. If true, execute task B, if false, execute task C, and then execute task D which leads to completion",NA.,True,0.6624356775300172
+43,43,True,True,Show subprocess F,,False,0.0
+44,44,True,False,Take the processes of the subtask F and append them to task A,NA.,True,0.6624356775300172
+45,45,False,False,"Delete subprocess F first, add a selection state after task A, add a new task B if it’s true , add a task C if it’s false, after B and C add a new state, after this state add a new task D",False,False,0.0
+46,46,True,True,Expanding a subprocess into explicit decision logic,NA.,True,0.6624356775300172
+47,47,True,True,Expand subprocess F,NA.,True,0.6624356775300172
+48,48,True,True,Add the explicit process model of subprocess F.,,False,0.0
+49,49,True,False,"subprocess F should consist of following: x, if true, task B, else task C, connect both to an x and move on with task D",NA.,True,0.6624356775300172
+50,50,True,True,replace subprocess F with the tasks from before.,,False,0.0
+51,51,True,False,"Replace subprocess F with an new XOR branch. For true add a task B and for false add a task C, after the XOR branch add a new task D.","The subprocess F is replaced with an XOR gateway that branches into two paths: one for the condition evaluating to true, leading to task B, and another for the condition evaluating to false, leading to task C. After the XOR branch, a new task D is added.",True,1.0
+52,52,True,False,"replace the subprocess. First should be a xor Split: if false Task C, if true Task B. After The XOR join follows task D",,False,0.0
+53,53,True,False,"Replace subprocess F with an or gate. On true task B is executed on false task C, afterwards they join and then task D leads to the final state",NA.,True,0.6624356775300172
+54,54,True,True,Replace the subprocess F with all the elements that are actually in the subprocess F.,NA.,True,0.6624356775300172
+55,55,True,False,"Replace subprocess F with an XOR gateway: task B on the true branch, task C on the false branch, both followed by task D.",,False,0.0
+56,56,True,True,Replace the sub process F with all the content inside it,NA.,True,0.6624356775300172
+57,57,True,False,"Extract the functionality of subprocess F to have After Task A an true false gateway, in the true case execute Task B, in the false case Task C, merge into the close gateway and execute Task D",NA.,True,0.6624356775300172
+58,58,True,True,The output PM does not have subprocess. ,,False,0.0
+59,59,True,True,Replace subprocess F with its original form.,NA.,True,0.6624356775300172
+60,60,True,True,Revert the the subprocess into the original structure,NA.,True,0.6624356775300172
+61,61,True,False,add subprocess f as tasks,,False,0.0
+62,62,True,False,Assuming subprocess F is known and that: Replace subprocess F with the subprocess,NA.,True,0.6624356775300172
+63,63,True,False,"Replace the subprocess F with a decision with two branches. The first branch should be executed when the condition of variable X = true, and contain task B. The second branch should be the default branch and contain task C. After the decision join additionally a task D should be inserted.","The subprocess F is replaced with a decision gateway that splits the flow into two branches. The first branch, which executes when the condition X equals true, contains task B. The second branch, which is the default branch, contains task C. After the decision, the branches join and task D is inserted.",True,1.0

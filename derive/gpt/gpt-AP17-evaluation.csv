@@ -1,0 +1,66 @@
+,mapping,epap,user,meaning
+0,False,False,n,False
+1,True,True,delete the whole branch with condition c,Remove the entire branch with condition c.
+2,True,False,delete the c condition,NA
+3,True,True,"branch option c, along with all its tasks should be removed","Remove the entire branch option C, along with all its tasks."
+4,True,True,"In the new model, condition c, task E and task F should be deleted.","Delete condition c, task E, and task F."
+5,True,True,"Eliminate the branch that contains task E and task F. Ignore the possibility that task A can return ""c"". ",Remove the branch that contains task E and task F.
+6,True,False,Delete condition c from the model,NA
+7,True,True,In the input process model there are three pathways in the or-gate. Fully remove the path labeled with 'c' and all the tasks it consists of. The resulting output process model therefore only has the two paths 'a' and 'b' in the or-gate.,Remove the entire branch labeled with 'c' and all its tasks from the or-gate.
+8,True,True,Remove option c of the or condition,Remove the entire branch corresponding to option c of the OR condition.
+9,True,True,Remove Case if status after task A is „c“. We do not need the condition for c including all the task that would have been done exclusively there.,"Remove the entire branch that includes the condition for status ""c"" after task A, along with all tasks that would have been done exclusively in that branch."
+10,True,True,delete path c and its tasks from the model,Remove the entire branch labeled as path c and all its associated tasks from the model.
+11,True,False,"Add an alternate path for reaching X that is checking if X returns c. If X returns C, then move to task E and task F and finally the second X consequently. ","Embed a conditional branch that checks if X returns C. If X returns C, then move to task E, task F, and finally the second X consequently."
+12,True,True,delete condition c and resulting tasks for first xor gate,NA
+13,True,True,remove option c ,NA
+14,True,True,Please remove the condition case c including task E and task F,Remove the condition case c including task E and task F.
+15,True,True,Branch c was removed,Removes single entire branch inside selected gateways and consequently flatten the hierarchy if necessary
+16,True,True,delete the c Case in the OR Gateway,"Remove the ""c Case"" branch in the OR Gateway."
+17,True,False,"Remove the transitions 'task E', 'task F' and their corresponding edges, including the edges annotations. ","Remove the transitions 'task E', 'task F' and their corresponding edges, including the edges annotations."
+18,True,True,Remove the path for choice = c,Delete the entire branch for choice = c.
+19,True,True,in the xor please remove the branch with the condition c from the model,Remove the branch with the condition c from the XOR gateway.
+20,True,True,remove alternative branch containing tasks E and F (no replacement by empty branch),Remove the alternative branch containing tasks E and F.
+21,True,True,please remove the branch for the xor gateway where condition is c and followed by task E and task F.,Remove the branch for the XOR gateway where the condition is C and followed by Task E and Task F.
+22,True,True,Remove case c of the condition as well as task E & F,Remove the third branch of the conditional gateway and delete tasks E and F.
+23,True,True,Removing option c,Delete the entire branch containing option c.
+24,False,False,.,False
+25,True,True,Remove the condition c branch in the XOR fragment. ,Remove the entire branch with condition c in the XOR fragment.
+26,True,False,"Add a new branch in the exclusive gateway, this one should be executed if it's case ""c"". In that case tasks with labels ""task E"" and ""task F"" should be executed.","Embed tasks ""task E"" and ""task F"" in a new conditional branch within the exclusive gateway, to be executed if the condition is ""case c""."
+27,True,False,"add another branch to the XOR. the branch is taken when the condition is c and it has two tasks: first E, followed by F.","Embed a new conditional branch in the XOR gateway with the condition ""c"" that includes two tasks: first ""E"", followed by ""F""."
+28,True,True,remove path c from the the exclusive gateway,Remove the entire branch corresponding to path c from the exclusive gateway.
+29,True,True,Remove path c.,Remove single entire branch inside selected gateways corresponding to path c.
+30,True,True,Please remove branch c including Task E and F,Remove the entire branch containing Task E and Task F.
+31,True,False,"Insert a third condition ""c"" for the first XOR gateway that includes two sequential tasks ""task E"" followed by ""task F"". This sequence flow terminates in the second XOR gateway.","Embed a new conditional branch in the first XOR gateway with the condition ""c"" that includes two sequential tasks ""task E"" followed by ""task F"", and terminates in the second XOR gateway."
+32,True,True,"Remove branch with label ""c"" from the diagram.","Remove the branch with label ""c"" from the diagram."
+33,True,True,Remove the sequencen completely related to condition c being met,Remove the entire branch related to condition c being met.
+34,True,True,Remove branch c,NA
+35,True,True,Remove the path for the case of parameter c ,Remove the entire branch for the case of parameter c.
+36,True,True,"the tasks e and f are removed, it means there are only 2 conditions now, instead of 3",Delete the tasks e and f.
+37,True,True,"remove subtask e and f, also the conditional check for c ","Remove subtask e and f, also the conditional check for c."
+38,False,False,I don't know. ,False
+39,True,True,remove option c and the path completely,Delete the entire branch containing option c and its path.
+40,True,True,Path c (excluding task E and F) is removed. Only a and b are considered.,"Remove path c, excluding task E and F. Only paths a and b are considered."
+41,True,True,delete the path in the exclusive gateway which would happen for c,Remove the path in the exclusive gateway that leads to activity C.
+42,True,False,Please remove the condition c from the exclusive gateway.,Update the condition c in the exclusive gateway.
+43,True,False,And an third option c with task E and F ending the same option ,NA
+44,True,True,"Our model currently includes two exclusive gateway nodes. the first exclusive gateway node connected to task A will hereinafter be reffered to as ""eg1"" while the second exclusive gateway node connected by task B as its true statement and task C and task F statement will hereinafter be referred to as ""eg2"". 
+Delete task E and task F from both exclusive gateway nodes. ",NA
+45,True,True,Remove selection path c and states E and F ,Remove the entire branch containing states E and F.
+46,True,False,Delete the situation c,NA
+47,True,False,Remove task E and task F and their repective control flow,Remove task E and task F and their respective control flow.
+48,True,True,Remove the c Route in the conditional Split ,"Remove the entire branch labeled ""c Route"" inside the conditional split."
+49,True,True,remove option c from the first X,NA
+50,True,True,remove the path for c at the exclusive gateway,Remove the entire branch for path C at the exclusive gateway.
+51,True,True,remove the c branch.,Remove the entire C branch.
+52,True,True,Remove The Branch with condition C from The XOR block,Remove the branch with condition C from the XOR block.
+53,True,True,remove the case c including the task E and task F,Remove the process fragment that includes Task E and Task F.
+54,True,True,"Remove the conditional path c with all its tasks (task E and task F). So that the first XOR Decision Gateway has only two possible paths (a, b).",Remove the conditional path c with all its tasks (task E and task F).
+55,True,True,remove branch c,"Remove the entire branch labeled as ""c""."
+56,True,False,Add condition c to the xor with task E followed by task F in the branch,NA
+57,True,False,Remove condition c and Both Tasks (E and F) Inside the case resulting in only two cases Splitting from the gateway ,"Remove condition c and both tasks (E and F) inside the case, resulting in only two cases splitting from the gateway."
+58,True,False,C condition is removed.  ,NA
+59,True,True,Remove branch c.,"Remove the entire branch labeled as ""c""."
+60,True,True,Remove option c from the xor flow,Remove the entire branch corresponding to option c from the XOR gateway.
+61,True,True,delete c as decision,NA
+62,True,True,remove the exclusive branch with condition c,Remove the exclusive branch with condition c.
+63,True,True,Delete the branch with condition c.,Remove the branch with condition c.

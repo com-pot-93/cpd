@@ -1,0 +1,124 @@
+,mapping,epap,user,meaning
+0,False,False,g,False
+1,True,True,Add a loop after the closing XOR gateway. The loop is exited if a condition is true and a further iteration is performed if a condition is false. Then include task D in the loop so that it can be executed between 1 and n times.,"Embed task D in a post-conditional loop after the closing XOR gateway.
+"
+2,True,False,"add an node, which directs false before task D","NA
+"
+3,True,True,task D should be in a loop where it has to be executed at least once,"Embed task D in a loop that executes one or more times.
+"
+4,True,True,"In the new model, if task D is false, task D will be repeated again.","Task D will be repeated if its outcome is false.
+"
+5,True,True,"Please add two if-else-blocks, one before task D and one after task D that form a loop which, when turned true exists and while false feeds back the input to task D. ","NA
+"
+6,True,False,Do task D only when condition is true,"NA
+"
+7,True,False,"Relocate task D and insert two or-gates, a opening one and a closing one. After the already existing closing or-gate I want you to insert the following structure: First, add the closing or-gate followed by task D. After that there is the opening or-gate with a condition check. If the condition is true, continue with the end of the process. If the condition is false, the process should go to the closing or-gate without any task being done. Therefore the process 'jumps' back and will continue with task D again. ","Move task D after the existing closing OR-gateway. Embed task D in a loop with a conditional check after the task.  The loop should iterate as long as the condition is false.
+"
+8,True,True,when the branch after task D is false repeat task D,"Add a loop around task D that repeats the task if the condition after it is false.
+"
+9,True,True,"Add a check with possible loop after task D, if the status after task D is false, Task D needs to be repeated ","Add a gateway after Task D to check a condition. If the condition evaluates to false, return to Task D. If the condition evaluates to true, continue the process.
+"
+10,True,True,implement a second gateway which does task d as long as the gateway decision is false,"Embed task ""d"" in a post-conditional loop.
+"
+11,True,True,"add two more X's before and after task D. If the condition after the second X is true, then reach the output, if false then return back to the X before task D.","Insert two new tasks before and after task D. The second new task has a conditional flow. If the condition is true, the process continues to the output. If false, the process loops back to the first new task.
+"
+12,True,False,"add an xor gate before and after task d, return to the gate before task d if the gate after task b is false","Introduce a decision gateway before Task D.  If the condition after Task D evaluates to false, return to the gateway preceding Task D.  The condition after Task D is based on the same criteria as the gateway following Task B.
+"
+13,True,True,"add an or gateway after task D, with a condition allowing the process to loop back to before task D","Embed task D in a post-conditional loop controlled by an OR gateway.
+"
+14,True,True,Please add a loop around task D directly after the end of the current one executes task D first and then loops in case the condition is not fulfilled and terminated in the true case.,"Embed task D in a loop that executes the task at least once and repeats it as long as a condition is false.
+"
+15,True,False,boolean evaluation of result of taskD,"NA
+"
+16,True,True,"Task D should at least be executed one time, but can als be executed several times","Task D should be executed in a post-conditional loop.
+"
+17,True,True,"After 'OR join', add a loop around 'task D', so that 'task D' can be executed at least one time, using the 'OR' operator.  If the condition in OR split is  'true' after executing 'task D' for the first time, the process should end, otherwise 'task D' should be executed again. ","Embed 'Task D' in a loop that executes at least once. The loop condition, evaluated after each execution of 'Task D', should follow the existing 'OR' gateway logic. If the 'OR' condition is true, the loop terminates; otherwise, 'Task D' executes again.
+"
+18,True,False,Introduce a choice node before the final state which goes to final with true and to task D with false.,"Add a gateway before the final state. If the condition is true, go to the final state. If the condition is false, go to task D.
+"
+19,True,False,Please insert a xor gateway before task D. Then insert a xor gateway after task D which is connected to the previous xor if it evaluates to false and connected to the end if it evaluates to true,"Insert an exclusive gateway before task D.  If the gateway evaluates to true, connect it to the end event. If it evaluates to false, connect it to task D.  Connect task D to a second exclusive gateway.
+"
+20,True,False,embed task D into loop,"Embed task D in a loop.
+"
+21,True,True,"please put task D in a self loop after the previous exclusive choice where the minimum occurrence of task D is 1, if false, execute the loop otherwise it reaches the end of the process. ","Add a loop to Task D with a minimum iteration of one. The loop condition is based on the output of the preceding exclusive gateway. If the gateway's condition evaluates to false, Task D is executed again. If true, the process continues to the next step.
+"
+22,True,True,Add a loop in front of the sink target where task D is repeatedly executed if the condition is false. ,"Embed task D in a pre-conditional loop based on a condition.
+"
+23,True,True,Go back when false after task d,"NA
+"
+24,True,True,add a loop surrounding task D using a gate. the task D should be triggered either way and only in the false branch it should jump back,"Embed task D in a post-conditional loop.
+"
+25,True,True,"Task D should be repeated, if a condition is false.","Task D should be embedded in a post-conditional loop.
+"
+26,True,True,"Add a exclusive gateway directly after ""task D"". If the condition evaluates to false execute again ""task D"" and the condition must be evaluated again. If the condition is evaluated to true then the process ends. Do not make any other changes.","Add an exclusive gateway after Task D.  If the condition is false, return to Task D. If the condition is true, end the process.
+"
+27,True,True,wrap task D inside a while loop,"Embed task D in a loop that allows for repeated execution. It's not specified whether it's a pre- or post-conditional loop.
+"
+28,True,True,Create a Loop around task D. task D must be executed at least once.,"Embed task D in a loop that executes one or more times.
+"
+29,True,True,"Add an OR-Gateway before and after task D, if the desicion point after task D is true, it goes to END, if it is false it goes to the OR-Gateway before task D. ","Introduce a conditional gateway before Task D.  If the condition after Task D evaluates to true, the process proceeds to the end. If false, the process returns to the gateway preceding Task D.
+"
+30,False,False,Task D has to be done correctly to complete the process,False
+31,False,False,"Before and after ""task D"", insert respective gateways. The first inserted gateway should flow through ""task D"" into the second inserted gateway.
+Insert to exclusive gateways around task D. The second gateway, after task D, should be connected to both the termination event and the first inserted gateway.",False
+32,True,True,"Replace task D with a conditional loop, where the false branch contains task D and the true branch ends the process. Task D must always be executed at least once.","Embed task D in a post-conditional loop with a condition.  The true branch of the loop ends the process.
+"
+33,True,True,Create a Loop after Task d which loops Task d If a condition ist Not met and repeats Task d until this condition ist met. ,"Embed Task d in a loop that repeats as long as a condition is not met.
+"
+34,True,True,"Add task D into a condition/OR loop. If the condition is false, execute task D again. If condition true, end process model. Task D gets executed regardless.","Embed task D in a post-conditional loop with a condition.
+"
+35,True,False,change the gates after b and c so that the process only returns true of task d returns true. Else stay in a loop ,"Replace the parallel gateway after activity B and the subsequent merge gateway before activity E with exclusive gateways.  The outgoing flow from the exclusive gateway after B, leading to activity D, should have the condition ""true"". The outgoing flow from the exclusive gateway after C should unconditionally lead to the merge gateway before E.  The outgoing flow from the exclusive gateway after D, leading to the merge gateway before E, should have the condition ""false"" and loop back to activity A.
+"
+36,True,False,A new condition is added that exectues D only if certain conditions are met,"Add a conditional gateway before activity D.
+"
+37,True,True,"Add a new conditional logic based on the output of task b and c, if false loop over task d until true, perform task d before checkoing again ","Introduce a conditional gateway after tasks ""b"" and ""c"". If the condition evaluates to true, the process continues. If false, a loop is initiated, executing task ""d"" repeatedly until the condition becomes true.
+"
+38,False,False,I don't know. ,False
+39,False,False,"enter a new Xor after the second one, then the task D and then another XOR right before the endpoint. Only allow a connection from the last XOR to endpoint if true. If fals root back to the previous XOR",False
+40,True,False,"Two more checks are added after the second X. If the last condition is false, then the third condition will be evaluated again. ","Add two new checks after the second activity X.  If the last check's condition evaluates to false, then re-evaluate the third check.
+"
+41,True,False,"after the second exclusive gateway add another exclusive gateway. Then we result in task d. After task d add another exclusive gateway. If it results in true end, elsewise if false we go back to first exclusive gateway.","Insert an exclusive gateway after the second exclusive gateway. Connect this new gateway to Task D.  Add another exclusive gateway after Task D.  On the true path of this last gateway, end the process. On the false path, connect it back to the first exclusive gateway.
+"
+42,True,True,"Please add a new gateway after task D, that if true leads to completion and if false loops back to just before task D.","Embed task D in a post-conditional loop, with the condition evaluated after the task. If the condition is true, the process continues to completion, otherwise it loops back to task D.
+"
+43,True,False,Add an if statement. Before Task D if true run task D else not,"Introduce a conditional gateway before Task D. If the condition is met, execute Task D; otherwise, skip Task D.
+"
+44,False,False,Add another exclusive gateway following our second gateway. Connect this third exclusive gateway to another exclusive gateway through task D. the fourth exclusive gateways false condition is connected back to our third exclusive gateway while our true condition is connected to the end node. ,False
+45,True,True,"Please add two new selections before and after task D, task D will always be triggered, if tue selection get a false after task D, will go back to the last step of task D","Insert a new exclusive gateway before task D.  Insert a new exclusive gateway after task D. Connect the gateways such that task D is always executed.  On the second gateway, create a flow back to the activity immediately preceding task D, with the condition ""false"".  Create a flow forward from the second gateway with the condition ""true"".
+"
+46,True,False,"Only the “true ” result can come out, otherwise please always do the task D","Change the condition on an exclusive gateway so that only the ""true"" path is possible, and if that's not feasible, add a task ""D"" to the process model.
+"
+47,True,True,Replace task D by do-while-looping task D as long as a conditon is false,"Embed task D in a post-conditional loop with the specified condition.
+"
+48,True,False,Add a conditional Split after Task d. If true end. If false Loop back to Task d.,"Introduce a conditional gateway after Task d.  One outgoing path from the gateway should lead to the end of the process. The other outgoing path should loop back to Task d.
+"
+49,True,False,"add an X after task D, if true, endpoint, else return to state before task D","Insert an exclusive gateway after task D. If the condition is true, the process ends. If the condition is false, the process returns to the state before task D.
+"
+50,True,False,Please add an exclusive gateway at the end to repeat task D in case the result is false,"Embed task D in a post-conditional loop based on the condition ""result is false"".
+"
+51,True,False,"Add a new XOR branch to task D. Run task D. If false return to entry point of XOR branch, if true terminate.","Add a new exclusive gateway after task D.  If the condition is false, return to the exclusive gateway. If the condition is true, end the process.
+"
+52,True,True,add a loop for task D which is run through if a decision before D has the result false. D has to be executed at least once,"Embed task D in a loop that executes if the condition before D is false. Task D must execute at least once.
+"
+53,True,False,Add a joining or gate before task D which gets the input from the or gate after task D on the false path. The true path gets to the end state,"NA
+"
+54,True,False,"Exchange task D with the following elements. Create a loop with two XOR-Decision Gateways. Task D always follows the first gateway. If the second gateway evaluated as true, an end event follows. If the second gateway is evaluated as false, start again with the first gateway.","NA
+"
+55,True,False,"Insert a new XOR gateway after the first one, and move task D to the 'false' branch of this new gateway.","Add a new exclusive gateway after the first exclusive gateway.  Create a sequence flow from the first gateway to the new gateway.  Create two sequence flows from the new gateway: one with the condition 'true' leading to the existing target of the first gateway, and one with the condition 'false' leading to Task D.
+"
+56,True,True,Create a new xor and task D will be reached at least one time. When the xor get false from task D the task D will be repeated and if true gores to the end,"NA
+"
+57,True,False,"Add a true/false gateway after Task D in front of the End node, to repeate Task D if the condition is false and continue to the End Node if true ","Add a gateway after Task D. If the condition is true, continue to the End event. If the condition is false, return to Task D.
+"
+58,True,True,The task D will be run repeatedly if the last condition false. ,"Task D will be included in a post-conditional loop.
+"
+59,True,False,"Add a XOR before and after task D - if it's false go back to the firset XOR, if true continue to end the process.","Introduce an exclusive gateway before task D. On a false evaluation, create a loop back to the first exclusive gateway in the process.  A true evaluation leads to the end of the process.
+"
+60,True,True,Please add XOR to make a repeat circle around task D but keep task D as the normal task flow. ,"Embed task D in a loop with a conditional gateway before it.
+"
+61,True,False,"after decision of task b or respectively task c there is a new task d and a new evaluation  which either accounts to the result in case of true or in case of false, does task d and evaluates again","After tasks B and C, introduce a new task D.  Following task D, add a new evaluation gateway.  Based on the outcome of this gateway (true or false), either proceed with the existing flow or loop back to task D and the evaluation gateway.
+"
+62,True,True,Remove Task D. Add a loop before the end which is exited with True. In the Loop add task D such that it is executed before the loop check.,"Remove task D. Add a loop with task D inside the loop body before the loop condition which is set to ""True"".
+"
+63,True,True,"After the decision join, task D should be executed once. After that, if a certain condition is false, task D should be either done again, or the process should finish.","Task D is executed. If a condition is false, execute task D again, otherwise end the process.
+"
