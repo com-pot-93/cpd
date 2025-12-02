@@ -1,119 +1,66 @@
 ,mapping,epap,user,meaning
 0,False,False,k,False
-1,True,True,Merge the whole XOR and task D into a subprocess F.,"Extract task D and the exclusive gateway preceding it into a new subprocess called F.
-"
-2,True,True,change all to one subprocess F except the task A,"NA
-"
-3,True,True,create subprocess F and replace everything after task A with it,"Extract all steps after task A into a new subprocess called F.
-"
-4,False,False,"In the new model, after task A, there is one subprocess F.",False
-5,True,False,Keep only task A and let it follow a sub-process F.,"Remove all elements except task A and sub-process F, then connect sub-process F to task A.
-"
-6,True,True,"Combine tasks B, C, and D into subprocess F ","Extract tasks B, C, and D into a new subprocess called F.
-"
-7,True,False,"Remove the or-block of the input process model, including the two or-gates and both task B and C, and replace it with a task called 'subprocess F'. Furthermore remove task D. The resulting proces model only consists of the start and end event as well as task A followed by subprocess F.","Replace the exclusive gateway, tasks B and C, and the merging exclusive gateway with a new task called ""subprocess F"". Remove task D.
-"
-8,True,True,encapsulate everything after task A in subproces F,"Extract all tasks after task A into a new subprocess called F.
-"
-9,True,True,"Move everything after task a into a separate subprocess F, which then included the Or Condition,Task B, Task C and Task D","Extract tasks B, C, and D, along with the OR gateway following task A, into a new subprocess called ""F"".  The subprocess ""F"" will be placed after task A.
-"
-10,True,True,group everything except task a into a subprocess F,"Extract all tasks except Task A into a new subprocess called ""F"".
-"
-11,True,True,"Call the process coming after task A subprocess F, and while presenting the flow, use subprocess F for notation.","Extract the process fragment following task A into a new subprocess named ""Subprocess F"".
-"
-12,True,True,summarize everything after task a into subprocess f,"Extract all activities after task ""a"" into a new subprocess called ""f"".
-"
-13,True,True,remove the optional paths B and C as well as D and make a subprocess F out of them,"NA
-"
-14,True,False,Please replace the current condition with a subprocess F.,"NA
-"
-15,True,True,subprocess introduced for taskB and C incl. the boolean operator,Extract task B and C into a new subprocess.
-16,True,True,Summarize everything after task A into an Subprocess.,"Extract all tasks after Task A into a new subprocess.
-"
-17,True,False,"After 'task A' and before the 'end place', replace all elements with a transition 'subprocess F'.","Replace the sequence of elements between ""task A"" and the end event with a call activity referencing ""subprocess F"".
-"
-18,True,True,Introduce a subprocess F instead of all tasks after task A,"Extract all tasks after task A into a new subprocess called F.
-"
-19,True,True,Please summarize the xor section together with task D to a subprocess F and insert it into the model.,"Extract the XOR gateway, its two branches, and Task D into a new subprocess called ""F"".
-"
-20,True,False,embed XOR block containing tasks B and C as well as task D into complex task with label subprocess F,"Embed tasks B, C, and D, connected by an exclusive gateway, into a subprocess labeled ""F"".
-"
-21,True,False,"please only keep the start, end and task A in the model, and then add subprocess F after task A.","Remove all elements except start event, end event, and task A. Add subprocess F after task A.
-"
-22,True,True,Make everything besides task A into a subprocess F,"Extract all tasks except task A into a new subprocess called F.
-"
-23,True,True,Creating a subprocess for tasks b - d,"Extract tasks b, c, and d into a new subprocess.
-"
+1,True,True,Merge the whole XOR and task D into a subprocess F.,"A new collapsed Sub-Process named ""F"" is introduced into the process. This Sub-Process ""F"" encapsulates a specific fragment of the original process. This fragment consists of an exclusive gateway (XOR split), all its alternative sequence flows and the activities/events contained within them, the corresponding exclusive gateway (XOR join), and an additional task named ""D"" which immediately follows the XOR join. The original fragment is replaced by this single Sub-Process ""F""."
+2,True,True,change all to one subprocess F except the task A,NA
+3,True,False,create subprocess F and replace everything after task A with it,"A new subprocess named ""F"" is introduced into the process model. All elements and their associated sequence flows that previously followed ""Task A"" are removed. The sequence flow originating from ""Task A"" will now directly lead to the newly created ""Subprocess F""."
+4,True,False,"In the new model, after task A, there is one subprocess F.",NA
+5,True,False,Keep only task A and let it follow a sub-process F.,NA
+6,True,True,"Combine tasks B, C, and D into subprocess F ","Tasks B, C, and D are extracted from their current location and encapsulated within a new collapsed subprocess named F. The internal flow of subprocess F will contain tasks B, C, and D, maintaining their original sequence and connections."
+7,True,False,"Remove the or-block of the input process model, including the two or-gates and both task B and C, and replace it with a task called 'subprocess F'. Furthermore remove task D. The resulting proces model only consists of the start and end event as well as task A followed by subprocess F.","The process fragment consisting of an exclusive gateway that splits the flow to either Task B or Task C, followed by another exclusive gateway that merges these paths, is removed. Additionally, Task D is removed. This entire removed segment is then replaced by a single new element, 'subprocess F'. The resulting process flow is a simple sequence: Start Event, followed by Task A, then 'subprocess F', and finally the End Event."
+8,True,True,encapsulate everything after task A in subproces F,"The entire sequence of flow elements immediately following ""task A"" will be extracted and encapsulated within a new collapsed sub-process named ""F"". This new sub-process ""F"" will then be placed in the main process, directly after ""task A""."
+9,True,True,"Move everything after task a into a separate subprocess F, which then included the Or Condition,Task B, Task C and Task D","A new collapsed Sub-Process named 'F' is introduced into the process. This Sub-Process 'F' is placed immediately after 'task a'. The process fragment consisting of the 'Or Condition' (which is a gateway), 'Task B', 'Task C', and 'Task D', including their original sequence flows, is moved from the main process into the new Sub-Process 'F'."
+10,True,True,group everything except task a into a subprocess F,NA
+11,True,True,"Call the process coming after task A subprocess F, and while presenting the flow, use subprocess F for notation.",NA
+12,True,True,summarize everything after task a into subprocess f,"A new embedded subprocess named ""f"" is created. All tasks, events, and gateways that sequentially follow ""task a"" are moved inside this new subprocess ""f"". The flow from ""task a"" now leads to the new subprocess ""f""."
+13,True,True,remove the optional paths B and C as well as D and make a subprocess F out of them,NA
+14,False,False,Please replace the current condition with a subprocess F.,False
+15,True,True,subprocess introduced for taskB and C incl. the boolean operator,NA
+16,True,True,Summarize everything after task A into an Subprocess.,Extract the entire process fragment that starts with the direct successor(s) of 'Task A' and extends to the end of the process. Encapsulate this fragment within a new collapsed Sub-Process. The sequence flow originating from 'Task A' will now lead into this new Sub-Process.
+17,True,False,"After 'task A' and before the 'end place', replace all elements with a transition 'subprocess F'.","The process fragment between 'task A' and the 'end place' is replaced by 'subprocess F'. 'Task A' is now followed by 'subprocess F', which is then followed by the 'end place'."
+18,True,False,Introduce a subprocess F instead of all tasks after task A,The sequence of all tasks immediately following Task A is replaced by a new subprocess named 'F'. The process flow will now proceed from Task A directly into Subprocess F.
+19,True,True,Please summarize the xor section together with task D to a subprocess F and insert it into the model.,"A new collapsed sub-process named 'F' is created. This sub-process 'F' encapsulates an existing process fragment. This fragment consists of an exclusive gateway, all its diverging paths including their activities, the corresponding converging exclusive gateway, and the task 'D' which immediately follows this converging gateway. The original fragment is replaced by the new sub-process 'F' in the main process flow."
+20,True,True,embed XOR block containing tasks B and C as well as task D into complex task with label subprocess F,"The existing process fragment consisting of an exclusive (XOR) gateway that splits the flow to execute either Task B or Task C, followed by a converging exclusive (XOR) gateway, and then Task D, is extracted and encapsulated into a new collapsed sub-process labeled ""subprocess F""."
+21,True,False,"please only keep the start, end and task A in the model, and then add subprocess F after task A.","A new process fragment, `Subprocess F`, is inserted between `Task A` and the `End Event`."
+22,True,True,Make everything besides task A into a subprocess F,NA
+23,True,True,Creating a subprocess for tasks b - d,"A new embedded sub-process is created. Tasks 'b', 'c', and 'd' are moved from their current location into this new sub-process. The new sub-process replaces the original sequence of tasks 'b', 'c', and 'd' in the parent process flow."
 24,False,False,.,False
-25,True,True,Abstract the XOR fragment and task D into a subprocess F. ,"Extract task D and the XOR gateway into a new subprocess called F.
-"
-26,True,False,"Now directly after task A we have ""subprocess F"". Please delete all the rest. ","Delete all elements after subprocess F.
-"
+25,True,True,Abstract the XOR fragment and task D into a subprocess F. ,NA
+26,True,False,"Now directly after task A we have ""subprocess F"". Please delete all the rest. ","The process model will be modified to contain only a Task named ""A"" followed by a Subprocess named ""F"". All other existing elements in the process model, including any other tasks, events, gateways, data objects, pools, lanes, or subprocesses (other than 'F' itself), and their connecting flows, will be removed."
 27,False,False,"fuck the original process. create a new process with task A at the beginning, followed by subprocess F.",False
-28,True,True,transform everything except task A into a subprocess,"Extract all tasks except Task A into a new subprocess.
-"
-29,True,True,"Simplify the process to only show task A and the rest as ""subprocess F"".","Extract tasks B, C, D, and E into a new subprocess called ""subprocess F"".
-"
+28,True,True,transform everything except task A into a subprocess,A new sub-process is created that encapsulates all existing elements of the process except for 'task A'.
+29,True,True,"Simplify the process to only show task A and the rest as ""subprocess F"".","An existing fragment of the process, which originally followed ""task A"", is extracted and encapsulated within a new embedded sub-process named ""subprocess F"". The main process now shows ""task A"" followed by ""subprocess F""."
 30,False,False,"Please insert subprocess F after task A and remove task B, C and D",False
-31,True,True,"Store all operations after task A with a new task called ""subprocess F"".","Extract all tasks after task A into a new subprocess called ""subprocess F"".
-"
-32,True,False,Replace everything except task A with a subprocess F.,"Replace all elements after task A with a subprocess named F.
-"
-33,True,True,Display the process from the Split Gateway to the end of the process as subprocess F,"Extract the sequence of activities from the Split Gateway to the end of the process and encapsulate them in a new subprocess called ""F"".
-"
-34,True,False,After task A add subprocess F. Then end the process. Remove all other tasks.,"Insert subprocess F after task A. Delete all other tasks except task A and subprocess F.
-"
-35,True,True,"summarize tasks b,c and d and their paths in subprocess F ","NA
-"
-36,True,False,"instead of a condition to either b or c, we now have a subprocess F sequentially executed","Replace the exclusive gateway and its outgoing branches to activities B and C with a subprocess named F.
-"
-37,True,False,"replace the conditional logic and task d with ""subprocess F"" ","Replace task ""d"" with subprocess ""F"" and update the conditional logic preceding subprocess ""F"".
-"
+31,True,True,"Store all operations after task A with a new task called ""subprocess F"".","A new collapsed Sub-Process named 'subprocess F' is introduced immediately after task 'A'. This new Sub-Process encapsulates all the tasks, gateways, and events that originally followed task 'A' in the process."
+32,True,False,Replace everything except task A with a subprocess F.,NA
+33,True,True,Display the process from the Split Gateway to the end of the process as subprocess F,"The entire segment of the process, including all activities, gateways, and events, that follows the specified Split Gateway and continues until the process's termination, is extracted and encapsulated within a new embedded sub-process named ""F"". The Split Gateway in the main process will now have its outgoing sequence flow(s) directed to this new sub-process."
+34,False,False,After task A add subprocess F. Then end the process. Remove all other tasks.,False
+35,False,False,"summarize tasks b,c and d and their paths in subprocess F ",False
+36,True,False,"instead of a condition to either b or c, we now have a subprocess F sequentially executed","The existing process fragment, which involved a decision point leading to two alternative paths ('b' or 'c'), is replaced by a new Subprocess named 'F' that will be executed sequentially."
+37,True,False,"replace the conditional logic and task d with ""subprocess F"" ",NA
 38,False,False,I don't know. ,False
 39,False,False,create a new process flow with task A followed by subporcess F and then the endpoint,False
 40,False,False,Subprocess F follows task A. It seems to be black box. ,False
-41,True,False,delete everthying after task a and replace it with the subprocess F which results in the end,"Delete all elements after Task A and replace them with Subprocess F, which then leads to the end event.
-"
-42,True,False,Please replace everything after task A with subprocess F,"NA
-"
-43,True,True,Everything after task a is called subprocess F,"Extract all steps after task ""a"" into a new subprocess called ""F"".
-"
-44,True,True,put every process following task A into a subprocess called subprocess F,"Extract all tasks after task A into a new subprocess named ""subprocess F"".
-"
-45,True,False,Replace all process between task A and end state to a new subprocess F ,"Replace the process fragment between task A and the end state with subprocess F.
-"
-46,True,True,Encapsulating decision logic into a subprocess,"Extract a process fragment into a new subprocess.
-"
-47,True,True,Merge everythingt that comes after task A into a subprocess F,"Extract all tasks after task A into a new subprocess called F.
-"
-48,True,True,Abstract the process after Task a into subprocess F.,"Extract Task a and all subsequent tasks into a new subprocess called F.
-"
-49,True,False,substitute everything but task A and start-point and endpoint with a subprocess F,"Extract all activities between task A and the end event into a new subprocess called F.  Connect the start event, task A, subprocess F, and the end event in sequence.
-"
-50,True,False,replace everything behind task A with subprocess F.,"Replace the process fragment following Task A with Subprocess F.
-"
-51,True,False,Replace the whole XOR branch and task D with a subprocess called F.,"Replace task D and the XOR gateway preceding it with a subprocess called F.
-"
-52,True,False,replace everything After a exept the endevent with subprocess F,"Replace the fragment between activity ""a"" and the end event with subprocess ""F"".
-"
-53,True,False,"replace everything after taks A with ""subprocess F""","Replace the process fragment succeeding Task A with Subprocess F.
-"
-54,True,True,Create a new subprocess F that contains all elements between task A and task D,"Extract tasks B and C into a new subprocess named F, located between tasks A and D.
-"
-55,True,True,Merge tasks  except A into a new subprocess F,"NA
-"
-56,True,True,Compress the task other than task A in to sub process F,"Extract all tasks except task A into a new subprocess called F.
-"
+41,True,False,delete everthying after task a and replace it with the subprocess F which results in the end,"The sequence of activities, gateways, and events that currently follows 'task a' until the process end is removed. A new subprocess named 'F' is inserted immediately after 'task a', and this subprocess 'F' is then connected directly to the process end event."
+42,True,False,Please replace everything after task A with subprocess F,The entire process fragment that directly follows 'Task A' will be removed and replaced by 'Subprocess F'. The outgoing sequence flow from 'Task A' will now connect to 'Subprocess F'.
+43,True,True,Everything after task a is called subprocess F,"A new collapsed Sub-Process named ""F"" is introduced into the process. All tasks, events, gateways, and sequence flows that originally occurred after ""task a"" are moved into this new Sub-Process ""F"". The sequence flow that previously exited ""task a"" now enters Sub-Process ""F""."
+44,True,True,put every process following task A into a subprocess called subprocess F,"A contiguous sequence of activities, gateways, and events that immediately follow ""task A"" will be extracted and encapsulated within a new embedded sub-process named ""subprocess F"". The sequence flow from ""task A"" will now lead to ""subprocess F"", and the sequence flow previously exiting the extracted fragment will now exit ""subprocess F""."
+45,True,False,Replace all process between task A and end state to a new subprocess F ,"The entire process fragment, including all tasks, events, and gateways, that previously existed between 'task A' and the 'end state' will be removed. This fragment will be replaced by a new, single subprocess named 'F'. The process flow will now transition from 'task A' directly to 'subprocess F', and upon completion of 'subprocess F', the process will proceed directly to the 'end state'."
+46,True,True,Encapsulating decision logic into a subprocess,A fragment of the process that implements a decision and its subsequent alternative paths is extracted and encapsulated within a new subprocess.
+47,True,True,Merge everythingt that comes after task A into a subprocess F,"A new subprocess named 'F' will be created. All elements (tasks, gateways, events, and their connecting sequence flows) that occur after 'task A' will be moved into this new 'Subprocess F'. 'Task A' will now directly precede 'Subprocess F'."
+48,True,True,Abstract the process after Task a into subprocess F.,NA
+49,True,False,substitute everything but task A and start-point and endpoint with a subprocess F,NA
+50,True,False,replace everything behind task A with subprocess F.,The process fragment that begins immediately after task 'A' and includes all subsequent elements will be replaced by a new subprocess named 'F'.
+51,True,False,Replace the whole XOR branch and task D with a subprocess called F.,"The modification replaces a fragment of the process model with a new collapsed subprocess named 'F'. The fragment being replaced consists of an XOR split gateway, all its alternative outgoing paths (including all activities, events, and gateways within these paths), the corresponding XOR merge gateway that brings these paths back together, and the task 'D' which immediately follows this XOR merge gateway. The sequence flow that previously entered the XOR split gateway will now enter the new subprocess 'F', and the sequence flow that previously exited task 'D' will now exit from subprocess 'F'."
+52,True,False,replace everything After a exept the endevent with subprocess F,"The process fragment starting immediately after activity 'a' and extending up to, but not including, the final End Event of the process, is replaced by a new subprocess named 'F'."
+53,True,False,"replace everything after taks A with ""subprocess F""",The entire process fragment that follows 'Task A' is replaced by 'Subprocess F'. The sequence flow from 'Task A' will now lead directly into 'Subprocess F'.
+54,True,True,Create a new subprocess F that contains all elements between task A and task D,"A new collapsed subprocess named ""F"" is created. This subprocess encapsulates the existing process fragment that starts with Task A and ends with Task D, including Task A, Task D, and all intermediate flow elements and their connecting sequence flows. The sequence flow leading into Task A is now directed to the new subprocess F, and the sequence flow leading out of Task D now originates from the new subprocess F."
+55,True,False,Merge tasks  except A into a new subprocess F,NA
+56,True,True,Compress the task other than task A in to sub process F,NA
 57,True,True,"Put the whole Process Model except for Task A into a subprocess F keeping the Overall functionality resulting in an Output
-Process Model with Start -> Task A -> Subprocess F -> End","Extract all elements after Task A into a new subprocess called ""F"".
-"
-58,False,False,The output PM can only have two tasks. ,False
-59,True,True,"Simplify everything after task A but before the end of the process with ""subprocess F"".","Replace the process fragment between task A and the end event with a subprocess named ""subprocess F"".
-"
-60,True,True,Change the flow and put ecerything after Task A into a subprocess F,"Extract all steps after Task A into a new subprocess called F.
-"
-61,True,True,all tasks after task a are subprocess f,"Extract all tasks after task ""a"" into a new subprocess called ""f"".
-"
-62,False,False,Make a new process task A directly leads to subprocess F.,False
-63,True,False,Delete evertything after task A. Then add a subprocess F after A.,"Delete all elements after task A. Add subprocess F after task A.
-"
+Process Model with Start -> Task A -> Subprocess F -> End",NA
+58,True,False,The output PM can only have two tasks. ,NA
+59,True,False,"Simplify everything after task A but before the end of the process with ""subprocess F"".","The existing process fragment that starts immediately after ""task A"" and continues until the ""End Event"" of the process will be removed. This entire fragment will be replaced by a single element, ""subprocess F"". The outgoing sequence flow from ""task A"" will now lead to ""subprocess F"", and the outgoing sequence flow from ""subprocess F"" will lead to the ""End Event""."
+60,True,True,Change the flow and put ecerything after Task A into a subprocess F,"A new collapsed subprocess named ""F"" is introduced. All elements and their connecting sequence flows that logically follow ""Task A"" are moved into this new subprocess ""F"". The sequence flow that previously exited ""Task A"" now flows into subprocess ""F"", and the sequence flow that previously exited the last element of the extracted fragment now exits subprocess ""F""."
+61,True,True,all tasks after task a are subprocess f,"The process fragment consisting of all tasks and flow elements that sequentially follow 'task a' is extracted and encapsulated into a new embedded sub-process named 'subprocess f'. The sequence flow from 'task a' will now lead to the start of 'subprocess f', and the sequence flow exiting 'subprocess f' will connect to the element that originally followed the extracted fragment."
+62,True,False,Make a new process task A directly leads to subprocess F.,NA
+63,True,False,Delete evertything after task A. Then add a subprocess F after A.,"The process fragment that immediately follows ""Task A"" is removed and replaced by a new ""Subprocess F"" which is inserted directly after ""Task A""."

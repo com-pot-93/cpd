@@ -1,10 +1,9 @@
-graph LR
+flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->7:exclusivegateway:{x}
-7:exclusivegateway:{x}-->|condition is true|2:task:(task B)
-7:exclusivegateway:{x}-->|condition is false|3:task:(task C)
-2:task:-->4:exclusivegateway:{x}
-3:task:-->4:exclusivegateway:{x}
-4:exclusivegateway:{x}-->5:task:(task D)
-5:task:-->8:endevent:(((endevent)))
-
+1:task:(task A)-->9:exclusivegateway:{x}
+9:exclusivegateway:{x} --> |true| 10:task:(Task B)
+9:exclusivegateway:{x} --> |false| 11:task:(Task C)
+10:task:(Task B) --> 12:exclusivegateway:{x}
+11:task:(Task C) --> 12:exclusivegateway:{x}
+12:exclusivegateway:{x} --> 13:task:(Task D)
+13:task:(Task D)-->8:endevent:(((endevent)))

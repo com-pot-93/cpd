@@ -1,117 +1,66 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,i,False,False,0.0
-1,1,False,False,delete everything and create a new process with task A then task B then task D,False,False,0.0
-2,2,True,True,make the a condition path without the other values,"NA
-",True,0.6975124378109451
-3,3,True,False,replace everything between task A and task D with task B,"Remove all elements between task A and task D, then connect task A to task B and task B to task D.
-",True,1.0
-4,4,True,False,"In the new model, a completely new system that executes tasks A, B, C in sequence.","NA
-",True,0.6975124378109451
-5,5,True,False,"Delete all if-else-blocks to create one sequential process that only contains task A, task B and task D, in the respective order. ","Remove all gateway elements and outgoing connections and connect Task A to Task B and Task B to Task D sequentially.
-",True,1.0
-6,6,True,False,Delete conditions b and c from the model,"Remove conditions ""b"" and ""c"" from the process model.
-",True,0.8296918767507002
-7,7,True,False,Replace the whole block of or-gates and tasks with a single task B. Therefore the resulting process model only consists of task A followed by task B followed by task D.,"Replace the gateway and tasks between Task A and Task D with a single Task B.
-",True,1.0
-8,8,True,False,replace the or condition with only option a,"Change the gateway condition to only allow path ""a"".
-",True,0.9351351351351351
-9,9,True,False,"Simplify the chain, we only need task A, task B and task D in this order. We also do not need any if checks. So the chain should be Start-Task A- Task B- Task D - End","Remove all elements between the start and end events except for Task A, Task B, and Task D.  Connect the remaining elements sequentially.
-",True,1.0
-10,10,True,False,delete the gateway and all its tasks and replace the whole gateway with just the task b,"Replace the gateway and its branches with task 'b'.
-",True,1.0
-11,11,True,False,While coming from task A to task D remove all inner parts and replace it with task B. By doing so task A follow task B and task B follows task D. ,"Replace the process fragment between task A and task D with task B.
-",True,1.0
-12,12,True,False,"substitute everything in between the two xor gates to be task a, task b and task d in sequential order","Replace the process fragment between the two exclusive gateways with a sequence of Task A, Task B, and Task D.
-",True,0.748814463544754
-13,13,True,False,"remove all options and include only one path followed by task A, B and D sequentially","Remove all branches and gateways, leaving only a sequence of tasks A, B, and D.
-",True,1.0
-14,14,True,False,Please replace the condition with task B.,"NA
-",True,0.6975124378109451
-15,15,True,False,exklusive gateway was removed,"NA
-",True,0.6975124378109451
-16,16,True,True,delete the b and c Case in the OR Gateway and simplify the model.,"Remove tasks ""b"" and ""c"" and the outgoing sequence flows from the OR gateway.  Remove the OR gateway and its incoming sequence flow. Connect the incoming sequence flow of the original OR gateway directly to task ""a"". Remove the merge gateway following tasks ""a"", ""b"", and ""c"", and connect the outgoing sequence flow of task ""a"" directly to the subsequent element in the process.
-",True,1.0
-17,17,True,False,"Remove the everything within 'OR split' and 'OR join', including those operation nodes. Insert 'task B' between 'task A' and 'task C'. ","Replace the exclusive gateway and its converging gateway with ""Task B"" between ""Task A"" and ""Task C"".
-",True,0.9037080945794638
-18,18,True,False,Remove the choice for b and c and serialize the process,"Remove branches ""b"" and ""c"" and make the remaining branch ""a"" sequential.
-",True,1.0
-19,19,True,False,Please remove the xor and instead just insert a task B which is connected to task A and task D,"Replace the exclusive gateway with task B, connecting task A to task B and task B to task D.
-",True,0.0
-20,20,True,False,replace XOR block by task B,"Replace an exclusive gateway with a task named ""B"".
-",True,0.6661800486618004
-21,21,True,False,"please remove the entire xor gateway with all elements inside, then add task B after task A and before task D.","Remove the XOR gateway and all its outgoing branches. Add task B between task A and task D.
-",True,1.0
-22,22,True,True,remove the condition from the process model. Now only case a can happen but no condition is needed. So that task A --> task B --> task D,"Remove the exclusive gateway following Task A and connect Task A directly to Task B.  Remove the sequence flow from the exclusive gateway to Task C.  Remove Task C and the sequence flow connecting it to the merging gateway. Remove the merging gateway. Connect Task B directly to Task D.
-",True,0.8514324428958575
-23,23,True,False,Renoving the xor (or and?) Gate,"NA
-",True,0.6975124378109451
-24,24,False,False,.,False,False,0.0
-25,25,True,False,Replace the XOR fragment with task B. ,"Replace the exclusive gateway and its converging gateway with task B.
-",True,1.0
-26,26,True,False,Remove the exclusive gateway and tasks from the branches. Instead I just want to have task B. It should be executed directly after task A. ,"Task B follows directly after task A.
-",True,0.6975124378109451
-27,27,False,False,fuck the entire process. create a new process with task A followed by task B followed by task D,False,False,0.0
+0,0,False,False,i,False,False,0.6099502487562188
+1,1,True,False,delete everything and create a new process with task A then task B then task D,"The entire existing process is replaced by a new process consisting of a sequential flow of three tasks: Task A, followed by Task B, followed by Task D.",True,1.0
+2,2,True,True,make the a condition path without the other values,,True,1.0
+3,3,True,False,replace everything between task A and task D with task B,"The existing sequence of activities or events located between 'task A' and 'task D' will be removed. 'task B' will be inserted in its place, establishing a direct flow from 'task A' to 'task B', and subsequently from 'task B' to 'task D'.",True,1.0
+4,4,True,False,"In the new model, a completely new system that executes tasks A, B, C in sequence.",,True,1.0
+5,5,True,True,"Delete all if-else-blocks to create one sequential process that only contains task A, task B and task D, in the respective order. ",,True,1.0
+6,6,True,False,Delete conditions b and c from the model,,True,1.0
+7,7,True,False,Replace the whole block of or-gates and tasks with a single task B. Therefore the resulting process model only consists of task A followed by task B followed by task D.,"The process fragment located between Task A and Task D, which previously contained a block of OR-gates and tasks, is replaced by a single Task B. Task A is now directly followed by Task B, which is then directly followed by Task D.",True,1.0
+8,8,True,True,replace the or condition with only option a,,True,1.0
+9,9,True,False,"Simplify the chain, we only need task A, task B and task D in this order. We also do not need any if checks. So the chain should be Start-Task A- Task B- Task D - End","The process is modified by deleting Task C, any conditional gateways (e.g., Exclusive Gateways), and their associated sequence flows. The remaining sequence flows are reconnected to establish a direct sequential flow from the Start Event to Task A, then to Task B, then to Task D, and finally to the End Event.",True,1.0
+10,10,True,False,delete the gateway and all its tasks and replace the whole gateway with just the task b,,True,1.0
+11,11,True,False,While coming from task A to task D remove all inner parts and replace it with task B. By doing so task A follow task B and task B follows task D. ,"The process fragment between Task A and Task D is replaced by Task B. Task A is now followed by Task B, and Task B is followed by Task D.",True,1.0
+12,12,True,False,"substitute everything in between the two xor gates to be task a, task b and task d in sequential order",,True,1.0
+13,13,True,True,"remove all options and include only one path followed by task A, B and D sequentially",,True,1.0
+14,14,False,False,Please replace the condition with task B.,False,False,0.6099502487562188
+15,15,True,False,exklusive gateway was removed,,False,0.6099502487562188
+16,16,True,False,delete the b and c Case in the OR Gateway and simplify the model.,"The entire branches corresponding to ""case b"" and ""case c"" originating from the OR Gateway are removed from the process model.",True,0.8054054054054054
+17,17,True,False,"Remove the everything within 'OR split' and 'OR join', including those operation nodes. Insert 'task B' between 'task A' and 'task C'. ","The process fragment, including the 'OR split' gateway, all activities and sequence flows within its scope, and the 'OR join' gateway, which was previously located between 'task A' and 'task C', is entirely removed. This removed fragment is replaced by a new 'task B', such that 'task A' is now followed by 'task B', and 'task B' is followed by 'task C'.",True,0.9037080945794638
+18,18,True,True,Remove the choice for b and c and serialize the process,,True,0.9037080945794638
+19,19,True,False,Please remove the xor and instead just insert a task B which is connected to task A and task D,"The modification replaces the existing process fragment, which is initiated by an exclusive gateway (XOR) and includes all its subsequent decision paths and activities, with a single sequential activity, `Task B`. The flow from `Task A` will now directly lead to `Task B`, and `Task B` will then directly lead to `Task D`. All previous decision logic and alternative paths associated with the exclusive gateway are removed.",True,1.0
+20,20,True,False,replace XOR block by task B,"The existing process fragment, which consists of an exclusive gateway block, is replaced by a single task named ""Task B"".",True,1.0
+21,21,True,False,"please remove the entire xor gateway with all elements inside, then add task B after task A and before task D.",,True,1.0
+22,22,True,True,remove the condition from the process model. Now only case a can happen but no condition is needed. So that task A --> task B --> task D,,True,1.0
+23,23,True,False,Renoving the xor (or and?) Gate,,True,1.0
+24,24,False,False,.,False,False,0.6099502487562188
+25,25,True,False,Replace the XOR fragment with task B. ,,False,0.6099502487562188
+26,26,True,False,Remove the exclusive gateway and tasks from the branches. Instead I just want to have task B. It should be executed directly after task A. ,"The exclusive gateway and its subsequent tasks are removed. Task B is inserted directly after Task A, replacing the removed fragment.",True,1.0
+27,27,True,False,fuck the entire process. create a new process with task A followed by task B followed by task D,,True,1.0
 28,28,False,False,"recreate a new process model with task A -> task B -> task D
-",False,False,0.0
-29,29,True,True,"Simplify to only show path a, without gateways. ","NA
-",True,0.6975124378109451
-30,30,True,False,"After task A, only task B should be completed to get to Task D, so please remove the branches b and c","Remove branches leading to tasks B and C from the exclusive gateway following task A, and remove the corresponding merge gateway before task D.  Task B should now be the only task performed after A and before D.
-",True,1.0
-31,31,True,False,Delete both XOR gateways such that the sequence flow only goes from task A through task B into task D. ,"Remove the XOR gateways and connect task A to task B, and task B to task D sequentially.
-",True,1.0
-32,32,True,False,"Remove branches labeled ""b"" and ""c"" from the diagram.","Delete branches ""b"" and ""c"".
-",True,0.9351351351351351
-33,33,True,False,Remove the sequences executed If condition b or c ist Met aswell AS the Gateways which are the No longer necessary,"Delete the branches related to conditions ""b"" and ""c"" within a gateway, removing the associated gateways if they become redundant.
-",True,1.0
-34,34,False,False,Eemkve branch b and c,False,False,0.0
-35,35,True,False,only keep the upper part of the graph and execute them sequentially. ,"NA
-",True,0.6975124378109451
-36,36,True,False,"the tasks are now executed sequentially, instead of conditionally. the tasks c, e, f are now removed, the conditions also. ","Tasks C, E, and F are removed and the conditional gateway is replaced with a sequence flow.
-",True,1.0
-37,37,True,False,"make task a be followed by task b and then d, delete the other tasks and conditional checks ","Task A is followed by Task B and then by Task D. All other tasks and conditional checks are removed.
-",True,1.0
-38,38,False,False,I don't know. ,False,False,0.0
-39,39,False,False,"change the model to a flow with task a, task b and task d in a linear order. Remove all other tasks and XOR",False,False,0.0
-40,40,True,True,"Only the first case of the condition is considered. Possible other result paths, such as b or c are removed.","NA
-",True,0.6975124378109451
-41,41,True,False,delete everthying after task and let a follow task b which then results in d after which the process ends,"NA
-",True,0.6975124378109451
-42,42,True,True,Please remove the exclusive gateway and replace it with just task B,"NA
-",True,0.6975124378109451
-43,43,True,False,Remove the option for a b c and make task a task b task d,"Delete Entire Branch for activities b and c.
-",True,0.9351351351351351
-44,44,False,False,Create a new process that takes the tasks task A task B and task D and put them in the sequence A B and D,False,False,0.0
-45,45,True,False,Remove other states only keep task A B and C and keep them in a order ,"Keep tasks A, B, and C in sequence, removing all other elements.
-",True,1.0
-46,46,True,False,Delete all the judgements ,"NA
-",True,0.6975124378109451
-47,47,False,False,-,False,False,0.0
-48,48,True,True,Remove conditional Split and only leave Route a ,"Leave only the branch ""Route a"" in the conditional split.
-",True,0.8468749999999999
-49,49,True,True,"visualize the process only if option a is true, leave out the x.","NA
-",True,0.6975124378109451
-50,50,False,False,"Instead of the current flow, do task A, task B, and task D sequentially in this order.",False,False,0.0
-51,51,True,False,"Remove task E, task C and task F and make task A, task B and task D sequential.","Remove task C, task E, and task F, then connect task A, task B, and task D in sequence.
-",True,0.9079956188389924
-52,52,True,False,replace The XOR block with task B,"NA
-",True,0.6975124378109451
-53,53,True,True,remove the or gate and just keep task B between task A and task D,"Remove the OR gateway between Task A and Tasks B/C, and the merging OR gateway after Tasks B/C.  Connect Task A directly to Task B, and Task B directly to Task D. Remove Task C and all related connections.
-",True,0.8514324428958575
-54,54,False,False,"Create a new PM. That starts with task A, followed by task B, followed by task D, followed by an end event.",False,False,0.0
-55,55,True,False,"Delete tasks C, E, and F, and simplify the process to a linear flow with task A, task B, and task D.","Remove tasks C, E, and F.  Sequence tasks A, B, and D.
-",True,1.0
-56,56,True,True,Delete xor and only keep the branch A,"Leave only branch A in the XOR gateway.
-",True,0.9351351351351351
-57,57,True,False,"Remove the condition gateway and all Tasks except Task B to result in the following Output PM: Start, Task A, Task B, Task D, End","NA
-",True,0.6975124378109451
-58,58,True,False,Condition b and c are removed. ,"Remove conditions ""b"" and ""c"" from a gateway.
-",True,0.7435897435897436
-59,59,True,False,Remove the XORs and everything inside it except for task B.,"NA
-",True,0.6975124378109451
-60,60,True,False,Remove the xor options and xor them delves so that we only have task A to C in a chain,"Replace the exclusive gateway with a sequence flow, connecting Task A directly to Task B, and Task B directly to Task C.
-",True,0.7627337201805287
-61,61,True,True,delete decision to follow tasks in order: a b and c,"Remove the decision gateway that determines the order of tasks A, B, and C, making them sequential.
-",True,0.9037080945794638
-62,62,False,False,Make a new process Task A directly leads to task B directly leads to task D,False,False,0.0
-63,63,True,False,Delete the branches with condition c and with condition c.,"Delete the branches with condition c.
-",True,0.8296918767507002
+",False,False,0.6099502487562188
+29,29,True,True,"Simplify to only show path a, without gateways. ",,False,0.6099502487562188
+30,30,True,True,"After task A, only task B should be completed to get to Task D, so please remove the branches b and c","The current branching structure after Task A is eliminated. The process flow will now proceed directly from Task A to Task B, and then from Task B to Task D. All other branches (specifically 'b' and 'c') and their associated diverging and converging gateways between Task A and Task D are removed.",True,1.0
+31,31,True,False,Delete both XOR gateways such that the sequence flow only goes from task A through task B into task D. ,"The alternative branches controlled by the two XOR gateways are removed, and the XOR split and join gateways themselves are deleted, resulting in a direct sequence flow from Task A to Task B, and then from Task B to Task D.",True,1.0
+32,32,True,False,"Remove branches labeled ""b"" and ""c"" from the diagram.",,True,1.0
+33,33,True,False,Remove the sequences executed If condition b or c ist Met aswell AS the Gateways which are the No longer necessary,,True,1.0
+34,34,True,False,Eemkve branch b and c,,True,1.0
+35,35,True,True,only keep the upper part of the graph and execute them sequentially. ,,True,1.0
+36,36,True,False,"the tasks are now executed sequentially, instead of conditionally. the tasks c, e, f are now removed, the conditions also. ","The conditional branch containing tasks 'c', 'e', and 'f' is deleted, along with its associated conditions, resulting in a sequential execution flow instead of a conditional one.",True,0.7198879551820728
+37,37,True,False,"make task a be followed by task b and then d, delete the other tasks and conditional checks ","All tasks, except for task 'a', task 'b', and task 'd', are removed from the process. All gateways (conditional checks) are also removed. A direct sequence flow is then established from task 'a' to task 'b', and subsequently from task 'b' to task 'd'.",True,1.0
+38,38,False,False,I don't know. ,False,False,0.6099502487562188
+39,39,True,False,"change the model to a flow with task a, task b and task d in a linear order. Remove all other tasks and XOR","The branch containing Task C and the XOR gateway are removed, resulting in a linear flow from Task A to Task B, and then to Task D.",True,1.0
+40,40,True,False,"Only the first case of the condition is considered. Possible other result paths, such as b or c are removed.","The modification removes all outgoing sequence flows and their subsequent process elements from a conditional gateway, except for the sequence flow representing the first case. This effectively eliminates all alternative paths, ensuring the process always follows the single remaining path.",True,0.8974358974358974
+41,41,True,False,delete everthying after task and let a follow task b which then results in d after which the process ends,,True,0.8974358974358974
+42,42,True,False,Please remove the exclusive gateway and replace it with just task B,"The existing exclusive gateway in the process model is removed and replaced by a single task named ""Task B"".",True,0.0
+43,43,True,False,Remove the option for a b c and make task a task b task d,,True,0.0
+44,44,True,False,Create a new process that takes the tasks task A task B and task D and put them in the sequence A B and D,,True,0.0
+45,45,True,False,Remove other states only keep task A B and C and keep them in a order ,,True,0.0
+46,46,True,False,Delete all the judgements ,"The process fragment representing ""all the judgements"" is removed from the process model, including all its constituent tasks, gateways, events, and sequence flows. The remaining parts of the process are reconnected to maintain a valid and executable flow.",True,0.8814419225634178
+47,47,False,False,-,False,False,0.6099502487562188
+48,48,True,True,Remove conditional Split and only leave Route a ,"The conditional split gateway will be removed. All alternative routes except for 'Route a' will be eliminated. The process flow will now directly proceed through 'Route a', and any corresponding merge gateway for these routes will also be removed or bypassed.",True,1.0
+49,49,True,False,"visualize the process only if option a is true, leave out the x.",,True,1.0
+50,50,True,False,"Instead of the current flow, do task A, task B, and task D sequentially in this order.",,True,1.0
+51,51,True,False,"Remove task E, task C and task F and make task A, task B and task D sequential.","The tasks 'Task E', 'Task C', and 'Task F' are removed from the process. The remaining tasks 'Task A', 'Task B', and 'Task D' are reconnected to execute sequentially, meaning 'Task A' is followed by 'Task B', which is then followed by 'Task D'.",True,1.0
+52,52,True,False,replace The XOR block with task B,,True,1.0
+53,53,True,False,remove the or gate and just keep task B between task A and task D,"The exclusive or inclusive gateway and its corresponding join gateway between Task A and Task D are removed. All branches originating from this gateway, except for the one containing Task B, are deleted. Task A is then directly connected to Task B, which is directly connected to Task D, establishing a sequential flow.",True,1.0
+54,54,False,False,"Create a new PM. That starts with task A, followed by task B, followed by task D, followed by an end event.",False,False,0.6099502487562188
+55,55,True,False,"Delete tasks C, E, and F, and simplify the process to a linear flow with task A, task B, and task D.","Tasks C, E, and F are removed from the process. The process flow is reconfigured to be a simple sequence where Task A is followed by Task B, which is then followed by Task D.",True,1.0
+56,56,True,True,Delete xor and only keep the branch A,,True,1.0
+57,57,True,True,"Remove the condition gateway and all Tasks except Task B to result in the following Output PM: Start, Task A, Task B, Task D, End",,True,1.0
+58,58,True,False,Condition b and c are removed. ,,True,1.0
+59,59,True,True,Remove the XORs and everything inside it except for task B.,,True,1.0
+60,60,True,False,Remove the xor options and xor them delves so that we only have task A to C in a chain,,True,1.0
+61,61,True,False,delete decision to follow tasks in order: a b and c,,True,1.0
+62,62,True,False,Make a new process Task A directly leads to task B directly leads to task D,,True,1.0
+63,63,True,False,Delete the branches with condition c and with condition c.,,True,1.0

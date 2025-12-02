@@ -1,13 +1,11 @@
-```mermaid
-graph LR
-0:startevent:((startevent))-->1:exclusivegateway:{x}
-1:exclusivegateway:{x}-->|a != 1|2:exclusivegateway:{x}
-1:exclusivegateway:{x}-->|a == 1|8:task:(task D)
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->9:exclusivegateway:{x}
+9:exclusivegateway:{x}-->|a == 1|6:exclusivegateway:{x}
+9:exclusivegateway:{x}-->|a != 1|2:exclusivegateway:{x}
 2:exclusivegateway:{x}-->|true|3:task:(task B)
 2:exclusivegateway:{x}-->|false|5:task:(task C)
-3:task:(task B)-->4:exclusivegateway:{x}
-5:task:(task C)-->4:exclusivegateway:{x}
-4:exclusivegateway:{x}-->6:task:(task D)
-6:task:-->7:endevent:(((endevent)))
-8:task:-->7:endevent:
-```
+3:task:-->6:exclusivegateway:{x}
+5:task:-->6:exclusivegateway:
+6:exclusivegateway:{x}-->7:task:(task D)
+7:task:-->8:endevent:((endevent))

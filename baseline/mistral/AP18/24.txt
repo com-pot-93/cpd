@@ -1,0 +1,1 @@
+To assist you effectively, please provide the specific changes you would like to apply to the model. Once I have the details of the modifications, I can validate and transform the BPMN model accordingly while ensuring compliance with BPMN rules and Mermaid.js syntax.

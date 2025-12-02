@@ -1,10 +1,9 @@
 flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->7:subprocess:(subprocess F)
-7:subprocess:-->2:exclusivegateway:{x}
-2:exclusivegateway:-->|true path|3:task:(task B)
-2:exclusivegateway:-->|false path|4:task:(task C)
-3:task:-->5:exclusivegateway:{x}
-4:task:-->5:exclusivegateway:{x}
-5:exclusivegateway:-->6:task:(task D)
-6:task:-->8:endevent:((endevent))
+1:task:-->7:exclusivegateway:{x}
+7:exclusivegateway:{x}--> |true|9:task:(task B)
+7:exclusivegateway:{x}--> |false|10:task:(task C)
+9:task:-->11:exclusivegateway:{x}
+10:task:-->11:exclusivegateway:{x}
+11:exclusivegateway:{x}-->12:task:(task D)
+12:task:-->8:endevent:((endevent))

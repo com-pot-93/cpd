@@ -9,5 +9,5 @@ flowchart LR
 6:exclusivegateway:-->7:task:(task D)
 7:task:-->9:exclusivegateway:{x}
 9:exclusivegateway:-->|repeat|7:task:
-9:exclusivegateway:-->|done|8:endevent:(((endevent)))
+9:exclusivegateway:-->|condition met|8:endevent:(((endevent)))
 ```

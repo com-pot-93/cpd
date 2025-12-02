@@ -8,8 +8,8 @@ import pandas as pd
 sys.path.append("./round_trip")
 sys.path.append("./model_evaluation/")
 import bpmn_similarity
-from round_trip.llm_connect.sap_hub_call import generate_with_timeout
 from merson.merson_converter import mermaid_to_json
+
 def main_pipeline(llm):
     # Setup logging
     logging.basicConfig(
@@ -27,7 +27,6 @@ def main_pipeline(llm):
             print(filename)
             similarities = []
             meaning_status = []
-            stat = False
             meaning_sheet = pd.read_csv(file_name)
             meaning_prompts = meaning_sheet.iloc[:,4:]
             meaning_prompts = meaning_prompts['meaning'].to_list()
@@ -40,25 +39,27 @@ def main_pipeline(llm):
             for m in range(0,len(meaning_prompts)):
                 meaning = meaning_prompts[m]
                 if isinstance(meaning, str):
-                    if meaning != "NA":
+                    meaning = meaning.strip()
+                    if meaning != "NA" and meaning.lower() != "false":
                         stat = True
-                        generated = open("{}/{}.txt".format(output_dir,m), "r")
-                        generated_bpmn = generated.read()
-                        generated_json = json.loads(mermaid_to_json(generated_bpmn))
-                        try:
-                            similarity_score = bpmn_similarity.calculate_similarity_scores(
-                                expected_json, generated_json, method="dice", similarity_threshold=0.75
-                            )[0]["overall"]
-                        except:
-                            similarity_score = 0
-                    #else:
-                    #    similarity_score = 0
-                #else:
-                    #similarity_score = 0
+                    else:
+                        stat = False
+                    generated = open("{}/{}.txt".format(output_dir,m), "r")
+                    print("{}/{}.txt".format(output_dir,m))
+                    generated_bpmn = generated.read()
+                    #print("generated BPMN: ", generated_bpmn)
+                    generated_json = json.loads(mermaid_to_json(generated_bpmn))
+                    try:
+                        similarity_score = bpmn_similarity.calculate_similarity_scores(
+                            expected_json, generated_json, method="dice", similarity_threshold=0.95
+                        )[0]["overall"]
+                    except:
+                        similarity_score = 0
 
                 similarities.append(similarity_score)
-                meaning_status.appen(stat)
-            meaning_sheet['meaning_status'] = meaning_status    
+                meaning_status.append(stat)
+
+            meaning_sheet['meaning_status'] = meaning_status
             meaning_sheet['similarity'] = similarities
             meaning_sheet.to_csv("./m2m_similarity/{}/{}.csv".format(llm,pattern), encoding='utf-8')
 

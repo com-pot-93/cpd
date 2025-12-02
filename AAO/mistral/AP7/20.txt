@@ -1,6 +1,10 @@
 ```mermaid
 flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->7:subprocess:(subprocess F)
-7:subprocess:-->8:endevent:(((endevent)))
+1:task:-->7:exclusivegateway:{x}
+7:exclusivegateway:{x}-->|condition|9:task:(task B)
+7:exclusivegateway:{x}-->|!condition|10:task:(task C)
+9:task:-->11:task:(task D)
+10:task:-->11:
+11:task:-->8:endevent:(((endevent)))
 ```

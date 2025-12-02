@@ -1,9 +1,8 @@
-graph LR
+flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->2:parallelgateway:{AND}
-2:parallelgateway:{AND}-->3:task:(task X)
-2:parallelgateway:{AND}-->4:task:(task D)
-3:task:-->5:parallelgateway:{AND}
-4:task:-->5:parallelgateway:{AND}
-5:parallelgateway:{AND}-->6:endevent:(((endevent)))
-5:parallelgateway:{AND}-->7:task:(task D)
+1:task:(task A)-->9:parallelgateway:{AND}
+9:parallelgateway:{AND}-->10:task:(task X)
+9:parallelgateway:{AND}-->7:task:(task D)
+10:task:(task X)-->11:parallelgateway:{AND}
+7:task:(task D)-->11:parallelgateway:{AND}
+11:parallelgateway:{AND}-->8:endevent:((endevent))

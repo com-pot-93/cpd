@@ -1,113 +1,65 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,d,False,False,0.0
-1,1,True,True,replace task B with task E,"Replace task B with task E.
-",True,1.0
-2,2,True,True,change task B into task E,"Rename task B to task E.
-",True,1.0
-3,3,True,True,create task E and replace task B with task E,"Replace task B with task E.
-",True,1.0
-4,4,True,True,"In the new model, task B will be changed as task E. ","Rename task B to task E.
-",True,1.0
-5,5,True,True,Please substitute task B through task E.,"Replace the sequence of tasks from B to E with a new process fragment.
-",True,0.8571428571428571
-6,6,True,True,Replace task B with task E,"Replace task B with task E
-",True,1.0
-7,7,True,True,Replace task B with task E. Don't change anything else.,"Replace task B with task E.
-",True,1.0
-8,8,True,True,Remove task B with task E,"NA
-",True,1.0
-9,9,True,True,Replace task B with task e. We do not need task b but instead we need task e at the stage where task b was previously.,"Replace task B with task E.
-",True,1.0
-10,10,False,False,rename task b to task e,False,False,0.0
-11,11,True,True,replace task B with task E within the process while everything stays the same,"Replace task B with task E.
-",True,1.0
-12,12,True,False,switch in task e for task b,"NA
-",True,1.0
-13,13,True,True,replace task E for task B,"Replace task B with task E.
-",True,1.0
-14,14,True,True,Please replace task B with task E.,"Replace task B with task E.
-",True,1.0
-15,15,True,True,taskB get replaced by task E,"Replace task B with task E.
-",True,1.0
-16,16,True,True,Task B should be replaced by Task Ee,"Replace Task B with Task Ee.
-",True,1.0
-17,17,True,True,Replace 'task E' with 'task B'.,"Replace task E with task B.
-",True,1.0
-18,18,True,True,Replace task B with task E,"Replace task B with task E
-",True,1.0
-19,19,False,False,Please rename task B to task E,False,False,0.0
-20,20,True,True,replace task B by task E,"Replace task B with task E.
-",True,1.0
-21,21,False,False,please change the name of task B to task E,False,False,0.0
-22,22,True,False,Exchange task B with task E,"Swap task B and task E.
-",True,1.0
-23,23,True,True,Replacing tasl b with task e,"Replace task B with task E.
-",True,1.0
-24,24,False,False,rename task B to task E,False,False,0.0
-25,25,False,False,Rename task B to task E,False,False,0.0
-26,26,False,False,"Replace the label of ""task B"" with ""task E"". Do not make any other changes.",False,False,0.0
-27,27,True,True,replace task B with task E,"Replace task B with task E.
-",True,1.0
-28,28,False,False,Rename task B to task E,False,False,0.0
-29,29,False,False,Change the name of task B to task E.,False,False,0.0
-30,30,True,False,Task B has to be exchanged with Task E,"Swap Task B and Task E.
-",True,1.0
-31,31,True,True,"Change ""task B"" to ""task E"".","Rename ""task B"" to ""task E"".
-",True,1.0
-32,32,True,True,Replace task B by a new task E.,"Replace task B with task E.
-",True,1.0
-33,33,False,False,Change the Name of Task B to Task E,False,False,0.0
-34,34,True,True,Replace task B with task E,"Replace task B with task E
-",True,1.0
-35,35,True,True,replace task b with task e,"Replace Task B with Task E.
-",True,1.0
-36,36,True,True,"Task B is replaced by Task E, meaning a true task A, will execute a task E instead of a B","Task B is replaced with Task E.
-",True,1.0
-37,37,True,True,replace task b with task e with the same conditional logic ,"Replace task ""b"" with task ""e"", preserving the incoming and outgoing sequence flows and conditions.
-",True,1.0
-38,38,True,True,Replacing task B with task E. ,"Replace task B with task E.
-",True,1.0
-39,39,False,False,"change the text ""task B"" to ""task E""",False,False,0.0
-40,40,True,False,"Task E will be executed instead of task B, if condition X is true.  ","If condition X is true, execute task E instead of task B.
-",True,1.0
-41,41,True,True,replace task b with task e in the diagram,"Replace task ""b"" with task ""e"".
-",True,1.0
-42,42,True,True,Please replace task B with task E,"Replace task B with task E.
-",True,1.0
-43,43,True,False,Switch B to E,"NA
-",True,1.0
-44,44,False,False,"Change the name of ""task B"" to be ""task E"" ",False,False,0.0
-45,45,True,True,Please replace the task B with task E,"Replace task B with task E.
-",True,1.0
-46,46,False,False,Change the content of task B to E,False,False,0.0
-47,47,True,True,Change task B to task E,"Replace task B with task E.
-",True,1.0
-48,48,True,True,Change Task B to Task E,"Rename Task B to Task E
-",True,1.0
-49,49,True,True,replace task B with task E,"Replace task B with task E.
-",True,1.0
-50,50,True,True,please replace task B by task E,"Replace task B with task E.
-",True,1.0
-51,51,True,True,Replace task B with a new task called task E.,"Replace task B with task E.
-",True,1.0
-52,52,False,False,renametask B to E,False,False,0.0
-53,53,True,True,Replace task B with task E,"Replace task B with task E
-",True,1.0
-54,54,True,True,Exchange task B with a new task E.,"Replace task B with task E.
-",True,1.0
-55,55,True,True,Replace task B with a new task E in the 'true' branch of the XOR gateway.,"Replace task B with task E after the XOR gateway if the condition is true.
-",True,1.0
-56,56,False,False,Change the signature of task B to task E,False,False,0.0
-57,57,True,True,Replace Task B with Task ,"NA
-",True,1.0
-58,58,True,True,The task b is replaced with task E. ,"Replace task ""b"" with task ""E"".
-",True,1.0
-59,59,True,True,Replace task B with task E.,"Replace task B with task E.
-",True,1.0
-60,60,False,False,Please change task B to Task E,False,False,0.0
-61,61,True,False,exchange task b to task e,"Swap task B and task E.
-",True,1.0
-62,62,True,True,Replace Task B with Task E,"Replace Task B with Task E
-",True,1.0
-63,63,True,True,replace task b with a task e.,"Replace task ""b"" with task ""e"".
-",True,1.0
+0,0,False,False,d,False,False,0.863636363636364
+1,1,True,True,replace task B with task E,Task B is replaced by Task E. Task E will now be executed in the process flow at the exact location where Task B was previously.,True,1
+2,2,True,True,change task B into task E,The activity 'task B' is replaced by the activity 'task E'.,True,1
+3,3,True,True,create task E and replace task B with task E,Task B is removed from the process and replaced by Task E. Task E will inherit all incoming and outgoing sequence flows that were previously connected to Task B.,True,1
+4,4,True,True,"In the new model, task B will be changed as task E. ",The existing task 'B' in the process will be replaced by a new task 'E'.,True,1
+5,5,True,True,Please substitute task B through task E.,Task B is replaced by Task E.,True,1
+6,6,True,True,Replace task B with task E,"The existing ""Task B"" activity is removed from the process, and a new ""Task E"" activity is inserted in its place, inheriting all incoming and outgoing sequence flows and any associated elements.",True,1
+7,7,True,True,Replace task B with task E. Don't change anything else.,"The activity ""task B"" is replaced by a new activity ""task E"". The incoming and outgoing sequence flows of ""task B"" are now connected to ""task E"".",True,1
+8,8,True,True,Remove task B with task E,Task 'B' is removed from the process and replaced by task 'E'. Task 'E' will inherit all incoming and outgoing sequence flows that were previously connected to Task 'B'.,True,1
+9,9,True,True,Replace task B with task e. We do not need task b but instead we need task e at the stage where task b was previously.,"The existing task 'B' is removed from the process, and a new task 'e' is introduced in its place, inheriting the sequence flow connections of the original task 'B'.",True,1
+10,10,False,False,rename task b to task e,False,False,0.863636363636364
+11,11,True,True,replace task B with task E within the process while everything stays the same,"The existing Task B in the process is replaced by a new Task E. All incoming sequence flows that previously led to Task B will now lead to Task E, and all outgoing sequence flows that previously originated from Task B will now originate from Task E.",True,1
+12,12,True,True,switch in task e for task b,The existing task 'b' is replaced by a new task 'e'. Task 'e' will inherit all incoming and outgoing sequence flows that were previously connected to task 'b'.,True,1
+13,13,True,True,replace task E for task B,The existing task named 'E' will be replaced by a new task named 'B'. Task 'B' will inherit all incoming and outgoing sequence flows that were previously connected to task 'E'.,True,0.863636363636364
+14,14,True,True,Please replace task B with task E.,"The existing task named ""B"" is removed from the process and replaced by a new task named ""E"". All incoming and outgoing sequence flows that were connected to task ""B"" are now connected to task ""E"".",True,1
+15,15,True,True,taskB get replaced by task E,"The existing `taskB` in the process is removed, and `task E` is inserted in its place, inheriting all incoming and outgoing sequence flows that were previously connected to `taskB`.",True,1
+16,16,True,True,Task B should be replaced by Task Ee,The activity 'Task B' is replaced by the activity 'Task Ee'.,True,0.909090909090909
+17,17,True,True,Replace 'task E' with 'task B'.,The activity 'task E' is replaced by a new activity 'task B'. 'task B' will inherit all incoming and outgoing sequence flows that were previously connected to 'task E'.,True,0.863636363636364
+18,18,True,True,Replace task B with task E,"The task named ""B"" is removed from the process model and replaced by a new task named ""E"". Task ""E"" inherits all incoming and outgoing sequence flows that were previously connected to task ""B"".",True,1
+19,19,False,False,Please rename task B to task E,False,False,0.863636363636364
+20,20,True,True,replace task B by task E,"The existing task ""B"" in the process is removed and replaced by a new task ""E"" in the same position, inheriting its incoming and outgoing sequence flows.",True,1
+21,21,False,False,please change the name of task B to task E,False,False,0.863636363636364
+22,22,True,False,Exchange task B with task E,"The sequence flow position of Task B will be taken by Task E, and the sequence flow position of Task E will be taken by Task B.",True,1
+23,23,True,True,Replacing tasl b with task e,"The existing Task 'b' is removed from the process, and a new Task 'e' is inserted in its place, inheriting all incoming and outgoing sequence flows that were previously connected to Task 'b'.",True,1
+24,24,False,False,rename task B to task E,False,False,0.863636363636364
+25,25,False,False,Rename task B to task E,False,False,0.863636363636364
+26,26,False,False,"Replace the label of ""task B"" with ""task E"". Do not make any other changes.",False,False,0.863636363636364
+27,27,True,True,replace task B with task E,Task B is replaced by Task E.,True,1
+28,28,False,False,Rename task B to task E,False,False,0.863636363636364
+29,29,False,False,Change the name of task B to task E.,False,False,0.863636363636364
+30,30,True,False,Task B has to be exchanged with Task E,"The process fragment 'Task B' will be swapped with the process fragment 'Task E'. This means 'Task B' will inherit the position and sequence flow connections of 'Task E', and 'Task E' will inherit the position and sequence flow connections of 'Task B'.",True,1
+31,31,True,True,"Change ""task B"" to ""task E"".","The existing task named ""task B"" is replaced by a new task named ""task E"".",True,1
+32,32,True,True,Replace task B by a new task E.,"The existing task named ""B"" is removed from the process, and a new task named ""E"" is inserted in its place, inheriting all incoming and outgoing sequence flows that were previously connected to task ""B"".",True,1
+33,33,False,False,Change the Name of Task B to Task E,False,False,0.863636363636364
+34,34,True,True,Replace task B with task E,"The existing activity 'task B' is removed from the process and replaced by a new activity 'task E' at the same location, inheriting all incoming and outgoing sequence flows.",True,1
+35,35,True,True,replace task b with task e,"The existing `Task b` will be removed from the process and replaced by `Task e`. All incoming sequence flows to `Task b` will now be directed to `Task e`, and all outgoing sequence flows from `Task b` will now originate from `Task e`.",True,1
+36,36,True,True,"Task B is replaced by Task E, meaning a true task A, will execute a task E instead of a B","The activity ""Task B"" is replaced by the activity ""Task E"" in the process flow.",True,1
+37,37,True,True,replace task b with task e with the same conditional logic ,"The activity 'task b' is replaced by a new activity 'task e'. All incoming and outgoing sequence flows previously connected to 'task b' are now connected to 'task e'. Any condition expressions defined on these sequence flows, or on any boundary conditional events previously attached to 'task b', are preserved and applied to 'task e' or its new connections.",True,1
+38,38,True,True,Replacing task B with task E. ,"The existing task ""B"" is removed from the process and replaced by a new task ""E"" at the same location, maintaining all incoming and outgoing sequence flows.",True,1
+39,39,False,False,"change the text ""task B"" to ""task E""",False,False,0.863636363636364
+40,40,True,False,"Task E will be executed instead of task B, if condition X is true.  ","An exclusive gateway is introduced before Task B. If Condition X is true, Task E is executed. Otherwise, Task B is executed. The process continues after either Task E or Task B completes.",True,0.880651164241905
+41,41,True,True,replace task b with task e in the diagram,The existing task 'b' in the process will be removed and replaced by a new task 'e'. All incoming and outgoing sequence flows that were connected to task 'b' will now be connected to task 'e'.,True,1
+42,42,True,True,Please replace task B with task E,The existing 'Task B' in the process is removed and replaced by a new 'Task E'. 'Task E' inherits all incoming and outgoing sequence flows that were previously connected to 'Task B'.,True,1
+43,43,True,False,Switch B to E,The process fragment 'B' and the process fragment 'E' will exchange their positions in the process flow.,True,0.863636363636364
+44,44,False,False,"Change the name of ""task B"" to be ""task E"" ",False,False,0.863636363636364
+45,45,True,True,Please replace the task B with task E,"The existing task 'B' is removed from the process model, and a new task 'E' is inserted in its exact place. All incoming sequence flows that previously targeted 'B' will now target 'E', and all outgoing sequence flows that previously originated from 'B' will now originate from 'E'.",True,1
+46,46,True,True,Change the content of task B to E,The existing task named 'B' is replaced by a new task named 'E'.,True,1
+47,47,True,True,Change task B to task E,"The existing task named ""B"" is removed from the process and is replaced by a new task named ""E"" at the same location, inheriting all incoming and outgoing sequence flows.",True,1
+48,48,True,True,Change Task B to Task E,The existing Task B is replaced by a new Task E. All incoming and outgoing sequence flows previously connected to Task B are now connected to Task E.,True,1
+49,49,True,True,replace task B with task E,"The task ""B"" will be replaced by a new task ""E"".",True,1
+50,50,True,True,please replace task B by task E,"The existing task 'B' is removed from the process, and a new task 'E' is inserted in its place. All incoming and outgoing sequence flows that were connected to 'B' are now connected to 'E'.",True,1
+51,51,True,True,Replace task B with a new task called task E.,"The existing task named ""task B"" is removed from the process, and a new task named ""task E"" is inserted in its place, inheriting all incoming and outgoing sequence flows.",True,1
+52,52,False,False,renametask B to E,False,False,0.863636363636364
+53,53,True,True,Replace task B with task E,"The existing task named ""B"" is removed from the process and a new task named ""E"" is inserted in its place, inheriting all incoming and outgoing sequence flows.",True,1
+54,54,True,True,Exchange task B with a new task E.,"The existing task B is removed from the process model and a new task E is inserted in its place. All incoming sequence flows that previously led to task B will now lead to task E, and all outgoing sequence flows that previously originated from task B will now originate from task E.",True,1
+55,55,True,True,Replace task B with a new task E in the 'true' branch of the XOR gateway.,The task named 'B' in the 'true' branch of the XOR gateway is replaced by a new task named 'E'.,True,1
+56,56,True,True,Change the signature of task B to task E,"The existing task B is replaced by a new task E. Task E will inherit all incoming and outgoing connections (sequence flows, message flows, data associations) that were previously associated with task B.",True,1
+57,57,True,True,Replace Task B with Task ,,True,1
+58,58,True,True,The task b is replaced with task E. ,"The existing task 'b' is removed from the process, and the new task 'E' is inserted in its place, inheriting all incoming and outgoing sequence flows that were previously connected to task 'b'.",True,1
+59,59,True,True,Replace task B with task E.,"The existing task B is removed from the process and is replaced by a new task E. All incoming sequence flows to task B will now connect to task E, and all outgoing sequence flows from task B will now originate from task E.",True,1
+60,60,True,True,Please change task B to Task E,The activity 'Task B' is replaced by the activity 'Task E'.,True,1
+61,61,True,True,exchange task b to task e,The existing task 'b' in the process is replaced by a new task 'e'.,True,1
+62,62,True,True,Replace Task B with Task E,"The existing Task B is removed from the process, and a new Task E is inserted in its exact location, inheriting all its incoming and outgoing sequence flows.",True,1
+63,63,True,True,replace task b with a task e.,"The existing task named ""b"" is replaced by a new task named ""e"". Task ""e"" will inherit all incoming and outgoing sequence flows that were previously connected to task ""b"".",True,1

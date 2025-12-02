@@ -1,9 +1,8 @@
 flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->7:exclusivegateway:{x}
-7:exclusivegateway:{x}-->|condition evaluates to false|9:task:(task C)
-7:exclusivegateway:{x}-->|condition evaluates to true|10:task:(task B)
-9:task:-->11:exclusivegateway:{x}
-10:task:-->11:exclusivegateway:{x}
-11:exclusivegateway:{x}-->12:task:(task D)
-12:task:-->8:endevent:((endevent))
+1:task:-->2:exclusivegateway:{x}
+2:exclusivegateway:{x}--> |false|3:task:(task C)
+2:exclusivegateway:{x}--> |true|4:task:(task B)
+3:task:-->5:exclusivegateway:{x}
+4:task:-->5:exclusivegateway:{x}
+5:exclusivegateway:{x}-->8:endevent:((endevent))

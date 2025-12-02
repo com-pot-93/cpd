@@ -1,7 +1,0 @@
-```mermaid
-graph LR
-0:startevent:((startevent))-->1:task:(task A)
-1:task:-->2:task:(task b)
-2:task:-->7:task:(task D)
-7:task:-->8:endevent:(((endevent)))
-```

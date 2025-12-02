@@ -43,18 +43,20 @@ def main_pipeline(llm):
                    stat = True
                 else:
                    stat = False
-                print(row['mapping'],type(row['mapping']))
                 if row['mapping'] == False:
-                    temp = "{}".format(row['mapping'])   
+                    temp = "{}".format(row['mapping'])
                 elif row['meaning_status'] == False:
-                    temp = "{},{}".format(row['mapping'],row['meaning_status'])   
+                    temp = "{},{}".format(row['mapping'],row['meaning_status'])
                 else:
-                    temp = "{},{},{},{}".format(row['mapping'],row['meaning_status'],row['epap'],stat)   
+                    temp = "{},{},{},{}".format(row['mapping'],row['meaning_status'],row['epap'],stat)
                 mysum.append(temp)
             res = list(Counter(mysum).items())
+            res.remove((' ', 1))
+            res.sort(key=lambda x: x[0])
+            res.append(('',''))
             full.append(res)
-            
-    print(full) 
+
+    print(full)
     full = flatten_comprehension(full)
     summary = pd.DataFrame(full, columns =['1', 'count'])
     summary.to_csv("{}{}-general.csv".format(output_dir,llm), encoding='utf-8')

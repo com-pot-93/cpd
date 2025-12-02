@@ -1,66 +1,66 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,n,False,False,0.0
-1,1,True,True,delete the whole branch with condition c,Remove the entire branch with condition c.,True,1.0
-2,2,True,False,delete the c condition,,False,0.0
-3,3,True,True,"branch option c, along with all its tasks should be removed","Remove the entire branch option C, along with all its tasks.",True,1.0
-4,4,True,True,"In the new model, condition c, task E and task F should be deleted.","Delete condition c, task E, and task F.",True,1.0
-5,5,True,True,"Eliminate the branch that contains task E and task F. Ignore the possibility that task A can return ""c"". ",Remove the branch that contains task E and task F.,True,1.0
-6,6,True,False,Delete condition c from the model,,False,0.0
-7,7,True,True,In the input process model there are three pathways in the or-gate. Fully remove the path labeled with 'c' and all the tasks it consists of. The resulting output process model therefore only has the two paths 'a' and 'b' in the or-gate.,Remove the entire branch labeled with 'c' and all its tasks from the or-gate.,True,1.0
-8,8,True,True,Remove option c of the or condition,Remove the entire branch corresponding to option c of the OR condition.,True,1.0
-9,9,True,True,Remove Case if status after task A is „c“. We do not need the condition for c including all the task that would have been done exclusively there.,"Remove the entire branch that includes the condition for status ""c"" after task A, along with all tasks that would have been done exclusively in that branch.",True,1.0
-10,10,True,True,delete path c and its tasks from the model,Remove the entire branch labeled as path c and all its associated tasks from the model.,True,1.0
-11,11,True,False,"Add an alternate path for reaching X that is checking if X returns c. If X returns C, then move to task E and task F and finally the second X consequently. ","Embed a conditional branch that checks if X returns C. If X returns C, then move to task E, task F, and finally the second X consequently.",True,0.8476190476190476
-12,12,True,True,delete condition c and resulting tasks for first xor gate,,False,0.0
-13,13,True,True,remove option c ,,False,0.0
-14,14,True,True,Please remove the condition case c including task E and task F,Remove the condition case c including task E and task F.,True,1.0
-15,15,True,True,Branch c was removed,Removes single entire branch inside selected gateways and consequently flatten the hierarchy if necessary,True,1.0
-16,16,True,True,delete the c Case in the OR Gateway,"Remove the ""c Case"" branch in the OR Gateway.",True,1.0
-17,17,True,False,"Remove the transitions 'task E', 'task F' and their corresponding edges, including the edges annotations. ","Remove the transitions 'task E', 'task F' and their corresponding edges, including the edges annotations.",True,1.0
-18,18,True,True,Remove the path for choice = c,Delete the entire branch for choice = c.,True,1.0
-19,19,True,True,in the xor please remove the branch with the condition c from the model,Remove the branch with the condition c from the XOR gateway.,True,1.0
-20,20,True,True,remove alternative branch containing tasks E and F (no replacement by empty branch),Remove the alternative branch containing tasks E and F.,True,1.0
-21,21,True,True,please remove the branch for the xor gateway where condition is c and followed by task E and task F.,Remove the branch for the XOR gateway where the condition is C and followed by Task E and Task F.,True,1.0
-22,22,True,True,Remove case c of the condition as well as task E & F,Remove the third branch of the conditional gateway and delete tasks E and F.,True,1.0
-23,23,True,True,Removing option c,Delete the entire branch containing option c.,True,1.0
-24,24,False,False,.,False,False,0.0
-25,25,True,True,Remove the condition c branch in the XOR fragment. ,Remove the entire branch with condition c in the XOR fragment.,True,1.0
-26,26,True,False,"Add a new branch in the exclusive gateway, this one should be executed if it's case ""c"". In that case tasks with labels ""task E"" and ""task F"" should be executed.","Embed tasks ""task E"" and ""task F"" in a new conditional branch within the exclusive gateway, to be executed if the condition is ""case c"".",True,0.8025646357524088
-27,27,True,False,"add another branch to the XOR. the branch is taken when the condition is c and it has two tasks: first E, followed by F.","Embed a new conditional branch in the XOR gateway with the condition ""c"" that includes two tasks: first ""E"", followed by ""F"".",True,0.8639511564686483
-28,28,True,True,remove path c from the the exclusive gateway,Remove the entire branch corresponding to path c from the exclusive gateway.,True,1.0
-29,29,True,True,Remove path c.,Remove single entire branch inside selected gateways corresponding to path c.,True,1.0
-30,30,True,True,Please remove branch c including Task E and F,Remove the entire branch containing Task E and Task F.,True,1.0
-31,31,True,False,"Insert a third condition ""c"" for the first XOR gateway that includes two sequential tasks ""task E"" followed by ""task F"". This sequence flow terminates in the second XOR gateway.","Embed a new conditional branch in the first XOR gateway with the condition ""c"" that includes two sequential tasks ""task E"" followed by ""task F"", and terminates in the second XOR gateway.",True,0.8639511564686483
-32,32,True,True,"Remove branch with label ""c"" from the diagram.","Remove the branch with label ""c"" from the diagram.",True,1.0
-33,33,True,True,Remove the sequencen completely related to condition c being met,Remove the entire branch related to condition c being met.,True,1.0
-34,34,True,True,Remove branch c,,False,0.0
-35,35,True,True,Remove the path for the case of parameter c ,Remove the entire branch for the case of parameter c.,True,1.0
-36,36,True,True,"the tasks e and f are removed, it means there are only 2 conditions now, instead of 3",Delete the tasks e and f.,True,1.0
-37,37,True,True,"remove subtask e and f, also the conditional check for c ","Remove subtask e and f, also the conditional check for c.",True,1.0
-38,38,False,False,I don't know. ,False,False,0.0
-39,39,True,True,remove option c and the path completely,Delete the entire branch containing option c and its path.,True,1.0
-40,40,True,True,Path c (excluding task E and F) is removed. Only a and b are considered.,"Remove path c, excluding task E and F. Only paths a and b are considered.",True,1.0
-41,41,True,True,delete the path in the exclusive gateway which would happen for c,Remove the path in the exclusive gateway that leads to activity C.,True,0.9363888065951991
-42,42,True,False,Please remove the condition c from the exclusive gateway.,Update the condition c in the exclusive gateway.,True,0.8639511564686483
-43,43,True,False,And an third option c with task E and F ending the same option ,,False,0.0
+0,0,False,False,n,False,False,0.8639511564686483
+1,1,True,True,delete the whole branch with condition c,"Delete the entire branch that has the condition labeled ""c"".",True,1.0
+2,2,True,False,delete the c condition,"The condition ""c"" has been removed from the transition.",True,0.8639511564686483
+3,3,True,True,"branch option c, along with all its tasks should be removed","The branch option c, along with all its tasks, should be removed from the process model.",True,1.0
+4,4,True,True,"In the new model, condition c, task E and task F should be deleted.","Delete the branch containing condition c, task E, and task F.",True,1.0
+5,5,True,True,"Eliminate the branch that contains task E and task F. Ignore the possibility that task A can return ""c"". ",Eliminate the branch that contains task E and task F.,True,1.0
+6,6,True,False,Delete condition c from the model,"Delete the condition labeled ""c"" from the transition in the process.",True,0.8639511564686483
+7,7,True,True,In the input process model there are three pathways in the or-gate. Fully remove the path labeled with 'c' and all the tasks it consists of. The resulting output process model therefore only has the two paths 'a' and 'b' in the or-gate.,"Remove the entire branch labeled with 'c' and all its tasks from the or-gate, leaving only the branches labeled 'a' and 'b'.",True,1.0
+8,8,True,True,Remove option c of the or condition,Remove the branch corresponding to option c from the OR gateway.,True,1.0
+9,9,True,True,Remove Case if status after task A is „c“. We do not need the condition for c including all the task that would have been done exclusively there.,"Remove the branch that handles the case where the status is ""c"" after task A, including all tasks that are exclusively part of that branch.",True,1.0
+10,10,True,True,delete path c and its tasks from the model,"Delete the path labeled ""c"" and all tasks associated with it from the model.",True,1.0
+11,11,True,False,"Add an alternate path for reaching X that is checking if X returns c. If X returns C, then move to task E and task F and finally the second X consequently. ","An alternate path is added to check if X returns C. If X returns C, the process moves to task E, then task F, and finally to the second occurrence of X.",True,0.8476190476190476
+12,12,True,True,delete condition c and resulting tasks for first xor gate,Delete the branch corresponding to condition c and its resulting tasks from the first XOR gateway.,True,1.0
+13,13,True,True,remove option c ,,True,1.0
+14,14,True,True,Please remove the condition case c including task E and task F,"Remove the condition case c, including task E and task F.",True,1.0
+15,15,True,True,Branch c was removed,"Branch c was removed entirely from the process model, including all its activities and flows.",True,1.0
+16,16,True,True,delete the c Case in the OR Gateway,"Delete the entire branch related to the ""Case"" in the OR Gateway.",True,1.0
+17,17,True,False,"Remove the transitions 'task E', 'task F' and their corresponding edges, including the edges annotations. ",The transitions 'task E' and 'task F' along with their corresponding edges and edge annotations are removed from the process model.,True,1.0
+18,18,True,True,Remove the path for choice = c,"Remove the entire branch corresponding to the choice ""c"" within the selected gateway.",True,1.0
+19,19,True,True,in the xor please remove the branch with the condition c from the model,"Remove the branch with the condition ""c"" from the XOR gateway.",True,1.0
+20,20,True,True,remove alternative branch containing tasks E and F (no replacement by empty branch),The alternative branch containing tasks E and F has been removed.,True,1.0
+21,21,True,True,please remove the branch for the xor gateway where condition is c and followed by task E and task F.,"Remove the branch from the XOR gateway where the condition is ""c"" and the branch includes Task E and Task F.",True,1.0
+22,22,True,True,Remove case c of the condition as well as task E & F,"Remove the branch corresponding to case c, including task E and task F.",True,1.0
+23,23,True,True,Removing option c,,True,1.0
+24,24,False,False,.,False,False,0.8639511564686483
+25,25,True,True,Remove the condition c branch in the XOR fragment. ,Remove the branch associated with condition c in the XOR gateway.,True,1.0
+26,26,True,False,"Add a new branch in the exclusive gateway, this one should be executed if it's case ""c"". In that case tasks with labels ""task E"" and ""task F"" should be executed.","A new branch is added to the exclusive gateway, which will be executed if the condition is ""c"". In this case, ""task E"" and ""task F"" will be executed.",True,0.8639511564686483
+27,27,True,False,"add another branch to the XOR. the branch is taken when the condition is c and it has two tasks: first E, followed by F.","A new branch has been added to the XOR gateway. This branch is taken when the condition is ""c"" and it includes two tasks: first task E, followed by task F.",True,0.8639511564686483
+28,28,True,True,remove path c from the the exclusive gateway,"Remove the path labeled ""c"" from the exclusive gateway.",True,1.0
+29,29,True,True,Remove path c.,Remove the entire branch corresponding to path c.,True,1.0
+30,30,True,True,Please remove branch c including Task E and F,Remove the branch containing Task E and Task F.,True,1.0
+31,31,True,False,"Insert a third condition ""c"" for the first XOR gateway that includes two sequential tasks ""task E"" followed by ""task F"". This sequence flow terminates in the second XOR gateway.","A third condition ""c"" has been added to the first XOR gateway, which includes two sequential tasks ""task E"" followed by ""task F"". This sequence flow terminates in the second XOR gateway.",True,0.8639511564686483
+32,32,True,True,"Remove branch with label ""c"" from the diagram.","Remove the branch labeled ""c"" from the diagram.",True,1.0
+33,33,True,True,Remove the sequencen completely related to condition c being met,"Remove the entire sequence flow and activities associated with the condition ""c"" being met.",True,1.0
+34,34,True,True,Remove branch c,"Remove the entire branch labeled as ""c"" from the selected gateways and flatten the hierarchy if necessary.",True,1.0
+35,35,True,True,Remove the path for the case of parameter c ,Remove the path for the case of parameter c.,True,1.0
+36,36,True,True,"the tasks e and f are removed, it means there are only 2 conditions now, instead of 3","The branch containing tasks e and f is removed, resulting in only 2 remaining conditions instead of 3.",True,1.0
+37,37,True,True,"remove subtask e and f, also the conditional check for c ","Remove subtask e and subtask f, along with the conditional check for task c.",True,1.0
+38,38,False,False,I don't know. ,False,False,0.8639511564686483
+39,39,True,True,remove option c and the path completely,Remove the entire branch corresponding to option c and its associated path from the process model.,True,1.0
+40,40,True,True,Path c (excluding task E and F) is removed. Only a and b are considered.,"Path c is removed, leaving only paths a and b.",True,1.0
+41,41,True,True,delete the path in the exclusive gateway which would happen for c,"Delete the path in the exclusive gateway that leads to activity ""c"".",True,1.0
+42,42,True,False,Please remove the condition c from the exclusive gateway.,"Remove the condition ""c"" from the exclusive gateway.",True,0.8639511564686483
+43,43,True,False,And an third option c with task E and F ending the same option ,,True,0.8639511564686483
 44,44,True,True,"Our model currently includes two exclusive gateway nodes. the first exclusive gateway node connected to task A will hereinafter be reffered to as ""eg1"" while the second exclusive gateway node connected by task B as its true statement and task C and task F statement will hereinafter be referred to as ""eg2"". 
-Delete task E and task F from both exclusive gateway nodes. ",,False,0.0
-45,45,True,True,Remove selection path c and states E and F ,Remove the entire branch containing states E and F.,True,1.0
-46,46,True,False,Delete the situation c,,False,0.0
-47,47,True,False,Remove task E and task F and their repective control flow,Remove task E and task F and their respective control flow.,True,1.0
-48,48,True,True,Remove the c Route in the conditional Split ,"Remove the entire branch labeled ""c Route"" inside the conditional split.",True,1.0
-49,49,True,True,remove option c from the first X,,False,0.0
-50,50,True,True,remove the path for c at the exclusive gateway,Remove the entire branch for path C at the exclusive gateway.,True,1.0
-51,51,True,True,remove the c branch.,Remove the entire C branch.,True,0.9363888065951991
+Delete task E and task F from both exclusive gateway nodes. ",,True,0.8639511564686483
+45,45,True,True,Remove selection path c and states E and F ,"Remove the path labeled ""c"" and the states labeled ""E"" and ""F"".",True,1.0
+46,46,True,True,Delete the situation c,,True,1.0
+47,47,True,False,Remove task E and task F and their repective control flow,Remove task E and task F along with their respective control flow.,True,1.0
+48,48,True,True,Remove the c Route in the conditional Split ,"Remove the ""Route c"" branch in the conditional split.",True,1.0
+49,49,True,True,remove option c from the first X,Remove the entire branch corresponding to option c from the first exclusive gateway.,True,1.0
+50,50,True,True,remove the path for c at the exclusive gateway,"Remove the path for activity ""c"" at the exclusive gateway.",True,1.0
+51,51,True,True,remove the c branch.,"Remove the entire branch labeled ""c"" from the selected gateway.",True,1.0
 52,52,True,True,Remove The Branch with condition C from The XOR block,Remove the branch with condition C from the XOR block.,True,1.0
-53,53,True,True,remove the case c including the task E and task F,Remove the process fragment that includes Task E and Task F.,True,1.0
-54,54,True,True,"Remove the conditional path c with all its tasks (task E and task F). So that the first XOR Decision Gateway has only two possible paths (a, b).",Remove the conditional path c with all its tasks (task E and task F).,True,1.0
-55,55,True,True,remove branch c,"Remove the entire branch labeled as ""c"".",True,1.0
-56,56,True,False,Add condition c to the xor with task E followed by task F in the branch,,False,0.0
-57,57,True,False,Remove condition c and Both Tasks (E and F) Inside the case resulting in only two cases Splitting from the gateway ,"Remove condition c and both tasks (E and F) inside the case, resulting in only two cases splitting from the gateway.",True,1.0
-58,58,True,False,C condition is removed.  ,,False,0.0
-59,59,True,True,Remove branch c.,"Remove the entire branch labeled as ""c"".",True,1.0
-60,60,True,True,Remove option c from the xor flow,Remove the entire branch corresponding to option c from the XOR gateway.,True,1.0
-61,61,True,True,delete c as decision,,False,0.0
-62,62,True,True,remove the exclusive branch with condition c,Remove the exclusive branch with condition c.,True,1.0
-63,63,True,True,Delete the branch with condition c.,Remove the branch with condition c.,True,1.0
+53,53,True,True,remove the case c including the task E and task F,Remove the branch containing Task E and Task F from the process model.,True,1.0
+54,54,True,True,"Remove the conditional path c with all its tasks (task E and task F). So that the first XOR Decision Gateway has only two possible paths (a, b).","Remove the conditional path c along with task E and task F, leaving the first XOR Decision Gateway with only two possible paths: a and b.",True,1.0
+55,55,True,True,remove branch c,"Remove the entire branch labeled as ""c"" from the selected gateways and flatten the hierarchy if necessary.",True,1.0
+56,56,True,False,Add condition c to the xor with task E followed by task F in the branch,"A condition labeled ""c"" is added to the XOR gateway, leading to a branch that includes task E followed by task F.",True,0.8639511564686483
+57,57,True,True,Remove condition c and Both Tasks (E and F) Inside the case resulting in only two cases Splitting from the gateway ,"Remove the condition labeled ""c"" and the tasks labeled ""E"" and ""F"" from the process, resulting in only two branches splitting from the gateway.",True,1.0
+58,58,True,False,C condition is removed.  ,The condition on transition C is removed.,True,0.8639511564686483
+59,59,True,True,Remove branch c.,"Remove the entire branch labeled as ""c"" within the selected gateways and flatten the hierarchy if necessary.",True,1.0
+60,60,True,True,Remove option c from the xor flow,Remove the branch corresponding to option c from the XOR gateway.,True,1.0
+61,61,True,False,delete c as decision,"Remove the decision point labeled ""c"" from the process.",True,1.0
+62,62,True,True,remove the exclusive branch with condition c,"Remove the exclusive branch that has the condition ""c"".",True,1.0
+63,63,True,True,Delete the branch with condition c.,Delete the branch with condition c.,True,1.0

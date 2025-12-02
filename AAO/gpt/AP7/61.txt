@@ -1,0 +1,8 @@
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->2:task:(task B)
+2:task:-->3:task:(task C)
+3:task:-->4:task:(task D)
+4:task:-->5:task:(task E)
+5:task:-->6:task:(task F)
+6:task:-->8:endevent:((endevent))

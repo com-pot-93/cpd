@@ -1,9 +1,0 @@
-graph LR
-0:startevent:((startevent))-->1:task:(task A)
-1:task:-->2:parallelgateway:{AND}
-2:parallelgateway:-->3:task:(task D)
-2:parallelgateway:-->4:task:(task E)
-3:task:-->5:parallelgateway:{AND}
-4:task:-->5:parallelgateway:
-5:parallelgateway:-->6:endevent:(((endevent)))
-

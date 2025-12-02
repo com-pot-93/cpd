@@ -5,11 +5,15 @@ This repository contains evaluation tables and code for conversational model red
 
 [EAO](./EAO) : Expected Agent Output - process models that were used for the survey to obtain wording
 
+[baseline](./baseline) : contains directly adapted process models for each wording
+
 [derive](./derive) : contains derived meaning for each wording
 
 [identify](./identify) : contains identified pattern for each wording
 
 [input](./input) : Input Process Models - process models that were used for the survey to obtain wording. Models to which meaning is applied
+
+[m2m_baseline](./m2m_baseline) : contains for each wording similarity scores between each corresponding AAO (using baseline approach) and EAO
 
 [m2m_similarity](./m2m_similarity) : contains for each wording similarity scores between each corresponding AAO and EAO
 
@@ -29,8 +33,6 @@ For model-to-model comparison [model_evaluation](./model_evaluation) we utilise 
 
 
 Impotant: for privite use to make a call to the llm user requires own API key. 
-
-sap\_hub\_call.py example will not be possible to execute due to the credential restrictions, thus we provide example, how to make a call to open ai or mistral (see ask\_mistral.py or ask\_open\_ai.py).
 
 For more information rely on official documentation.
 

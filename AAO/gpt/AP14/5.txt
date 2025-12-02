@@ -5,6 +5,6 @@ flowchart LR
 2:exclusivegateway:-->|false|5:task:(task C)
 3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
-6:exclusivegateway:-->9:task:(task A')
+6:exclusivegateway:-->9:task:(task A´)
 9:task:-->7:task:(task D)
 7:task:-->8:endevent:((endevent))

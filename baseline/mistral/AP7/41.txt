@@ -1,0 +1,6 @@
+```mermaid
+flowchart LR
+8:endevent:(((endevent)))-->7:subprocess:(subprocess F)
+7:subprocess:-->1:task:(task A)
+1:task:-->0:startevent:((startevent))
+```

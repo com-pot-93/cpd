@@ -1,9 +1,6 @@
-```mermaid
-graph LR
+flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->3:task:(task B)
-3:task:-->5:task:(task C)
-5:task:-->7:task:(task D)
-7:task:-->8:endevent:(((endevent)))
-
-```
+1:task:(task A)-->11:task:(task B)
+11:task:(task B)-->12:task:(task C)
+12:task:(task C)-->7:task:(task D)
+7:task:(task D)-->8:endevent:((endevent))

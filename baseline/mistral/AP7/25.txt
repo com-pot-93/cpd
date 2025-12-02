@@ -1,0 +1,9 @@
+```mermaid
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->7:subprocess:(subprocess F)
+7:subprocess:-->9:exclusivegateway:{x}
+9:exclusivegateway:-->|condition 1|10:task:(task D)
+10:task:-->11:exclusivegateway:
+11:exclusivegateway:-->8:endevent:(((endevent)))
+```

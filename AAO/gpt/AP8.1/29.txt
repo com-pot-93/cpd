@@ -6,7 +6,7 @@ flowchart LR
 3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
 6:exclusivegateway:-->9:inclusivegateway:{O}
-9:inclusivegateway:-->|true|10:endevent:((endevent))
+9:inclusivegateway:-->|true|10:inclusivegateway:{O}
 9:inclusivegateway:-->|false|7:task:(task D)
-7:task:-->11:inclusivegateway:{O}
-11:inclusivegateway:-->9:inclusivegateway:
+7:task:-->9:inclusivegateway:
+10:inclusivegateway:-->8:endevent:((endevent))

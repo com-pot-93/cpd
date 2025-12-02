@@ -1,12 +1,4 @@
-graph LR
+flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->2:subprocess:(subprocess F)
-2:subprocess:-->3:task:(task E)
-3:task:-->4:endevent:(((endevent)))
-subgraph "F"
-5:exclusivegateway:{x}-->|true|6:task:(task B)
-5:exclusivegateway:-->|false|7:task:(task C)
-6:task:-->8:exclusivegateway:{x}
-7:task:-->8:exclusivegateway:
-8:exclusivegateway:-->9:task:(task D)
-end
+1:task:-->9:subprocess:(Sub-Process F)
+9:subprocess:-->8:endevent:((endevent))

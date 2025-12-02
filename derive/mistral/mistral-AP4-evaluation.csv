@@ -1,65 +1,69 @@
 ,mapping,epap,user,meaning
 0,False,False,d,False
-1,True,True,replace task B with task E,NA
-2,True,True,change task B into task E,NA.
-3,True,True,create task E and replace task B with task E,NA.
-4,True,True,"In the new model, task B will be changed as task E. ",NA.
-5,True,True,Please substitute task B through task E.,NA.
-6,True,True,Replace task B with task E,NA.
-7,True,True,Replace task B with task E. Don't change anything else.,"Replace the activity represented by task B with the activity represented by task E, while keeping the rest of the process unchanged."
-8,True,False,Remove task B with task E,NA
-9,True,True,Replace task B with task e. We do not need task b but instead we need task e at the stage where task b was previously.,Task B is removed and replaced with task E at the same stage in the process.
+1,True,True,replace task B with task E,"The modification means: ""Replace the existing task B in the process with a new task E."""
+2,False,False,change task B into task E,False
+3,True,True,create task E and replace task B with task E,The modification means: Create a new task labeled 'E' and replace the existing task 'B' with the new task 'E'.
+4,True,True,"In the new model, task B will be changed as task E. ","The task ""B"" is replaced with a new task called ""E""."
+5,True,True,Please substitute task B through task E.,Replace the sequence from task B through task E with a new process fragment.
+6,True,True,Replace task B with task E,The modification means: Remove task B from the process and add task E in its place.
+7,True,True,Replace task B with task E. Don't change anything else.,"The modification means: Remove task B from the process and insert task E in its place, while keeping all other parts of the process unchanged."
+8,True,True,Remove task B with task E,The modification means: Replace task B in the process with task E.
+9,True,True,Replace task B with task e. We do not need task b but instead we need task e at the stage where task b was previously.,"The modification means: Remove task B from the process model and insert task E in the same position where task B was located, maintaining the existing sequence flow connections."
 10,False,False,rename task b to task e,False
-11,True,True,replace task B with task E within the process while everything stays the same,"Replace the activity represented by task B with the activity represented by task E, maintaining all other aspects of the process unchanged."
-12,True,False,switch in task e for task b,NA
-13,True,True,replace task E for task B,NA
-14,True,True,Please replace task B with task E.,NA
-15,True,True,taskB get replaced by task E,NA
-16,True,True,Task B should be replaced by Task Ee,NA.
-17,True,True,Replace 'task E' with 'task B'.,NA
-18,True,True,Replace task B with task E,NA
-19,True,True,Please rename task B to task E,NA
-20,True,True,replace task B by task E,NA
-21,True,True,please change the name of task B to task E,NA
-22,True,False,Exchange task B with task E,NA
-23,True,True,Replacing tasl b with task e,NA.
+11,True,True,replace task B with task E within the process while everything stays the same,"The task ""B"" is replaced with a new task ""E"" within the process, while all other aspects of the process remain unchanged."
+12,True,False,switch in task e for task b,"The modification means that the position of task ""e"" and task ""b"" in the process model should be interchanged."
+13,True,True,replace task E for task B,The modification means: Replace task B in the process with task E.
+14,True,True,Please replace task B with task E.,Replace task B with task E.
+15,True,True,taskB get replaced by task E,"The task ""taskB"" is replaced by a new task called ""taskE""."
+16,True,True,Task B should be replaced by Task Ee,"The task ""B"" will be removed and replaced with the task ""Ee""."
+17,True,True,Replace 'task E' with 'task B'.,Replace the activity represented by 'task E' with a new activity represented by 'task B'.
+18,True,True,Replace task B with task E,"The task ""B"" is replaced by a new task ""E""."
+19,False,False,Please rename task B to task E,False
+20,True,True,replace task B by task E,The modification means: Replace the existing task B in the process with a new task E.
+21,False,False,please change the name of task B to task E,False
+22,True,False,Exchange task B with task E,"The meaning of the modification is: ""Replace task B with task E, and replace task E with task B."""
+23,True,True,Replacing tasl b with task e,"The clear meaning of the modification is:
+
+""Replace task 'B' with task 'E'."""
 24,False,False,rename task B to task E,False
 25,False,False,Rename task B to task E,False
 26,False,False,"Replace the label of ""task B"" with ""task E"". Do not make any other changes.",False
-27,True,True,replace task B with task E,NA
+27,True,True,replace task B with task E,"The clear meaning of the modification is:
+
+""Replace the existing task B in the process model with a new task E."""
 28,False,False,Rename task B to task E,False
 29,False,False,Change the name of task B to task E.,False
-30,True,False,Task B has to be exchanged with Task E,NA
-31,True,True,"Change ""task B"" to ""task E"".",NA
-32,True,True,Replace task B by a new task E.,Replace the existing task B with a new task E.
+30,True,False,Task B has to be exchanged with Task E,"The meaning of the modification is: ""Replace Task B with Task E, and replace Task E with Task B."""
+31,False,False,"Change ""task B"" to ""task E"".",False
+32,True,True,Replace task B by a new task E.,The modification means: Remove task B from the process model and add task E in its place.
 33,False,False,Change the Name of Task B to Task E,False
-34,True,True,Replace task B with task E,Replace the activity represented by task B with the activity represented by task E.
-35,True,True,replace task b with task e,NA.
-36,True,True,"Task B is replaced by Task E, meaning a true task A, will execute a task E instead of a B",NA.
-37,True,True,replace task b with task e with the same conditional logic ,NA.
-38,True,True,Replacing task B with task E. ,Replace the activity represented by task B with a new activity represented by task E.
-39,True,True,"change the text ""task B"" to ""task E""",NA.
-40,True,False,"Task E will be executed instead of task B, if condition X is true.  ",Task B is replaced with Task E when condition X is true.
-41,True,True,replace task b with task e in the diagram,NA
-42,True,True,Please replace task B with task E,NA.
-43,True,True,Switch B to E,NA
-44,True,True,"Change the name of ""task B"" to be ""task E"" ",NA
-45,True,True,Please replace the task B with task E,Replace task B with task E.
-46,True,True,Change the content of task B to E,NA.
-47,True,True,Change task B to task E,NA.
-48,True,True,Change Task B to Task E,NA.
-49,True,True,replace task B with task E,NA.
-50,True,True,please replace task B by task E,NA.
-51,True,True,Replace task B with a new task called task E.,NA
+34,True,True,Replace task B with task E,"The task ""B"" is replaced by a new task ""E""."
+35,True,True,replace task b with task e,"The task ""b"" is replaced with a new task ""e""."
+36,True,True,"Task B is replaced by Task E, meaning a true task A, will execute a task E instead of a B","The task ""B"" has been replaced by a new task ""E"". Therefore, after completing task ""A"", task ""E"" will be executed instead of task ""B""."
+37,True,True,replace task b with task e with the same conditional logic ,"The modification means: Replace the existing task ""Task B"" with a new task ""Task E,"" ensuring that the conditional logic associated with Task B is preserved and applied to Task E."
+38,True,True,Replacing task B with task E. ,The modification means: Replace the existing task B in the process with a new task E.
+39,False,False,"change the text ""task B"" to ""task E""",False
+40,True,False,"Task E will be executed instead of task B, if condition X is true.  ",Task E will be executed instead of task B when condition X is true.
+41,True,True,replace task b with task e in the diagram,"The task ""b"" will be removed and replaced with a new task ""e"" in the process diagram."
+42,True,True,Please replace task B with task E,The existing task B in the process will be removed and replaced with a new task E.
+43,False,False,Switch B to E,False
+44,False,False,"Change the name of ""task B"" to be ""task E"" ",False
+45,True,True,Please replace the task B with task E,The task B in the process is replaced by task E.
+46,False,False,Change the content of task B to E,False
+47,False,False,Change task B to task E,False
+48,False,False,Change Task B to Task E,False
+49,True,True,replace task B with task E,The modification means: Remove task B from the process and add task E in its place.
+50,True,True,please replace task B by task E,Replace task B with task E.
+51,True,True,Replace task B with a new task called task E.,The modification means: Remove the existing task B from the process and add a new task E in its place.
 52,False,False,renametask B to E,False
-53,True,True,Replace task B with task E,NA
-54,True,True,Exchange task B with a new task E.,NA
-55,True,True,Replace task B with a new task E in the 'true' branch of the XOR gateway.,Replace task B with a new task E in the 'true' branch of the XOR gateway.
-56,True,True,Change the signature of task B to task E,NA.
+53,True,True,Replace task B with task E,"The task ""B"" is replaced by a new task ""E""."
+54,True,True,Exchange task B with a new task E.,The modification means: Replace task B in the process with a new task E.
+55,True,True,Replace task B with a new task E in the 'true' branch of the XOR gateway.,The existing task B in the 'true' branch of the XOR gateway will be removed and replaced with a new task E.
+56,False,False,Change the signature of task B to task E,False
 57,True,True,Replace Task B with Task ,NA.
-58,True,True,The task b is replaced with task E. ,NA.
-59,True,True,Replace task B with task E.,Replace the activity represented by task B with the activity represented by task E.
-60,True,True,Please change task B to Task E,NA.
-61,True,True,exchange task b to task e,NA
-62,True,True,Replace Task B with Task E,Replace the activity represented by Task B with a new activity represented by Task E.
-63,True,True,replace task b with a task e.,NA
+58,True,True,The task b is replaced with task E. ,"The task ""b"" is replaced with task ""E""."
+59,True,True,Replace task B with task E.,The modification means: Replace the existing task B in the process with a new task E.
+60,False,False,Please change task B to Task E,False
+61,True,False,exchange task b to task e,"The modification means that the position of task ""b"" and task ""e"" in the process model should be swapped."
+62,True,True,Replace Task B with Task E,The modification means: Replace the existing Task B in the process with a new Task E.
+63,True,True,replace task b with a task e.,"The modification means: Replace the existing task ""b"" with a new task ""e"" in the process model."

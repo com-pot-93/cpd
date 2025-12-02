@@ -5,7 +5,8 @@ flowchart LR
 2:exclusivegateway:-->|false|5:task:(task C)
 3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
-6:exclusivegateway:-->9:exclusivegateway:{x}
-9:exclusivegateway:-->|false|7:task:(task D)
-7:task:-->9:exclusivegateway:
-9:exclusivegateway:-->|true|8:endevent:((endevent))
+6:exclusivegateway:--> 9:inclusivegateway:{O}
+9:inclusivegateway:--> 7:task:(task D)
+7:task:-->10:inclusivegateway:{O}
+10:inclusivegateway:-->|true|8:endevent:((endevent))
+10:inclusivegateway:-->|false|9:inclusivegateway:

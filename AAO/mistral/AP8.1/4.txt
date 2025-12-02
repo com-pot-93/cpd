@@ -6,6 +6,9 @@ flowchart LR
 2:exclusivegateway:-->|false|5:task:(task C)
 3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
-6:exclusivegateway:--> 7:task:(task D)
-7:task:-->8:endevent:(((endevent)))
+6:exclusivegateway:-->|true|9:exclusivegateway:{x}
+6:exclusivegateway:-->|false|9:exclusivegateway:
+9:exclusivegateway:-->7:task:(task D)
+7:task:-->|false|9:
+7:task:-->|true|8:endevent:(((endevent)))
 ```
