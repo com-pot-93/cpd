@@ -1,0 +1,7 @@
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->2:exclusivegateway:{x}
+2:exclusivegateway:-->|true|4:exclusivegateway:{x}
+2:exclusivegateway:-->|false|4:exclusivegateway:
+4:exclusivegateway:-->3:subprocess:(subprocess F)
+3:subprocess:(subprocess F)-->8:endevent:((endevent))

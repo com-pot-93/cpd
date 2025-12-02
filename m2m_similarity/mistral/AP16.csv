@@ -1,107 +1,65 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,p,False,False,0.0
-1,1,True,True,"Merge ""task B"" and ""task E"" into one task called ""task B & E"".","Task B and Task E are combined into a single task named ""Task B & E"".",True,1.0
-2,2,True,False,combine the task B and E into one,"Sure, here is the combined task B and E:
-
-**Task B and E:**
-
-**Input:**
-
-**Existing Process:**
-
-```
-Start Event
-   |
-Task A
-   |
-Exclusive Gateway (Diverging)
-   |
-   |-- Task B -- Task C
-   |
-   |-- Task D -- Task E
-   |
-Converging Exclusive Gateway
-   |
-End Event
-```
-
-**User Modifications:**
-
-1. ""Insert a new task 'Task F' between 'Task A' and the exclusive gateway.""
-2. ""Embed 'Task C' in a post-conditional loop.""
-3. ""Replace 'Task D' with 'Task G'.""
-4. ""Swap the branches following the exclusive gateway.""
-5. ""Update the condition for the branch containing 'Task G' to 'Condition X'.""
-
-**Output:**
-
-1. ""A new task 'Task F' is added between 'Task A' and the exclusive gateway.""
-2. ""NA""
-3. ""'Task D' is replaced with 'Task G'.""
-4. ""The branch containing 'Task B -- Task C' is swapped with the branch containing 'Task G -- Task E'.""
-5. ""The condition for the branch containing 'Task G' is updated to 'Condition X'.""",True,0.8247337225366548
-3,3,True,True,"task B and task E should be summarized to task B & E, while remaining on their branch",NA.,True,0.9363888065951991
-4,4,True,False,"In the new model, the system executes tasks B and E simultaneously.",Tasks B and E are now executed in parallel.,True,0.7727522575579112
-5,5,True,True,Consolidate the two individual modules task B and task E into one combined module of task B and task E.,NA.,True,0.9363888065951991
-6,6,True,True,Join tasks B and E together,NA.,True,0.9363888065951991
-7,7,True,True,Merge task B and task E into one single task called 'task B & E'. The rest stays the same.,Task B and task E are combined into a single task named 'task B & E'.,True,1.0
-8,8,True,True,Merge task B and task E into task B&E,NA.,True,0.9363888065951991
-9,9,True,False,Combine task B and Task E. Task b and e should be done together and not separately so merge those two,NA.,True,0.9363888065951991
-10,10,True,True,group task b and e into one task called task B & E,NA.,True,0.9363888065951991
-11,11,True,True,"Instead of task B and task E being separately notated in the flow, group them into one group called task B& E. After task B&E, move forward to X similarly to the previous structure. ",NA.,True,0.9363888065951991
-12,12,False,False,summarize task b and task e into single task b&e,False,False,0.0
-13,13,True,True,merge tasks B and E into one singel task,NA.,True,0.9363888065951991
-14,14,False,False,Please summarize task B and task E in one task task B&E,False,False,0.0
-15,15,False,False,same as above vice versa ,False,False,0.0
-16,16,True,True,sum up Task B and E into one task,"Combine the tasks ""Review Vendor Proposal"" and ""Evaluate Vendor Proposal"" into a single task.
-
-NA",True,0.9363888065951991
-17,17,False,False,"Remove 'task E' and its edges. Replace  ''task B"" with 'task B & E' . ",False,False,0.0
-18,18,False,False,Jokn task B and task E,False,False,0.0
-19,19,True,False,please summarize task B and task E into one task named: task B & E,"Sure, here is the summarized task B & E:
-
-**Task B & E:** Mapping each modification to a predefined change pattern and deriving the actual meaning of the modification based on BPMN semantics and the intent of the change pattern.",True,1.0
-20,20,True,False,replace sequence of task B and task E by task with label task B & E,,False,0.0
-21,21,True,True,please merge task B and task E into one task under the name of task B & E.,,False,0.0
-22,22,True,True,divide task B & E into one task. ,NA.,True,0.9363888065951991
-23,23,False,False,Not sure,False,False,0.0
-24,24,False,False,.,False,False,0.0
-25,25,True,True,Abstract task B and E into task B & E. ,,False,0.0
-26,26,True,False,"Replace ""task B"" and ""task E"" with a new task called ""task B & E""",,False,0.0
-27,27,True,True,merge the tasks B and E into a single taskk called 'task B & E',NA.,True,0.9363888065951991
-28,28,True,True,combine task B and task E to one task B & E,NA.,True,0.9363888065951991
-29,29,True,False,"Combine task B and E to one task called ""task B & E"".",NA.,True,0.9363888065951991
-30,30,True,True,Task B and Task E should be summarized as one task B & E,,False,0.0
-31,31,True,True,"Merge ""task B"" and ""task B"" into on task called ""task B & E"".",,False,0.0
-32,32,True,True,Merge tasks B and E into one task labeled B & E.,,False,0.0
-33,33,True,True,Merge Task B and Task E into Task B&E,,False,0.0
-34,34,True,False,Combine task B and E into one process,NA.,True,0.9363888065951991
-35,35,True,True,Merge Tasks B and E into one task instead of executing sequentially ,AP16,True,0.0
-36,36,True,False,"the task b and e are executed at the same time, not sequentially",NA.,True,0.9363888065951991
-37,37,False,False,perform task b and e together ,False,False,0.0
-38,38,False,False,I don't know. ,False,False,0.0
-39,39,True,False,replace task b and task E with a new task B & E,,False,0.0
-40,40,True,False,Task B and E are joined together to be executed at the same time if the conditions X is true. ,Parallelize Task B and Task E to execute them concurrently when condition X is true.,True,0.7727522575579112
-41,41,True,False,reverse the action from the previuos question,NA.,True,0.9363888065951991
-42,42,True,False,Please execute task B and task E together. ,,False,0.0
-43,43,True,False,Combine Task B and E in one,,False,0.0
-44,44,True,True,Merge task B and task E into one task called task B & E ,,False,0.0
-45,45,True,False,Combine task b and task e together as one state ,NA.,True,0.9363888065951991
-46,46,True,False,Process B and C at the same time,AP9,True,0.9169262720664589
-47,47,True,True,Merge task B % E to one task,,False,0.0
-48,48,True,True,Merge Task b and Task e into one task,NA.,True,0.9363888065951991
-49,49,True,True,combine task B and task E to one task called task B & E,NA.,True,0.9363888065951991
-50,50,True,True,"combine ""task B"" and ""task E"" into ""task B & E""",NA.,True,0.9363888065951991
-51,51,True,False,Make task B and task E parallel.,"Task B and task E will now be executed simultaneously in parallel, rather than sequentially.",True,0.7727522575579112
-52,52,True,False,rename Task B to Task B&E. Remove task E.,,False,0.0
-53,53,True,True,join task B and task E into one single task B&E,,False,0.0
-54,54,True,True,Merge task B and task E in one task called task B & E. And replace task B and task E with the new merged task.,NA.,True,0.9363888065951991
-55,55,True,True,Merge task B and task E in the true branch into a single composite task labeled 'task B & E'.,The tasks B and E in the true branch will be combined into a single composite task named 'task B & E'.,True,1.0
-56,56,True,False,Change the sequence taskB then task E to combination task B&E,NA.,True,0.9363888065951991
-57,57,True,False,Combine Tasks B and E into one Task B & E,,False,0.0
-58,58,False,False,Task b and e are summarized together. ,False,False,0.0
-59,59,True,True,"Merge ""task B"" and ""task E"" into one called ""task B &E"".",,False,0.0
-60,60,True,False,Combine task B and task E into task B&E,NA.,True,0.9363888065951991
-61,61,True,True,do task b and task e as one step,"Sure, I can combine tasks (b) and (e) to map each modification to a predefined change pattern and ensure compliance with BPMN modeling rules and the structure of the existing process. Please provide the user-provided modifications to the BPMN process model.",True,1.0
-62,62,False,False,Add task B & E after Task E. Remove Task B. Remove Task E.,False,False,0.0
-63,63,False,False,"Delete task E. Rename task B to task B&E. (Again, from POV of execution joining makes no sense).",False,False,0.0
+0,0,False,False,p,False,False,0.8087860400642255
+1,1,True,True,"Merge ""task B"" and ""task E"" into one task called ""task B & E"".","The modification means that the separate tasks ""task B"" and ""task E"" will be combined into a single task named ""task B & E"".",True,1.0
+2,2,True,False,combine the task B and E into one,NA.,True,0.8087860400642255
+3,3,True,True,"task B and task E should be summarized to task B & E, while remaining on their branch","The modification means that task B and task E, which are currently separate tasks on their branch, should be combined into a single task named ""Task B & E"" while keeping their position on the same branch in the process model.",True,1.0
+4,4,True,False,"In the new model, the system executes tasks B and E simultaneously.","The modification means that tasks B and E, which were previously executed sequentially, will now be performed concurrently in the new model.",True,0.7334903808402042
+5,5,True,True,Consolidate the two individual modules task B and task E into one combined module of task B and task E.,The modification means that the separate tasks B and E will now be combined into a single task that includes both B and E.,True,0.8636363636363636
+6,6,True,True,Join tasks B and E together,,True,0.8636363636363636
+7,7,True,True,Merge task B and task E into one single task called 'task B & E'. The rest stays the same.,The modification means that the activities represented by task B and task E will now be combined into a single activity named 'task B & E'.,True,1.0
+8,8,True,True,Merge task B and task E into task B&E,The modification means that the separate tasks B and E will be combined into a single new task named B&E.,True,1.0
+9,9,True,False,Combine task B and Task E. Task b and e should be done together and not separately so merge those two,"The modification means that Task B and Task E, which were previously executed sequentially, should now be performed in parallel.",True,0.6953278366705928
+10,10,True,True,group task b and e into one task called task B & E,"The tasks ""b"" and ""e"" will be combined into a single task named ""Task B & E"".",True,1.0
+11,11,True,True,"Instead of task B and task E being separately notated in the flow, group them into one group called task B& E. After task B&E, move forward to X similarly to the previous structure. ","The modification means that the separate tasks B and E will now be combined into a single task named ""B&E"". After completing task ""B&E"", the process will proceed to task X, following the same sequence as before.",True,0.8937277578444173
+12,12,False,False,summarize task b and task e into single task b&e,False,False,0.8087860400642255
+13,13,True,True,merge tasks B and E into one singel task,The modification means that the separate tasks B and E will be combined into a single task within the process model.,True,0.8636363636363636
+14,14,False,False,Please summarize task B and task E in one task task B&E,False,False,0.8087860400642255
+15,15,False,False,same as above vice versa ,False,False,0.8087860400642255
+16,16,True,True,sum up Task B and E into one task,The modification means that Task B and Task E will be combined into a single task.,True,0.8636363636363636
+17,17,True,False,"Remove 'task E' and its edges. Replace  ''task B"" with 'task B & E' . ","The modification means: ""Remove 'task E' and its connecting edges from the process. Replace 'task B' with a new task labeled 'task B & E'.""",True,1.0
+18,18,True,False,Jokn task B and task E,,True,1.0
+19,19,False,False,please summarize task B and task E into one task named: task B & E,False,False,0.8087860400642255
+20,20,True,False,replace sequence of task B and task E by task with label task B & E,"The sequence of Task B and Task E is replaced by a single task labeled ""Task B & E"".",True,1.0
+21,21,True,True,please merge task B and task E into one task under the name of task B & E.,"The modification means that the activities represented by task B and task E will be combined into a single activity named ""task B & E"".",True,1.0
+22,22,True,True,divide task B & E into one task. ,NA.,True,0.8087860400642255
+23,23,False,False,Not sure,False,False,0.8087860400642255
+24,24,False,False,.,False,False,0.8087860400642255
+25,25,True,True,Abstract task B and E into task B & E. ,"The modification means that the separate tasks B and E will be combined into a single task named ""B & E"".",True,0.8636363636363636
+26,26,True,False,"Replace ""task B"" and ""task E"" with a new task called ""task B & E""","The modification means: Remove the tasks ""task B"" and ""task E"" from the process model and add a new task labeled ""task B & E"" in their place.",True,1.0
+27,27,True,True,merge the tasks B and E into a single taskk called 'task B & E',"The tasks ""B"" and ""E"" will be combined into a single task named ""Task B & E"".",True,1.0
+28,28,True,False,combine task B and task E to one task B & E,,True,1.0
+29,29,True,False,"Combine task B and E to one task called ""task B & E"".",,True,1.0
+30,30,True,True,Task B and Task E should be summarized as one task B & E,"The tasks ""Task B"" and ""Task E"" will be combined into a single task named ""Task B & E"".",True,1.0
+31,31,True,True,"Merge ""task B"" and ""task B"" into on task called ""task B & E"".",,True,1.0
+32,32,True,True,Merge tasks B and E into one task labeled B & E.,"The modification means that the separate tasks B and E will be combined into a single task named ""B & E"".",True,0.8636363636363636
+33,33,True,True,Merge Task B and Task E into Task B&E,"The tasks ""Task B"" and ""Task E"" will be combined into a single task named ""Task B&E"".",True,1.0
+34,34,True,False,Combine task B and E into one process,,True,1.0
+35,35,True,False,Merge Tasks B and E into one task instead of executing sequentially ,,True,1.0
+36,36,True,False,"the task b and e are executed at the same time, not sequentially","The tasks ""b"" and ""e"" will now be performed concurrently, rather than one after the other.",True,0.6953278366705928
+37,37,False,False,perform task b and e together ,False,False,0.8087860400642255
+38,38,False,False,I don't know. ,False,False,0.8087860400642255
+39,39,True,False,replace task b and task E with a new task B & E,"The modification means: Remove tasks ""b"" and ""E"" from the process model and add new tasks ""B"" and ""E"" in their place.",True,0.8087860400642255
+40,40,True,False,Task B and E are joined together to be executed at the same time if the conditions X is true. ,"The modification means that Task B and Task E, which were previously executed sequentially, will now be performed simultaneously if condition X is true.",True,0.6953278366705928
+41,41,True,False,reverse the action from the previuos question,NA.,True,0.8087860400642255
+42,42,True,False,Please execute task B and task E together. ,,True,0.8087860400642255
+43,43,True,False,Combine Task B and E in one,NA.,True,0.8087860400642255
+44,44,True,True,Merge task B and task E into one task called task B & E ,"The modification means that the separate tasks B and E will be combined into a single task named ""Task B & E"".",True,1.0
+45,45,True,False,Combine task b and task e together as one state ,NA.,True,0.8087860400642255
+46,46,True,False,Process B and C at the same time,"The modification means that Process B and Process C, which were previously executed sequentially, will now be executed concurrently in parallel.",True,0.6685130986435615
+47,47,True,True,Merge task B % E to one task,The modification means that the separate tasks B and E will be combined into a single task.,True,0.8636363636363636
+48,48,True,True,Merge Task b and Task e into one task,The modification means that Task b and Task e will be combined into a single task.,True,0.8636363636363636
+49,49,True,False,combine task B and task E to one task called task B & E,,True,0.8636363636363636
+50,50,True,True,"combine ""task B"" and ""task E"" into ""task B & E""","The modification means that the separate tasks ""task B"" and ""task E"" will now be combined into a single task named ""task B & E"".",True,1.0
+51,51,True,False,Make task B and task E parallel.,"To make Task B and Task E parallel, they should be positioned within a parallel gateway, allowing both tasks to execute simultaneously rather than sequentially.",True,0.7334903808402042
+52,52,False,False,rename Task B to Task B&E. Remove task E.,False,False,0.8087860400642255
+53,53,True,True,join task B and task E into one single task B&E,The modification means that the separate tasks B and E will now be combined into a single task named B&E.,True,1.0
+54,54,True,True,Merge task B and task E in one task called task B & E. And replace task B and task E with the new merged task.,"The modification means that tasks B and E will be combined into a single task named ""Task B & E,"" and this new task will replace the original tasks B and E in the process model.",True,1.0
+55,55,True,True,Merge task B and task E in the true branch into a single composite task labeled 'task B & E'.,"The modification means that task B and task E, which are currently separate tasks in the true branch of the process, will be combined into a single composite task named 'task B & E'.",True,1.0
+56,56,True,True,Change the sequence taskB then task E to combination task B&E,"The tasks ""taskB"" and ""taskE,"" which were previously separate, have been combined into a single task named ""taskB&E.""",True,1.0
+57,57,True,True,Combine Tasks B and E into one Task B & E,"The tasks ""B"" and ""E"" will now be represented as a single task named ""B & E"".",True,1.0
+58,58,False,False,Task b and e are summarized together. ,False,False,0.8087860400642255
+59,59,True,True,"Merge ""task B"" and ""task E"" into one called ""task B &E"".","The modification means that the separate tasks ""task B"" and ""task E"" will be combined into a single task named ""task B & E"".",True,1.0
+60,60,True,False,Combine task B and task E into task B&E,NA.,True,0.8087860400642255
+61,61,True,False,do task b and task e as one step,NA.,True,0.8087860400642255
+62,62,True,False,Add task B & E after Task E. Remove Task B. Remove Task E.,NA.,True,0.8087860400642255
+63,63,True,False,"Delete task E. Rename task B to task B&E. (Again, from POV of execution joining makes no sense).",,True,0.8087860400642255

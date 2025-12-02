@@ -1,100 +1,66 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,l,False,False,0.0
-1,1,True,True,"Split ""task B & E"" into two subsequent activities which are called ""task B"" and ""task E"". Task B should be the first one, task E the second one.","The task ""task B & E"" is split into two sequential activities: ""task B"" followed by ""task E"".",True,1.0
-2,2,True,True,divide the combined task B & E into two separate ones,The combined task B & E should be divided into two separate tasks: task B and task E.,True,1.0
+0,0,False,False,l,False,False,0.8087860400642255
+1,1,True,True,"Split ""task B & E"" into two subsequent activities which are called ""task B"" and ""task E"". Task B should be the first one, task E the second one.","The modification means that the existing combined activity ""task B & E"" will be divided into two separate sequential activities. The first activity will be named ""task B"" and the second activity will be named ""task E"".",True,1.0
+2,2,True,True,divide the combined task B & E into two separate ones,"The combined task B & E will be separated into two individual tasks, with task E following task B.",True,1.0
 3,3,True,True,"task B & E should be split into task B and task E, while remaining on their branch
-task B should be executed before task E","AP15: Split Process Fragment. Splits an existing process fragment into a sequence of multiple separate new process fragments.
-
-Task B and task E should be executed sequentially on their branch, with task B being executed before task E.",True,1.0
-4,4,True,False,"In the new model, the system executes tasks B, E in sequence.",,False,0.0
-5,5,True,True,Separate the combined module of task B and task E into two individual modules task B and task E. ,NA.,True,0.9363888065951991
-6,6,True,True,Separate task B&E into task B and task E,NA.,True,0.9363888065951991
-7,7,True,True,Split the task 'task B & E' into two single tasks 'task B' immediately followed by 'task E'. The rest of the process model should not be changed.,"The task 'task B & E' will be divided into two separate tasks, 'task B' and 'task E', with 'task B' being immediately followed by 'task E'.",True,1.0
-8,8,True,True,split task B&E into task B and task E,NA.,True,0.9363888065951991
-9,9,True,True,Split Task B&E into two separate tasks Task B and Task E. Task B should be done first and then Task E should be done.,"The user wants to divide the current task labeled ""Task B&E"" into two distinct tasks, ""Task B"" and ""Task E."" These tasks should be executed sequentially, with ""Task B"" being performed first, followed by ""Task E.""",True,1.0
-10,10,True,True,split task b & e into two separate tasks called task b and task e where task b comes first,,False,0.0
-11,11,True,False,"Instead of task B & E notation following X being true, clearly indicate that task B follows task E, and they are separate tasks.",NA.,True,0.9363888065951991
-12,12,True,True,deconstruct task b&e to individual tasks task b and task e,"Sure, let's break down the tasks B and E individually:
-
-**Task B:**
-""Move the 'Order Processing' activity to occur after the 'Payment Confirmation' activity.""
-
-**Task E:**
-""If 'Order Value' is greater than $100, then add a new activity 'Apply Discount' before 'Order Confirmation'.""
-
-Please confirm if you would like to proceed with the evaluation and interpretation of these modifications.",True,0.7150416601470818
-13,13,True,True,"separate the task ""B&E"" into two subsequent distinct tasks",NA.,True,0.9363888065951991
-14,14,True,False,Please separate task B and task E in two separate tasks. Execute E after B.,NA.,True,0.9363888065951991
-15,15,True,True,taskB&E got separated in separate tasks,NA.,True,0.9363888065951991
-16,16,True,False,uncombine task B&E; Execute them each at a time,NA.,True,0.9363888065951991
-17,17,True,False,"Replace 'task B & E' with ''task B'. In the 'OR split' after 'task B', insert a transition 'task E' after 'task B' and its corresponding edges.",,False,0.0
-18,18,True,True,Split task B & E into 2 tasks,NA.,True,0.9363888065951991
-19,19,True,True,"please split the task ""task B & E"" into two seperate tasks ""ask B and task E",,False,0.0
-20,20,True,True,"split task task B & E into a sequence of two tasks, i.e., task B followed by task E",NA.,True,0.9363888065951991
-21,21,False,False,"please split task B & E into two tasks, i.e., remove task B & E first and add task B if condition is true and task E is immediately followed by task B.",False,False,0.0
-22,22,True,True,divide task B & E into two several tasks. ,"To divide tasks B and E into several tasks, we need to understand the context and the specific activities involved in these tasks within the BPMN process model. However, since the details of tasks B and E are not provided, I will assume a general approach to dividing any task into sub-tasks.
-
-Let's assume tasks B and E are generic tasks that can be broken down into smaller, more manageable sub-tasks. Here is how you might divide them:
-
-### Task B:
-1. **Sub-task B1**: Prepare necessary documents.
-2. **Sub-task B2**: Review and approve documents.
-3. **Sub-task B3**: Submit documents for further processing.
-
-### Task E:
-1. **Sub-task E1**: Gather required materials.
-2. **Sub-task E2**: Assemble materials into a final product.
-3. **Sub-task E3**: Quality check the final product.
-4. **Sub-task E4**: Package the final product for delivery.
-
-Given the instructions, the actual meaning of the user input in natural language is:
-
-""Divide task B into three sub-tasks: prepare necessary documents, review and approve documents, and submit documents for further processing. Divide task E into four sub-tasks: gather required materials, assemble materials into a final product, quality check the final product, and package the final product for delivery.""",True,0.6215796408016087
-23,23,False,False,Not sure what the difference is,False,False,0.0
-24,24,False,False,.,False,False,0.0
-25,25,True,False,Refine abstract task B & E to be the two tasks B and E following each other. ,"The user input specifies that two abstract tasks, B and E, should be refined to follow each other sequentially. This modification can be mapped to the change pattern ""AP1: Insert Process Fragment,"" which involves adding a new process fragment between two directly succeeding activities.
-
-Based on BPMN semantics and the intent of the change pattern, the actual meaning of the modification is:
-
-""Insert a new process fragment where task E directly follows task B in sequence.""",True,1.0
-26,26,True,True,"Replace task called ""task B & E"" with two independent tasks. The first one being called ""task B"" and the second one being called ""task E""",NA.,True,0.9363888065951991
-27,27,True,True,split the 'task B & E' into two tasks. first b then e,,False,0.0
-28,28,True,True,split task B & E to two tasks B and E,NA.,True,0.9363888065951991
-29,29,True,True,"Split ""task B & E"" to be two seperate task directly following each other, first ""task B"" and then ""task E"". ","The tasks ""B"" and ""E,"" which were previously combined, will now be separated into two distinct tasks. These tasks will follow each other sequentially, with ""task B"" being executed first, followed by ""task E"".",True,1.0
-30,30,True,True,Task B & E should be separated into two tasks,,False,0.0
-31,31,True,True,"Separate ""taks B & E"" into two independent tasks ""task B"" followed by ""task E"".","The user input is interpreted as: ""Insert a new task 'task B' and follow it with another new task 'task E', ensuring they are independent and sequential.""",True,1.0
-32,32,True,True,Separate task B & E into two tasks B and E.,,False,0.0
-33,33,True,True,Split Task B & E inti the Taks B and Task E which are executed sequentialy,NA.,True,0.9363888065951991
-34,34,True,True,Split tasks B and E into seperate taks,NA.,True,0.9363888065951991
-35,35,True,True,Split up taskB&E into two separate paths on the upper graph ,NA.,True,0.9363888065951991
-36,36,True,False,"instead of being executed at the same time, b and e are now executed sequentially",NA.,True,0.9363888065951991
-37,37,True,False,make task e follow the completion of task b ,NA.,True,0.9363888065951991
-38,38,False,False,I don't know. ,False,False,0.0
-39,39,True,False,replace task B & E with two seperate tasks task B and then task E,NA.,True,0.9363888065951991
-40,40,True,False,"Task B and E are not executed at the same time, but sequentially. First B and then task E. ",,False,0.0
-41,41,True,True,replace the task b& E into two following seperate steps with task b first followed by task e. leave the rest the same.,"The task ""B"" should be executed first, followed by the task ""E"". The rest of the process remains unchanged.",True,1.0
-42,42,True,True,Please replace task B&E to execute task B and task E seperately,NA.,True,0.9363888065951991
-43,43,True,True,Split task B and E I'm two separated tasks ,NA.,True,0.9363888065951991
-44,44,True,True,split up task B & E to be two seperat tasks called task B and task E.,,False,0.0
-45,45,True,True,Separate task B&E to two states Task b and E in a order ,NA.,True,0.9363888065951991
-46,46,False,False,Process the task B and E one by one ,False,False,0.0
-47,47,True,True,Split task B & E into two seperate tasks,NA.,True,0.9363888065951991
-48,48,True,True,Split Task B&E into to seperate tasks,NA.,True,0.9363888065951991
-49,49,True,True,split task B&E into task B and then task E,NA.,True,0.9363888065951991
-50,50,True,False,"instead of doing task B & E combined, do them sequentially after each other, starting with task B","The user input indicates a modification where two tasks, B and E, which were previously combined, should now be performed sequentially with task B starting first. This modification aligns with the change pattern AP9: ""Parallelize Process Fragments,"" but in reverse, sequentializing process fragments that were previously parallelized or combined.
-
-The actual meaning of the modification is:
-""Tasks B and E, which were previously combined, should now be executed one after the other. Task B should be performed first, followed by task E.""",True,1.0
-51,51,True,False,"Make task B & E sequential, with task B being followed by task E.",NA.,True,0.9363888065951991
-52,52,True,True,replace task B&E by two separate tasks B and E,NA.,True,0.9363888065951991
-53,53,True,True,"split task B&E into two separate tasks, task B and task E",NA.,True,0.9363888065951991
-54,54,True,True,Split task B & E in two separated tasks called task B and task E. And replace the two new tasks with the task B & E.,,False,0.0
-55,55,True,True,Split the combined task 'B & E' in the true branch into two separate tasks: task B followed by task E.,"The combined task 'B & E' in the true branch will be separated into two sequential tasks: task B will be executed first, followed by task E.",True,1.0
-56,56,True,False,Change task B&E to sequence task B then task E,"The actual meaning of the user input is: ""Replace the parallel execution of tasks B and E with a sequence where task B is executed first, followed by task E.""",True,1.0
-57,57,True,True,Split and Replace Task B & E into the First Task B and secondly Task E inside the true case ,NA.,True,0.9363888065951991
-58,58,True,False,Task B and E is run in sequence. ,,False,0.0
-59,59,True,True,"Replace ""task B & E"" with ""task B"" and then ""task E"" individually.",NA.,True,0.9363888065951991
-60,60,True,True,Split the task B&E into two seperate tasks,NA.,True,0.9363888065951991
-61,61,True,True,pull apart task b and e to first have task b,,False,0.0
-62,62,False,False,Add task B and Task E after task B &E. Remove task B&E,False,False,0.0
-63,63,True,True,"Replace task B&E by a sequence of task B and task E. (Spliting is an absolutely pointless pattern from the point of view of execution, but a useful pattern from the point of view of modelling. Keep that in mind.). ",The task B&E is replaced by a sequence where task B is followed by task E.,True,1.0
+task B should be executed before task E","The modification means that tasks B and E, which were previously combined, should be separated into two individual tasks. Task B should be executed first, followed by task E. Both tasks will remain on their original branch in the process.",True,1.0
+4,4,True,False,"In the new model, the system executes tasks B, E in sequence.",NA.,True,0.8087860400642255
+5,5,True,True,Separate the combined module of task B and task E into two individual modules task B and task E. ,"The combined module containing task B and task E will be divided into two separate modules, one for task B and another for task E, creating a sequence of individual process fragments.",True,1.0
+6,6,True,True,Separate task B&E into task B and task E,"The modification means that the existing combined task ""B&E"" will be split into two separate, sequential tasks: task ""B"" and task ""E"".",True,1.0
+7,7,True,True,Split the task 'task B & E' into two single tasks 'task B' immediately followed by 'task E'. The rest of the process model should not be changed.,"The task 'task B & E' will be divided into two separate tasks, 'task B' and 'task E', with 'task B' occurring immediately before 'task E'.",True,1.0
+8,8,True,True,split task B&E into task B and task E,"The modification means that the existing single task ""B&E"" will be divided into two separate sequential tasks: task ""B"" followed by task ""E"".",True,1.0
+9,9,True,True,Split Task B&E into two separate tasks Task B and Task E. Task B should be done first and then Task E should be done.,"The modification means that the existing combined task ""Task B&E"" will be divided into two separate tasks: ""Task B"" and ""Task E"". These tasks will be performed sequentially, with ""Task B"" being executed first, followed by ""Task E"".",True,1.0
+10,10,True,True,split task b & e into two separate tasks called task b and task e where task b comes first,"The modification means that the existing task that combines tasks 'b' and 'e' will be split into two separate tasks. Task 'b' will be executed first, followed by task 'e'.",True,1.0
+11,11,True,False,"Instead of task B & E notation following X being true, clearly indicate that task B follows task E, and they are separate tasks.","The modification means that task B and task E should be modeled as separate tasks in sequence, with task B following task E, and this sequence should only occur if the condition X is true.",True,1.0
+12,12,True,True,deconstruct task b&e to individual tasks task b and task e,"The modification means that the existing combined task ""b&e"" will be separated into two distinct tasks: ""task b"" and ""task e,"" which will be executed individually.",True,1.0
+13,13,True,True,"separate the task ""B&E"" into two subsequent distinct tasks","The task ""B&E"" will be divided into two separate, sequential tasks.",True,1.0
+14,14,True,True,Please separate task B and task E in two separate tasks. Execute E after B.,"The modification means that the existing process fragment containing tasks B and E should be split into two separate process fragments. Task B will be in one fragment, and task E will be in another fragment. Task E will be executed after task B.",True,1.0
+15,15,True,True,taskB&E got separated in separate tasks,"The modification means that the combined task ""B&E"" has been split into two separate, sequential tasks: task ""B"" and task ""E"".",True,1.0
+16,16,True,True,uncombine task B&E; Execute them each at a time,"The modification means that the current combined task B&E will be separated into two individual tasks, B and E, which will be executed sequentially one after the other.",True,1.0
+17,17,True,False,"Replace 'task B & E' with ''task B'. In the 'OR split' after 'task B', insert a transition 'task E' after 'task B' and its corresponding edges.",NA.,True,0.8087860400642255
+18,18,True,True,Split task B & E into 2 tasks,"The modification means that tasks B and E in the existing process will be divided into two sequential tasks each, resulting in four new tasks in total.",True,1.0
+19,19,True,True,"please split the task ""task B & E"" into two seperate tasks ""ask B and task E","The task ""task B & E"" should be split into two separate, sequential tasks: ""task B"" and ""task E"".",True,1.0
+20,20,True,True,"split task task B & E into a sequence of two tasks, i.e., task B followed by task E","The modification means that the existing single task, which combines tasks B and E, will be divided into two separate tasks. Task B will be executed first, and upon its completion, task E will follow sequentially.",True,1.0
+21,21,True,False,"please split task B & E into two tasks, i.e., remove task B & E first and add task B if condition is true and task E is immediately followed by task B.",NA.,True,0.8087860400642255
+22,22,True,True,divide task B & E into two several tasks. ,NA.,True,0.8087860400642255
+23,23,False,False,Not sure what the difference is,False,False,0.8087860400642255
+24,24,False,False,.,False,False,0.8087860400642255
+25,25,True,False,Refine abstract task B & E to be the two tasks B and E following each other. ,NA.,True,0.8087860400642255
+26,26,True,True,"Replace task called ""task B & E"" with two independent tasks. The first one being called ""task B"" and the second one being called ""task E""","The modification means that the existing task named ""task B & E"" will be removed and replaced with two separate, independent tasks named ""task B"" and ""task E"". These new tasks will be sequenced one after the other.",True,1.0
+27,27,True,True,split the 'task B & E' into two tasks. first b then e,"The modification means that the existing single task ""B & E"" will be split into two separate sequential tasks. The first task will be ""B"" and the second task will be ""E"".",True,1.0
+28,28,True,True,split task B & E to two tasks B and E,NA.,True,0.8087860400642255
+29,29,True,True,"Split ""task B & E"" to be two seperate task directly following each other, first ""task B"" and then ""task E"". ","The modification means that the existing combined task ""task B & E"" will be separated into two consecutive tasks. The first task will be ""task B,"" immediately followed by ""task E.""",True,1.0
+30,30,True,True,Task B & E should be separated into two tasks,"The modification means that the current task labeled ""B & E"" will be divided into two separate tasks, one for ""B"" and one for ""E"", which will be executed sequentially.",True,1.0
+31,31,True,True,"Separate ""taks B & E"" into two independent tasks ""task B"" followed by ""task E"".","The modification means that ""task B"" and ""task E,"" which were previously combined, should be separated into two independent tasks where ""task B"" is followed by ""task E.""",True,1.0
+32,32,True,True,Separate task B & E into two tasks B and E.,,True,1.0
+33,33,True,True,Split Task B & E inti the Taks B and Task E which are executed sequentialy,"The modification means that the existing combined task ""Task B & E"" will be split into two separate tasks, ""Task B"" and ""Task E"", which will be executed one after the other in sequence.",True,1.0
+34,34,True,True,Split tasks B and E into seperate taks,,True,1.0
+35,35,True,True,Split up taskB&E into two separate paths on the upper graph ,The modification means that the existing process fragment containing tasks B and E will be divided into two separate paths or sequences of activities within the upper part of the process model.,True,1.0
+36,36,True,False,"instead of being executed at the same time, b and e are now executed sequentially",NA.,True,0.8087860400642255
+37,37,True,False,make task e follow the completion of task b ,"""Task 'e' will now start immediately after task 'b' completes.""",True,1.0
+38,38,False,False,I don't know. ,False,False,0.8087860400642255
+39,39,True,False,replace task B & E with two seperate tasks task B and then task E,"The modification means: ""Replace the existing combined task 'B & E' with two separate, sequential tasks: 'B' followed by 'E'.""",True,1.0
+40,40,True,False,"Task B and E are not executed at the same time, but sequentially. First B and then task E. ",NA.,True,0.8087860400642255
+41,41,True,True,replace the task b& E into two following seperate steps with task b first followed by task e. leave the rest the same.,"The modification means that the existing task ""b&E"" will be split into two separate tasks. The first task will be ""b"", followed by the task ""e"". The rest of the process will remain unchanged.",True,1.0
+42,42,True,False,Please replace task B&E to execute task B and task E seperately,"The modification means that tasks B and E, which were previously combined and executed sequentially, should now be separated and executed in parallel.",True,0.8034662628302204
+43,43,True,True,Split task B and E I'm two separated tasks ,"The modification means that the existing tasks ""B"" and ""E"" will be separated into two individual tasks, each forming its own distinct process fragment.",True,1.0
+44,44,True,True,split up task B & E to be two seperat tasks called task B and task E.,NA.,True,0.8087860400642255
+45,45,True,True,Separate task B&E to two states Task b and E in a order ,"The modification means that the existing combined task ""B&E"" will be split into two separate tasks, ""Task B"" and ""Task E,"" and these tasks will be arranged in a sequence where ""Task B"" comes before ""Task E.""",True,1.0
+46,46,False,False,Process the task B and E one by one ,False,False,0.8087860400642255
+47,47,True,True,Split task B & E into two seperate tasks,"The modification means that tasks B and E, which were previously single tasks in the process, will be divided into two separate tasks each, resulting in a sequence of four tasks in total.",True,0.8576380491737204
+48,48,True,True,Split Task B&E into to seperate tasks,"The modification means that the existing combined task ""Task B&E"" will be divided into two separate, sequential tasks.",True,1.0
+49,49,True,True,split task B&E into task B and then task E,"The modification means that the existing single task ""B&E"" will be divided into two separate sequential tasks: task ""B"" followed by task ""E"".",True,1.0
+50,50,True,False,"instead of doing task B & E combined, do them sequentially after each other, starting with task B",NA.,True,0.8087860400642255
+51,51,True,False,"Make task B & E sequential, with task B being followed by task E.","The modification means that task B and task E, which were previously not sequential, should now be arranged so that task E directly follows task B.",True,1.0
+52,52,True,True,replace task B&E by two separate tasks B and E,"The modification splits the existing combined task ""B&E"" into two separate, sequential tasks: ""B"" followed by ""E"".",True,1.0
+53,53,True,True,"split task B&E into two separate tasks, task B and task E","The modification means that the existing single task ""B&E"" will be divided into two separate, sequential tasks: task ""B"" followed by task ""E"".",True,1.0
+54,54,True,True,Split task B & E in two separated tasks called task B and task E. And replace the two new tasks with the task B & E.,NA.,True,0.8087860400642255
+55,55,True,True,Split the combined task 'B & E' in the true branch into two separate tasks: task B followed by task E.,The combined task 'B & E' in the true branch will be separated into two sequential tasks: task B will be followed by task E.,True,1.0
+56,56,True,False,Change task B&E to sequence task B then task E,,True,1.0
+57,57,True,True,Split and Replace Task B & E into the First Task B and secondly Task E inside the true case ,"The modification means that Task B and Task E, which were originally part of a single process fragment, have been split into two separate process fragments. Task B is now the first task in its own fragment, and Task E follows as the second task within the true case of a conditional flow.",True,1.0
+58,58,False,False,Task B and E is run in sequence. ,False,False,0.8087860400642255
+59,59,True,True,"Replace ""task B & E"" with ""task B"" and then ""task E"" individually.","The modification means that the existing sequence where ""task B"" and ""task E"" are combined will be separated. In the updated process, ""task B"" will be followed by ""task E"" as individual sequential tasks.",True,1.0
+60,60,True,True,Split the task B&E into two seperate tasks,"The task ""B&E"" will be divided into two separate, sequential tasks.",True,1.0
+61,61,True,True,pull apart task b and e to first have task b,"The modification means that the process fragment containing tasks ""b"" and ""e"" will be split into separate sequential fragments, with task ""b"" occurring first.",True,1.0
+62,62,True,False,Add task B and Task E after task B &E. Remove task B&E,NA.,True,0.8087860400642255
+63,63,True,True,"Replace task B&E by a sequence of task B and task E. (Spliting is an absolutely pointless pattern from the point of view of execution, but a useful pattern from the point of view of modelling. Keep that in mind.). ","The modification means that the existing single task ""B&E"" will be removed and replaced by two separate tasks, ""B"" and ""E"", which will be executed in sequence.",True,1.0

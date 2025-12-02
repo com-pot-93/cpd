@@ -1,96 +1,70 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,i,False,False,0.0
-1,1,True,False,delete everything and create a new process with task A then task B then task D,NA.,True,0.6975124378109451
-2,2,True,False,make the a condition path without the other values,NA.,True,0.6975124378109451
-3,3,True,False,replace everything between task A and task D with task B,NA.,True,0.6975124378109451
-4,4,True,False,"In the new model, a completely new system that executes tasks A, B, C in sequence.",,False,0.0
-5,5,True,False,"Delete all if-else-blocks to create one sequential process that only contains task A, task B and task D, in the respective order. ",NA.,True,0.6975124378109451
-6,6,True,False,Delete conditions b and c from the model,NA.,True,0.6975124378109451
-7,7,True,False,Replace the whole block of or-gates and tasks with a single task B. Therefore the resulting process model only consists of task A followed by task B followed by task D.,"The user intends to replace a sequence of tasks and or-gateways with a single task B, resulting in a simplified process model where task A is followed by task B, which is then followed by task D.",True,1.0
-8,8,True,False,replace the or condition with only option a,AP13,True,0.0
-9,9,True,False,"Simplify the chain, we only need task A, task B and task D in this order. We also do not need any if checks. So the chain should be Start-Task A- Task B- Task D - End",NA.,True,0.6975124378109451
-10,10,True,False,delete the gateway and all its tasks and replace the whole gateway with just the task b,NA.,True,0.6975124378109451
-11,11,False,False,While coming from task A to task D remove all inner parts and replace it with task B. By doing so task A follow task B and task B follows task D. ,False,False,0.0
-12,12,True,False,"substitute everything in between the two xor gates to be task a, task b and task d in sequential order",NA.,True,0.6975124378109451
-13,13,True,False,"remove all options and include only one path followed by task A, B and D sequentially","The user input specifies the removal of all options and the inclusion of a single path followed by tasks A, B, and D sequentially. This modification can be mapped to the change pattern ""AP17"": Delete Entire Branch. Removes single entire branch inside selected gateways and consequently flatten the hierarchy if necessary.
-
-The actual meaning of the modification is:
-
-Remove all existing branches and include only one path that sequentially performs task A, followed by task B, and then task D.",True,1.0
-14,14,True,False,Please replace the condition with task B.,,False,0.0
-15,15,True,False,exklusive gateway was removed,NA.,True,0.6975124378109451
-16,16,True,False,delete the b and c Case in the OR Gateway and simplify the model.,NA.,True,0.6975124378109451
-17,17,False,False,"Remove the everything within 'OR split' and 'OR join', including those operation nodes. Insert 'task B' between 'task A' and 'task C'. ",False,False,0.0
-18,18,True,False,Remove the choice for b and c and serialize the process,,False,0.0
-19,19,True,False,Please remove the xor and instead just insert a task B which is connected to task A and task D,NA.,True,0.6975124378109451
-20,20,True,False,replace XOR block by task B,NA.,True,0.6975124378109451
-21,21,False,False,"please remove the entire xor gateway with all elements inside, then add task B after task A and before task D.",False,False,0.0
-22,22,True,False,remove the condition from the process model. Now only case a can happen but no condition is needed. So that task A --> task B --> task D,"To determine the actual meaning of the user's input, let's break down the provided modification step by step:
-
-1. **User Input Analysis**:
-   - The user wants to remove a condition from the process model.
-   - The user specifies that only ""case a"" can happen, and no condition is needed.
-   - The user provides a sequence: Task A --> Task B --> Task D.
-
-2. **Validation of Information**:
-   - The user input specifies a clear sequence of tasks (Task A --> Task B --> Task D).
-   - The input mentions removing a condition, implying there was a conditional branch that is no longer needed.
-
-3. **Mapping to Change Pattern**:
-   - The modification involves removing a conditional branch and simplifying the process flow.
-   - This aligns with change pattern **AP17**: ""Delete Entire Branch. Removes single entire branch inside selected gateways and consequently flatten the hierarchy if necessary.""
-
-4. **Deriving the Actual Meaning**:
-   - The user wants to remove the conditional branch that previously existed between Task A and Task B.
-   - The process should now flow directly from Task A to Task B to Task D without any conditions.
-
-5. **Ensuring Compliance with BPMN Rules**:
-   - Removing a condition and ensuring a direct flow between tasks is compliant with BPMN modeling rules.
-   - The sequence Task A --> Task B --> Task D is a valid and unambiguous process flow.
-
-**Final Output**:
-Remove the conditional branch between Task A and Task B, ensuring the process flows directly from Task A to Task B to Task D without any conditions.",True,1.0
-23,23,True,False,Renoving the xor (or and?) Gate,NA.,True,0.6975124378109451
-24,24,False,False,.,False,False,0.0
-25,25,True,False,Replace the XOR fragment with task B. ,,False,0.0
-26,26,True,False,Remove the exclusive gateway and tasks from the branches. Instead I just want to have task B. It should be executed directly after task A. ,,False,0.0
-27,27,True,False,fuck the entire process. create a new process with task A followed by task B followed by task D,,False,0.0
+0,0,False,False,i,False,False,0.6099502487562188
+1,1,True,False,delete everything and create a new process with task A then task B then task D,NA.,True,0.6099502487562188
+2,2,True,False,make the a condition path without the other values,NA.,True,0.6099502487562188
+3,3,True,False,replace everything between task A and task D with task B,Replace the sequence of activities between Task A and Task D with a single Task B.,True,1.0
+4,4,True,False,"In the new model, a completely new system that executes tasks A, B, C in sequence.",NA.,True,0.6099502487562188
+5,5,True,False,"Delete all if-else-blocks to create one sequential process that only contains task A, task B and task D, in the respective order. ","The modification means: Remove all decision points and alternative paths to create a single sequential flow that includes only Task A, followed by Task B, and then Task D, in that specific order.",True,1.0
+6,6,False,False,Delete conditions b and c from the model,False,False,0.6099502487562188
+7,7,True,False,Replace the whole block of or-gates and tasks with a single task B. Therefore the resulting process model only consists of task A followed by task B followed by task D.,"The modification means: Remove the existing section of the process that contains the OR gateways and their associated tasks, and insert a new task ""B"" in its place. As a result, the updated process will have task ""A"" followed by task ""B"", and then task ""D"".",True,1.0
+8,8,True,False,replace the or condition with only option a,"The modification means that the condition for a transition in the process has been changed from an ""or"" condition to a condition that only considers option A.",True,0.6099502487562188
+9,9,True,False,"Simplify the chain, we only need task A, task B and task D in this order. We also do not need any if checks. So the chain should be Start-Task A- Task B- Task D - End","The modification simplifies the process to a sequential flow of Task A, Task B, and Task D, removing any conditional checks and ensuring a straightforward sequence from start to end.",True,1.0
+10,10,True,True,delete the gateway and all its tasks and replace the whole gateway with just the task b,"The modification means that a gateway and all its associated tasks have been removed. Instead of the gateway and its tasks, only task ""b"" has been added to the process.",True,1.0
+11,11,True,False,While coming from task A to task D remove all inner parts and replace it with task B. By doing so task A follow task B and task B follows task D. ,"The modification means: Remove all activities and gateways between Task A and Task D, and insert Task B in their place. Thus, Task A will be directly followed by Task B, and Task B will be directly followed by Task D.",True,1.0
+12,12,True,False,"substitute everything in between the two xor gates to be task a, task b and task d in sequential order","The modification replaces all activities between the two exclusive gateways with three sequential tasks: Task A, Task B, and Task D.",True,0.7830033003300331
+13,13,True,False,"remove all options and include only one path followed by task A, B and D sequentially","The modification means that all branches within the selected gateways will be removed, and only one sequential path consisting of tasks A, B, and D will be retained.",True,0.8054054054054054
+14,14,True,False,Please replace the condition with task B.,NA.,True,0.6099502487562188
+15,15,True,False,exklusive gateway was removed,The modification means that an exclusive gateway was replaced with an inclusive gateway in the specified fragment of the BPMN process model.,True,0.6099502487562188
+16,16,True,False,delete the b and c Case in the OR Gateway and simplify the model.,"The modification means: Remove the branches labeled ""b"" and ""c"" within the OR gateway and simplify the process model accordingly.",True,0.8054054054054054
+17,17,False,False,"Remove the everything within 'OR split' and 'OR join', including those operation nodes. Insert 'task B' between 'task A' and 'task C'. ",False,False,0.6099502487562188
+18,18,True,False,Remove the choice for b and c and serialize the process,NA.,True,0.6099502487562188
+19,19,True,False,Please remove the xor and instead just insert a task B which is connected to task A and task D,"The modification means that a new task, Task B, will be inserted into the process. Task B will be connected directly to Task A as its predecessor and to Task D as its successor, replacing the previously existing XOR gateway between them.",True,0.7264957264957264
+20,20,True,False,replace XOR block by task B,,True,0.7264957264957264
+21,21,True,False,"please remove the entire xor gateway with all elements inside, then add task B after task A and before task D.","The user wants to remove an entire exclusive (XOR) gateway along with all its internal elements. After this removal, a new task, Task B, should be added to the process so that it occurs after Task A and before Task D.",True,1.0
+22,22,True,False,remove the condition from the process model. Now only case a can happen but no condition is needed. So that task A --> task B --> task D,"The modification means that the conditional flow leading to multiple branches has been removed, and now the process directly flows from Task A to Task B to Task D, eliminating any other alternative paths.",True,1.0
+23,23,True,False,Renoving the xor (or and?) Gate,NA.,True,0.6099502487562188
+24,24,False,False,.,False,False,0.6099502487562188
+25,25,True,False,Replace the XOR fragment with task B. ,"The XOR gateway and its associated tasks are removed and replaced with a single task labeled ""B"".",True,1.0
+26,26,True,False,Remove the exclusive gateway and tasks from the branches. Instead I just want to have task B. It should be executed directly after task A. ,"The exclusive gateway and its branching tasks have been removed. Now, Task B will be executed immediately after Task A.",True,1.0
+27,27,True,False,fuck the entire process. create a new process with task A followed by task B followed by task D,NA.,True,0.6099502487562188
 28,28,True,False,"recreate a new process model with task A -> task B -> task D
-",NA.,True,0.6975124378109451
-29,29,True,False,"Simplify to only show path a, without gateways. ",NA.,True,0.6975124378109451
-30,30,True,False,"After task A, only task B should be completed to get to Task D, so please remove the branches b and c",,False,0.0
-31,31,True,False,Delete both XOR gateways such that the sequence flow only goes from task A through task B into task D. ,NA.,True,0.6975124378109451
-32,32,True,True,"Remove branches labeled ""b"" and ""c"" from the diagram.",,False,0.0
-33,33,True,False,Remove the sequences executed If condition b or c ist Met aswell AS the Gateways which are the No longer necessary,NA.,True,0.6975124378109451
-34,34,True,True,Eemkve branch b and c,NA.,True,0.6975124378109451
-35,35,True,False,only keep the upper part of the graph and execute them sequentially. ,,False,0.0
-36,36,False,False,"the tasks are now executed sequentially, instead of conditionally. the tasks c, e, f are now removed, the conditions also. ",False,False,0.0
-37,37,True,False,"make task a be followed by task b and then d, delete the other tasks and conditional checks ",,False,0.0
-38,38,False,False,I don't know. ,False,False,0.0
-39,39,True,False,"change the model to a flow with task a, task b and task d in a linear order. Remove all other tasks and XOR",NA.,True,0.6975124378109451
-40,40,True,True,"Only the first case of the condition is considered. Possible other result paths, such as b or c are removed.",AP17,True,0.6975124378109451
-41,41,True,False,delete everthying after task and let a follow task b which then results in d after which the process ends,NA.,True,0.6975124378109451
-42,42,True,False,Please remove the exclusive gateway and replace it with just task B,NA.,True,0.6975124378109451
-43,43,False,False,Remove the option for a b c and make task a task b task d,False,False,0.0
-44,44,True,False,Create a new process that takes the tasks task A task B and task D and put them in the sequence A B and D,Insert task B between task A and task D.,True,0.6543478260869565
-45,45,True,False,Remove other states only keep task A B and C and keep them in a order ,NA.,True,0.6975124378109451
-46,46,True,False,Delete all the judgements ,AP17,True,0.6975124378109451
-47,47,False,False,-,False,False,0.0
-48,48,True,True,Remove conditional Split and only leave Route a ,AP18,True,0.0
-49,49,True,False,"visualize the process only if option a is true, leave out the x.",,False,0.0
-50,50,True,False,"Instead of the current flow, do task A, task B, and task D sequentially in this order.",,False,0.0
-51,51,True,False,"Remove task E, task C and task F and make task A, task B and task D sequential.",,False,0.0
-52,52,True,False,replace The XOR block with task B,NA.,True,0.6975124378109451
-53,53,True,False,remove the or gate and just keep task B between task A and task D,NA.,True,0.6975124378109451
-54,54,True,False,"Create a new PM. That starts with task A, followed by task B, followed by task D, followed by an end event.",,False,0.0
-55,55,True,False,"Delete tasks C, E, and F, and simplify the process to a linear flow with task A, task B, and task D.",NA.,True,0.6975124378109451
-56,56,True,False,Delete xor and only keep the branch A,,False,0.0
-57,57,True,False,"Remove the condition gateway and all Tasks except Task B to result in the following Output PM: Start, Task A, Task B, Task D, End",NA.,True,0.6975124378109451
-58,58,True,False,Condition b and c are removed. ,"Understood. I will focus on validating the user-provided modifications and ensuring compliance with BPMN modeling rules and the structure of the existing process. I will then provide the actual meaning of the user input in natural language without ambiguity. If there is not enough information to perform changes, I will return ""NA"".
+",The modification means that a new activity (Task D) has been inserted between two existing activities (Task A and Task B) in the process model.,True,0.6135869565217391
+29,29,True,False,"Simplify to only show path a, without gateways. ","The modification means that all branches within the selected gateways will be removed, except for path ""a"". Additionally, the gateways associated with these branches will be eliminated to flatten the process hierarchy, leaving only path ""a"" visible in the model.",True,1.0
+30,30,True,False,"After task A, only task B should be completed to get to Task D, so please remove the branches b and c","The modification means that the branches containing tasks B and C after task A should be removed, and only the branch leading directly from task A to task D should remain.",True,0.8814419225634178
+31,31,True,True,Delete both XOR gateways such that the sequence flow only goes from task A through task B into task D. ,"The modification means that the exclusive (XOR) gateways that control the divergence and convergence of the process flow are being replaced with each other. As a result, the sequence flow will now proceed directly from task A through task B and into task D, without any branching or decision-making at the gateways.",True,0.8054054054054054
+32,32,True,False,"Remove branches labeled ""b"" and ""c"" from the diagram.","The modification means: Remove the entire branches labeled ""b"" and ""c"", including all activities and flow objects within these branches, from the diagram. If these branches are controlled by a gateway, the gateway should be adjusted to reflect the removal of these branches, potentially simplifying the gateway if it no longer needs to direct flow to multiple branches.",True,0.8054054054054054
+33,33,True,False,Remove the sequences executed If condition b or c ist Met aswell AS the Gateways which are the No longer necessary,"The modification means: Remove the sequence flows and activities that are executed when conditions ""b"" or ""c"" are met, as well as any gateways that become unnecessary after this removal.",True,0.8054054054054054
+34,34,True,False,Eemkve branch b and c,"The modification means: ""Remove branches 'b' and 'c' from the 'Eemkve' gateway, and if 'b' and 'c' are the only branches, merge the gateway with the remaining process flow.""",True,0.8054054054054054
+35,35,True,False,only keep the upper part of the graph and execute them sequentially. ,"The modification means that a specific portion of the process model, referred to as a process fragment, will be removed. As a result, if this removal causes a hierarchical level to disappear, the hierarchy of the process model will be simplified accordingly. Only the tasks and activities represented in the upper section of the process diagram will be retained and performed in a sequential order.",True,0.8814419225634178
+36,36,False,False,"the tasks are now executed sequentially, instead of conditionally. the tasks c, e, f are now removed, the conditions also. ",False,False,0.6099502487562188
+37,37,True,False,"make task a be followed by task b and then d, delete the other tasks and conditional checks ","The modification means that the process will now flow from task A to task B and then to task D. All other tasks and conditional checks in the process fragment will be removed, simplifying the process flow to a sequential order of A, B, and then D.",True,1.0
+38,38,False,False,I don't know. ,False,False,0.6099502487562188
+39,39,True,False,"change the model to a flow with task a, task b and task d in a linear order. Remove all other tasks and XOR","The modification means:
 
-Please provide the user-provided modifications to the BPMN process model.",True,0.6975124378109451
-59,59,True,False,Remove the XORs and everything inside it except for task B.,NA.,True,0.6975124378109451
-60,60,True,False,Remove the xor options and xor them delves so that we only have task A to C in a chain,NA.,True,0.6975124378109451
-61,61,True,False,delete decision to follow tasks in order: a b and c,,False,0.0
-62,62,True,False,Make a new process Task A directly leads to task B directly leads to task D,"Insert a new process fragment where Task A directly leads to Task B, which then directly leads to Task D.",True,0.6975124378109451
-63,63,True,False,Delete the branches with condition c and with condition c.,,False,0.0
+The process will now consist of a sequential flow with three tasks: first ""Task A"", then ""Task B"", and finally ""Task D"". All other tasks and XOR gateways have been removed from the process.",True,1.0
+40,40,True,False,"Only the first case of the condition is considered. Possible other result paths, such as b or c are removed.",The modification means that all branches except for the first case of the condition are removed from the process model.,True,0.8054054054054054
+41,41,True,False,delete everthying after task and let a follow task b which then results in d after which the process ends,NA.,True,0.6099502487562188
+42,42,True,False,Please remove the exclusive gateway and replace it with just task B,,True,0.6099502487562188
+43,43,True,False,Remove the option for a b c and make task a task b task d,"The modification means that the process fragment containing options for ""a,"" ""b,"" and ""c"" will be split into a sequence of separate tasks: ""Task A,"" ""Task B,"" and ""Task D.""",True,1.0
+44,44,True,False,Create a new process that takes the tasks task A task B and task D and put them in the sequence A B and D,NA.,True,0.6099502487562188
+45,45,True,False,Remove other states only keep task A B and C and keep them in a order ,,True,0.6099502487562188
+46,46,True,False,Delete all the judgements ,,True,0.6099502487562188
+47,47,False,False,-,False,False,0.6099502487562188
+48,48,True,True,Remove conditional Split and only leave Route a ,"The modification means that the existing conditional splitting gateway should be replaced with a merging gateway, and only the path for ""Route A"" should be retained in the process model.",True,0.8054054054054054
+49,49,True,False,"visualize the process only if option a is true, leave out the x.",NA.,True,0.6099502487562188
+50,50,True,False,"Instead of the current flow, do task A, task B, and task D sequentially in this order.",NA.,True,0.6099502487562188
+51,51,True,False,"Remove task E, task C and task F and make task A, task B and task D sequential.","The modification means:
+
+Task E, task C, and task F will be removed from the process. Task A, task B, and task D, which were previously parallel or part of a more complex structure, will now be performed one after the other in sequence.",True,0.8054054054054054
+52,52,True,False,replace The XOR block with task B,NA.,True,0.6099502487562188
+53,53,True,True,remove the or gate and just keep task B between task A and task D,"The modification means: Replace the inclusive (OR) gateway between Task A and Task D with a sequence flow that directly connects Task A to Task B, and then Task B to Task D.",True,0.7264957264957264
+54,54,True,False,"Create a new PM. That starts with task A, followed by task B, followed by task D, followed by an end event.",NA.,True,0.6099502487562188
+55,55,True,False,"Delete tasks C, E, and F, and simplify the process to a linear flow with task A, task B, and task D.","The modification means that tasks C, E, and F will be removed from the process model, and the remaining tasks A, B, and D will be arranged in a sequential flow, one after the other.",True,1.0
+56,56,True,False,Delete xor and only keep the branch A,"The modification means that an exclusive gateway (XOR) is removed from the process model, and only the branch labeled 'A' is retained, while all other branches are deleted.",True,1.0
+57,57,True,False,"Remove the condition gateway and all Tasks except Task B to result in the following Output PM: Start, Task A, Task B, Task D, End","The modification deletes the branch that does not include Task B, simplifying the process to proceed from Task A directly to Task B and then to Task D before ending.",True,1.0
+58,58,True,False,Condition b and c are removed. ,"The condition for the transition has been updated to remove the requirements for both ""b"" and ""c"".",True,0.7198879551820728
+59,59,True,False,Remove the XORs and everything inside it except for task B.,,True,0.7198879551820728
+60,60,True,False,Remove the xor options and xor them delves so that we only have task A to C in a chain,"The modification means that the exclusive gateways (XOR) and their branches have been removed, leaving only tasks A, B, and C in a sequential chain.",True,0.9037080945794638
+61,61,True,False,delete decision to follow tasks in order: a b and c,"The modification means: ""Remove the decision gateway and all its branches, as well as the subsequent tasks 'a', 'b', and 'c'. Adjust the process to simplify the hierarchy accordingly.""",True,0.8391622209049594
+62,62,True,False,Make a new process Task A directly leads to task B directly leads to task D,"The modification means that a new task, Task D, should be inserted between Task A and Task B, so that the process flow now goes from Task A to Task D, and then from Task D to Task B.",True,0.6135869565217391
+63,63,True,False,Delete the branches with condition c and with condition c.,The modification means: Remove the branches that have the condition 'c' within the selected gateways and flatten the hierarchy if needed.,True,0.7198879551820728

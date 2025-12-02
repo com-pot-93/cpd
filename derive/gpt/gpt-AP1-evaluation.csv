@@ -1,65 +1,65 @@
 ,mapping,epap,user,meaning
 0,False,False,a,False
-1,True,False,delete task E from the model,NA
-2,True,False,"after task C in the false bracket, append task E",Embed task E in the false branch after task C.
-3,True,True,create task E and make it follow task C only,Insert task E after task C.
-4,True,False,"In the new model, if task A is false, 2 tasks should be done: task C and task E.",Embed tasks C and E in a conditional branch that executes if task A is false.
-5,True,False,"Please add another task (task E) in the ""false""-branch directly after task C. ","Embed task E in the ""false""-branch directly after task C."
-6,True,True,Add task E to the model after task C,Insert task E after task C.
-7,True,True,"Insert a task E immediately after task C. After that the closing or-gate should follow. The other path of the or-gate, including task B, should not be changed.","Insert task E immediately after task C, followed by the closing or-gate. The other path of the or-gate, including task B, remains unchanged."
-8,True,True,Add a task E following task C before the join clause,Insert a new task E between task C and the join clause.
-9,True,False,"Add a task E after task C. The reason is that if after task a the status is false we need to do task c first and then immediately afterwards task E, task E is not needed if after task A the status is true.",Embed task E in a conditional branch after task C. Task E is executed only if the status after task A is false.
-10,True,False,Remove task E,Delete task E.
-11,True,True,please add one more step after task c and before arriving into X,Insert a new step after task C and before arriving at X.
-12,True,True,Add task E after task C,Insert task E after task C.
-13,True,True,append a task E following task C ,Insert a new task E after task C.
-14,True,True,Please add task E directly after task C,Insert task E directly after task C.
-15,True,False,Task E was added for the case taskQ evaluated to false ,Embed Task E in a conditional branch for the case where taskQ evaluates to false.
-16,True,False,"Aditionally, the new model should have a task E after task C in the flase OR Gateway path",Insert a new task E after task C in the false OR Gateway path.
-17,True,True,"In the 'OR split' after 'task A', insert a transition 'task E' after 'task C' and its corresponding edges.",NA
-18,True,True,Add task E directly after task C,Insert task E directly after task C.
-19,True,True,Please insert a task E between task C and the closing XOR ,Insert task E between task C and the closing XOR.
-20,True,True,insert task E after task C and before XOR gateway (join),Insert task E after task C and before XOR gateway (join).
+1,True,False,delete task E from the model,Delete task E from the model.
+2,True,False,"after task C in the false bracket, append task E","After task C, if the condition evaluates to false, task E will be executed."
+3,True,True,create task E and make it follow task C only,Insert a new task E immediately after task C.
+4,True,False,"In the new model, if task A is false, 2 tasks should be done: task C and task E.","If task A is false, then task C and task E should be performed."
+5,True,True,"Please add another task (task E) in the ""false""-branch directly after task C. ","Add a new task, named ""task E,"" immediately after ""task C"" in the ""false"" branch."
+6,True,True,Add task E to the model after task C,Insert a new task E immediately after task C.
+7,True,True,"Insert a task E immediately after task C. After that the closing or-gate should follow. The other path of the or-gate, including task B, should not be changed.","Insert a task E immediately after task C. After that, the closing OR-gate should follow. The other path of the OR-gate, including task B, should not be changed."
+8,True,True,Add a task E following task C before the join clause,Add a task E immediately after task C and before the join clause.
+9,True,False,"Add a task E after task C. The reason is that if after task a the status is false we need to do task c first and then immediately afterwards task E, task E is not needed if after task A the status is true.",Embed task E after task C in a conditional branch where task E is executed only if the status after task A is false.
+10,True,False,Remove task E,"Remove the task labeled ""E"" from the process model."
+11,True,True,please add one more step after task c and before arriving into X,Add a new step after task C and before task X.
+12,True,True,Add task E after task C,Add a new task E immediately after task C.
+13,True,True,append a task E following task C ,Insert a new task E immediately after task C.
+14,True,True,Please add task E directly after task C,Add task E immediately following task C.
+15,True,False,Task E was added for the case taskQ evaluated to false ,Task E is executed when taskQ evaluates to false.
+16,True,True,"Aditionally, the new model should have a task E after task C in the flase OR Gateway path",Insert a new task E after task C in the false path of the OR Gateway.
+17,True,True,"In the 'OR split' after 'task A', insert a transition 'task E' after 'task C' and its corresponding edges.",Insert 'task E' after 'task C' in the 'OR split' following 'task A'.
+18,True,True,Add task E directly after task C,Add a new task E immediately following task C.
+19,True,True,Please insert a task E between task C and the closing XOR ,Insert a task E between task C and the closing XOR.
+20,True,True,insert task E after task C and before XOR gateway (join),Insert task E after task C and before the XOR gateway (join).
 21,True,True,please insert an additional task E immediately after task C.,Insert an additional task E immediately after task C.
-22,True,True,Please add task E behind Task C before going into the XOR,Insert Task E between Task C and the XOR gateway.
+22,True,True,Please add task E behind Task C before going into the XOR,Insert Task E immediately after Task C and before the XOR gateway.
 23,True,True,Adding a task,NA
-24,True,True,Please add another Task E directly following the Task C in the False Branch of the Gate. ,Insert a new Task E directly following Task C in the False Branch of the Gate.
-25,True,True,Add task E directly after task C before the XOR join. ,Insert task E directly after task C before the XOR join.
+24,True,True,Please add another Task E directly following the Task C in the False Branch of the Gate. ,Add a new Task E directly after Task C in the False Branch of the Gateway.
+25,True,True,Add task E directly after task C before the XOR join. ,Task E is added directly after task C and before the XOR join.
 26,True,True,Directly after task C add task E. Do not make any other changes.,Insert task E directly after task C.
-27,True,True,Add task E after task C.,Insert task E after task C.
+27,True,True,Add task E after task C.,Add a new task E immediately after task C.
 28,True,True,Insert a task E between task C and the Exclusive gateway,Insert a task E between task C and the Exclusive gateway.
-29,True,True,Add an additional task E directly after task C and before the closing of the OR-gateway.,Insert a new task E directly after task C and before the closing of the OR-gateway.
-30,True,True,Please insert Task E after Task C,Insert Task E after Task C.
+29,True,True,Add an additional task E directly after task C and before the closing of the OR-gateway.,Add a new task E directly after task C and before the closing of the OR-gateway.
+30,True,True,Please insert Task E after Task C,Insert Task E directly after Task C.
 31,True,True,"After task C, insert a new task E.",Insert a new task E after task C.
-32,True,True,"Add a new task E after task C, before the two branches converge.","Insert a new task E after task C, before the two branches converge."
-33,True,True,Add a Task E after Task C but Before the XOR-Merge Gate,Insert Task E after Task C but before the XOR-Merge Gate.
-34,True,False,"After executing task A, a condition is executed. If false, complete task C and add a new task E. If the condition is true, complete task B and contniue as stated in the graph","Embed a conditional branch after executing task A. If the condition is false, complete task C and add a new task E. If the condition is true, complete task B and continue as stated in the graph."
-35,True,True,Include Task E after Task C in the path before the merger to Task D,Insert Task E after Task C in the path before the merger to Task D.
-36,True,False,"Task E is added, which means in case of a false Task A, task C and E should be executed",Embed Task C and Task E in a conditional branch to be executed if Task A is false.
-37,True,True,Add a task called task E directly following task C with the same conditional logic  ,Insert a task called task E directly following task C with the same conditional logic.
-38,True,True,Adding a task E after task C. ,Insert a new task E after task C.
-39,True,False,"the ""false"" path should include a task E after task C","Embed a task E in the ""false"" path after task C."
-40,True,False,"Task E is added, following task C, in case task condition",Embed Task E in a conditional branch following Task C.
-41,True,False,after task a if it results in a false value we do task c and then go back to task d after which the entire model ends. I want to add a second task e which takes place after task c and before we go into task d,Insert a new task e between task c and task d.
-42,True,True,"Please add a new task called ""task E"" that should be executed after task C","Insert a new task called ""task E"" to be executed after task C."
+32,True,True,"Add a new task E after task C, before the two branches converge.","Add a new task E after task C, before the two branches converge."
+33,True,True,Add a Task E after Task C but Before the XOR-Merge Gate,A new Task E is added after Task C and before the XOR-Merge Gateway.
+34,True,False,"After executing task A, a condition is executed. If false, complete task C and add a new task E. If the condition is true, complete task B and contniue as stated in the graph","After executing task A, a condition is evaluated. If the condition is false, complete task C and then add a new task E. If the condition is true, complete task B and continue as stated in the graph."
+35,True,True,Include Task E after Task C in the path before the merger to Task D,Insert Task E after Task C before merging to Task D.
+36,True,False,"Task E is added, which means in case of a false Task A, task C and E should be executed","In case Task A is false, Task C and Task E should be executed."
+37,True,True,Add a task called task E directly following task C with the same conditional logic  ,Add a task called task E directly following task C with the same conditional logic.
+38,True,True,Adding a task E after task C. ,Insert a new task E immediately after task C.
+39,True,False,"the ""false"" path should include a task E after task C","A task E is added after task C in the ""false"" path of the conditional branch."
+40,True,False,"Task E is added, following task C, in case task condition","Task E is added to the process, following task C, but only if a specific condition is met."
+41,True,True,after task a if it results in a false value we do task c and then go back to task d after which the entire model ends. I want to add a second task e which takes place after task c and before we go into task d,Insert task e after task c and before task d in the process flow.
+42,True,True,"Please add a new task called ""task E"" that should be executed after task C","Insert a new task called ""task E"" to be executed immediately after task C."
 43,True,True,Add task E,NA
-44,True,True,"Add a new Task called ""task E"" following task C and connect only task E to the exclusive gateway. ","Insert a new Task called ""task E"" following task C and connect only task E to the exclusive gateway."
-45,True,True,Please add a new task E after the task C,Insert a new task E after the task C.
-46,True,True,Add one more step after processing task C,Insert a new step after processing task C.
-47,True,True,Insert task E after task C but before the two control flows merges,Insert task E after task C but before the two control flows merge.
-48,True,True,Add a new Task E after Task C in the Same condition,Insert a new Task E after Task C in the same condition.
-49,True,True,"Add a task E after task C, before X",Insert task E between task C and task X.
-50,True,True,Please add a new task E directly after task C ,Insert a new task E directly after task C.
-51,True,True,Add a new task E following task C.,Insert a new task E after task C.
-52,True,False,Add a new task E After Task C inside the XOR block,Insert a new task E after Task C inside the XOR block.
-53,True,True,Insert a task E after task C that then merges into the existing or gate,Insert a task E after task C.
-54,True,True,Add a new task E immediately after task C,Insert a new task E immediately after task C.
-55,True,True,"Add a new task E after task C, so that the 'false' branch becomes task C followed by task E.",Insert a new task E after task C in the 'false' branch.
-56,True,False,"The task C should followed by task E, no other relationship should be changed",The task C should be moved to follow task E.
-57,True,True,Please add Task E following Task C before merging the true and false cases,Insert Task E following Task C before merging the true and false cases.
-58,True,True,The task E is added after task c. ,Insert task E after task C.
-59,True,True,Add an extra task (task E) after task C.,Insert a new task E after task C.
-60,True,False,Please add a Task E to within the flow of „false“ after task C,"Embed Task E in the conditional branch that follows the ""false"" condition after Task C."
-61,True,False,in case task A results in false we need to add a task E after task C,Insert a new task E after task C if task A results in false.
-62,True,False,Add the task E after task C on the false branch.,Insert the task E after task C on the false branch.
-63,True,True,Insert a task e after task c.,Insert a new task e after task c.
+44,True,True,"Add a new Task called ""task E"" following task C and connect only task E to the exclusive gateway. ","Insert a new task called ""task E"" immediately after task C, and connect task E to the exclusive gateway."
+45,True,True,Please add a new task E after the task C,Insert a new task E immediately after the task C.
+46,True,True,Add one more step after processing task C,Add a new step immediately after the processing task C.
+47,True,True,Insert task E after task C but before the two control flows merges,Insert task E immediately after task C and before the two control flows merge.
+48,True,True,Add a new Task E after Task C in the Same condition,Insert a new Task E immediately after Task C within the same sequence flow.
+49,True,True,"Add a task E after task C, before X","Add a task E after task C, before task X."
+50,True,True,Please add a new task E directly after task C ,A new task E will be added directly after task C.
+51,True,True,Add a new task E following task C.,Insert a new task E immediately after task C.
+52,True,True,Add a new task E After Task C inside the XOR block,Add a new task E immediately after Task C within the XOR block.
+53,True,True,Insert a task E after task C that then merges into the existing or gate,"Insert a task E immediately after task C, and then merge task E into the existing OR gate."
+54,True,True,Add a new task E immediately after task C,A new task E is added immediately after task C.
+55,True,True,"Add a new task E after task C, so that the 'false' branch becomes task C followed by task E.","Add a new task E after task C, so that the 'false' branch becomes task C followed by task E."
+56,True,False,"The task C should followed by task E, no other relationship should be changed","Task C should be moved to follow Task E, without altering any other relationships."
+57,True,True,Please add Task E following Task C before merging the true and false cases,Insert Task E after Task C and before the point where the true and false cases merge.
+58,True,True,The task E is added after task c. ,The task E is added after task C.
+59,True,True,Add an extra task (task E) after task C.,Insert a new task E immediately after task C.
+60,True,True,Please add a Task E to within the flow of „false“ after task C,"Insert Task E in the sequence flow that follows Task C when the condition is ""false""."
+61,True,False,in case task A results in false we need to add a task E after task C,"In case task A results in false, task E needs to be added after task C."
+62,True,True,Add the task E after task C on the false branch.,Add the task E after task C on the false branch.
+63,True,True,Insert a task e after task c.,Insert a task e immediately after task c.

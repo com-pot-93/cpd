@@ -1,0 +1,10 @@
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->7:subprocess:(subprocess F)
+7:subprocess:-->8:endevent:((endevent))
+
+subgraph subprocess F
+    9:startevent:((startevent))-->10:task:(task B)
+    10:task:-->11:task:(task C)
+    11:task:-->12:endevent:(((endevent)))
+end

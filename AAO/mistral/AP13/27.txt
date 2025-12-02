@@ -1,21 +1,11 @@
-To apply the changes specified by "AP13" to the given BPMN model, I'll need to know what "AP13" refers to. Since the specific changes aren't provided, I'll assume "AP13" might be a placeholder for a set of modifications. For the sake of this example, let's assume "AP13" refers to the following changes:
-
-1. Add a new task "task E" after "task D".
-2. Change the condition on the edge from the exclusive gateway to "task C" from "false" to "not true".
-
-Given these assumptions, here is the modified Mermaid.js BPMN model:
-
 ```mermaid
 flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
 1:task:-->2:exclusivegateway:{x}
-2:exclusivegateway:-->|true|3:task:(task B)
-2:exclusivegateway:-->|not true|5:task:(task C)
+2:exclusivegateway:-->|a > 10|3:task:(task B)
+2:exclusivegateway:-->|a <= 10|5:task:(task C)
 3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
 6:exclusivegateway:--> 7:task:(task D)
-7:task:-->9:task:(task E)
-9:task:-->8:endevent:(((endevent)))
+7:task:-->8:endevent:(((endevent)))
 ```
-
-This model includes the new task "task E" and the updated condition for the edge leading to "task C". If "AP13" refers to different changes, please provide the specific modifications, and I can adjust the model accordingly.

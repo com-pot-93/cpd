@@ -5,10 +5,8 @@ flowchart LR
 2:parallelgateway:-->3:task:(task B)
 2:parallelgateway:-->4:task:(task D)
 2:parallelgateway:-->5:task:(task C)
-3:task:-->6:exclusivegateway:{x}
-5:task:-->6:exclusivegateway:
-6:exclusivegateway:-->7:task:(task D)
-7:task:-->8:parallelgateway:{AND}
-4:task:-->8:parallelgateway:
-8:parallelgateway:-->9:endevent:(((endevent)))
+3:task:-->6:parallelgateway:{AND}
+4:task:-->6:parallelgateway:
+5:task:-->6:parallelgateway:
+6:parallelgateway:-->7:endevent:(((endevent)))
 ```

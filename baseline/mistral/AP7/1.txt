@@ -1,0 +1,11 @@
+```mermaid
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->7:exclusivegateway:{x}
+7:exclusivegateway:{x}-->|true| 9:task:(task B)
+7:exclusivegateway:{x}-->|false| 10:task:(task C)
+9:task:-->11:task:(task D)
+10:task:-->11:task:
+11:task:-->12:exclusivegateway:{x}
+12:exclusivegateway:{x}-->8:endevent:(((endevent)))
+```

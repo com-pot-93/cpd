@@ -8,5 +8,5 @@ flowchart LR
 10:task:-->6:exclusivegateway:{x}
 3:task:-->6:exclusivegateway:
 5:task:-->6:exclusivegateway:
-6:exclusivegateway:-->7:task:(task D)
+6:exclusivegateway:--> 7:task:(task D)
 7:task:-->8:endevent:((endevent))

@@ -9,7 +9,10 @@ flowchart LR
 6:exclusivegateway:-->|false|9:task:(task E)
 9:task:-->10:exclusivegateway:{x}
 10:exclusivegateway:-->|true|11:task:(task F)
-10:exclusivegateway:-->|false|9:task:
+10:exclusivegateway:-->|false|6:exclusivegateway:
 11:task:-->12:exclusivegateway:{x}
-12:exclusivegateway:-->13:task:(task G)
-13:task:-->8:endevent:((endevent))
+12:exclusivegateway:-->|true|13:task:(task G)
+12:exclusivegateway:-->|false|10:exclusivegateway:
+13:task:-->14:exclusivegateway:{x}
+14:exclusivegateway:-->15:task:(task H)
+15:task:-->8:endevent:((endevent))

@@ -1,13 +1,5 @@
 flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->2:task:(B)
-2:task:-->3:task:(task B)
-2:task:-->5:task:(task C)
-2:task:-->9:task:(task E)
-9:task:-->10:task:(task F)
-10:task:-->6:exclusivegateway:{x}
-3:task:-->6:exclusivegateway:
-5:task:-->6:exclusivegateway:
-6:exclusivegateway:-->7:task:(task D)
-7:task:-->8:endevent:(((endevent)))
-
+1:task:(task A)-->3:task:(Task B)
+3:task:(Task B)-->7:task:(task D)
+7:task:(task D)-->8:endevent:((endevent))

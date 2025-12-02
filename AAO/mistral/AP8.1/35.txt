@@ -8,8 +8,7 @@ flowchart LR
 5:task:-->6:exclusivegateway:
 6:exclusivegateway:--> 7:task:(task D)
 7:task:-->9:exclusivegateway:{x}
-9:exclusivegateway:-->|B|7:task:
-9:exclusivegateway:-->|C|7:task:
-9:exclusivegateway:-->|D|7:task:
-9:exclusivegateway:-->|otherwise|8:endevent:(((endevent)))
+9:exclusivegateway:-->|b|3:task:
+9:exclusivegateway:-->|c|5:task:
+9:exclusivegateway:-->|d|8:endevent:(((endevent)))
 ```

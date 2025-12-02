@@ -1,0 +1,60 @@
+gemini,,,,,,,,,,,,,,,,,,
+,AP1,AP2,AP3,AP4,AP5,AP8.1,AP8.2,AP9,AP10,AP14,AP6,AP7,AP13,AP19,AP15,AP16,AP17,AP18
+0,a,b,c,d,e,f,g,h,j,i,k,u,y,t,l,p,n,i
+1,,forward false without any tasks,Please move task C behind the second XOR and if the first XOR is false we do now go directly into the second XOR,rename task b to task e,"rename Task A to task B and task A to task B, essentially changing the 2 tasks","In the new model, if task B or C is false, task D should be done. Afterwards task D will be checked, if task D is false, task D will be repeated again.",Task D has to be done correctly to complete the process,-,No idea,?,Please replace the current condition with a subprocess F.,Display the subprocess F as it was before,.,-,Not sure what the difference is,same as above vice versa ,.,Please replace the condition with task B.
+2,,,remove task C such that after task A is suceded by task D when the condition is false. After the condition add a new task C.,Please rename task B to task E,"Swap the label between ""task A"" and ""task B"". Do not make any other changes.",a kind of loop is introduced,I don't know. ,Introduce task D as a parallel path directly after task A,.,.,.,.,I don't know. ,.,.,Not sure,I don't know. ,.
+3,,,Remove task C from the false branch and add a new task C before task D.,please change the name of task B to task E,"at the start, add task B. replace task B inside the conditional branch with task A.",I don't know how to describe this,,And gate?,I don't know how to describe this process change,I don't know. ,"fuck the original process. create a new process with task A at the beginning, followed by subprocess F.",I don't know. ,,I don't know. ,I don't know. ,.,,"recreate a new process model with task A -> task B -> task D
+"
+4,,,,rename task B to task E,Replace the Name of Task A with Task B and Task B with Task A,I don't know. ,,Add a parallel Task D where the Split happens after Task a and ist joined before the end of the process,I don't know. ,-,"Please insert subprocess F after task A and remove task B, C and D",Subprocess F is clearly explained how it works. ,,Sorry I don't know,Process the task B and E one by one ,I don't know. ,,I don't know. 
+5,,,,Rename task B to task E,rename task A to B and B to A,,,I don't know. ,,,After task A add subprocess F. Then end the process. Remove all other tasks.,reverse the process from the previous question ,,,,reverse the action from the previuos question,,-
+6,,,,"Replace the label of ""task B"" with ""task E"". Do not make any other changes.",,,,"Add two new status after the task A and at the position of task D, move the original task C to the middle position of both new status ",,,"summarize tasks b,c and d and their paths in subprocess F ","Please remove subprocess F, and make a new exclusive gate after task A. If true, execute task B, if false, execute task C, and then execute task D which leads to completion",,,,,,"Create a new PM. That starts with task A, followed by task B, followed by task D, followed by an end event."
+7,,,,Rename task B to task E,,,,,,,I don't know. ,Show subprocess F,,,,,,
+8,,,,Change the name of task B to task E.,,,,,,,create a new process flow with task A followed by subporcess F and then the endpoint,"Delete subprocess F first, add a selection state after task A, add a new task B if it’s true , add a task C if it’s false, after B and C add a new state, after this state add a new task D",,,,,,
+9,,,,Change the Name of Task B to Task E,,,,,,,Subprocess F follows task A. It seems to be black box. ,The output PM does not have subprocess. ,,,,,,
+10,,,,"change the text ""task B"" to ""task E""",,,,,,,,,,,,,,
+11,,,,"Change the name of ""task B"" to be ""task E"" ",,,,,,,,,,,,,,
+12,,,,renametask B to E,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+gpt,,,,,,,,,,,,,,,,,,
+,AP1,AP2,AP3,AP4,AP5,AP8.1,AP8.2,AP9,AP10,AP14,AP6,AP7,AP13,AP19,AP15,AP16,AP17,AP18
+0,a,b,c,d,e,f,g,h,j,i,k,u,y,t,l,p,n,i
+1,,forward false without any tasks,,rename task b to task e,Replace the Name of Task A with Task B and Task B with Task A,a kind of loop is introduced,Task D has to be done correctly to complete the process,-,No idea,?,.,.,.,-,"In the new model, the system executes tasks B, E in sequence.",Not sure,.,delete everything and create a new process with task A then task B then task D
+2,,,,Please rename task B to task E,,I don't know how to describe this,I don't know. ,And gate?,.,.,I don't know. ,I don't know. ,I don't know. ,.,Not sure what the difference is,.,I don't know. ,.
+3,,,,please change the name of task B to task E,,I don't know. ,,I don't know. ,I don't know how to describe this process change,I don't know. ,,Subprocess F is clearly explained how it works. ,,I don't know. ,.,I don't know. ,,fuck the entire process. create a new process with task A followed by task B followed by task D
+4,,,,rename task B to task E,,,,,"first, execute c, then b ",-,,,,Sorry I don't know,I don't know. ,reverse the action from the previuos question,,I don't know. 
+5,,,,Rename task B to task E,,,,,I don't know. ,,,,,,,,,-
+6,,,,"Replace the label of ""task B"" with ""task E"". Do not make any other changes.",,,,,,,,,,,,,,"Create a new PM. That starts with task A, followed by task B, followed by task D, followed by an end event."
+7,,,,Rename task B to task E,,,,,,,,,,,,,,
+8,,,,Change the name of task B to task E.,,,,,,,,,,,,,,
+9,,,,Change the Name of Task B to Task E,,,,,,,,,,,,,,
+10,,,,"change the text ""task B"" to ""task E""",,,,,,,,,,,,,,
+11,,,,"Change the name of ""task B"" to be ""task E"" ",,,,,,,,,,,,,,
+12,,,,renametask B to E,,,,,,,,,,,,,,
+13,,,,Change the signature of task B to task E,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,
+mistral,,,,,,,,,,,,,,,,,,
+,AP1,AP2,AP3,AP4,AP5,AP8.1,AP8.2,AP9,AP10,AP14,AP6,AP7,AP13,AP19,AP15,AP16,AP17,AP18
+0,a,b,c,d,e,f,g,h,j,i,k,u,y,t,l,p,n,i
+1,Adding a task,forward false without any tasks,Change task c from false input to finally ,change task B into task E,Swap the labels 'task A' and 'task B'.,I don't know how to describe this,boolean evaluation of result of taskD,-,No idea,?,summarize everything after task a into subprocess f,"create task B, task D, and task C and remove subprocess F
+after task A, task B or task C should follow - task B should follow if true, task C if false
+task D should always be executed after either task B or C",.,-,Not sure what the difference is,summarize task b and task e into single task b&e,Delete condition c from the model,Delete conditions b and c from the model
+2,Add task E,,add a task c after the decision join.,rename task b to task e,"rename Task A to task B and task A to task B, essentially changing the 2 tasks",I don't know. ,I don't know. ,I don't know. ,.,.,.,"Convert subprocess F into the following scheme: The first element is an if-else statement that takes an boolean input from task A. If true task B should follow, if false task C should follow. Afterwards another if-else-block should be placed to consolidate the two branches which then go to task D. ",I don't know. ,.,.,Please summarize task B and task E in one task task B&E,.,"Remove the everything within 'OR split' and 'OR join', including those operation nodes. Insert 'task B' between 'task A' and 'task C'. "
+3,,,,Please rename task B to task E,"Swap the label between ""task A"" and ""task B"". Do not make any other changes.",,Add another exclusive gateway following our second gateway. Connect this third exclusive gateway to another exclusive gateway through task D. the fourth exclusive gateways false condition is connected back to our third exclusive gateway while our true condition is connected to the end node. ,Add a new AND branch within task D ,I don't know how to describe this process change,I don't know. ,"summarize tasks b,c and d and their paths in subprocess F ",Display the subprocess F as it was before,Clarify the judgment condition is whether a is less than 10,Replace the conditional branch by an unconditional branch.,I don't know. ,same as above vice versa ,"Add a new branch in the exclusive gateway, this one should be executed if it's case ""c"". In that case tasks with labels ""task E"" and ""task F"" should be executed.",.
+4,,,,please change the name of task B to task E,Replace the Name of Task A with Task B and Task B with Task A,,Add a joining or gate before task D which gets the input from the or gate after task D on the false path. The true path gets to the end state,,"first, execute c, then b ",-,I don't know. ,.,,I don't know. ,Process the task B and E one by one ,please summarize task B and task E into one task named: task B & E,"Insert a third condition ""c"" for the first XOR gateway that includes two sequential tasks ""task E"" followed by ""task F"". This sequence flow terminates in the second XOR gateway.","the tasks are now executed sequentially, instead of conditionally. the tasks c, e, f are now removed, the conditions also. "
+5,,,,rename task B to task E,rename task A to B and B to A,,"Insert a new XOR gateway after the first one, and move task D to the 'false' branch of this new gateway.",,I don't know. ,,,I don't know. ,,Sorry I don't know,Task B and E is run in sequence. ,Not sure,I don't know. ,I don't know. 
+6,,,,Rename task B to task E,,,,,Add two new XOR Decision Gateways. The first one immediately before the first decision gateway in the Input PM. The second one immediately after the last decision gateway in the Input PM. Create two paths. The first paths is between the two new XOR Decision Gateways and is traversed if a=1. The second path is between the first two XOR Decision Gateways and is traversed if a != 1.,,,Subprocess F is clearly explained how it works. ,,Replace both selection states to normal states ,,.,,-
+7,,,,"Replace the label of ""task B"" with ""task E"". Do not make any other changes.",,,,,The if condition will not be involved in the first run. ,,,Show subprocess F,,,,perform task b and e together ,,
+8,,,,Rename task B to task E,,,,,,,,,,,,I don't know. ,,
+9,,,,Change the name of task B to task E.,,,,,,,,,,,,rename Task B to Task B&E. Remove task E.,,
+10,,,,"Change ""task B"" to ""task E"".",,,,,,,,,,,,Task b and e are summarized together. ,,
+11,,,,Change the Name of Task B to Task E,,,,,,,,,,,,,,
+12,,,,"change the text ""task B"" to ""task E""",,,,,,,,,,,,,,
+13,,,,Switch B to E,,,,,,,,,,,,,,
+14,,,,"Change the name of ""task B"" to be ""task E"" ",,,,,,,,,,,,,,
+15,,,,Change the content of task B to E,,,,,,,,,,,,,,
+16,,,,Change task B to task E,,,,,,,,,,,,,,
+17,,,,Change Task B to Task E,,,,,,,,,,,,,,
+18,,,,renametask B to E,,,,,,,,,,,,,,
+19,,,,Change the signature of task B to task E,,,,,,,,,,,,,,
+20,,,,Please change task B to Task E,,,,,,,,,,,,,,

@@ -1,105 +1,68 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,k,False,False,0.0
-1,1,True,True,Merge the whole XOR and task D into a subprocess F.,NA.,True,0.6624356775300172
-2,2,True,True,change all to one subprocess F except the task A,NA.,True,0.6624356775300172
-3,3,True,True,create subprocess F and replace everything after task A with it,NA.,True,0.6624356775300172
-4,4,True,True,"In the new model, after task A, there is one subprocess F.",,False,0.0
-5,5,True,True,Keep only task A and let it follow a sub-process F.,,False,0.0
-6,6,True,True,"Combine tasks B, C, and D into subprocess F ",NA.,True,0.6624356775300172
-7,7,True,False,"Remove the or-block of the input process model, including the two or-gates and both task B and C, and replace it with a task called 'subprocess F'. Furthermore remove task D. The resulting proces model only consists of the start and end event as well as task A followed by subprocess F.",NA.,True,0.6624356775300172
-8,8,True,True,encapsulate everything after task A in subproces F,NA.,True,0.6624356775300172
-9,9,True,True,"Move everything after task a into a separate subprocess F, which then included the Or Condition,Task B, Task C and Task D",NA.,True,0.6624356775300172
-10,10,True,True,group everything except task a into a subprocess F,NA.,True,0.6624356775300172
-11,11,True,True,"Call the process coming after task A subprocess F, and while presenting the flow, use subprocess F for notation.",NA.,True,0.6624356775300172
-12,12,True,True,summarize everything after task a into subprocess f,,False,0.0
-13,13,True,True,remove the optional paths B and C as well as D and make a subprocess F out of them,NA.,True,0.6624356775300172
-14,14,True,True,Please replace the current condition with a subprocess F.,,False,0.0
-15,15,True,True,subprocess introduced for taskB and C incl. the boolean operator,NA.,True,0.6624356775300172
-16,16,True,True,Summarize everything after task A into an Subprocess.,,False,0.0
-17,17,True,False,"After 'task A' and before the 'end place', replace all elements with a transition 'subprocess F'.",NA.,True,0.6624356775300172
-18,18,True,True,Introduce a subprocess F instead of all tasks after task A,NA.,True,0.6624356775300172
-19,19,True,True,Please summarize the xor section together with task D to a subprocess F and insert it into the model.,NA.,True,0.6624356775300172
-20,20,True,True,embed XOR block containing tasks B and C as well as task D into complex task with label subprocess F,NA.,True,0.6624356775300172
-21,21,False,False,"please only keep the start, end and task A in the model, and then add subprocess F after task A.",False,False,0.0
-22,22,True,True,Make everything besides task A into a subprocess F,NA.,True,0.6624356775300172
-23,23,True,True,Creating a subprocess for tasks b - d,NA.,True,0.6624356775300172
-24,24,False,False,.,False,False,0.0
-25,25,True,True,Abstract the XOR fragment and task D into a subprocess F. ,NA.,True,0.6624356775300172
-26,26,True,False,"Now directly after task A we have ""subprocess F"". Please delete all the rest. ",NA.,True,0.6624356775300172
-27,27,True,False,"fuck the original process. create a new process with task A at the beginning, followed by subprocess F.",,False,0.0
-28,28,True,True,transform everything except task A into a subprocess,"To transform everything except Task A into a subprocess, we need to evaluate the modification based on the provided change patterns and BPMN semantics.
+0,0,False,False,k,False,False,0.5252144082332763
+1,1,True,True,Merge the whole XOR and task D into a subprocess F.,The modification means that the entire XOR gateway along with task D will be grouped together and placed within a new subprocess named F.,True,0.6271634615384615
+2,2,True,True,change all to one subprocess F except the task A,"The modification means that all activities in the process model, except for task A, will be grouped together and encapsulated within a new subprocess named F.",True,0.5794871794871795
+3,3,True,True,create subprocess F and replace everything after task A with it,"The modification means that a new subprocess F will be created, and all activities and elements that currently follow task A in the process will be moved into this new subprocess F.",True,0.5794871794871795
+4,4,True,True,"In the new model, after task A, there is one subprocess F.","The modification means that after Task A, a new Subprocess F has been added to encapsulate a fragment of the existing process.",True,0.5794871794871795
+5,5,True,True,Keep only task A and let it follow a sub-process F.,"The modification means that Task A will be followed by a new sub-process F, which will encapsulate the remaining process fragment.",True,0.5794871794871795
+6,6,True,True,"Combine tasks B, C, and D into subprocess F ","The modification means that tasks B, C, and D will be grouped together and placed within a new subprocess named F.",True,0.5670673076923077
+7,7,True,False,"Remove the or-block of the input process model, including the two or-gates and both task B and C, and replace it with a task called 'subprocess F'. Furthermore remove task D. The resulting proces model only consists of the start and end event as well as task A followed by subprocess F.","The modification means:
 
-1. **Validation**: The modification specifies transforming everything except Task A into a subprocess. This information is sufficient and unambiguous.
-
-2. **Mapping to Change Pattern**: This modification maps to ""AP6"": Extract Sub Process. Extracts an existing process fragment to encapsulate it in a separate sub process.
-
-3. **Deriving the Actual Meaning**: Based on BPMN semantics and the intent of the change pattern, the actual meaning of the modification is:
-
-""Encapsulate all activities and elements except Task A into a separate subprocess.""",True,0.6271634615384615
-29,29,True,True,"Simplify the process to only show task A and the rest as ""subprocess F"".",NA.,True,0.6624356775300172
-30,30,True,True,"Please insert subprocess F after task A and remove task B, C and D",NA.,True,0.6624356775300172
-31,31,True,True,"Store all operations after task A with a new task called ""subprocess F"".",,False,0.0
-32,32,True,True,Replace everything except task A with a subprocess F.,NA.,True,0.6624356775300172
-33,33,True,True,Display the process from the Split Gateway to the end of the process as subprocess F,"To evaluate and interpret the user-provided modification, let's break down the request step by step:
-
-1. **Validation of Information**:
-   - The user wants to display the process from the Split Gateway to the end of the process as a subprocess named ""F"".
-   - This modification contains sufficient and unambiguous information to be applied.
-
-2. **Mapping to Change Pattern**:
-   - The modification involves extracting a part of the process and encapsulating it in a separate subprocess.
-   - This corresponds to the change pattern **AP6: Extract Sub Process**.
-
-3. **Deriving the Actual Meaning**:
-   - Based on BPMN semantics and the intent of the change pattern AP6, the user wants to take the sequence of activities from the Split Gateway to the end of the process and encapsulate it within a subprocess named ""F"".
-
-4. **Ensuring Compliance with BPMN Rules**:
-   - Extracting a subprocess is a valid operation in BPMN.
-   - The structure of the existing process should allow for the extraction without violating any BPMN modeling rules.
-
-Given the above analysis, the actual meaning of the user input in natural language is:
-
-**Encapsulate the sequence of activities from the Split Gateway to the end of the process within a subprocess named ""F"".**",True,0.6435897435897436
-34,34,True,True,After task A add subprocess F. Then end the process. Remove all other tasks.,NA.,True,0.6624356775300172
-35,35,False,False,"summarize tasks b,c and d and their paths in subprocess F ",False,False,0.0
-36,36,True,True,"instead of a condition to either b or c, we now have a subprocess F sequentially executed",NA.,True,0.6624356775300172
-37,37,True,False,"replace the conditional logic and task d with ""subprocess F"" ",NA.,True,0.6624356775300172
-38,38,False,False,I don't know. ,False,False,0.0
-39,39,True,True,create a new process flow with task A followed by subporcess F and then the endpoint,,False,0.0
-40,40,True,False,Subprocess F follows task A. It seems to be black box. ,,False,0.0
-41,41,False,False,delete everthying after task a and replace it with the subprocess F which results in the end,False,False,0.0
-42,42,True,False,Please replace everything after task A with subprocess F,NA.,True,0.6624356775300172
-43,43,True,True,Everything after task a is called subprocess F,,False,0.0
-44,44,True,True,put every process following task A into a subprocess called subprocess F,,False,0.0
-45,45,True,True,Replace all process between task A and end state to a new subprocess F ,Replace the sequence of activities between 'Task A' and the 'End State' with a new subprocess labeled 'F'.,True,1.0
-46,46,True,True,Encapsulating decision logic into a subprocess,NA.,True,0.6624356775300172
-47,47,True,True,Merge everythingt that comes after task A into a subprocess F,NA.,True,0.6624356775300172
-48,48,True,True,Abstract the process after Task a into subprocess F.,,False,0.0
-49,49,True,True,substitute everything but task A and start-point and endpoint with a subprocess F,NA.,True,0.6624356775300172
-50,50,True,False,replace everything behind task A with subprocess F.,,False,0.0
-51,51,True,False,Replace the whole XOR branch and task D with a subprocess called F.,NA.,True,0.6624356775300172
-52,52,True,True,replace everything After a exept the endevent with subprocess F,NA.,True,0.6624356775300172
-53,53,True,False,"replace everything after taks A with ""subprocess F""",NA.,True,0.6624356775300172
-54,54,True,True,Create a new subprocess F that contains all elements between task A and task D,,False,0.0
-55,55,True,False,Merge tasks  except A into a new subprocess F,NA.,True,0.6624356775300172
-56,56,True,True,Compress the task other than task A in to sub process F,,False,0.0
+The parallel branching structure (the OR-block) that includes Task B, Task C, and their respective gateways is removed from the process model. Additionally, Task D is eliminated. The revised process model now consists of a Start Event, followed by Task A, then a new Task called 'Subprocess F', and finally an End Event, all arranged in a simple sequence.",True,1.0
+8,8,True,True,encapsulate everything after task A in subproces F,"The modification means that all activities and elements occurring after ""Task A"" will be grouped together and placed within a new subprocess named ""F"".",True,0.5794871794871795
+9,9,True,True,"Move everything after task a into a separate subprocess F, which then included the Or Condition,Task B, Task C and Task D","The modification means that a new subprocess F has been created to encapsulate the sequence starting after Task A, including the OR gateway, Task B, Task C, and Task D.",True,0.5794871794871795
+10,10,True,True,group everything except task a into a subprocess F,"The modification means that all activities and elements in the process, except for ""Task A,"" will be grouped together and encapsulated within a new subprocess named ""F.""",True,0.5794871794871795
+11,11,True,True,"Call the process coming after task A subprocess F, and while presenting the flow, use subprocess F for notation.","The modification means that the sequence of activities following task A will be grouped into a separate subprocess, named ""Subprocess F,"" to encapsulate this portion of the process.",True,0.5794871794871795
+12,12,False,False,summarize everything after task a into subprocess f,False,False,0.5252144082332763
+13,13,True,True,remove the optional paths B and C as well as D and make a subprocess F out of them,,False,0.5252144082332763
+14,14,True,True,Please replace the current condition with a subprocess F.,NA.,True,0.5252144082332763
+15,15,True,True,subprocess introduced for taskB and C incl. the boolean operator,"The modification means that a new subprocess has been created to encapsulate the existing tasks ""B"" and ""C,"" including the boolean operator that connects them.",True,0.5794871794871795
+16,16,True,True,Summarize everything after task A into an Subprocess.,"The modification means that all activities and elements occurring after ""Task A"" will be grouped together and encapsulated within a separate subprocess.",True,0.6271634615384615
+17,17,True,False,"After 'task A' and before the 'end place', replace all elements with a transition 'subprocess F'.",The existing sequence of elements between 'task A' and the 'end place' will be removed and substituted with a single subprocess labeled 'subprocess F'.,True,1.0
+18,18,True,True,Introduce a subprocess F instead of all tasks after task A,The modification means that all tasks currently following task A will be grouped together and placed within a new subprocess named F. This subprocess F will now be the succeeding element after task A in the BPMN model.,True,0.5794871794871795
+19,19,True,True,Please summarize the xor section together with task D to a subprocess F and insert it into the model.,"The modification means that a exclusive gateway (XOR) section and task D will be grouped together and placed within a new subprocess named F, which will then be integrated back into the model.",True,0.5794871794871795
+20,20,True,True,embed XOR block containing tasks B and C as well as task D into complex task with label subprocess F,"The modification means that tasks B, C (within an XOR gateway), and task D will be grouped together and encapsulated within a new subprocess labeled ""F"".",True,0.5670673076923077
+21,21,True,False,"please only keep the start, end and task A in the model, and then add subprocess F after task A.","The modification means: After completing Task A, a new subprocess F will be initiated before reaching the end of the process.",True,0.5794871794871795
+22,22,True,True,Make everything besides task A into a subprocess F,"The modification means that all activities and elements in the process, except for task A, will be grouped together and encapsulated within a new subprocess named F.",True,0.5794871794871795
+23,23,True,True,Creating a subprocess for tasks b - d,"The modification means that tasks ""b"", ""c"", and ""d"" will be grouped together and encapsulated within a separate subprocess.",True,0.5794871794871795
+24,24,False,False,.,False,False,0.5252144082332763
+25,25,True,True,Abstract the XOR fragment and task D into a subprocess F. ,"The modification means that a portion of the process, specifically the XOR (exclusive gateway) fragment and task D, will be grouped together and encapsulated within a new subprocess named F.",True,0.6271634615384615
+26,26,True,False,"Now directly after task A we have ""subprocess F"". Please delete all the rest. ","The modification means that all activities and elements between task A and ""subprocess F"" should be removed, and ""subprocess F"" should now directly follow task A.",True,0.8062893081761007
+27,27,True,False,"fuck the original process. create a new process with task A at the beginning, followed by subprocess F.",NA.,True,0.5252144082332763
+28,28,True,True,transform everything except task A into a subprocess,"The modification means that all activities and elements in the process, except for task A, will be grouped together and placed within a new subprocess.",True,0.5794871794871795
+29,29,True,True,"Simplify the process to only show task A and the rest as ""subprocess F"".","The modification means that the process model will be simplified so that only task A is shown explicitly, while the remaining tasks are grouped together and encapsulated within a separate subprocess labeled ""subprocess F"".",True,1.0
+30,30,True,False,"Please insert subprocess F after task A and remove task B, C and D",NA.,True,0.5252144082332763
+31,31,True,True,"Store all operations after task A with a new task called ""subprocess F"".","The modification means that all activities currently following task A will be grouped together and encapsulated within a new subprocess named ""subprocess F"".",True,0.5794871794871795
+32,32,True,True,Replace everything except task A with a subprocess F.,"The modification means that all activities and elements in the process, except for task A, will be grouped together and placed within a new subprocess named F. This subprocess F will replace the original sequence of activities that were previously in the main process.",True,0.5794871794871795
+33,33,True,True,Display the process from the Split Gateway to the end of the process as subprocess F,The modification encapsulates the process fragment from the Split Gateway to the end into a separate subprocess labeled F.,True,0.5794871794871795
+34,34,True,True,After task A add subprocess F. Then end the process. Remove all other tasks.,"The modification means that after completing task A, a new subprocess F will be initiated. Once subprocess F is completed, the process will end. All other tasks originally present in the process will be removed.",True,1.0
+35,35,False,False,"summarize tasks b,c and d and their paths in subprocess F ",False,False,0.5252144082332763
+36,36,True,True,"instead of a condition to either b or c, we now have a subprocess F sequentially executed","The modification means that the decision point where the process could go to either task 'b' or task 'c' has been removed. Instead, a new subprocess 'F' will be executed sequentially after the preceding task, and tasks 'b' and 'c' will no longer be part of the main process flow.",True,0.7663971248876909
+37,37,True,False,"replace the conditional logic and task d with ""subprocess F"" ","The conditional logic and task D are replaced with a new subprocess labeled ""F"".",True,0.7160714285714286
+38,38,False,False,I don't know. ,False,False,0.5252144082332763
+39,39,True,True,create a new process flow with task A followed by subporcess F and then the endpoint,"The modification means that a new process flow will be created where task A is followed by a subprocess F, and then the process will end.",True,1.0
+40,40,True,False,Subprocess F follows task A. It seems to be black box. ,NA.,True,0.5252144082332763
+41,41,True,False,delete everthying after task a and replace it with the subprocess F which results in the end,NA.,True,0.5252144082332763
+42,42,True,True,Please replace everything after task A with subprocess F,"The modification means that all activities and elements currently following ""Task A"" will be grouped together and placed within a new subprocess named ""Subprocess F"".",True,0.5794871794871795
+43,43,True,True,Everything after task a is called subprocess F,"The modification means that all activities and elements occurring after ""Task A"" will be grouped together and encapsulated within a new subprocess named ""Subprocess F"".",True,0.5794871794871795
+44,44,True,True,put every process following task A into a subprocess called subprocess F,"The modification means that every task and flow that comes after task A in the current process will be grouped together and placed into a new subprocess named ""subprocess F"".",True,0.5794871794871795
+45,45,True,False,Replace all process between task A and end state to a new subprocess F ,"The modification means: ""Replace all activities and flows between 'Task A' and the 'End Event' with a new Subprocess 'F'.""",True,1.0
+46,46,True,True,Encapsulating decision logic into a subprocess,The modification means that a specific sequence of activities representing decision logic in the existing process will be grouped together and placed into a separate subprocess.,True,0.5794871794871795
+47,47,True,True,Merge everythingt that comes after task A into a subprocess F,The modification means that all activities and elements that occur after task A will be grouped together and placed within a new subprocess named F.,True,0.5794871794871795
+48,48,True,True,Abstract the process after Task a into subprocess F.,"The modification means that the sequence of activities following ""Task A"" will be grouped together and placed within a separate subprocess named ""F"".",True,0.5794871794871795
+49,49,True,True,substitute everything but task A and start-point and endpoint with a subprocess F,"The modification means that all activities and elements in the process model, except for task A, the start event, and the end event, will be grouped together and placed within a new subprocess named F.",True,0.6271634615384615
+50,50,True,True,replace everything behind task A with subprocess F.,NA.,True,0.5252144082332763
+51,51,True,True,Replace the whole XOR branch and task D with a subprocess called F.,"The modification means that the entire XOR branch, along with task D, will be removed from the main process and placed inside a separate subprocess named F.",True,0.5794871794871795
+52,52,True,True,replace everything After a exept the endevent with subprocess F,NA.,True,0.5252144082332763
+53,53,True,True,"replace everything after taks A with ""subprocess F""","The modification means that all activities and flows currently following ""task A"" will be grouped together and encapsulated within a new subprocess named ""subprocess F"".",True,0.5794871794871795
+54,54,True,True,Create a new subprocess F that contains all elements between task A and task D,The modification means that a new subprocess labeled 'F' will be created. This subprocess will include all activities and elements that currently exist between 'Task A' and 'Task D' in the process flow.,True,0.5794871794871795
+55,55,True,True,Merge tasks  except A into a new subprocess F,NA.,True,0.5252144082332763
+56,56,True,True,Compress the task other than task A in to sub process F,"The modification means that all tasks in the process, except for task A, will be grouped together and encapsulated within a new subprocess named F.",True,0.5562178828365879
 57,57,True,True,"Put the whole Process Model except for Task A into a subprocess F keeping the Overall functionality resulting in an Output
-Process Model with Start -> Task A -> Subprocess F -> End",NA.,True,0.6624356775300172
-58,58,True,False,The output PM can only have two tasks. ,NA.,True,0.6624356775300172
-59,59,True,True,"Simplify everything after task A but before the end of the process with ""subprocess F"".",,False,0.0
-60,60,True,True,Change the flow and put ecerything after Task A into a subprocess F,NA.,True,0.6624356775300172
-61,61,True,True,all tasks after task a are subprocess f,"To evaluate and interpret the user-provided modification ""all tasks after task a are subprocess f,"" we need to follow the steps outlined:
-
-(a) **Validating the modification**: The statement ""all tasks after task a are subprocess f"" is somewhat ambiguous. It does not specify exactly which tasks are being referred to or how they are being modified. Additionally, it does not clarify whether ""subprocess f"" is an existing subprocess or a new one.
-
-(b) **Mapping to a change pattern**: Based on the provided information, the closest change pattern could be ""AP6"": Extract Sub Process. However, the statement is not clear enough to definitively map it to this pattern.
-
-(c) **Deriving the actual meaning**: Given the ambiguity, it is challenging to derive a precise meaning. The statement seems to suggest that all tasks following ""task a"" should be encapsulated within a subprocess ""f,"" but it lacks specific details.
-
-(d) **Ensuring compliance with BPMN rules**: Without clear information on the tasks and the subprocess, it is not possible to ensure compliance with BPMN rules.
-
-Given the lack of sufficient and unambiguous information, the final output is:
-
-NA",True,0.6435897435897436
-62,62,True,False,Make a new process task A directly leads to subprocess F.,,False,0.0
-63,63,False,False,Delete evertything after task A. Then add a subprocess F after A.,False,False,0.0
+Process Model with Start -> Task A -> Subprocess F -> End","The modification encapsulates all activities in the process model, except for Task A, into a new subprocess named F. This results in a simplified main process that flows from Start to Task A, then to Subprocess F, and finally to End.",True,0.6271634615384615
+58,58,True,False,The output PM can only have two tasks. ,NA.,True,0.5252144082332763
+59,59,True,True,"Simplify everything after task A but before the end of the process with ""subprocess F"".","The modification means that a new subprocess ""F"" will be created to encapsulate all activities and flow objects that occur after task ""A"" but before the end of the process.",True,0.6271634615384615
+60,60,True,True,Change the flow and put ecerything after Task A into a subprocess F,"The modification means that all activities and flows currently following ""Task A"" will be grouped together and placed into a new subprocess named ""F"".",True,0.5794871794871795
+61,61,True,True,all tasks after task a are subprocess f,"The modification means that all tasks following ""task a"" will now be grouped together and encapsulated within a new subprocess named ""f"".",True,0.5794871794871795
+62,62,True,False,Make a new process task A directly leads to subprocess F.,,True,0.5794871794871795
+63,63,True,False,Delete evertything after task A. Then add a subprocess F after A.,"The modification means that all activities and elements occurring after ""Task A"" will be removed from the process model. After this deletion, a new subprocess labeled ""F"" will be added to follow ""Task A.""",True,0.8062893081761007

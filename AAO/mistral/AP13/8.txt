@@ -1,18 +1,11 @@
-To apply the changes specified by "AP13" to the given BPMN model, I need to know what "AP13" stands for. Since the specific changes aren't detailed, I'll assume a common scenario where "AP13" might refer to adding an approval task after task B.
-
-Here is the modified Mermaid.js BPMN model with the assumed changes:
-
 ```mermaid
 flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
 1:task:-->2:exclusivegateway:{x}
-2:exclusivegateway:-->|true|3:task:(task B)
-3:task:-->13:task:(Approval Task)
-13:task:-->6:exclusivegateway:{x}
-2:exclusivegateway:-->|false|5:task:(task C)
+2:exclusivegateway:-->|a > 10|3:task:(task B)
+2:exclusivegateway:-->|a <= 10|5:task:(task C)
+3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
 6:exclusivegateway:--> 7:task:(task D)
 7:task:-->8:endevent:(((endevent)))
 ```
-
-In this modified model, I added a new task with id 13, labeled "Approval Task," after task B. If you have a different interpretation of "AP13," please provide more details so I can adjust the model accordingly.

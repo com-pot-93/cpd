@@ -1,0 +1,16 @@
+flowchart LR
+0:startevent:((startevent))-->1:task:(task A)
+1:task:-->9:exclusivegateway:{x}
+9:exclusivegateway:-->|continue original path|2:exclusivegateway:{x}
+9:exclusivegateway:-->|new path via D|7:task:(task D)
+2:exclusivegateway:-->|true|3:task:(task B)
+2:exclusivegateway:-->|false|5:task:(task C)
+3:task:-->6:exclusivegateway:{x}
+5:task:-->6:exclusivegateway:
+6:exclusivegateway:-->11:exclusivegateway:{x}
+7:task:-->11:exclusivegateway:
+11:exclusivegateway:-->|option 1|15:task:(Path 2a)
+11:exclusivegateway:-->|option 2|16:task:(Path 2b)
+15:task:-->12:exclusivegateway:{x}
+16:task:-->12:exclusivegateway:
+12:exclusivegateway:-->8:endevent:((endevent))

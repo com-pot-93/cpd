@@ -1,5 +1,4 @@
-```mermaid
-graph LR
+flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
 1:task:-->2:exclusivegateway:{x}
 2:exclusivegateway:-->|a|3:task:(task B)
@@ -10,5 +9,4 @@ graph LR
 3:task:-->6:exclusivegateway:
 5:task:-->6:exclusivegateway:
 6:exclusivegateway:-->7:task:(task D)
-7:task:-->8:endevent:(((endevent)))
-```
+7:task:-->8:endevent:((endevent))

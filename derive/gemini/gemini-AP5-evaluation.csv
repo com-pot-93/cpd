@@ -1,123 +1,65 @@
 ,mapping,epap,user,meaning
 0,False,False,e,False
-1,True,True,swap the positions of tasks A and B,"Swap the positions of Task A and Task B.
-"
-2,True,True,change task A into task B and task B into task A,"Swap task A and task B.
-"
-3,True,True,swap task A with task B,"Swap Task A and Task B.
-"
-4,True,False,"In the new model, task B should be checked, if true, task A will be done.","Task B becomes a conditional gateway. If the condition is met, then Task A is performed.
-"
-5,True,True,Please switch task A and task B.,"Swap task A and task B.
-"
-6,True,True,Switch task A and task B,"Swap task A and task B.
-"
-7,True,True,Swap task A with task B. Don't change the rest of the structure.,"Swap task A and task B.
-"
-8,True,True,switch task A and task B,"Swap task A and task B.
-"
-9,True,True,Switch task b and task a. Task B should be the first task in the chain and task A is exclusive to if the status is true.,"Move task B before task A.  Introduce an exclusive gateway after task B.  Task A should follow the gateway if the status is true.
-"
-10,True,True,switch the positions of task b and task a with each other,"Swap task ""a"" and task ""b"".
-"
-11,True,True,swap the positions of task A and task B while everything stays the same,"Swap Task A and Task B.
-"
-12,True,True,change task a and task b's position for each other,"Swap the positions of Task A and Task B.
-"
-13,True,True,swap tasks A and B,"Swap the positions of task A and task B.
-"
-14,True,True,Please exchange task A and task B with each other.,"Swap task A and task B.
-"
-15,True,True,taskA and Task B were interchanged ,"Swap the positions of Task A and Task B.
-"
-16,True,True,Task A and B should be switched,"Swap the order of Task A and Task B.
-"
-17,False,False,Swap the labels 'task A' and 'task B'.,False
-18,True,True,Switch task A with task B,"Swap task A and task B.
-"
-19,True,True,Please swap task A with task B,"Swap task A and task B.
-"
-20,True,True,swap task and task B,"Swap Task A and Task B.
-"
-21,True,True,please swap task A and task B.,"Swap task A and task B.
-"
-22,True,True,exchange task A and task B,"Swap task A and task B.
-"
-23,True,True,Switching task a and b,"Swap task ""a"" and task ""b"".
-"
+1,True,True,swap the positions of tasks A and B,The order of execution of task 'A' and task 'B' is reversed. Task 'B' will now be executed before task 'A'.
+2,True,True,change task A into task B and task B into task A,"The process fragment 'task A' and the process fragment 'task B' exchange their positions within the process, meaning 'task B' will now occur where 'task A' previously was, and 'task A' will now occur where 'task B' previously was."
+3,True,True,swap task A with task B,"The execution order of 'task A' and 'task B' is reversed, meaning 'task B' will now occupy the position and sequence flow connections previously held by 'task A', and 'task A' will occupy the position and sequence flow connections previously held by 'task B'."
+4,True,False,"In the new model, task B should be checked, if true, task A will be done.",NA
+5,True,True,Please switch task A and task B.,The positions of 'task A' and 'task B' in the process flow are exchanged.
+6,True,True,Switch task A and task B,The sequential order of 'task A' and 'task B' is reversed.
+7,True,True,Swap task A with task B. Don't change the rest of the structure.,"The positions of 'task A' and 'task B' are exchanged. All sequence flows that previously connected to 'task A' now connect to 'task B', and all sequence flows that previously connected to 'task B' now connect to 'task A'."
+8,True,True,switch task A and task B,"The execution order of ""task A"" and ""task B"" is reversed."
+9,True,False,Switch task b and task a. Task B should be the first task in the chain and task A is exclusive to if the status is true.,"The process starts with Task B. After Task B, an exclusive gateway is introduced. If the status is true, Task A is executed. Otherwise, Task A is skipped."
+10,True,True,switch the positions of task b and task a with each other,"The execution order of 'task b' and 'task a' is reversed. 'task b' will now be executed before 'task a', assuming 'task a' was originally executed before 'task b'."
+11,True,True,swap the positions of task A and task B while everything stays the same,"The execution order of Task A and Task B is reversed. The sequence flow that previously led to Task A now leads to Task B, and the sequence flow that previously exited Task B now exits Task A."
+12,True,True,change task a and task b's position for each other,"The process fragment consisting of 'task a' is swapped with the process fragment consisting of 'task b'. This means that 'task a' will now be executed in the position previously occupied by 'task b', and 'task b' will now be executed in the position previously occupied by 'task a'."
+13,True,True,swap tasks A and B,"The positions of task 'A' and task 'B' in the process flow are exchanged. The sequence flow that previously led to and from task 'A' will now apply to task 'B', and the sequence flow that previously led to and from task 'B' will now apply to task 'A'."
+14,True,True,Please exchange task A and task B with each other.,"The execution order of Task A and Task B will be reversed; Task B will now be performed where Task A was previously, and Task A will now be performed where Task B was previously."
+15,True,True,taskA and Task B were interchanged ,"The activities 'taskA' and 'Task B' have exchanged their positions within the process flow. This means that any sequence flow that previously led to 'taskA' now leads to 'Task B', and any sequence flow that previously led to 'Task B' now leads to 'taskA'. Similarly, any sequence flow that previously originated from 'taskA' now originates from 'Task B', and any sequence flow that previously originated from 'Task B' now originates from 'taskA'."
+16,True,True,Task A and B should be switched,"The execution order of Task A and Task B is reversed, meaning Task B will now be performed before Task A."
+17,True,True,Swap the labels 'task A' and 'task B'.,NA
+18,True,True,Switch task A with task B,"The positions of 'task A' and 'task B' in the process flow will be exchanged. 'Task A' will now inherit the incoming and outgoing sequence flows that previously connected to 'task B', and 'task B' will now inherit the incoming and outgoing sequence flows that previously connected to 'task A'."
+19,True,True,Please swap task A with task B,"The existing task A is replaced by task B in its current position, and the existing task B is replaced by task A in its current position, effectively exchanging their places in the process flow along with their incoming and outgoing sequence flows."
+20,True,True,swap task and task B,NA
+21,True,True,please swap task A and task B.,"The execution order of 'task A' and 'task B' is reversed. If 'task A' was executed before 'task B', 'task B' will now be executed before 'task A', and vice-versa."
+22,True,True,exchange task A and task B,"The execution order of 'task A' and 'task B' is reversed. 'Task B' will now be performed where 'task A' was previously executed, and 'task A' will now be performed where 'task B' was previously executed, along with their respective incoming and outgoing sequence flows."
+23,True,True,Switching task a and b,The execution order of task 'a' and task 'b' will be reversed.
 24,False,False,"rename Task A to task B and task A to task B, essentially changing the 2 tasks",False
-25,True,True,Switch task A and B,"Swap task A and task B.
-"
+25,True,True,Switch task A and B,The execution order of 'Task A' and 'Task B' is reversed. 'Task B' will now be performed before 'Task A' in the process flow.
 26,False,False,"Swap the label between ""task A"" and ""task B"". Do not make any other changes.",False
 27,False,False,"at the start, add task B. replace task B inside the conditional branch with task A.",False
-28,True,True,Switch task A and task B,"Swap task A and task B.
-"
-29,True,True,"Switch tasks A and B, so the first task in the process is task B. ","Swap the order of task A and task B.
-"
-30,True,True,Please exchange Task A with Task B and vice versa,"Swap Task A and Task B.
-"
-31,True,True,Switch task A and task B.,"Swap task A and task B.
-"
-32,True,True,Switch the places of tasks A and B.,"Swap tasks A and B.
-"
-33,True,True,Replace the Name of Task A with Task B and Task B with Task A,"Rename Task A to Task B and rename Task B to Task A.
-"
-34,True,True,"Replace task A with task B, and task B with task A","Swap task A and task B.
-"
-35,True,True,switch the place of task a and b ,"Swap task ""a"" and task ""b"".
-"
-36,True,False,"Task A is replaced by B, and the conditionally B in case of a true task A, is not replaced by A.","NA
-"
-37,True,True,swap task a and task b with the same conditional logic ,"Swap Task A and Task B, preserving the existing conditional logic connected to each task.
-"
-38,True,True,Switching the spots of task A and B. ,"Swap task A and task B.
-"
-39,True,True,exchange task A and task B ,"Swap task A and task B.
-"
-40,True,False,"In this case task B will be firstly executed. Then condition X will be checked. If true, task A follows. ","Task B should precede task A, with a conditional check (X) determining if task A executes after task B.
-"
-41,True,True,"switch the places of task a and b in the input diagram, so that where task a was, no b is and where b was a will be","Swap the positions of Task A and Task B.
-"
-42,True,True,Please switch the positions of task A and task B,"Swap task A and task B.
-"
-43,True,True,switch A and B,"Swap activities A and B.
-"
-44,True,True,Switch positions of task A and task B,"Swap task A and task B.
-"
-45,True,True,Please exchange the task A and task B,"Swap task A and task B.
-"
-46,True,True,Exchange the content  (order) of task A with Task B,"Swap Task A and Task B.
-"
-47,True,True,"Change task B to task X, Change task A to task B, Change task X to task A","Rename task B to X, rename task A to B, and rename task X to A.
-"
-48,True,True,Change Task a and Task b with each other,"Swap Task a and Task b.
-"
-49,True,True,switch task A and task B,"Swap task A and task B.
-"
-50,True,True,Please switch task A with task B,"Swap task A and task B.
-"
-51,True,True,Switch the order of task A and task B.,"Swap task A and task B.
-"
+28,True,True,Switch task A and task B,"The existing task ""A"" and task ""B"" will exchange their positions and all their incoming and outgoing sequence flows. This means that the activities performed by task ""A"" will now occur where task ""B"" previously was, and the activities performed by task ""B"" will now occur where task ""A"" previously was, effectively swapping their execution order and context within the process."
+29,True,True,"Switch tasks A and B, so the first task in the process is task B. ","The process flow is modified by swapping the positions of Task A and Task B. Task B now becomes the first task in the process, directly following the Start Event, and Task A follows Task B."
+30,True,True,Please exchange Task A with Task B and vice versa,"The activity currently performed by 'Task A' will now be performed by 'Task B', and the activity currently performed by 'Task B' will now be performed by 'Task A'. All incoming and outgoing sequence flows, data associations, and other connections previously associated with 'Task A' will now be associated with 'Task B', and vice versa."
+31,True,True,Switch task A and task B.,The execution order of Task A and Task B is swapped.
+32,True,True,Switch the places of tasks A and B.,The execution order of Task A and Task B is reversed. Task B will now be performed before Task A.
+33,False,False,Replace the Name of Task A with Task B and Task B with Task A,False
+34,True,True,"Replace task A with task B, and task B with task A",Task A and Task B exchange their positions within the process flow.
+35,True,True,switch the place of task a and b ,The execution order of 'task a' and 'task b' is reversed.
+36,True,False,"Task A is replaced by B, and the conditionally B in case of a true task A, is not replaced by A.",NA
+37,True,True,swap task a and task b with the same conditional logic ,"The positions of 'task a' and 'task b' are exchanged within the process model. The conditional logic (e.g., conditions on incoming or outgoing sequence flows) previously associated with 'task a' will now apply to 'task b' in its new position, and the conditional logic previously associated with 'task b' will now apply to 'task a' in its new position."
+38,True,True,Switching the spots of task A and B. ,"The process is modified by exchanging the positions of Task A and Task B. The sequence flow that previously led to Task A will now lead to Task B, and the sequence flow that previously exited Task A will now exit Task B. Conversely, the sequence flow that previously led to Task B will now lead to Task A, and the sequence flow that previously exited Task B will now exit Task A."
+39,True,True,exchange task A and task B ,The task A and the task B will swap their positions in the process flow.
+40,True,False,"In this case task B will be firstly executed. Then condition X will be checked. If true, task A follows. ","After Task B, a conditional decision based on Condition X is introduced. If Condition X is true, Task A is executed."
+41,True,True,"switch the places of task a and b in the input diagram, so that where task a was, no b is and where b was a will be",The execution order of 'task a' and 'task b' is reversed.
+42,True,True,Please switch the positions of task A and task B,"The task ""task A"" will now be executed in the position previously occupied by ""task B"", and the task ""task B"" will now be executed in the position previously occupied by ""task A""."
+43,True,True,switch A and B,The order of execution of process fragment A and process fragment B is reversed.
+44,True,True,Switch positions of task A and task B,The execution order of 'task A' and 'task B' is reversed.
+45,True,True,Please exchange the task A and task B,"The task ""A"" and the task ""B"" will swap their positions and all their incoming and outgoing sequence flow connections in the process."
+46,True,True,Exchange the content  (order) of task A with Task B,The relative order of Task A and Task B in the process flow is reversed.
+47,True,False,"Change task B to task X, Change task A to task B, Change task X to task A",NA
+48,True,True,Change Task a and Task b with each other,"The execution order of 'Task a' and 'Task b' is reversed. 'Task b' will now be performed where 'Task a' was previously, and 'Task a' will be performed where 'Task b' was previously, including all their incoming and outgoing sequence flows."
+49,True,True,switch task A and task B,"The order of execution between Task A and Task B is reversed. Task B will now be executed before Task A, assuming their original sequence."
+50,True,True,Please switch task A with task B,"The execution order of 'task A' and 'task B' is reversed, meaning 'task B' will now be performed where 'task A' was previously performed, and 'task A' will now be performed where 'task B' was previously performed."
+51,True,True,Switch the order of task A and task B.,"The execution order of Task A and Task B will be reversed. If Task A was previously executed before Task B, Task B will now be executed before Task A."
 52,False,False,rename task A to B and B to A,False
-53,True,True,Switch task A and task B,"Swap task A and task B.
-"
-54,True,True,Exchange task A with task B,"Swap task A and task B.
-"
-55,True,True,Swap the positions of task A and task B,"Swap task A and task B.
-"
-56,True,True,Switch the position of task A and task B while make no change to others ,"Swap task A and task B.
-"
-57,True,True,Switch the positions of Tasks A and B to result to have Task B following the Start Node and Task A inside the True Case,"Swap Task A and Task B. Specifically, place Task B directly after the Start Node and move Task A into the True branch of the gateway.
-"
-58,True,True,The task A and task B are exchanged. ,"Swap the positions of task A and task B.
-"
-59,True,True,Switch task A and task B with one another.,"Swap task A and task B.
-"
-60,True,True,Please seitch task A and B,"Swap task A and task B.
-"
-61,True,True,exchange task A and task b,"Swap task A and task B.
-"
-62,True,False,Replace Task A with Task B and replace task A with Task B,"Replace Task A with Task B.
-"
-63,True,True,Swap task A and B.,"Swap the positions of task A and task B.
-"
+53,True,True,Switch task A and task B,The process fragment containing Task A and the process fragment containing Task B exchange their positions and all associated incoming and outgoing sequence flows within the process.
+54,True,True,Exchange task A with task B,Task A and Task B exchange their positions within the process flow.
+55,True,True,Swap the positions of task A and task B,"The sequence of execution between Task A and Task B is reversed. The incoming sequence flow to Task A will now go to Task B, and the incoming sequence flow to Task B will now go to Task A. Similarly, the outgoing sequence flow from Task A will now originate from Task B, and the outgoing sequence flow from Task B will now originate from Task A."
+56,True,True,Switch the position of task A and task B while make no change to others ,"The execution order of Task A and Task B is reversed. If Task A previously occurred before Task B, Task B will now occur before Task A, and vice versa."
+57,True,True,Switch the positions of Tasks A and B to result to have Task B following the Start Node and Task A inside the True Case,"The positions of Task A and Task B are interchanged. Task A, which was following the Start Node, will now be placed inside the True Case. Task B, which was inside the True Case, will now be placed following the Start Node."
+58,True,True,The task A and task B are exchanged. ,"The sequence of Task A and Task B is reversed; Task B now occurs where Task A previously occurred, and Task A now occurs where Task B previously occurred, including all their respective incoming and outgoing sequence flows."
+59,True,True,Switch task A and task B with one another.,"The existing task 'A' will be replaced by task 'B' in its current position, and the existing task 'B' will be replaced by task 'A' in its current position. This means that the order of execution between 'task A' and 'task B' is reversed."
+60,True,True,Please seitch task A and B,"The order of execution between 'task A' and 'task B' is reversed. If 'task A' previously occurred before 'task B', 'task B' will now occur before 'task A'."
+61,True,True,exchange task A and task b,The positions of 'task A' and 'task B' within the process flow are exchanged.
+62,True,False,Replace Task A with Task B and replace task A with Task B,"The activity ""Task A"" is removed from the process and is replaced by the activity ""Task B""."
+63,True,True,Swap task A and B.,The positions of 'task A' and 'task B' in the process flow are exchanged.

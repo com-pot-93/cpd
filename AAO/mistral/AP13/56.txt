@@ -1,25 +1,11 @@
-To apply the changes specified by "AP13" to the given BPMN model, I need to know what "AP13" stands for. Since the specific modifications aren't provided, I'll assume "AP13" refers to a set of predefined changes. For the sake of this example, let's assume "AP13" means:
-
-1. Add a new task "task E" after "task D".
-2. Change the label of "task A" to "task A1".
-3. Add a condition "new condition" to the edge from "task B" to the exclusive gateway.
-
-Given these assumptions, here is the modified Mermaid.js BPMN model:
-
 ```mermaid
 flowchart LR
-0:startevent:((startevent))-->1:task:(task A1)
+0:startevent:((startevent))-->1:task:(task A)
 1:task:-->2:exclusivegateway:{x}
-2:exclusivegateway:-->|true|3:task:(task B)
-2:exclusivegateway:-->|false|5:task:(task C)
-3:task:-->|new condition|6:exclusivegateway:{x}
+2:exclusivegateway:-->|a > 10|3:task:(task B)
+2:exclusivegateway:-->|a <= 10|5:task:(task C)
+3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
 6:exclusivegateway:--> 7:task:(task D)
-7:task:-->9:task:(task E)
-9:task:-->8:endevent:(((endevent)))
+7:task:-->8:endevent:((endevent))
 ```
-
-This model includes the specified changes:
-1. A new task "task E" is added after "task D".
-2. The label of "task A" is changed to "task A1".
-3. A condition "new condition" is added to the edge from "task B" to the exclusive gateway.

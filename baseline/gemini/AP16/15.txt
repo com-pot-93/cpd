@@ -1,0 +1,10 @@
+flowchart LR
+8:startevent:((startevent))-->7:task:(task D)
+7:task:(task D)-->6:exclusivegateway:{x}
+6:exclusivegateway:-->5:task:(task C)
+6:exclusivegateway:-->9:task:(task E)
+9:task:(task E)-->3:task:(task B)
+5:task:(task C)-->2:exclusivegateway:{x}
+3:task:(task B)-->2:exclusivegateway:
+2:exclusivegateway:-->1:task:(task A)
+1:task:(task A)-->0:endevent:(((endevent)))

@@ -8,6 +8,5 @@ flowchart LR
 3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
 6:exclusivegateway:--> 7:task:(task D)
-7:task:-->10:endevent:(((endevent)))
-9:subprocess:-->10:endevent:
+7:task:-->8:endevent:(((endevent)))
 ```

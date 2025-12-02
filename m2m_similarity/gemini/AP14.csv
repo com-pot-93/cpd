@@ -1,118 +1,65 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,i,False,False,0.0
-1,1,False,False,Introduce a task A' after the closing XOR gateway.,False,False,0.0
-2,2,True,False,Add task A'before task D,"Insert task A before task D.
-",True,1.0
-3,3,False,False,create task A' that always has to be executed before task D,False,False,0.0
-4,4,True,False,"In the new model, before the task D, task A' should be done.","Insert task A' before task D.
-",True,1.0
-5,5,True,False,Insert a new task A´ directly before task D.,"Insert task A' before task D.
-",True,1.0
-6,6,True,False,Add task A’ before task D,"Insert a new task named A’ between task D's preceding activity and task D. 
-",True,1.0
-7,7,True,False,Insert a task A' immediately after the closing or-gate and prior to task D. ,"Add task A' between the closing OR gateway and task D. 
-",True,1.0
-8,8,True,False,insert task A' before task D,"Insert a new task named A' before task D.
-",True,1.0
-9,9,True,False,Add a task a‘ to the chain it should be done after the or condition independent of the status and before task D,"Insert a new task 'a prime' after the OR gateway and before task D. This new task should be executed regardless of the outcome of the OR gateway.
-",True,1.0
-10,10,True,False,add task A' before task d,"Insert a new task named ""A'"" before task ""d"".
-",True,1.0
-11,11,True,False,"Right before task D, add task A' (A prime) which is the opposite of task A.","Insert a new task A' before task D. Task A' should represent the opposite function of task A.
-",True,1.0
-12,12,True,False,add task a' before task d,"Insert a new task 'a prime' before task 'd'.
-",True,1.0
-13,13,True,False,"add a task A' before task D, after the optional paths are merged","Add a task A' after the merge gateway that follows tasks B and C, and before task D.
-",True,1.0
-14,14,True,False,Please add a task A‘ directly before task D.,"Insert a new task named A' immediately before task D.
-",True,1.0
-15,15,False,False,?,False,False,0.0
-16,16,True,False,Insert a Task A' after the OR Gateway but before task D,"Insert a new task A' between the OR gateway and task D.
-",True,1.0
-17,17,True,False,"After 'OR join' and before 'task D', insert a transition 'task A' its corresponding edges.","Insert task A between the OR join gateway and task D.
-",True,1.0
-18,18,False,False,Introduce a task A‘ directly before task D,False,False,0.0
-19,19,True,False,Please insert task A' between the closing xor and task D,"Insert a new task A' between the exclusive gateway and task D.
-",True,1.0
-20,20,True,False,insert task A' after XOR-gateway (join) and task D,"Add a new task named A' between the XOR-gateway where the control flow converges and task D.
-",True,1.0
-21,21,True,False,please add task A' after the xor gateway and before task D.,"Insert a new task A' between the exclusive gateway and task D.
-",True,1.0
-22,22,True,False,Add task A' in front of task D without removing the existing task A,"Insert a new task A' before task D.
-",True,1.0
-23,23,True,True,Duplicating task a,"NA
-",True,0.9363888065951991
-24,24,False,False,.,False,False,0.0
-25,25,True,False,Add task A' directly before task D,"Insert a new task named A' between task  A and task D.
-",True,1.0
-26,26,True,False,"Directly before ""task D"" add a new task with label ""task A'"". Do not make any other changes.","Insert a new task labeled ""task A'"" immediately before ""task D"".
-",True,1.0
-27,27,True,False,add task A' after the condition has ended,"Insert a new task named ""A'"" after the existing conditional gateway.
-",True,0.9363888065951991
-28,28,True,False,insert a task A' after the exclusive choice block,"NA
-",True,0.9363888065951991
-29,29,True,False,"Add another ""task A"" directly before task D (after the closing OR-Gateway). ","Insert a new instance of ""Task A"" between the closing OR-Gateway and ""Task D"".
-",True,1.0
-30,30,True,False,Please insert task A' after completing task B or C,"Add task A' after the parallel gateway that follows tasks B and C.
-",True,0.9363888065951991
-31,31,True,False,"Insert task A' right before task D, maintaining the sequence flows through task A.","Insert a new task named ""A'"" immediately before task D, preserving the existing incoming and outgoing connections of task D.
-",True,1.0
-32,32,True,False,Add a new task A' just before task D.,"Insert a new task A' between task C and task D.
-",True,1.0
-33,33,True,False,Add Task A' between the Join Gateway and Task D,"Insert a new task named ""Task A'"" between the existing Join Gateway and ""Task D"".
-",True,1.0
-34,34,True,False,After the OR condition check add task A'.,"Insert task A' after the OR gateway.
-",True,0.9292764533667921
-35,35,True,True,include task again after the merger between b and c before d ,"Add a new instance of the ""again"" task between the merge gateway following tasks ""b"" and ""c"", and task ""d"".
-",True,1.0
-36,36,False,False,"instead of task d being executed directly after last condition, we now have 2 tasks a and d being executed sequentially",False,False,0.0
-37,37,True,False,repeat task a after the conditional logic of task b and c ,"NA
-",True,0.9363888065951991
-38,38,False,False,I don't know. ,False,False,0.0
-39,39,False,False,create a task A' directly before task D,False,False,0.0
-40,40,True,False,Task A' is added before task D. ,"Insert task A' before task D.
-",True,1.0
-41,41,True,False,add task A' after the merging of the tasks b and task c which then results in task D,"Add a new task ""A'"" after the merge gateway that follows tasks ""B"" and ""C"", and before task ""D"".
-",True,1.0
-42,42,False,False,Please execute task A' right before task D,False,False,0.0
-43,43,True,True,Add task A again but after task D ,"Add a new instance of task A after task D.
-",True,1.0
-44,44,False,False,-,False,False,0.0
-45,45,True,False,Add a new state which name is task A’ before task D,"Insert a new task named ""Task A’"" before Task D.
-",True,1.0
-46,46,True,False,Add one more step after the decision logic,"NA
-",True,0.9363888065951991
-47,47,True,True,insert another instance of task A right before task D ,"Add a new instance of task A immediately preceding task D.
-",True,1.0
-48,48,True,True,"Before Task D, add Task A again.","Insert a new instance of Task A immediately before Task D.
-",True,1.0
-49,49,True,False,add a task A' before task D,"Insert a new task named A' immediately before task D.
-",True,1.0
-50,50,True,False,add another task A' right before task D,"Insert a new task named A' between task C and task D.
-",True,1.0
-51,51,True,False,Add a new task A' before task D.,"Insert a new task A' between task C and task D.
-",True,1.0
-52,52,True,False,add task a‘ before D,"Insert a new task named ""a’"" directly before task ""D"".
-",True,1.0
-53,53,True,False,Add task A prime just before task D,"Insert a new task named ""A prime"" between task A and task D.
-",True,1.0
-54,54,True,False,Add the task A' immediately before task D.,"Insert task A' before task D.
-",True,1.0
-55,55,True,False,Add task A' between the XOR gateway and task D,"Insert a new task A' between the exclusive gateway and task D.
-",True,1.0
-56,56,True,False,Add task A’ behind the xor and before task D,"Insert a new task named A’ between the exclusive gateway and task D.
-",True,1.0
-57,57,True,False,Re-Execute Task A as Task A‘ after the close gateway of the condition and in Front of Task D,"Copy Task A and place it after the merge gateway following the conditional branch containing Task A, and before Task D.  Rename the copied task to Task A'.
-",True,1.0
-58,58,True,True,Task A will be duplicated before task D. ,"Copy Task A and place the copy before Task D.
-",True,1.0
-59,59,True,False,Add task A' before task D.,"Insert a new task named ""A'"" between task D's preceding activity and task D.
-",True,1.0
-60,60,True,True,Add a copy of task A in front of task D,"Copy task A and place it before task D.
-",True,1.0
-61,61,True,True,add duplicate of task a before task d,"Copy task ""a"" and place it before task ""d"".
-",True,1.0
-62,62,True,False,Add a task A' directly before task D,"Insert a new task named A' between the existing tasks preceding task D.
-",True,1.0
-63,63,True,False,insert a task A directly after the decision.,"Add task A after the decision gateway.
-",True,1.0
+0,0,False,False,i,False,False,0.8937277578444173
+1,1,True,False,Introduce a task A' after the closing XOR gateway.,,False,0.8937277578444173
+2,2,True,False,Add task A'before task D,,False,0.8937277578444173
+3,3,True,False,create task A' that always has to be executed before task D,,False,0.8937277578444173
+4,4,True,False,"In the new model, before the task D, task A' should be done.",,False,0.8937277578444173
+5,5,True,False,Insert a new task A´ directly before task D.,A new task named 'A´' is added to the process. This new task 'A´' will be executed immediately before task 'D'. Any activity that previously led directly to 'D' will now lead directly to 'A´'.,True,0.92
+6,6,True,False,Add task A’ before task D,,True,0.92
+7,7,True,False,Insert a task A' immediately after the closing or-gate and prior to task D. ,,True,0.92
+8,8,True,False,insert task A' before task D,"A new task named 'A'' is inserted into the process. This new task will be placed directly before 'task D', meaning that any activity that previously directly preceded 'task D' will now directly precede 'task A'', and 'task A'' will now directly precede 'task D'.",True,1.0
+9,9,True,False,Add a task a‘ to the chain it should be done after the or condition independent of the status and before task D,"A new task named 'a'' is inserted into the process flow. This task will be executed immediately after the completion of all necessary paths converging at the Inclusive Join Gateway, and directly before the execution of 'Task D'.",True,0.96
+10,10,True,False,add task A' before task d,,True,0.96
+11,11,True,False,"Right before task D, add task A' (A prime) which is the opposite of task A.","A new task named ""A' (A prime)"" is inserted into the process. This task will be executed immediately after the activity that previously directly preceded ""Task D"", and immediately before ""Task D"".",True,1.0
+12,12,True,False,add task a' before task d,,True,1.0
+13,13,True,False,"add a task A' before task D, after the optional paths are merged","A new task, 'A'', is inserted into the process flow. This task will be executed after all optional paths have merged and before the execution of task 'D'.",True,1.0
+14,14,True,False,Please add a task A‘ directly before task D.,,True,1.0
+15,15,False,False,?,False,False,0.8937277578444173
+16,16,True,False,Insert a Task A' after the OR Gateway but before task D,,False,0.8937277578444173
+17,17,True,False,"After 'OR join' and before 'task D', insert a transition 'task A' its corresponding edges.",A new task named 'task A' is inserted into the process. This 'task A' will be executed immediately after the 'OR join' gateway and immediately before 'task D'.,True,0.96
+18,18,True,False,Introduce a task A‘ directly before task D,A new task named 'A‘' is inserted into the process flow. This task will be executed immediately prior to 'task D'.,True,1.0
+19,19,True,False,Please insert task A' between the closing xor and task D,,True,1.0
+20,20,True,False,insert task A' after XOR-gateway (join) and task D,"A new task named 'A'' is inserted into the process. This task will now be executed immediately after the XOR-gateway (join) and immediately before task D. The original direct sequence flow from the XOR-gateway (join) to task D is replaced by a sequence flow from the XOR-gateway (join) to task A', followed by a sequence flow from task A' to task D.",True,1.0
+21,21,True,False,please add task A' after the xor gateway and before task D.,,True,1.0
+22,22,True,False,Add task A' in front of task D without removing the existing task A,"A new task named 'A'' is inserted into the process. This new task 'A'' will be executed immediately after the existing 'task A' and immediately before the existing 'task D'. This implies that the original sequence flow from 'task A' to 'task D' is replaced by a sequence flow from 'task A' to 'task A'', followed by a sequence flow from 'task A'' to 'task D'.",True,1.0
+23,23,True,True,Duplicating task a,,True,1.0
+24,24,False,False,.,False,False,0.8937277578444173
+25,25,True,False,Add task A' directly before task D,,False,0.8937277578444173
+26,26,True,False,"Directly before ""task D"" add a new task with label ""task A'"". Do not make any other changes.",,False,0.8937277578444173
+27,27,True,False,add task A' after the condition has ended,,False,0.8937277578444173
+28,28,True,False,insert a task A' after the exclusive choice block,,False,0.8937277578444173
+29,29,True,False,"Add another ""task A"" directly before task D (after the closing OR-Gateway). ","A new task named ""task A"" is inserted into the process flow immediately before the existing task ""task D"", specifically on the sequence flow originating from the closing OR-Gateway and leading into ""task D"".",True,0.96
+30,30,True,False,Please insert task A' after completing task B or C,,True,0.96
+31,31,True,False,"Insert task A' right before task D, maintaining the sequence flows through task A.","A new task named 'A'' is inserted into the process. This task will be executed immediately after task 'A' and immediately before task 'D'. The sequence flow that previously connected 'A' directly to 'D' is now modified to flow from 'A' to 'A'', and then from 'A'' to 'D'.",True,1.0
+32,32,True,False,Add a new task A' just before task D.,"A new task named 'A'' is inserted into the process flow. This task 'A'' will now directly precede task 'D', and whatever activity was previously directly preceding 'D' will now directly precede 'A''.",True,1.0
+33,33,True,False,Add Task A' between the Join Gateway and Task D,,True,1.0
+34,34,True,False,After the OR condition check add task A'.,,True,1.0
+35,35,True,True,include task again after the merger between b and c before d ,,True,1.0
+36,36,True,False,"instead of task d being executed directly after last condition, we now have 2 tasks a and d being executed sequentially","A new task named ""task a"" is inserted between the ""last condition"" and ""task d"". ""Task a"" will now be executed immediately after the ""last condition"", and ""task d"" will be executed immediately after ""task a"".",True,0.96
+37,37,True,False,repeat task a after the conditional logic of task b and c ,"Task 'a' will be executed at least once. After each execution of 'task a', a decision is made based on the conditional logic related to 'task b' and 'task c'. If this conditional logic evaluates to true, 'task a' is executed again. If the conditional logic evaluates to false, the loop terminates, and the process continues.",True,0.8015486416649208
+38,38,False,False,I don't know. ,False,False,0.8937277578444173
+39,39,True,False,create a task A' directly before task D,"A new task named 'A'' is inserted into the process flow. This task 'A'' will execute immediately before task 'D', meaning that any activity that previously directly preceded 'D' will now directly precede 'A'', and 'A'' will directly precede 'D'.",True,1.0
+40,40,True,False,Task A' is added before task D. ,,True,1.0
+41,41,True,False,add task A' after the merging of the tasks b and task c which then results in task D,"Insert a new Task A' into the process flow. This new task will be executed immediately after the completion of the merging of tasks 'b' and 'c', and immediately before the execution of Task 'D'.",True,1.0
+42,42,True,False,Please execute task A' right before task D,"A new task named 'A'' is inserted into the process. Any sequence flow that previously led directly to 'task D' will now lead to 'task A'', and a new sequence flow will be created from 'task A'' to 'task D'.",True,1.0
+43,43,True,True,Add task A again but after task D ,"A new instance of 'Task A' is added to the process, positioned immediately after 'Task D'.",True,0.84
+44,44,False,False,-,False,False,0.8937277578444173
+45,45,True,False,Add a new state which name is task A’ before task D,A new task named 'task A’' is inserted into the process. This new task is placed between the activity that was previously the direct predecessor of 'task D' and 'task D' itself.,True,1.0
+46,46,True,False,Add one more step after the decision logic,,True,1.0
+47,47,True,True,insert another instance of task A right before task D ,A copy of Task A is inserted immediately before Task D.,True,0.96
+48,48,True,False,"Before Task D, add Task A again.",,True,0.96
+49,49,True,False,add a task A' before task D,,True,0.96
+50,50,True,False,add another task A' right before task D,"A new task named 'A'' is inserted into the process. This task will be executed immediately before task 'D'. The activity or event that was previously the direct predecessor of 'D' will now become the direct predecessor of 'A'', and 'A'' will become the new direct predecessor of 'D'.",True,1.0
+51,51,True,False,Add a new task A' before task D.,,True,1.0
+52,52,True,False,add task a‘ before D,,True,1.0
+53,53,True,False,Add task A prime just before task D,,True,1.0
+54,54,True,False,Add the task A' immediately before task D.,,True,1.0
+55,55,True,False,Add task A' between the XOR gateway and task D,A new task named 'A'' is inserted into the process flow. This task 'A'' will be executed after the XOR gateway and before task 'D'.,True,1.0
+56,56,True,False,Add task A’ behind the xor and before task D,A new task named 'A prime' is inserted into the process flow. It will be executed after the XOR gateway and before task D.,True,0.88
+57,57,True,True,Re-Execute Task A as Task A‘ after the close gateway of the condition and in Front of Task D,"A copy of Task A, named Task A', is inserted into the process flow. This new Task A' will be executed after the close gateway of the conditional branch and before Task D.",True,1.0
+58,58,True,True,Task A will be duplicated before task D. ,"A new task, identical to ""Task A"", is inserted into the process flow immediately before ""Task D"".",True,0.96
+59,59,True,False,Add task A' before task D.,,True,0.96
+60,60,True,True,Add a copy of task A in front of task D,"A new task, identical to 'task A', is added to the process flow and will be executed immediately before 'task D'.",True,0.96
+61,61,True,True,add duplicate of task a before task d,A copy of 'task a' is inserted into the process flow immediately before 'task d'.,True,0.8749354005167959
+62,62,True,False,Add a task A' directly before task D,"A new task named A' is inserted into the process. This task A' will now execute immediately after the activity that previously executed directly before task D, and task D will now execute immediately after A'.",True,1.0
+63,63,True,False,insert a task A directly after the decision.,,True,1.0

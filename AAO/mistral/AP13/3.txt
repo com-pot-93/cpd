@@ -1,24 +1,11 @@
-To apply the changes specified by "AP13" to the given BPMN model, I need to know what "AP13" refers to. Since the specific modifications aren't provided, I'll assume "AP13" means adding a parallel gateway after task A and before the exclusive gateway, and ensuring the model adheres to the rules specified.
-
-Here is the modified Mermaid.js BPMN model:
-
 ```mermaid
 flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
-1:task:-->2:parallelgateway:{AND}
-2:parallelgateway:-->3:exclusivegateway:{x}
-3:exclusivegateway:-->|true|4:task:(task B)
-3:exclusivegateway:-->|false|6:task:(task C)
-4:task:-->7:exclusivegateway:{x}
-6:task:-->7:exclusivegateway:
-7:exclusivegateway:-->8:parallelgateway:{AND}
-8:parallelgateway:-->9:task:(task D)
-9:task:-->10:endevent:(((endevent)))
+1:task:-->2:exclusivegateway:{x}
+2:exclusivegateway:-->|a > 10|3:task:(task B)
+2:exclusivegateway:-->|a <= 10|5:task:(task C)
+3:task:-->6:exclusivegateway:{x}
+5:task:-->6:exclusivegateway:
+6:exclusivegateway:--> 7:task:(task D)
+7:task:-->8:endevent:(((endevent)))
 ```
-
-In this modified model:
-- A parallel gateway (id: 2) is added after task A (id: 1) to initiate a split.
-- Another parallel gateway (id: 8) is added before task D (id: 9) to merge the split.
-- The exclusive gateway (id: 3) handles the conditional split.
-- The exclusive gateway (id: 7) handles the merge of the conditional paths.
-- The model ensures that each gateway has both a split and a merge point, adhering to the rules specified.

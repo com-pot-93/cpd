@@ -1,121 +1,65 @@
 ,mapping,epap,user,meaning
 0,False,False,h,False
-1,True,True,Introduce a parallel flow which starts before the opening XOR gateway and merges after the closing XOR gateway. Then move task D into this newly created parallel flow so that it is executed in parallel to the whole XOR.,"Create a parallel gateway before the XOR gateway and another parallel gateway after the XOR gateway. Move task D between the created parallel gateways.
-"
-2,True,True,make out of task D an parrallel task after task A,"Create a parallel gateway after task A and connect it to task D and the subsequent task in the original sequence.  Task D should then be followed by a merge gateway that connects back to the original sequence.
-"
-3,True,False,"create task D and create a new branch after task A, so that task D can be executed instead of task B and C","Insert a new task ""D"" and create a parallel gateway after task A, connecting it to both task D and the existing sequence of tasks B and C.
-"
-4,True,False,"In the new model, after task A, if one condition is filled, task D will be done, then the system finishes.","After task A, introduce an exclusive gateway with two outgoing branches.  One branch, leading to task D and then the end event, has the specified condition. The other branch leads directly to the end event.
-"
-5,True,False,Please remove task D from its current location. Add an if-else-block richt after task A and right after the in originally second if-else-block. Connect the two new if-else blocks with task D.,"Move task D to be executed after task A.  Place an exclusive gateway after task A and after the existing exclusive gateway that follows task C. Task D should be executed if the condition in the first gateway is false, and if the condition in the second gateway is also false.
-"
+1,True,True,Introduce a parallel flow which starts before the opening XOR gateway and merges after the closing XOR gateway. Then move task D into this newly created parallel flow so that it is executed in parallel to the whole XOR.,The process will fork into two parallel paths. One path will execute Task D. The other path will execute the entire block of activities previously enclosed between the opening and closing XOR gateways. Both paths will execute concurrently and then synchronize before the process continues.
+2,True,True,make out of task D an parrallel task after task A,NA
+3,True,False,"create task D and create a new branch after task A, so that task D can be executed instead of task B and C","After task A, the process will conditionally execute either task D or the sequence of tasks B and C."
+4,True,False,"In the new model, after task A, if one condition is filled, task D will be done, then the system finishes.",NA
+5,True,False,Please remove task D from its current location. Add an if-else-block richt after task A and right after the in originally second if-else-block. Connect the two new if-else blocks with task D.,NA
 6,False,False,-,False
-7,True,False,"Relocate task D and insert two gates, an opening and-gate and a closing and-gate. After task A the opening and-gate with two paths should follow. One path is the or-block of the input process model without any changes, meaning that the or-gate is immediately following after the opening and-gate. The second path of the freshly inserted opening and-gate directs to task D being performed. After that, both paths meet each other again in the closing and-gate. In the resulting process model task D only appears in the second and-gate path since it was relocated.","Insert an AND gateway after task A. Create two branches after this AND gateway. The first branch leads to the existing OR gateway. The second branch leads to task D.  After task D, connect this branch to a closing AND gateway which then converges with the branch coming from the OR gateway. Remove the original occurrence of task D.
-"
-8,True,False,Add an and branch after task A containing task D rejoin after or or task B and C,"Introduce a parallel gateway after Task A. Create two branches: one with Task D and the other with Task B and C in sequence.  Merge both branches with a parallel gateway before continuing the process.
-"
-9,True,False,"Add an AND condition after task A. Additionally to the current chain, a task D should be done.","Introduce an AND gateway after task A, creating a parallel path. One path continues with the existing subsequent tasks, while the other path executes task D.  Both paths converge back to a common flow.
-"
-10,True,True,add a parallel gateway after task A which does task D parallel to the existing pm and reconnects before the end event,"Introduce a parallel gateway after Task A. Task D will be executed concurrently with the existing process model elements following Task A.  The parallel paths will converge before the end event.
-"
-11,True,False,"after task A and right before the output, add the plus step. Task D follows the first plus and leads to the second plus as an alternate path for reaching the output . ","Insert a new task ""plus"" after task A. Insert another new task ""plus"" before the output. Connect task D to the second ""plus"" task.
-"
-12,True,False,"add and gate after task a, change task d for and gate. connect new and gates with the execution of task b in between them","Insert an AND gateway after Task A. Connect the outgoing flow of Task A to this new AND gateway.  Insert an AND gateway replacing Task D. Connect the outgoing flow of the first AND gateway to Task B, and connect the outgoing flow of Task B to the second AND gateway.
-"
-13,True,True,"add another ""and"" (parallel) gateway after task A which executes task D to ensure that task D is performed in parallel to optional gate B or C","Introduce a parallel gateway after Task A. Task D should be executed concurrently with the existing optional branching logic involving Tasks B and C.
-"
-14,True,False,Please add an add construct after task A which runs task D in parallel to the current condition.,"Add a parallel gateway after task A, create a new branch for task D, and connect the gateway to the existing flow after the original conditional branch.
-"
-15,True,False,loop gets introduced,"NA
-"
-16,True,True,Task D can be executed in paralell to the OR Gateway,"NA
-"
-17,True,False,"Before the 'OR split' and after 'task A', add a 'AND split' followed by 'task D', and 'AND join'. 'AND join' should be between 'OR join' and 'end place'.","Insert an AND split gateway after ""Task A"" and before the OR split gateway.  Create ""Task D"" as a parallel branch originating from the AND split and joining at a new AND join gateway. Place this new AND join gateway before the existing OR join gateway.
-"
-18,True,True,Introduce task D as a parallel path directly after task A,"Add task D to run concurrently with task B and C, which follow task A.
-"
-19,True,True,Please insert a parallel after task A. The parallel has two branches. Branch 1 is the previous xor section and Branch 2 contains only task D.Both branches are connected with a closing parallel which is inserted before the end,"Introduce a parallel gateway after Task A. The existing XOR gateway and its subsequent tasks become the first branch of the parallel gateway.  A second branch, containing only Task D, is added in parallel.  Both branches converge at a closing parallel gateway placed immediately before the end event.
-"
-20,True,True,insert task D parallel to task B and task C,"Introduce a parallel gateway before tasks B and C, and another parallel gateway after them. Connect task D to both parallel gateways.
-"
-21,True,True,"please add a parallel path after task A where task D is moved to one branch of this parallel path, and the other branch is connected to the original exclusive choice.","Introduce a parallel gateway after Task A. Move Task D to a new branch created by the parallel gateway. Connect the other branch of the parallel gateway to the existing exclusive gateway that originally followed Task A.
-"
-22,True,True,Add a parallel process including only task D after task a which is then added to the other flow right in front of the target.,"Introduce a parallel gateway after task ""a"". Create a new branch containing only task ""D"". Merge both branches with a parallel gateway before the final task.
-"
+7,True,True,"Relocate task D and insert two gates, an opening and-gate and a closing and-gate. After task A the opening and-gate with two paths should follow. One path is the or-block of the input process model without any changes, meaning that the or-gate is immediately following after the opening and-gate. The second path of the freshly inserted opening and-gate directs to task D being performed. After that, both paths meet each other again in the closing and-gate. In the resulting process model task D only appears in the second and-gate path since it was relocated.","After Task A, the process splits into two parallel paths. One path executes the existing or-block, and the other path executes Task D. Both paths must complete before the process can proceed."
+8,True,False,Add an and branch after task A containing task D rejoin after or or task B and C,NA
+9,True,True,"Add an AND condition after task A. Additionally to the current chain, a task D should be done.","After Task A, a parallel gateway is introduced. This gateway splits the process flow into two concurrent paths: one path continues with the existing sequence of activities, and the other path initiates Task D."
+10,True,True,add a parallel gateway after task A which does task D parallel to the existing pm and reconnects before the end event,"After Task A is completed, the process will diverge into two concurrent paths. Task D will be executed in parallel with the activities that originally followed Task A. Both Task D and the original subsequent activities must complete before the process can proceed to the End Event."
+11,True,False,"after task A and right before the output, add the plus step. Task D follows the first plus and leads to the second plus as an alternate path for reaching the output . ",NA
+12,True,True,"add and gate after task a, change task d for and gate. connect new and gates with the execution of task b in between them",NA
+13,True,True,"add another ""and"" (parallel) gateway after task A which executes task D to ensure that task D is performed in parallel to optional gate B or C","After Task A, a parallel gateway is introduced. This gateway initiates two concurrent paths: one path executes Task D, and the other path presents an exclusive choice between executing Task B or Task C."
+14,True,True,Please add an add construct after task A which runs task D in parallel to the current condition.,NA
+15,True,False,loop gets introduced,NA
+16,True,True,Task D can be executed in paralell to the OR Gateway,NA
+17,True,False,"Before the 'OR split' and after 'task A', add a 'AND split' followed by 'task D', and 'AND join'. 'AND join' should be between 'OR join' and 'end place'.",NA
+18,False,False,Introduce task D as a parallel path directly after task A,False
+19,True,True,Please insert a parallel after task A. The parallel has two branches. Branch 1 is the previous xor section and Branch 2 contains only task D.Both branches are connected with a closing parallel which is inserted before the end,"After Task A, the process will split into two parallel branches. The first branch will execute the previously existing XOR-based section. The second branch will execute Task D. Both branches will run concurrently, and the process will only proceed to its end state after both the XOR-based section and Task D have completed."
+20,True,True,insert task D parallel to task B and task C,"The process flow will now split into two concurrent paths. One path will execute Task D. The other path will first execute Task B, and upon its completion, will execute Task C. Both Task D and the sequence of Task B followed by Task C must complete before the process can continue."
+21,True,True,"please add a parallel path after task A where task D is moved to one branch of this parallel path, and the other branch is connected to the original exclusive choice.","After Task A is completed, the process will split into two parallel paths. One path will execute Task D. The other path will proceed to the original exclusive choice gateway, allowing the decision and subsequent activities to occur concurrently with Task D."
+22,True,True,Add a parallel process including only task D after task a which is then added to the other flow right in front of the target.,NA
 23,False,False,And gate?,False
-24,True,False,add a parallel gate before the exclusive gate. the parallel gate should introduce task D and conclude right before the stop token,"Introduce a parallel gateway before the exclusive gateway. Create a parallel branch containing Task D. Merge this parallel branch back into the main flow immediately before the end event.
-"
-25,True,True,Task D is in parallel to both task B and C instead of following B and C.,"Task D should be executed in parallel with tasks B and C.
-"
-26,True,True,Task D should be executed on parallel to the exclusive gateway branch. ,"NA
-"
-27,True,False,put a parallel around the condition where the condition is one branch of the parallel and the other branch consists of task D,"Introduce a parallel gateway before the existing conditional gateway.  One branch of the parallel gateway will contain the existing conditional gateway and its subsequent branches. The other branch of the parallel gateway will contain Task D.  A merge gateway should be added after the conditional gateway and Task D to synchronize the parallel paths.
-"
-28,True,True,Task D should be executed in parallel the the exclusive choice block,"NA
-"
-29,True,False,"Add an AND-Gateway after task A and before END, they are connected and between them is task D.  ","Introduce parallel execution paths after task A, splitting the flow into two branches. One branch continues with the existing task D leading to the end event. The other branch represents a new parallel path, also converging at the end event.  No specific details are provided for this new parallel path.
-"
-30,True,False,You can either complete task D or you have to complete Task B or C according to Task A,"Task A determines whether Task D is executed, or if Tasks B and C are executed in parallel.
-"
-31,False,False,Insert two parallel gateways. One after task A and one right before the termination event. Both of these parallel gateways should be connected through task D.,False
-32,True,False,"Remove task D. After task A add an unconditional branch. One of the branches leads to the rest of the diagram, the other contains task D and converges with the other branch before the end of the diagram.","NA
-"
-33,True,True,Add a parallel Task D where the Split happens after Task a and ist joined before the end of the process,"Introduce a parallel gateway after Task A, create Task D parallel to the existing flow, and merge both branches with a parallel gateway before the end of the process.
-"
-34,True,False,"If condition neither true or false, then execute task D and end the process","NA
-"
-35,True,False,"If b, c or d return true, the output should be true ","NA
-"
-36,True,False,"a new && condition is added before the previous condition, and then the task d is executed not in the end but with the &&.","NA
-"
-37,True,False,skip the conditional logic and perform task d ,"Remove the gateway and connect Task C directly to Task D.
-"
+24,True,False,add a parallel gate before the exclusive gate. the parallel gate should introduce task D and conclude right before the stop token,NA
+25,True,True,Task D is in parallel to both task B and C instead of following B and C.,"Task D, which previously executed sequentially after both Task B and Task C had completed, will now execute concurrently with Task B and Task C."
+26,True,True,Task D should be executed on parallel to the exclusive gateway branch. ,"The process flow will diverge at a parallel gateway. One concurrent path will execute 'Task D'. The other concurrent path will execute the fragment starting with an exclusive gateway and its subsequent branches. After both 'Task D' and the exclusive gateway fragment are completed, their flows will synchronize at a parallel gateway before continuing the process."
+27,True,True,put a parallel around the condition where the condition is one branch of the parallel and the other branch consists of task D,NA
+28,True,True,Task D should be executed in parallel the the exclusive choice block,"The process will be modified to execute Task D concurrently with the entire exclusive choice block. This means a parallel split gateway will be introduced before Task D and the exclusive choice block, with one branch leading to Task D and the other branch leading to the exclusive choice block (starting with its exclusive split gateway). A parallel join gateway will then be introduced after Task D and after the exclusive choice block (ending with its exclusive join gateway) to synchronize their completion before the process continues."
+29,True,True,"Add an AND-Gateway after task A and before END, they are connected and between them is task D.  ",NA
+30,True,False,You can either complete task D or you have to complete Task B or C according to Task A,NA
+31,True,True,Insert two parallel gateways. One after task A and one right before the termination event. Both of these parallel gateways should be connected through task D.,NA
+32,True,True,"Remove task D. After task A add an unconditional branch. One of the branches leads to the rest of the diagram, the other contains task D and converges with the other branch before the end of the diagram.","After Task A, a Parallel Gateway is introduced to split the process flow into two concurrent paths. One path executes Task D, while the other path continues with the remaining activities of the process that were originally in sequence after Task A (excluding Task D from its former sequential position). These two parallel paths then merge at a subsequent Parallel Gateway."
+33,False,False,Add a parallel Task D where the Split happens after Task a and ist joined before the end of the process,False
+34,True,False,"If condition neither true or false, then execute task D and end the process",NA
+35,True,False,"If b, c or d return true, the output should be true ",NA
+36,True,True,"a new && condition is added before the previous condition, and then the task d is executed not in the end but with the &&.",NA
+37,True,False,skip the conditional logic and perform task d ,NA
 38,False,False,I don't know. ,False
-39,True,True,add a + for parallel processing after task A and before the XOR with a loop after the last XOR and before the endpoint. In this loop do task D and remove it from the end,"Introduce a parallel gateway after Task A and before the exclusive gateway.  Place Task D within a loop after the second exclusive gateway and before the end event. Remove the existing instance of Task D from its current location.
-"
-40,True,True,This switch leads to parallel execution of conditional upper sub-process and the task D. ,"NA
-"
-41,False,False,"after task and before the exclusive gateway, add a parallel gateway which results in the exclusive gatway.",False
-42,True,False,"Please add a new parallel gateway after task A, that evaluates task D, and remove the current task D","Introduce a parallel gateway after task A. Create two branches after the gateway: one leading to task D and the other continuing the existing flow. Remove the original instance of task D.
-"
-43,True,False,Add an option after task A. If chosen go via a newly created task D to the end of the second if stament,"Insert a new exclusive gateway after Task A.  Create a new path from this gateway leading to a new Task D. Connect Task D to the merge gateway following the second conditional branch.
-"
-44,True,True,Include a parallel gateway after task A and before our first exclusive gateway. this first parallel gateway is connected to our second parallel gateway which is located directly after our second exclusive gateway. the conenction between our parallel gateway includes task D,"Insert a parallel gateway after Task A and before the first exclusive gateway. Connect this new parallel gateway to a second parallel gateway placed after the second exclusive gateway. Task D is placed between the two parallel gateways.
-"
+39,True,True,add a + for parallel processing after task A and before the XOR with a loop after the last XOR and before the endpoint. In this loop do task D and remove it from the end,"After Task A, the process splits into two parallel paths. One path continues to the existing XOR gateway. The other path executes Task D. Task D is removed from its original position at the end of the process. These two parallel paths then synchronize at an AND-join gateway, which is placed after the XOR gateway and after Task D, before proceeding to the endpoint."
+40,True,True,This switch leads to parallel execution of conditional upper sub-process and the task D. ,The 'conditional upper sub-process' and 'task D' will now execute concurrently.
+41,True,False,"after task and before the exclusive gateway, add a parallel gateway which results in the exclusive gatway.","A new Parallel Gateway is inserted between an existing Task and an existing Exclusive Gateway. The Task now flows into the new Parallel Gateway, which then flows into the existing Exclusive Gateway."
+42,True,True,"Please add a new parallel gateway after task A, that evaluates task D, and remove the current task D",NA
+43,True,False,Add an option after task A. If chosen go via a newly created task D to the end of the second if stament,NA
+44,True,False,Include a parallel gateway after task A and before our first exclusive gateway. this first parallel gateway is connected to our second parallel gateway which is located directly after our second exclusive gateway. the conenction between our parallel gateway includes task D,"A new parallel gateway is inserted after 'Task A'. This new parallel gateway has two outgoing sequence flows. One flow leads to 'First Exclusive Gateway'. The second flow leads to 'Task D', which then connects to an existing parallel gateway located directly after 'Second Exclusive Gateway'."
 45,False,False,"Add two new status after the task A and at the position of task D, move the original task C to the middle position of both new status ",False
-46,True,False,B and C can be skipped and only process D if meet some conditions ,"Introduce a gateway before activity B that checks a condition. If the condition is met, the process continues with B and C, and then D. If the condition is not met, the process skips B and C and goes directly to D.
-"
-47,True,True,"Exectue task D in parallel after task A, instead of in the end.","Move task D to execute in parallel with tasks B and C, after task A.
-"
-48,True,False,Move Task d from after the conditional Split to parallel to the other Task after Task a.,"Move Task d to be executed in parallel with the task following Task a.
-"
-49,True,False,"add a + after task A, connect it to the first X and connect it to a new task D. Add another + after the second x and connect it to the endpoint, also connect task D to the second +.","Insert a parallel gateway after task A. Connect the gateway to task X and a new task D. Insert another parallel gateway after the second occurrence of task X. Connect this gateway to the end event and task D.
-"
-50,True,True,please add a parallel gateway after task A to do task D in parallel with the other block.,"Add a parallel gateway after Task A. Task D should be executed in parallel with the existing flow following Task A.
-"
-51,True,False,"Add a new AND branch after task A, that includes task D and finish the branch before terminating.","Insert a parallel gateway after task A, create a new branch with task D, and connect both branches to a converging parallel gateway before the end event.
-"
-52,True,True,task d should be executed parallel to B or C,"Task D should be executed in parallel with tasks B and C.
-"
-53,True,False,Add an and gate after task A which leads to task D and joins again before the end state.,"Introduce a parallel gateway after Task A, creating two branches. One branch leads to the existing flow, and the other to Task D.  These branches converge before the end event.
-"
-54,False,False,Remove task D from the Input PM. Add two new XOR Decision Gateways. The first one immediately before the first decision gateway in the Input PM. The second one immediately after the last decision gateway in the Input PM. Create a new path between the two new XOR Decision Gateways that always contains the task D.,False
-55,True,False,Add a new AND branch within task D ,"NA
-"
-56,True,True,Task D now will be executed parallel with the xor,"NA
-"
-57,True,True,Add a parallel Gateway Splitting before the existing true/false condition and merging after the true false merged and before the End Node to execute Task D parallel to the condition and Tasks B or C,"Introduce a parallel gateway before the existing exclusive gateway, creating a parallel path for Task D.  Merge the parallel paths after the existing merge gateway but before the end event.
-"
-58,True,True,The task D will be run parallel with other tasks after task A.  ,"Introduce a parallel gateway after task A and before task D.  Create a merge gateway after the set of tasks that run in parallel with D, including D itself.
-"
-59,True,False,Add a gateaway each after task A and right before the end of the process. Connect them both with task D.,"Introduce a parallel gateway after task A. Create task D, and connect A's gateway to it.  Place another parallel gateway before the end event, and connect task D to it.  Finally, connect the second gateway to the end event.
-"
-60,True,False,Please add a XOR after task A that spans to the very end and has Task D in it,"NA
-"
-61,True,False,add new step after task a to add task d and add at the end again,"Insert task ""d"" after task ""a"". Insert another instance of task ""d"" at the end of the process.
-"
-62,True,False,Remove Task D. Add two parallel branches. Put the exclusive choice on one parallel branch and Task D on the other parallel branch.,"Replace Task D with a parallel gateway and two branches. One branch contains an exclusive gateway, the other branch contains Task D.
-"
-63,True,True,Add a task D that runs in parallel to the decision.,"NA
-"
+46,True,False,B and C can be skipped and only process D if meet some conditions ,"An exclusive gateway is introduced. If a specific condition is met, activities B and C are executed. Otherwise, if an alternative condition is met, activity D is executed, skipping activities B and C. Both paths then converge."
+47,True,True,"Exectue task D in parallel after task A, instead of in the end.","After Task A completes, the process flow will split into parallel paths. One path will execute Task D, while the other path(s) will continue with the tasks that previously followed Task A sequentially."
+48,True,False,Move Task d from after the conditional Split to parallel to the other Task after Task a.,"Task d, which was previously executed sequentially after a conditional split, is now moved to a parallel branch originating after Task a, where it will be executed concurrently with another existing task that also starts after Task a."
+49,True,False,"add a + after task A, connect it to the first X and connect it to a new task D. Add another + after the second x and connect it to the endpoint, also connect task D to the second +.","A parallel split gateway is inserted immediately after Task A. Two parallel paths emerge from this gateway: one leading to Task X, and another leading to Task D. Both Task X and Task D then flow into a parallel join gateway. The outgoing flow from this join gateway connects to the subsequent element in the process."
+50,True,True,please add a parallel gateway after task A to do task D in parallel with the other block.,NA
+51,True,False,"Add a new AND branch after task A, that includes task D and finish the branch before terminating.",NA
+52,True,True,task d should be executed parallel to B or C,NA
+53,True,True,Add an and gate after task A which leads to task D and joins again before the end state.,NA
+54,True,False,Remove task D from the Input PM. Add two new XOR Decision Gateways. The first one immediately before the first decision gateway in the Input PM. The second one immediately after the last decision gateway in the Input PM. Create a new path between the two new XOR Decision Gateways that always contains the task D.,"The process is modified such that a new conditional decision point is introduced. At this point, the process will either execute 'Task D' or proceed with the existing process flow that starts at the first existing decision gateway and ends at the last existing decision gateway. This decision is made by a new XOR gateway placed immediately before the first existing decision gateway. The outcome of this decision, whether 'Task D' was executed or the existing process flow was followed, then merges at a new XOR gateway placed immediately after the last existing decision gateway, and the process continues from there."
+55,True,True,Add a new AND branch within task D ,NA
+56,True,True,Task D now will be executed parallel with the xor,NA
+57,True,True,Add a parallel Gateway Splitting before the existing true/false condition and merging after the true false merged and before the End Node to execute Task D parallel to the condition and Tasks B or C,"The process will be modified to introduce parallel execution. At a specific point, the flow will split into two concurrent paths. One path will execute Task D. The other path will execute the existing ""true/false condition"" logic, which involves selecting and executing either Task B or Task C. Both Task D and the selected path (Task B or Task C) will execute concurrently. The process will only proceed to its End Node after both Task D and the selected task (B or C) have completed."
+58,True,True,The task D will be run parallel with other tasks after task A.  ,NA
+59,True,False,Add a gateaway each after task A and right before the end of the process. Connect them both with task D.,NA
+60,True,False,Please add a XOR after task A that spans to the very end and has Task D in it,"An exclusive gateway is added immediately after Task A. From this gateway, there are two alternative paths. In one path, Task D is executed, and then the process ends. In the other path, Task D is skipped, and the process ends directly."
+61,True,False,add new step after task a to add task d and add at the end again,NA
+62,True,True,Remove Task D. Add two parallel branches. Put the exclusive choice on one parallel branch and Task D on the other parallel branch.,"Insert a Parallel Gateway (split) into the process flow. Create two outgoing sequence flows from this gateway. On the first parallel branch, place the fragment representing the exclusive choice, including its associated paths and subsequent convergence. On the second parallel branch, place Task D. Both parallel branches will then converge into a Parallel Gateway (join)."
+63,True,True,Add a task D that runs in parallel to the decision.,NA

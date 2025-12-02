@@ -1,65 +1,65 @@
 ,Unnamed: 0,mapping,epap,user,meaning,meaning_status,similarity
-0,0,False,False,e,False,False,0.0
+0,0,False,False,e,False,False,0.9545454545454546
 1,1,True,True,swap the positions of tasks A and B,Swap the positions of tasks A and B.,True,1.0
-2,2,True,True,change task A into task B and task B into task A,Swap task A with task B.,True,1.0
-3,3,True,True,swap task A with task B,Swap task A with task B.,True,1.0
-4,4,True,False,"In the new model, task B should be checked, if true, task A will be done.",Embed task A in a conditional branch where task B is checked.,True,0.9545454545454546
-5,5,True,True,Please switch task A and task B.,Swap task A and task B.,True,1.0
-6,6,True,True,Switch task A and task B,Swap task A and task B.,True,1.0
-7,7,True,True,Swap task A with task B. Don't change the rest of the structure.,Swap task A with task B.,True,1.0
-8,8,True,True,switch task A and task B,Swap task A and task B.,True,1.0
-9,9,True,True,Switch task b and task a. Task B should be the first task in the chain and task A is exclusive to if the status is true.,"Move the task ""task b"" to be executed before ""task a"".",True,0.9545454545454546
-10,10,True,True,switch the positions of task b and task a with each other,Swap the positions of Task B and Task A with each other.,True,1.0
-11,11,True,True,swap the positions of task A and task B while everything stays the same,Swap the positions of task A and task B.,True,1.0
+2,2,True,True,change task A into task B and task B into task A,Swap task A with task B and task B with task A.,True,1.0
+3,3,True,True,swap task A with task B,Swap the positions of task A and task B.,True,1.0
+4,4,True,False,"In the new model, task B should be checked, if true, task A will be done.","If task B is checked and the condition is true, then task A will be executed.",True,0.9778256852479212
+5,5,True,True,Please switch task A and task B.,Swap task A with task B.,True,1.0
+6,6,True,True,Switch task A and task B,Swap the positions of task A and task B in the process.,True,1.0
+7,7,True,True,Swap task A with task B. Don't change the rest of the structure.,Swap the position of task A with the position of task B.,True,1.0
+8,8,True,True,switch task A and task B,Swap the positions of task A and task B.,True,1.0
+9,9,True,True,Switch task b and task a. Task B should be the first task in the chain and task A is exclusive to if the status is true.,,True,1.0
+10,10,True,True,switch the positions of task b and task a with each other,Swap the positions of task b and task a with each other.,True,1.0
+11,11,True,True,swap the positions of task A and task B while everything stays the same,Swap the positions of task A and task B while everything else remains unchanged.,True,1.0
 12,12,True,True,change task a and task b's position for each other,Swap the positions of task a and task b.,True,1.0
-13,13,True,True,swap tasks A and B,Swap task A with task B.,True,1.0
-14,14,True,True,Please exchange task A and task B with each other.,Swap task A and task B with each other.,True,1.0
-15,15,True,True,taskA and Task B were interchanged ,Swap Task A with Task B.,True,1.0
-16,16,True,True,Task A and B should be switched,Move Task A to the position after Task B.,True,0.9545454545454546
-17,17,True,True,Swap the labels 'task A' and 'task B'.,Swap the labels of 'task A' and 'task B'.,True,1.0
-18,18,True,True,Switch task A with task B,Swap task A with task B.,True,1.0
+13,13,True,True,swap tasks A and B,Swap the positions of tasks A and B in the process.,True,1.0
+14,14,True,True,Please exchange task A and task B with each other.,Swap the positions of task A and task B in the process.,True,1.0
+15,15,True,True,taskA and Task B were interchanged ,Task A and Task B have swapped positions in the process.,True,1.0
+16,16,True,True,Task A and B should be switched,Task A and Task B should be swapped in the process.,True,1.0
+17,17,True,True,Swap the labels 'task A' and 'task B'.,Swap the labels 'task A' and 'task B'.,True,1.0
+18,18,True,True,Switch task A with task B,Switch task A with task B.,True,1.0
 19,19,True,True,Please swap task A with task B,Swap task A with task B.,True,1.0
-20,20,True,True,swap task and task B,Swap Task A and Task B.,True,1.0
-21,21,True,True,please swap task A and task B.,Swap task A and task B.,True,1.0
-22,22,True,True,exchange task A and task B,Swap task A and task B.,True,1.0
-23,23,True,True,Switching task a and b,Swap task A and task B.,True,1.0
-24,24,False,False,"rename Task A to task B and task A to task B, essentially changing the 2 tasks",False,False,0.0
-25,25,True,True,Switch task A and B,Swap task A and task B.,True,1.0
-26,26,True,True,"Swap the label between ""task A"" and ""task B"". Do not make any other changes.",,False,0.0
-27,27,True,False,"at the start, add task B. replace task B inside the conditional branch with task A.",,False,0.0
-28,28,True,True,Switch task A and task B,Swap task A and task B.,True,1.0
-29,29,True,True,"Switch tasks A and B, so the first task in the process is task B. ","Swap task A with task B, making task B the first task in the process.",True,1.0
+20,20,True,True,swap task and task B,,True,1.0
+21,21,True,True,please swap task A and task B.,Swap the positions of task A and task B in the process model.,True,1.0
+22,22,True,True,exchange task A and task B,Swap task A with task B.,True,1.0
+23,23,True,True,Switching task a and b,Swapping task a with task b.,True,1.0
+24,24,True,True,"rename Task A to task B and task A to task B, essentially changing the 2 tasks",Swap Task A with Task B.,True,1.0
+25,25,True,True,Switch task A and B,Switch the positions of task A and task B.,True,1.0
+26,26,True,True,"Swap the label between ""task A"" and ""task B"". Do not make any other changes.","Swap the labels of ""task A"" and ""task B"".",True,1.0
+27,27,True,False,"at the start, add task B. replace task B inside the conditional branch with task A.",,True,1.0
+28,28,True,True,Switch task A and task B,Switch the positions of task A and task B.,True,1.0
+29,29,True,True,"Switch tasks A and B, so the first task in the process is task B. ","Switch the positions of tasks A and B, making task B the first task in the process.",True,1.0
 30,30,True,True,Please exchange Task A with Task B and vice versa,Swap Task A with Task B and vice versa.,True,1.0
-31,31,True,True,Switch task A and task B.,Swap task A and task B.,True,1.0
-32,32,True,True,Switch the places of tasks A and B.,Swap the places of tasks A and B.,True,1.0
-33,33,True,True,Replace the Name of Task A with Task B and Task B with Task A,Swap the names of Task A and Task B.,True,1.0
-34,34,True,True,"Replace task A with task B, and task B with task A",Swap task A with task B,True,1.0
-35,35,True,True,switch the place of task a and b ,Swap the position of task A with task B.,True,1.0
-36,36,True,False,"Task A is replaced by B, and the conditionally B in case of a true task A, is not replaced by A.",,False,0.0
-37,37,True,True,swap task a and task b with the same conditional logic ,Swap Task A and Task B while maintaining the same conditional logic.,True,1.0
-38,38,True,True,Switching the spots of task A and B. ,Swap the positions of task A and task B.,True,1.0
-39,39,True,True,exchange task A and task B ,Swap task A and task B.,True,1.0
-40,40,True,False,"In this case task B will be firstly executed. Then condition X will be checked. If true, task A follows. ",Embed task A in a conditional branch after task B.,True,0.9369804919423239
-41,41,True,True,"switch the places of task a and b in the input diagram, so that where task a was, no b is and where b was a will be",Swap the positions of task A and task B in the process model.,True,1.0
-42,42,True,True,Please switch the positions of task A and task B,Swap the positions of task A and task B.,True,1.0
-43,43,True,True,switch A and B,Swap process fragment A with process fragment B.,True,1.0
-44,44,True,True,Switch positions of task A and task B,Swap the positions of task A and task B.,True,1.0
-45,45,True,True,Please exchange the task A and task B,Swap task A with task B.,True,1.0
-46,46,True,True,Exchange the content  (order) of task A with Task B,Swap the order of Task A with Task B.,True,1.0
-47,47,True,True,"Change task B to task X, Change task A to task B, Change task X to task A","Swap task B with task X, Swap task A with task B, Swap task X with task A",True,1.0
-48,48,True,True,Change Task a and Task b with each other,Swap Task a and Task b with each other.,True,1.0
-49,49,True,True,switch task A and task B,Swap task A and task B.,True,1.0
+31,31,True,True,Switch task A and task B.,Swap the positions of task A and task B.,True,1.0
+32,32,True,True,Switch the places of tasks A and B.,Switch the places of tasks A and B.,True,1.0
+33,33,False,False,Replace the Name of Task A with Task B and Task B with Task A,False,False,0.9545454545454546
+34,34,True,True,"Replace task A with task B, and task B with task A","Swap task A with task B, and task B with task A.",True,1.0
+35,35,True,True,switch the place of task a and b ,Swap the positions of task a and task b.,True,1.0
+36,36,True,False,"Task A is replaced by B, and the conditionally B in case of a true task A, is not replaced by A.",,True,1.0
+37,37,True,True,swap task a and task b with the same conditional logic ,"Swap the positions of task a and task b, ensuring that the conditional logic associated with each task remains unchanged.",True,1.0
+38,38,True,True,Switching the spots of task A and B. ,Switch the positions of task A and task B.,True,1.0
+39,39,True,True,exchange task A and task B ,Swap task A with task B.,True,1.0
+40,40,True,False,"In this case task B will be firstly executed. Then condition X will be checked. If true, task A follows. ","Task B will be executed first. Then, condition X will be checked. If the condition is true, task A will follow.",True,1.0
+41,41,True,True,"switch the places of task a and b in the input diagram, so that where task a was, no b is and where b was a will be",Swap the positions of task a and task b in the process model.,True,1.0
+42,42,True,True,Please switch the positions of task A and task B,Switch the positions of task A and task B.,True,1.0
+43,43,True,True,switch A and B,Swap the process fragment labeled A with the process fragment labeled B.,True,1.0
+44,44,True,True,Switch positions of task A and task B,Switch the positions of task A and task B.,True,1.0
+45,45,True,True,Please exchange the task A and task B,Swap the positions of task A and task B.,True,1.0
+46,46,True,True,Exchange the content  (order) of task A with Task B,Swap the order of Task A and Task B.,True,1.0
+47,47,True,True,"Change task B to task X, Change task A to task B, Change task X to task A","Swap task A with task X, and swap task B with task A.",True,0.8636363636363636
+48,48,True,True,Change Task a and Task b with each other,Swap Task a with Task b.,True,1.0
+49,49,True,True,switch task A and task B,Swap the positions of task A and task B.,True,1.0
 50,50,True,True,Please switch task A with task B,Swap task A with task B.,True,1.0
-51,51,True,True,Switch the order of task A and task B.,Swap the order of task A and task B.,True,1.0
-52,52,True,True,rename task A to B and B to A,Swap the names of task A and task B.,True,1.0
-53,53,True,True,Switch task A and task B,Swap task A and task B.,True,1.0
+51,51,True,True,Switch the order of task A and task B.,Switch the order of task A and task B.,True,1.0
+52,52,True,True,rename task A to B and B to A,Swap the positions of task A and task B.,True,1.0
+53,53,True,True,Switch task A and task B,Switch the positions of task A and task B in the process.,True,1.0
 54,54,True,True,Exchange task A with task B,Swap task A with task B.,True,1.0
 55,55,True,True,Swap the positions of task A and task B,Swap the positions of task A and task B.,True,1.0
-56,56,True,True,Switch the position of task A and task B while make no change to others ,Swap the position of task A and task B.,True,1.0
-57,57,True,True,Switch the positions of Tasks A and B to result to have Task B following the Start Node and Task A inside the True Case,Swap the positions of Task A and Task B so that Task B follows the Start Node and Task A is inside the True Case.,True,1.0
+56,56,True,True,Switch the position of task A and task B while make no change to others ,Switch the position of task A and task B while making no change to others.,True,1.0
+57,57,True,True,Switch the positions of Tasks A and B to result to have Task B following the Start Node and Task A inside the True Case,"Task B will follow the Start Node, and Task A will be placed inside the True Case.",True,1.0
 58,58,True,True,The task A and task B are exchanged. ,Task A and task B are swapped.,True,1.0
-59,59,True,True,Switch task A and task B with one another.,Swap task A and task B with one another.,True,1.0
-60,60,True,True,Please seitch task A and B,Swap task A and task B.,True,1.0
-61,61,True,True,exchange task A and task b,Swap task A and task B.,True,1.0
-62,62,True,False,Replace Task A with Task B and replace task A with Task B,Replace Task A with Task B.,True,1.0
+59,59,True,True,Switch task A and task B with one another.,Swap the positions of task A and task B.,True,1.0
+60,60,True,True,Please seitch task A and B,Swap task A with task B.,True,1.0
+61,61,True,True,exchange task A and task b,Swap task A with task B.,True,1.0
+62,62,True,False,Replace Task A with Task B and replace task A with Task B,Replace Task A with Task B.,True,0.9090909090909091
 63,63,True,True,Swap task A and B.,Swap task A with task B.,True,1.0

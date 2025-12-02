@@ -2,12 +2,13 @@
 flowchart LR
 0:startevent:((startevent))-->1:task:(task A)
 1:task:-->2:exclusivegateway:{x}
-2:exclusivegateway:-->|a==1|7:task:(task D)
-2:exclusivegateway:-->|a!=1|3:exclusivegateway:{x}
-3:exclusivegateway:-->|true|4:task:(task B)
-3:exclusivegateway:-->|false|5:task:(task C)
-4:task:-->6:exclusivegateway:{x}
+2:exclusivegateway:-->|a = 1|7:task:(task D)
+2:exclusivegateway:-->|a != 1|9:task:
+9:task:-->10:exclusivegateway:{x}
+10:exclusivegateway:-->3:task:(task B)
+10:exclusivegateway:-->5:task:(task C)
+3:task:-->6:exclusivegateway:{x}
 5:task:-->6:exclusivegateway:
-6:exclusivegateway:-->7:task:
+6:exclusivegateway:--> 7:task:
 7:task:-->8:endevent:(((endevent)))
 ```
