@@ -33,6 +33,7 @@ For model-to-model comparison [model_evaluation](./model_evaluation) we utilise 
 
 
 Impotant: for privite use to make a call to the llm user requires own API key. 
+Provide your key into .env file. Template for the .env file is provided (.env_template).
 
 For more information rely on official documentation.
 
